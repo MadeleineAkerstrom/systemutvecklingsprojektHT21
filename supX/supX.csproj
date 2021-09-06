@@ -7,10 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\fight1.gif" />
+    <None Remove="Assets\Images\mike_red.gif" />
+    <None Remove="Assets\Images\snake_blue.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Assets\Json\" />
-    <Folder Include="Assets\Images\" />
     <Folder Include="Models\" />
     <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\fight1.gif" />
+    <Resource Include="Assets\Images\mike_red.gif" />
+    <Resource Include="Assets\Images\snake_blue.gif" />
   </ItemGroup>
 
 </Project>
