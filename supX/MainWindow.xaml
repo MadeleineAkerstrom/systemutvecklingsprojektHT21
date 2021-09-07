@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBox HorizontalAlignment="Left" Margin="65,68,0,0" Text="{Binding PlayerName, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="{Binding PlayerName}" HorizontalAlignment="Left" Margin="65,37,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="165,112,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
