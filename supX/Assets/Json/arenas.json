@@ -1,0 +1,16 @@
+﻿{
+  "arenas": [
+    {
+      "id": 1,
+      "name": "Backyard"
+    },
+    {
+      "id": 2,
+      "name": "Wembley"
+    },
+    {
+      "id": 3,
+      "name": "Bellagio"
+    }
+  ]
+}
