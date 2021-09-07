@@ -19,6 +19,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Fody" Version="6.5.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Assets\Images\fight1.gif" />
     <Resource Include="Assets\Images\mike_red.gif" />
     <Resource Include="Assets\Images\snake_blue.gif" />
