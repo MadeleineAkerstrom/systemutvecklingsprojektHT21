@@ -9,7 +9,8 @@
       "speed": 2,
       "defense": 2,
       "wins": 0,
-      "losses": 0
+      "losses": 0,
+      "imagePath": ""
     },
     {
       "id": 2,
@@ -19,7 +20,8 @@
       "speed": 5,
       "defense": 2,
       "wins": 0,
-      "losses": 0
+      "losses": 0,
+      "imagePath": ""
     },
     {
       "id": 3,
@@ -29,7 +31,8 @@
       "speed": 4,
       "defense": 1,
       "wins": 0,
-      "losses": 0
+      "losses": 0,
+      "imagePath": ""
     }
   ]
 }
