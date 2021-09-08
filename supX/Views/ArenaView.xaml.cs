@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace supX.Views
 {
     /// <summary>
-    /// Interaction logic for StartView.xaml
+    /// Interaction logic for ArenaView.xaml
     /// </summary>
-    public partial class StartView : UserControl
+    public partial class ArenaView : UserControl
     {
-        public StartView()
+        public ArenaView()
         {
             InitializeComponent();
         }

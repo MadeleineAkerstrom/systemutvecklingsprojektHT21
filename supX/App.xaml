@@ -2,8 +2,19 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:supX"
+             xmlns:viewmodels="clr-namespace:supX.ViewModels"
+             xmlns:views="clr-namespace:supX.Views"
+             xmlns:data="clr-namespace:supX.Data"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <DataTemplate
+             DataType="{x:Type viewmodels:ArenaViewModel}">
+            <views:GameView />
+        </DataTemplate>
+
+        <DataTemplate
+             DataType="{x:Type viewmodels:PlayerViewModel}">
+            <views:PlayerView />
+        </DataTemplate>
     </Application.Resources>
 </Application>

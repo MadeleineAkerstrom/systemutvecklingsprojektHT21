@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="supX.Views.PlayerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:supX.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="800">
+    <Grid Background="HotPink">
+        <Button Content="Byt vy" HorizontalAlignment="Left" Margin="31,29,0,0" VerticalAlignment="Top" Command="{Binding ChangeViewCommand}" />
+        <Button Content="Button" HorizontalAlignment="Left" Margin="106,39,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="216,49,0,0" Text="Saldo: 4 kr" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</UserControl>

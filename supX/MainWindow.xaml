@@ -7,9 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="65,68,0,0" Text="{Binding PlayerName, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="{Binding PlayerName}" HorizontalAlignment="Left" Margin="65,37,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="165,112,0,0" VerticalAlignment="Top"/>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ContentControl Content="{Binding CurrentViewModel}" Grid.Column="1" Grid.Row="0"></ContentControl>
+        <ContentControl Content="{Binding BottomViewModel}" Grid.Column="1" Grid.Row="1"></ContentControl>
     </Grid>
 </Window>

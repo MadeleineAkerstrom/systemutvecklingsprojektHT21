@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace supX.ViewModels
+namespace supX.Data
 {
-    public class ArenaViewModel : BaseViewModel
+    public enum GotoView
     {
+        PlayerView, GameView, MainView
     }
 }
