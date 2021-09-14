@@ -34,7 +34,7 @@ namespace supX.Commands
                 case GotoView.PlayerView:
                     mainViewModel.CurrentViewModel = new PlayerViewModel();
                     break;
-                case GotoView.GameView:
+                case GotoView.BackyardView:
                     mainViewModel.CurrentViewModel = new GameViewModel();
                     break;
                 case GotoView.RulesView:

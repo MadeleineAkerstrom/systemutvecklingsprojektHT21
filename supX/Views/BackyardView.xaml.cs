@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace supX.Views
 {
     /// <summary>
-    /// Interaction logic for GameView.xaml
+    /// Interaction logic for BackyardView.xaml
     /// </summary>
-    public partial class GameView : UserControl
+    public partial class BackyardView : UserControl
     {
-        public GameView()
+        public BackyardView()
         {
             InitializeComponent();
         }

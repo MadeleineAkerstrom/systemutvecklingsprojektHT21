@@ -10,9 +10,12 @@ namespace supX.ViewModels
     {
         //public BaseViewModel CurrentViewModel { get; set; } = new ArenaViewModel();
 
-        //public BaseViewModel BottomViewModel { get; set; } = new PlayerViewModel();
+        //public BaseViewModel BalanceViewModel { get; set; } = new Player();
 
-        
+        public CreatePlayerCommand createPlayerCommand = new CreatePlayerCommand();
+        //public string MyName { get; set; } = "Madde";
+        //public double MyBalance { get; set; }
+
         private MainViewModel currentViewModel;
 
         public MainViewModel CurrentViewModel

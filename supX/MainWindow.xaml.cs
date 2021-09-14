@@ -1,4 +1,5 @@
-﻿using supX.ViewModels;
+﻿using supX.Commands;
+using supX.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,10 @@ namespace supX
         {
             InitializeComponent();
             DataContext = new MainViewModel();
+            //createPlayerCommand.CreatePlayer();
+            //CreatePlayerCommand createPlayerCommand = new CreatePlayerCommand();
+
+
         }
     }
 }

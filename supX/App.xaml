@@ -19,7 +19,7 @@
 
         <DataTemplate
             DataType="{x:Type viewmodels:GameViewModel}">
-            <views:GameView />
+            <views:BackyardView />
         </DataTemplate>
 
         <DataTemplate
