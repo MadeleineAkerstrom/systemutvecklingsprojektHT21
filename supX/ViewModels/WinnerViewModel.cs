@@ -4,7 +4,7 @@ using System.Text;
 
 namespace supX.ViewModels
 {
-    public class FighterViewModel : MainViewModel
+    public class WinnerViewModel : MainViewModel
     {
     }
 }

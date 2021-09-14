@@ -13,9 +13,9 @@ namespace supX.ViewModels
         //public BaseViewModel BottomViewModel { get; set; } = new PlayerViewModel();
 
         
-        private BaseViewModel currentViewModel;
+        private MainViewModel currentViewModel;
 
-        public BaseViewModel CurrentViewModel
+        public MainViewModel CurrentViewModel
         {
             get { return currentViewModel; }
             set 

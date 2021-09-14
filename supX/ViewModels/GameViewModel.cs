@@ -4,7 +4,7 @@ using System.Text;
 
 namespace supX.ViewModels
 {
-    public class GameViewModel : BaseViewModel
+    public class GameViewModel : MainViewModel
     {
     }
 }

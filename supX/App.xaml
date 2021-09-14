@@ -20,7 +20,22 @@
         <DataTemplate
             DataType="{x:Type viewmodels:GameViewModel}">
             <views:GameView />
-
         </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:RulesViewModel}">
+            <views:RulesView />
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:LoserViewModel}">
+            <views:LoserView/>
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:WinnerViewModel}">
+            <views:WinnerView/>
+        </DataTemplate>
+        
     </Application.Resources>
 </Application>

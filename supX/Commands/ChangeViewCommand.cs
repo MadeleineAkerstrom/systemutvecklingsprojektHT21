@@ -15,7 +15,7 @@ namespace supX.Commands
 
         public ChangeViewCommand(MainViewModel mainViewModel)
         {
-            this.mainViewModel = this.mainViewModel;
+            this.mainViewModel = mainViewModel;
         }
         public bool CanExecute(object parameter)
         {
@@ -36,6 +36,15 @@ namespace supX.Commands
                     break;
                 case GotoView.GameView:
                     mainViewModel.CurrentViewModel = new GameViewModel();
+                    break;
+                case GotoView.RulesView:
+                    mainViewModel.CurrentViewModel = new RulesViewModel();
+                    break;
+                case GotoView.WinnerView:
+                    mainViewModel.CurrentViewModel = new WinnerViewModel();
+                    break;
+                case GotoView.LoserView:
+                    mainViewModel.CurrentViewModel = new LoserViewModel();
                     break;
                 default:
                     break;

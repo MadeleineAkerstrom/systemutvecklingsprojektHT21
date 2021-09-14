@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:supX.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <Grid Background="BlanchedAlmond">
+        <TextBlock Text="ArenaView"/>
     </Grid>
 </UserControl>
