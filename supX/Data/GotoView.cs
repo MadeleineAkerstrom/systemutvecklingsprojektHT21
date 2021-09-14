@@ -6,6 +6,6 @@ namespace supX.Data
 {
     public enum GotoView
     {
-        PlayerView, GameView, MainView
+        PlayerView, GameView, MainView, ArenaView
     }
 }

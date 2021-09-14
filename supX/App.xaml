@@ -4,17 +4,23 @@
              xmlns:local="clr-namespace:supX"
              xmlns:viewmodels="clr-namespace:supX.ViewModels"
              xmlns:views="clr-namespace:supX.Views"
-             xmlns:data="clr-namespace:supX.Data"
+             
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <DataTemplate
              DataType="{x:Type viewmodels:ArenaViewModel}">
-            <views:GameView />
+            <views:ArenaView />
         </DataTemplate>
 
         <DataTemplate
              DataType="{x:Type viewmodels:PlayerViewModel}">
             <views:PlayerView />
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:GameViewModel}">
+            <views:GameView />
+
         </DataTemplate>
     </Application.Resources>
 </Application>

@@ -28,11 +28,14 @@ namespace supX.Commands
 
             switch(view)
             {
-                case GotoView.GameView:
+                case GotoView.ArenaView:
                     mainViewModel.CurrentViewModel = new ArenaViewModel();
                     break;
                 case GotoView.PlayerView:
                     mainViewModel.CurrentViewModel = new PlayerViewModel();
+                    break;
+                case GotoView.GameView:
+                    mainViewModel.CurrentViewModel = new GameViewModel();
                     break;
                 default:
                     break;
