@@ -18,8 +18,23 @@
         </DataTemplate>
 
         <DataTemplate
-            DataType="{x:Type viewmodels:GameViewModel}">
+            DataType="{x:Type viewmodels:BackyardViewModel}">
             <views:BackyardView />
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:WembleyViewModel}">
+            <views:WembleyView/>
+        </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:BellagioViewModel}">
+            <views:BellagioView/>
+        </DataTemplate>
+        
+        <DataTemplate
+            DataType="{x:Type viewmodels:GameViewModel}">
+            <views:BettingView/>
         </DataTemplate>
 
         <DataTemplate

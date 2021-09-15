@@ -14,7 +14,20 @@ namespace supX.ViewModels
 
         public CreatePlayerCommand createPlayerCommand = new CreatePlayerCommand();
         //public string MyName { get; set; } = "Madde";
-        //public double MyBalance { get; set; }
+        //public double MyBalance { get; set; 
+        public PlayerViewModel myPlayer { get; set; }
+
+        private MainViewModel gameViewModel;
+
+        public MainViewModel GameViewModel
+        {
+            get { return gameViewModel; }
+            set 
+            { gameViewModel = value;
+                NotifyPropertyChanged();
+            }
+        }
+
 
         private MainViewModel currentViewModel;
 

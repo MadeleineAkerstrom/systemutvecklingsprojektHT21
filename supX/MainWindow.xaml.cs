@@ -31,5 +31,10 @@ namespace supX
 
 
         }
+
+        private void PlayerView_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

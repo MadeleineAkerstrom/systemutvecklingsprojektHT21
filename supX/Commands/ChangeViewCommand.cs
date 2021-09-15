@@ -35,6 +35,15 @@ namespace supX.Commands
                     mainViewModel.CurrentViewModel = new PlayerViewModel();
                     break;
                 case GotoView.BackyardView:
+                    mainViewModel.CurrentViewModel = new BackyardViewModel();
+                    break;
+                case GotoView.BellagioView:
+                    mainViewModel.CurrentViewModel = new BellagioViewModel();
+                    break;
+                case GotoView.WembleyView:
+                    mainViewModel.CurrentViewModel = new WembleyViewModel();
+                    break;
+                case GotoView.BettingView:
                     mainViewModel.CurrentViewModel = new GameViewModel();
                     break;
                 case GotoView.RulesView:
