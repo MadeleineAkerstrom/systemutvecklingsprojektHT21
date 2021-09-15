@@ -14,5 +14,6 @@ namespace supX.ViewModels
         public int Defense { get; set; }
         public int Wins { get; set; }
         public int Losses { get; set; }
+        public string ImagePath { get; set; }
     }
 }
