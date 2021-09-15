@@ -4,9 +4,31 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:supX.Views"
+             xmlns:data="clr-namespace:supX.Data"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="IndianRed">
-        <TextBlock Text="LoserView"/>
+    <Grid Background="Black">
+        <ContentControl Content="{Binding CurrentViewModel}" 
+                        Grid.Column = "1"
+                        Grid.Row="1"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="You lost.." FontSize="65"  VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="DimGray"/>
+        <Button Content="Take me back to arenas" 
+                Command="{Binding ChangeViewCommand}" 
+                CommandParameter="{x:Static data:GotoView.ArenaView}" 
+                Grid.Column="1" HorizontalAlignment="Center" Margin="0,293,0,0" Grid.Row="1" VerticalAlignment="Top" Height="57" Width="264"/>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+
+
     </Grid>
 </UserControl>
