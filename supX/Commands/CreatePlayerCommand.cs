@@ -9,13 +9,13 @@ namespace supX.Commands
     public class CreatePlayerCommand 
 
     {
-       public Player CreatePlayer()
-        {
-            Player player = new Player()
-            { MyBalance = 100,
-            MyName = "Madde"};
-            return player;
-        }
+       //public Player CreatePlayer()
+       // {
+       //     Player player = new Player()
+       //     { MyBalance = 100,
+       //     MyName = "Madde"};
+       //     return player;
+       // }
         public CreatePlayerCommand()
         {
             

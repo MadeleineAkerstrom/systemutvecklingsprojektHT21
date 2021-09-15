@@ -1,24 +1,49 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace supX.ViewModels
 {
     public class PlayerViewModel : MainViewModel
     {
-        //public double MyBalance { get; set; }
-        //public string MyName { get; set; }
+        public static readonly Random random = new Random();
+        public List<FighterViewModel> fighters { get; set; }
 
-        //public PlayerViewModel()
-        //{
-        //    MyBalance = 100;
-        //    MyName = "Madde";
+
+        public PlayerViewModel()
+        {
+            GetRandomSeed();
+        }
+
+              
+
+        /// <summary>
+        /// Genrates a random number for Matchup
+        /// </summary>
+        public void GetRandomSeed()
+        {
+            //en match
+            fighters = new List<FighterViewModel>();
+
+
+            int seedNumber; /*= random.Next(6);*/
+
+            foreach (var fighter in fighters)
+            {
+                seedNumber = random.Next(6);
+                fighter.Id = seedNumber;   
+                
+            }
             
-        //}
-        //public override string ToString()
-        //{
-        //    return $"{MyBalance}";
-        //}
+        }
+
+        public void GenerateMatch(FighterViewModel fighter) 
+        {
+            //Här
+            
+        }
+
 
     }
 

@@ -6,16 +6,14 @@ using System.Windows.Input;
 
 namespace supX.ViewModels
 {
+
+    
     public class MainViewModel : BaseViewModel
     {
-        //public BaseViewModel CurrentViewModel { get; set; } = new ArenaViewModel();
-
-        //public BaseViewModel BalanceViewModel { get; set; } = new Player();
+        
 
         public CreatePlayerCommand createPlayerCommand = new CreatePlayerCommand();
-        //public string MyName { get; set; } = "Madde";
-        //public double MyBalance { get; set; 
-        public PlayerViewModel myPlayer { get; set; }
+        
 
         private MainViewModel gameViewModel;
 
