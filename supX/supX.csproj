@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ViewModels\Player.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Assets\Images\fight1.gif" />
     <None Remove="Assets\Images\mike_red.gif" />
     <None Remove="Assets\Images\snake_blue.gif" />
