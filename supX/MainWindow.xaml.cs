@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using supX.Assets.Filehandler;
 
 namespace supX
 {
@@ -22,11 +23,28 @@ namespace supX
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        string filename = "fighters1.json";
+        FighterViewModel fighters = new FighterViewModel();
         public MainWindow()
         {
             InitializeComponent();
             DataContext = new MainViewModel();
+
+            OpenFile();
            
+        }
+
+        public void SaveFile()
+        {
+            FileHandler.Save(fighters, filename);
+
+
+        }
+
+        public void OpenFile()
+        {
+            fighters = FileHandler.Open<FighterViewModel>("fighters1.json");
         }
 
         private void PlayerView_Loaded(object sender, RoutedEventArgs e)

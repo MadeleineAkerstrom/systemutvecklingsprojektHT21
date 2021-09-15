@@ -42,10 +42,5 @@ namespace supX.ViewModels
         {
             ChangeViewCommand = new ChangeViewCommand(this);
         }
-
-
-
-
-
     }
 }
