@@ -12,9 +12,34 @@
 
 
         <TextBlock Text="ArenaView"/>
-        <Button Content="Backyard" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BackyardView}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,189,0,0" Height="51" Width="137"/>
-        <Button Content="Wembley" HorizontalAlignment="Center" Margin="0,189,0,0" VerticalAlignment="Top" Height="51" Width="137"/>
-        <Button Content="Bellagio" HorizontalAlignment="Left" Margin="550,189,0,0" VerticalAlignment="Top" Height="51" Width="137"/>
-        <Label Content="Choose your arena" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top" Height="83" Width="323" FontSize="36"/>
+        <Button Content="Backyard" 
+                Command="{Binding ChangeViewCommand}" 
+                CommandParameter="{x:Static data:GotoView.BackyardView}" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Top" 
+                Margin="-500,189,0,0" 
+                Height="51" Width="137"/>
+        <Button Content="Wembley" 
+                Command="{Binding ChangeViewCommand}" 
+                CommandParameter="{x:Static data:GotoView.WembleyView}" 
+                HorizontalAlignment="Center" Margin="0,189,0,0" 
+                VerticalAlignment="Top" 
+                Height="51" 
+                Width="137"/>
+        <Button Content="Bellagio" 
+                Command="{Binding ChangeViewCommand}" 
+                CommandParameter="{x:Static data:GotoView.BellagioView}" 
+                HorizontalAlignment="Center" 
+                Margin="500,189,0,0" 
+                VerticalAlignment="Top" 
+                Height="51" 
+                Width="137"/>
+        <Label Content="Choose your arena" 
+               HorizontalAlignment="Center" 
+               Margin="0,74,0,0" 
+               VerticalAlignment="Top" 
+               Height="83" 
+               Width="323" 
+               FontSize="36"/>
     </Grid>
 </UserControl>
