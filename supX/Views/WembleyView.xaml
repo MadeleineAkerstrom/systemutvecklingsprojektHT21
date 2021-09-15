@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:supX.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Beige" Margin="0,-5,0,5">
+    <Grid Background="#FF6EAAFF" Margin="0,-5,0,5">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="*"/>
@@ -18,9 +18,12 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="0"  Text=" Welcome To Wembley! " FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Bisque" Background="DarkOrange" Margin="6,0,0,0"/>
+        <TextBlock Grid.Column="1" Grid.Row="0"  Text=" Welcome To Wembley! " FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Bisque" Background="#FF6EAAFF" Margin="6,0,0,0"/>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <local:BettingView/>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="/Assets/Images/WembleyWallpaper.jpg"/>
+            </StackPanel.Background>
+            <!--<local:BettingView/>-->
 
 
         </StackPanel>

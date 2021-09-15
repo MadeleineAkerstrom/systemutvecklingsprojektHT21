@@ -7,9 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\BackyardWallpaper.jpg" />
+    <None Remove="Assets\Images\BellagioWallpaper.jpg" />
     <None Remove="Assets\Images\fight1.gif" />
     <None Remove="Assets\Images\mike_red.gif" />
     <None Remove="Assets\Images\snake_blue.gif" />
+    <None Remove="Assets\Images\WembleyWallpaper.jpg" />
+    <None Remove="Views\backyard.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,9 +33,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Images\BackyardWallpaper.jpg" />
+    <Resource Include="Assets\Images\BellagioWallpaper.jpg" />
     <Resource Include="Assets\Images\fight1.gif" />
     <Resource Include="Assets\Images\mike_red.gif" />
     <Resource Include="Assets\Images\snake_blue.gif" />
+    <Resource Include="Assets\Images\WembleyWallpaper.jpg" />
+    <Resource Include="Views\backyard.jpg" />
   </ItemGroup>
 
 </Project>
