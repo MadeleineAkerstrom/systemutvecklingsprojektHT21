@@ -7,16 +7,24 @@
              mc:Ignorable="d" 
              d:DesignHeight="400" d:DesignWidth="760">
     <Grid Background="Beige" Margin="0,-5,0,5">
-        <Button Content="Fighter1" HorizontalAlignment="Left" Margin="70,181,0,0" VerticalAlignment="Top"/>
+        <Button HorizontalAlignment="Left" Margin="70,138,0,0" VerticalAlignment="Top" Height="63" Width="63" >
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/mike_red.gif"/>
+            </Button.Background>
+        </Button>
         <Button Content="Fighter3" HorizontalAlignment="Left" Margin="336,181,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="64,130,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,130,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <Button Content="Fighter2" HorizontalAlignment="Left" Margin="122,181,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="70,105,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,108,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Button HorizontalAlignment="Left" Margin="133,138,0,0" VerticalAlignment="Top" Height="63" Width="65">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/snake_blue.gif"/>
+            </Button.Background>
+        </Button>
         <TextBox HorizontalAlignment="Center" Margin="0,276,0,0" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" Width="120"/>
         <Button Content="Fighter4" HorizontalAlignment="Left" Margin="386,181,0,0" VerticalAlignment="Top" />
         <Button Content="Fighter5" HorizontalAlignment="Left" Margin="598,181,0,0" VerticalAlignment="Top"/>
         <Button Content="Fighter6" HorizontalAlignment="Left" Margin="648,181,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="598,130,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="98"/>
+        <TextBlock HorizontalAlignment="Left" Margin="598,108,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="98"/>
         <Button Content="Bet!" HorizontalAlignment="Center" Margin="0,299,0,0" VerticalAlignment="Top" Width="120" Height="39" FontSize="24"/>
         <Label Content="Odds 1" HorizontalAlignment="Left" Margin="70,206,0,0" VerticalAlignment="Top"/>
         <Label Content="Odds 2" HorizontalAlignment="Left" Margin="123,206,0,0" VerticalAlignment="Top"/>

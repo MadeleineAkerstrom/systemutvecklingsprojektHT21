@@ -7,7 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid   Margin="0,-5,0,5">
-        <Image Source="/Assets/Images/BackyardWallpaper.jpg"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="*"/>
@@ -19,14 +18,13 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="0" Text=" Welcome To My Backyard! " FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Bisque" Background="DarkOliveGreen" Margin="6,0,0,0"/>
+        <TextBlock Grid.Column="1" Grid.Row="0" Text=" Welcome To My Backyard!" FontSize="65" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Bisque" Background="#FF0B995F" Margin="6,0,0,0"/>
+        
         <StackPanel Grid.Column="1" Grid.Row="1">
             <StackPanel.Background>
                 <ImageBrush ImageSource="/Assets/Images/BackyardWallpaper.jpg"/>
             </StackPanel.Background>
             <!--<local:BettingView/>-->
-
-
         </StackPanel>
     </Grid>
 </UserControl>
