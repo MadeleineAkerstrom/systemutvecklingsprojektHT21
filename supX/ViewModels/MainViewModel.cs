@@ -25,7 +25,7 @@ namespace supX.ViewModels
             }
         }
 
-        private BaseViewModel currentViewModel;
+        
         private BaseViewModel currentViewModel;
 
         public BaseViewModel CurrentViewModel
