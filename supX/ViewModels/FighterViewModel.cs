@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace supX.ViewModels
-{ public class FighterViewModel : BaseViewModel
+{
+    public class FighterViewModel : MainViewModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -15,11 +16,17 @@ namespace supX.ViewModels
         public int Losses { get; set; }
         public string ImagePath { get; set; }
 
-        public MainViewModel Parent { get; }
+        public List<FighterViewModel> fighters { get; set; }
 
-        public FighterViewModel(MainViewModel mainViewModel)
+        public FighterViewModel()
         {
-            Parent = mainViewModel;
+            fighters = new List<FighterViewModel>(); //lista skapad i ctor
+        }
+
+
+        public override string ToString() //Annars kommer inte namnet i listan över trollkarlar, samma som comboboxen
+        {
+            return $"{Name} {Wins} {Losses}";
         }
 
     
@@ -37,5 +44,4 @@ namespace supX.ViewModels
             return $"{Name} {Wins} {Losses}";
         }
     }
-   
 }
