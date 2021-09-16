@@ -15,7 +15,7 @@
         <TextBlock Grid.Column="1" Grid.Row="1" Text="You won!" FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="DarkGoldenrod"  Margin="0,46,0,0"/>
 
         <Button Content="Collect my winnings and take me back to arenas" 
-                Command="{Binding ChangeViewCommand}" 
+                Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.ArenaView}" 
                
                 Grid.Column="1" HorizontalAlignment="Center" Margin="0,333,0,0" Grid.Row="1" VerticalAlignment="Top" Height="57" Width="282" OpacityMask="Black">

@@ -25,9 +25,9 @@ namespace supX.ViewModels
         }
 
 
-        private MainViewModel currentViewModel;
+        private BaseViewModel currentViewModel;
 
-        public MainViewModel CurrentViewModel
+        public BaseViewModel CurrentViewModel
         {
             get { return currentViewModel; }
             set 

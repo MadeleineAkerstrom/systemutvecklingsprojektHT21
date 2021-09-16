@@ -4,7 +4,13 @@ using System.Text;
 
 namespace supX.ViewModels
 {
-    public class FighterViewModel : MainViewModel
+    public class FighterViewModel : BaseViewModel
     {
+        public MainViewModel Parent { get; }
+
+        public FighterViewModel(MainViewModel mainViewModel)
+        {
+            Parent = mainViewModel;
+        }
     }
 }

@@ -4,7 +4,13 @@ using System.Text;
 
 namespace supX.ViewModels
 {
-    public class LoserViewModel : MainViewModel
+    public class LoserViewModel : BaseViewModel
     {
+        public MainViewModel Parent { get; }
+
+        public LoserViewModel(MainViewModel mainViewModel)
+        {
+            Parent = mainViewModel;
+        }
     }
 }

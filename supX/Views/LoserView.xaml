@@ -13,7 +13,7 @@
                         Grid.Row="1"/>
         <TextBlock Grid.Column="1" Grid.Row="1" Text="You lost.." FontSize="65"  VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="DimGray"/>
         <Button Content="Take me back to arenas" 
-                Command="{Binding ChangeViewCommand}" 
+                Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.ArenaView}" 
                 Grid.Column="1" HorizontalAlignment="Center" Margin="0,293,0,0" Grid.Row="1" VerticalAlignment="Top" Height="57" Width="264"/>
 
