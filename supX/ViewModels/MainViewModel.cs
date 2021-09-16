@@ -10,7 +10,7 @@ namespace supX.ViewModels
     {
      
         public CreatePlayerCommand createPlayerCommand = new CreatePlayerCommand();
-       
+        
         public PlayerViewModel myPlayer { get; set; }
 
         private MainViewModel gameViewModel;
@@ -24,17 +24,18 @@ namespace supX.ViewModels
             }
         }
 
-
-        private BaseViewModel currentViewModel;
+        
+        private BaseViewModel currentViewModel; //bort början här
 
         public BaseViewModel CurrentViewModel
         {
             get { return currentViewModel; }
-            set 
-            { currentViewModel = value;
+            set
+            {
+                currentViewModel = value;
                 NotifyPropertyChanged();
             }
-        }
+        } //Bort slut här
 
         public ICommand ChangeViewCommand { get; }
 

@@ -1,4 +1,5 @@
-﻿using supX.Commands;
+﻿using supX.Assets.Filehandler;
+using supX.Commands;
 using supX.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -22,11 +23,35 @@ namespace supX
     /// </summary>
     public partial class MainWindow : Window
     {
+        string filename = "fighters.json";
+        FighterViewModel fighter = new FighterViewModel();
+        //FighterViewModel
         public MainWindow()
         {
             InitializeComponent();
             DataContext = new MainViewModel();
-           
+            //createPlayerCommand.CreatePlayer();
+            //CreatePlayerCommand createPlayerCommand = new CreatePlayerCommand();
+            OpenFile();
+            //SaveFile();
+
+        }
+
+        public void SaveFile() 
+        {
+            FileHandler.Save(fighter, filename);
+        
+        
+        }
+
+        public void OpenFile() 
+        {
+            fighter = FileHandler.Open<FighterViewModel>("fighters.json");
+            /*listFighter.ItemsSource = fighter.fighters;*/ //Listan på figtes i ctor i fighterviewmodel som nyas överst här i Main
+            //fighter = new List<FighterViewModel>();
+
+            //More to come i guess
+            //fighters = new ObservableCollection<FighterViewModel>();
         }
 
         private void PlayerView_Loaded(object sender, RoutedEventArgs e)
