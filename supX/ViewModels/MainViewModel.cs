@@ -8,12 +8,13 @@ namespace supX.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-     
+        
         public CreatePlayerCommand createPlayerCommand = new CreatePlayerCommand();
         
         public PlayerViewModel myPlayer { get; set; }
 
         private MainViewModel gameViewModel;
+        
 
         public MainViewModel GameViewModel
         {
