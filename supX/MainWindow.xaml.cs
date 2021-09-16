@@ -26,10 +26,7 @@ namespace supX
         {
             InitializeComponent();
             DataContext = new MainViewModel();
-            //createPlayerCommand.CreatePlayer();
-            //CreatePlayerCommand createPlayerCommand = new CreatePlayerCommand();
-
-
+           
         }
 
         private void PlayerView_Loaded(object sender, RoutedEventArgs e)

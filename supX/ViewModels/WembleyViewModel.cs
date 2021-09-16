@@ -4,7 +4,13 @@ using System.Text;
 
 namespace supX.ViewModels
 {
-    public class WembleyViewModel : MainViewModel
+    public class WembleyViewModel : BaseViewModel
     {
+        public MainViewModel Parent { get; }
+
+        public WembleyViewModel(MainViewModel mainViewModel)
+        {
+            Parent = mainViewModel;
+        }
     }
 }

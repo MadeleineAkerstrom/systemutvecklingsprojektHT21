@@ -29,31 +29,31 @@ namespace supX.Commands
             switch(view)
             {
                 case GotoView.ArenaView:
-                    mainViewModel.CurrentViewModel = new ArenaViewModel();
+                    mainViewModel.CurrentViewModel = new ArenaViewModel(mainViewModel);
                     break;
                 case GotoView.PlayerView:
-                    mainViewModel.CurrentViewModel = new PlayerViewModel();
+                    mainViewModel.CurrentViewModel = new PlayerViewModel(mainViewModel);
                     break;
                 case GotoView.BackyardView:
-                    mainViewModel.CurrentViewModel = new BackyardViewModel();
+                    mainViewModel.CurrentViewModel = new BackyardViewModel(mainViewModel);
                     break;
                 case GotoView.BellagioView:
-                    mainViewModel.CurrentViewModel = new BellagioViewModel();
+                    mainViewModel.CurrentViewModel = new BellagioViewModel(mainViewModel);
                     break;
                 case GotoView.WembleyView:
-                    mainViewModel.CurrentViewModel = new WembleyViewModel();
+                    mainViewModel.CurrentViewModel = new WembleyViewModel(mainViewModel);
                     break;
                 case GotoView.BettingView:
-                    mainViewModel.CurrentViewModel = new GameViewModel();
+                    mainViewModel.CurrentViewModel = new GameViewModel(mainViewModel);
                     break;
                 case GotoView.RulesView:
-                    mainViewModel.CurrentViewModel = new RulesViewModel();
+                    mainViewModel.CurrentViewModel = new RulesViewModel(mainViewModel);
                     break;
                 case GotoView.WinnerView:
-                    mainViewModel.CurrentViewModel = new WinnerViewModel();
+                    mainViewModel.CurrentViewModel = new WinnerViewModel(mainViewModel);
                     break;
                 case GotoView.LoserView:
-                    mainViewModel.CurrentViewModel = new LoserViewModel();
+                    mainViewModel.CurrentViewModel = new LoserViewModel(mainViewModel);
                     break;
                 default:
                     break;

@@ -3,8 +3,24 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace supX.ViewModels
-{
-    public class FighterViewModel : MainViewModel
+{ public class FighterViewModel : BaseViewModel
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Strength { get; set; }
+        public int Cardio { get; set; }
+        public int Speed { get; set; }
+        public int Defense { get; set; }
+        public int Wins { get; set; }
+        public int Losses { get; set; }
+        public string ImagePath { get; set; }
+
+        public MainViewModel Parent { get; }
+
+        public FighterViewModel(MainViewModel mainViewModel)
+        {
+            Parent = mainViewModel;
+        }
     }
+   
 }

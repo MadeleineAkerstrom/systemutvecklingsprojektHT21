@@ -7,9 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ViewModels\Player.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Assets\Images\fight1.gif" />
+    <None Remove="Assets\Images\game-lose.jpg" />
     <None Remove="Assets\Images\mike_red.gif" />
     <None Remove="Assets\Images\snake_blue.gif" />
+    <None Remove="Assets\Images\winner.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,8 +36,10 @@
 
   <ItemGroup>
     <Resource Include="Assets\Images\fight1.gif" />
+    <Resource Include="Assets\Images\game-lose.jpg" />
     <Resource Include="Assets\Images\mike_red.gif" />
     <Resource Include="Assets\Images\snake_blue.gif" />
+    <Resource Include="Assets\Images\winner.png" />
   </ItemGroup>
 
 </Project>
