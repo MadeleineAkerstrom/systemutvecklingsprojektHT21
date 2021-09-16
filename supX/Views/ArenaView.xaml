@@ -13,21 +13,21 @@
 
         <TextBlock Text="ArenaView"/>
         <Button Content="Backyard" 
-                Command="{Binding ChangeViewCommand}" 
+                Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BackyardView}" 
                 HorizontalAlignment="Center" 
                 VerticalAlignment="Top" 
                 Margin="-500,189,0,0" 
                 Height="51" Width="137"/>
         <Button Content="Wembley" 
-                Command="{Binding ChangeViewCommand}" 
+                Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.WembleyView}" 
                 HorizontalAlignment="Center" Margin="0,189,0,0" 
                 VerticalAlignment="Top" 
                 Height="51" 
                 Width="137"/>
         <Button Content="Bellagio" 
-                Command="{Binding ChangeViewCommand}" 
+                Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BellagioView}" 
                 HorizontalAlignment="Center" 
                 Margin="500,189,0,0" 

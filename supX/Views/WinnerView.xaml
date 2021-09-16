@@ -4,9 +4,39 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:supX.Views"
+             xmlns:data="clr-namespace:supX.Data"
+             
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="DarkOrchid">
-        <TextBlock Text="WinnerView"/>
+    <Grid Background="White">
+        <ContentControl Content="{Binding CurrentViewModel}" 
+                        Grid.Column = "1"
+                        Grid.Row="1"/>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="You won!" FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="DarkGoldenrod"  Margin="0,46,0,0"/>
+
+        <Button Content="Collect my winnings and take me back to arenas" 
+                Command="{Binding Parent.ChangeViewCommand}" 
+                CommandParameter="{x:Static data:GotoView.ArenaView}" 
+               
+                Grid.Column="1" HorizontalAlignment="Center" Margin="0,333,0,0" Grid.Row="1" VerticalAlignment="Top" Height="57" Width="282" OpacityMask="Black">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding YourPreviousBet}" FontSize="45"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="DarkGoldenrod"  Margin="0,120,0,0" Width="90"/>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+
+
     </Grid>
 </UserControl>

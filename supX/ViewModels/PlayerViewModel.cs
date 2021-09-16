@@ -5,7 +5,7 @@ using System.Text;
 
 namespace supX.ViewModels
 {
-    public class PlayerViewModel : MainViewModel
+    public class PlayerViewModel : BaseViewModel
     {
         public static readonly Random random = new Random();
         /*public List<FighterViewModel> fighters { get; set; }*/ //verkar rätt
@@ -34,6 +34,8 @@ namespace supX.ViewModels
         //    fighters.Add(Fighter)
 
         //}      
+        public double MyBalance { get; set; }
+        public string MyName { get; set; }
 
         //public List<FighterViewModel> ShowFighters() 
         //{ 
@@ -61,15 +63,16 @@ namespace supX.ViewModels
         //    }
             
         //}
+       
+        public MainViewModel Parent { get; }
 
-        public void GenerateMatch(FighterViewModel fighter) 
+        public PlayerViewModel(MainViewModel mainViewModel)
         {
-            //Här
-            
+            Parent = mainViewModel;
+            MyBalance = 100;
+            MyName = "Madde";
         }
 
 
     }
-
-
 }

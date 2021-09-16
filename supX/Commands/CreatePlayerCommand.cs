@@ -9,12 +9,12 @@ namespace supX.Commands
     public class CreatePlayerCommand 
 
     {
-       //public Player CreatePlayer()
+       //public PlayerViewModel CreatePlayer()
        // {
-       //     Player player = new Player()
+       //     PlayerViewModel playerViewModel = new PlayerViewModel()
        //     { MyBalance = 100,
        //     MyName = "Madde"};
-       //     return player;
+       //     return playerViewModel;
        // }
         public CreatePlayerCommand()
         {

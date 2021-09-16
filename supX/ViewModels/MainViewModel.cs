@@ -6,14 +6,13 @@ using System.Windows.Input;
 
 namespace supX.ViewModels
 {
-
-    
     public class MainViewModel : BaseViewModel
     {
-        
-
+     
         public CreatePlayerCommand createPlayerCommand = new CreatePlayerCommand();
-        
+        //public string MyName { get; set; } = "Madde";
+        //public double MyBalance { get; set; 
+        public PlayerViewModel myPlayer { get; set; }
 
         private MainViewModel gameViewModel;
 
@@ -26,10 +25,10 @@ namespace supX.ViewModels
             }
         }
 
+        private BaseViewModel currentViewModel;
+        private BaseViewModel currentViewModel;
 
-        private MainViewModel currentViewModel;
-
-        public MainViewModel CurrentViewModel
+        public BaseViewModel CurrentViewModel
         {
             get { return currentViewModel; }
             set 
