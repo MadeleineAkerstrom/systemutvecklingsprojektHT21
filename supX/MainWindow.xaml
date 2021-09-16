@@ -21,9 +21,11 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
-        <ContentControl Content="{Binding CurrentViewModel}" 
+        <ContentControl 
                         Grid.Column = "1"
-                        Grid.Row="1"/>
+                        Grid.Row="1">
+            <ListBox x:Name="listFighter" Margin="585,127,52,52"/>
+        </ContentControl>
         <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal">
             <Button Content="Choose Arena" Margin="0,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.ArenaView}" Width="100"/>
             <Button Content="Empty" Margin="50,0,0,0" Width="100"  />

@@ -15,5 +15,18 @@ namespace supX.ViewModels
         public int Wins { get; set; }
         public int Losses { get; set; }
         public string ImagePath { get; set; }
+
+        public List<FighterViewModel> fighters { get; set; }
+
+        public FighterViewModel()
+        {
+            fighters = new List<FighterViewModel>(); //lista skapad i ctor
+        }
+
+        
+        public override string ToString() //Annars kommer inte namnet i listan över trollkarlar, samma som comboboxen
+        {
+            return $"{Name} {Wins} {Losses}";
+        }
     }
 }
