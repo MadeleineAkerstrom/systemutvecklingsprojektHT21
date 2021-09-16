@@ -8,17 +8,17 @@
         xmlns:viewmodels="clr-namespace:supX.ViewModels"
         xmlns:Views="clr-namespace:supX.Views" x:Class="supX.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="675" Width="1200">
+        Title="MainWindow" Height="600" Width="860">
     <Grid Background="AliceBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="800"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="450" />
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
         <ContentControl Content="{Binding CurrentViewModel}" 

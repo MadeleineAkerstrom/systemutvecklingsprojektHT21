@@ -9,14 +9,11 @@
     <Grid Background="Beige" Margin="0,-5,0,5">
         <Button Content="Fighter1" HorizontalAlignment="Left" Margin="74,129,0,0" VerticalAlignment="Top"/>
         <Button Content="Fighter3" HorizontalAlignment="Left" Margin="340,129,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="68,78,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="334,78,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
         <Button Content="Fighter2" HorizontalAlignment="Left" Margin="126,129,0,0" VerticalAlignment="Top"/>
         <TextBox HorizontalAlignment="Left" Margin="324,224,0,0" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" Width="120"/>
         <Button Content="Fighter4" HorizontalAlignment="Left" Margin="390,129,0,0" VerticalAlignment="Top" />
         <Button Content="Fighter5" HorizontalAlignment="Left" Margin="602,129,0,0" VerticalAlignment="Top"/>
         <Button Content="Fighter6" HorizontalAlignment="Left" Margin="652,129,0,0" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Left" Margin="602,78,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Width="98"/>
         <Button Content="Bet!" HorizontalAlignment="Left" Margin="324,247,0,0" VerticalAlignment="Top" Width="120" Height="39" FontSize="24"/>
         <Label Content="Odds 1" HorizontalAlignment="Left" Margin="74,154,0,0" VerticalAlignment="Top"/>
         <Label Content="Odds 2" HorizontalAlignment="Left" Margin="127,154,0,0" VerticalAlignment="Top"/>

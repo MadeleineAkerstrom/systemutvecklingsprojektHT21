@@ -20,7 +20,7 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" Grid.Row="0" Text=" Welcome To My Backyard! " FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Bisque" Background="DarkOliveGreen" Margin="6,0,0,0"/>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <local:BettingView Height="337" Width="760" />
+            <local:BettingView Height="350" Width="760" />
 
 
         </StackPanel>
