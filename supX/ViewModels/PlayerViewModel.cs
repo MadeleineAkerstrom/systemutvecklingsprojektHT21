@@ -8,21 +8,26 @@ namespace supX.ViewModels
     public class PlayerViewModel : BaseViewModel
     {
         public static readonly Random random = new Random();
-        /*public List<FighterViewModel> fighters { get; set; }*/ //verkar rätt
-        public ObservableCollection<FighterViewModel> Fighter { get; set; }
 
-        public PlayerViewModel()
+        public double MyBalance { get; set; }
+        public string MyName { get; set; }
+
+        public MainViewModel Parent { get; }
+
+        public PlayerViewModel(MainViewModel mainViewModel)
         {
-            
-            //GetRandomSeed();
+            Parent = mainViewModel;
+
+
         }
+
 
         //public void GetFightersFromSave() 
         //{
         //    fighters = new List<FighterViewModel>();
-        
-        
-        
+
+
+
         //}
         //public List<FighterViewModel> ShowFighters() 
         //{
@@ -34,44 +39,11 @@ namespace supX.ViewModels
         //    fighters.Add(Fighter)
 
         //}      
-        public double MyBalance { get; set; }
-        public string MyName { get; set; }
-
-        //public List<FighterViewModel> ShowFighters() 
-        //{ 
-            
         
+
         
-        //}
-
-        /// <summary>
-        /// Genrates a random number for Matchup
-        /// </summary>
-        //public void GetRandomSeed()
-        //{
-        //    //en match
-        //    fighters = new List<FighterViewModel>();
-
-
-        //    int seedNumber; /*= random.Next(6);*/
-
-        //    foreach (var fighter in fighters)
-        //    {
-        //        seedNumber = random.Next(6);
-        //        fighter.Id = seedNumber;   
-                
-        //    }
-            
-        //}
        
-        public MainViewModel Parent { get; }
-
-        public PlayerViewModel(MainViewModel mainViewModel)
-        {
-            Parent = mainViewModel;
-            MyBalance = 100;
-            MyName = "Madde";
-        }
+        
 
 
     }

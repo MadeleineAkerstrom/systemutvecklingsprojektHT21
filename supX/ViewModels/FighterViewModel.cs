@@ -21,18 +21,8 @@ namespace supX.ViewModels
         {
             Parent = mainViewModel;
         }
-{
-    public class FighterViewModel : MainViewModel
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Strength { get; set; }
-        public int Cardio { get; set; }
-        public int Speed { get; set; }
-        public int Defense { get; set; }
-        public int Wins { get; set; }
-        public int Losses { get; set; }
-        public string ImagePath { get; set; }
+
+    
 
         public List<FighterViewModel> fighters { get; set; }
 
