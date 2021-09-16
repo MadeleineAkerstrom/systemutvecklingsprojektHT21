@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace supX.ViewModels
-{ public class FighterViewModel : BaseViewModel
+{
+    public class FighterViewModel : MainViewModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -18,15 +19,26 @@ namespace supX.ViewModels
         public MainViewModel Parent { get; }
         public List<FighterViewModel> fighters { get; set; }
 
-        public FighterViewModel(MainViewModel mainViewModel)
+        public FighterViewModel()
         {
             Parent = mainViewModel;
 
+            fighters = new List<FighterViewModel>(); //lista skapad i ctor
         }
+{
+    public class FighterViewModel : MainViewModel
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Strength { get; set; }
+        public int Cardio { get; set; }
+        public int Speed { get; set; }
+        public int Defense { get; set; }
+        public int Wins { get; set; }
+        public int Losses { get; set; }
+        public string ImagePath { get; set; }
 
-    
-
-        
+        public List<FighterViewModel> fighters { get; set; }
 
         //public FighterViewModel()
         //{
@@ -39,5 +51,4 @@ namespace supX.ViewModels
             return $"{Name} {Wins} {Losses}";
         }
     }
-   
 }

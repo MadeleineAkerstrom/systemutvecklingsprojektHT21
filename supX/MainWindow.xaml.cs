@@ -47,7 +47,7 @@ namespace supX
         public void OpenFile() 
         {
             fighter = FileHandler.Open<FighterViewModel>("fighters.json");
-            listFighter.ItemsSource = fighter.fighters; //Listan på figtes i ctor i fighterviewmodel som nyas överst här i Main
+            /*listFighter.ItemsSource = fighter.fighters;*/ //Listan på figtes i ctor i fighterviewmodel som nyas överst här i Main
             //fighter = new List<FighterViewModel>();
 
             //More to come i guess

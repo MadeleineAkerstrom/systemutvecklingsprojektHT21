@@ -10,8 +10,7 @@ namespace supX.ViewModels
     {
      
         public CreatePlayerCommand createPlayerCommand = new CreatePlayerCommand();
-        //public string MyName { get; set; } = "Madde";
-        //public double MyBalance { get; set; 
+        
         public PlayerViewModel myPlayer { get; set; }
 
         private MainViewModel gameViewModel;
@@ -31,11 +30,12 @@ namespace supX.ViewModels
         public BaseViewModel CurrentViewModel
         {
             get { return currentViewModel; }
-            set 
-            { currentViewModel = value;
+            set
+            {
+                currentViewModel = value;
                 NotifyPropertyChanged();
             }
-        }
+        } //Bort slut här
 
         public ICommand ChangeViewCommand { get; }
 
