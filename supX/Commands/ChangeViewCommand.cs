@@ -58,7 +58,6 @@ namespace supX.Commands
                 default:
                     break;
             }
-
         }
     }
 }
