@@ -7,10 +7,8 @@ namespace supX.Models
 {
     public class GenerateFightsModel
     {
-        public int[] GenerateFight()
+        public int[] GenerateFight(List<FighterViewModel> fighters)
         {
-            List<FighterViewModel> fighters = new List<FighterViewModel>();
-
             int fighterCount = fighters.Count;
             int[] fighterIDs = new int[2];
 

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace supX.Models
 {
-    class GenerateResultsModel
+    public class GenerateResultsModel
     {
         public FighterViewModel GenerateResult(FighterViewModel fighter1, FighterViewModel fighter2)
         {
