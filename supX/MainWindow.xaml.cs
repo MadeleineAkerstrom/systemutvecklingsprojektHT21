@@ -15,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using supX.Assets.Filehandler;
+using supX.Models;
 
 namespace supX
 {
@@ -30,6 +31,13 @@ namespace supX
             InitializeComponent();
             DataContext = new MainViewModel();
             OpenFile();
+
+            GenerateOddsModel generateOddsModel = new GenerateOddsModel();
+            GenerateResultsModel generateResultsModel = new GenerateResultsModel();
+
+            double[] odds = generateOddsModel.GenerateOdds(fighter.fighters[0], fighter.fighters[1]);
+            FighterViewModel winner = generateResultsModel.GenerateResult(fighter.fighters[0], fighter.fighters[1]);
+
         }
 
         public void OpenFile() 

@@ -13,7 +13,7 @@ namespace supX.Models
 
             int typeOfFinish = random.Next(1, 4);
             int roundsToFinish;
-            int winChance = 100;
+            int winChance = 50;
             FighterViewModel winner;
 
             // 1 in 3 chance the fight goes to decision.
@@ -52,6 +52,18 @@ namespace supX.Models
 
             return winner;
             
+        }
+
+        public bool GenerateBetResult(FighterViewModel myBet, FighterViewModel winner)
+        {
+            if (myBet == winner)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
