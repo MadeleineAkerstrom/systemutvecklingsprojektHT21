@@ -17,10 +17,11 @@ namespace supX.ViewModels
         public string ImagePath { get; set; }
 
         public List<FighterViewModel> fighters { get; set; }
-
-        public FighterViewModel()
+        //public MainViewModel Parent { get; }
+        public FighterViewModel(/*MainViewModel mainViewModel*/)
         {
-            fighters = new List<FighterViewModel>(); 
+            fighters = new List<FighterViewModel>();
+            //Parent = mainViewModel;
         }
 
 
