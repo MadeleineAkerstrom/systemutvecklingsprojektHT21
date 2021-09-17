@@ -6,23 +6,51 @@
              xmlns:local="clr-namespace:supX.Views"
              mc:Ignorable="d" 
              d:DesignHeight="350" d:DesignWidth="760">
-    <Grid Background="Beige" Margin="0,-5,0,5">
-        <Button Content="Fighter1" HorizontalAlignment="Left" Margin="74,129,0,0" VerticalAlignment="Top"/>
-        <Button Content="Fighter3" HorizontalAlignment="Left" Margin="340,129,0,0" VerticalAlignment="Top"/>
-        <Button Content="Fighter2" HorizontalAlignment="Left" Margin="126,129,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Margin="324,224,0,0" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Fighter4" HorizontalAlignment="Left" Margin="390,129,0,0" VerticalAlignment="Top" />
-        <Button Content="Fighter5" HorizontalAlignment="Left" Margin="602,129,0,0" VerticalAlignment="Top"/>
-        <Button Content="Fighter6" HorizontalAlignment="Left" Margin="652,129,0,0" VerticalAlignment="Top"/>
-        <Button Content="Bet!" HorizontalAlignment="Left" Margin="324,247,0,0" VerticalAlignment="Top" Width="120" Height="39" FontSize="24"/>
-        <Label Content="Odds 1" HorizontalAlignment="Left" Margin="74,154,0,0" VerticalAlignment="Top"/>
-        <Label Content="Odds 2" HorizontalAlignment="Left" Margin="127,154,0,0" VerticalAlignment="Top"/>
-        <Label Content="Odds 3" HorizontalAlignment="Left" Margin="340,154,0,0" VerticalAlignment="Top"/>
-        <Label Content="Odds 4" HorizontalAlignment="Left" Margin="392,154,0,0" VerticalAlignment="Top"/>
-        <Label Content="Odds 5" HorizontalAlignment="Left" Margin="602,154,0,0" VerticalAlignment="Top"/>
-        <Label Content="Odds 6" HorizontalAlignment="Left" Margin="652,154,0,0" VerticalAlignment="Top"/>
-        <Label Content="Match 1 info" HorizontalAlignment="Left" Margin="68,22,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label Content="Match 2 info" HorizontalAlignment="Left" Margin="334,22,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label Content="Match 3 info" HorizontalAlignment="Right" Margin="0,22,60,0" VerticalAlignment="Top" Width="100"/>
+    <Grid Margin="0,-5,0,5">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Images/StageBettingView.png"/>
+        </Grid.Background>
+        <Button Content="Fighter1" HorizontalAlignment="Left" Margin="495,177,0,0" VerticalAlignment="Top" Height="147" Width="124">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterFrog.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Fighter3" HorizontalAlignment="Left" Margin="12,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.451,1.341" Height="217" Width="109" d:LayoutOverrides="HorizontalAlignment">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterLobster.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Fighter2" HorizontalAlignment="Left" Margin="346,118,0,0" VerticalAlignment="Top" Height="212" Width="154">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterHuman.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Margin="321,10,0,0" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" d:LayoutOverrides="VerticalAlignment" Width="151"/>
+        <Button Content="Fighter4" HorizontalAlignment="Left" Margin="138,99,0,0" VerticalAlignment="Top" Height="217" Width="122" d:LayoutOverrides="HorizontalAlignment" >
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterKangaroo.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Fighter5" HorizontalAlignment="Left" Margin="265,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="212" Width="92" d:LayoutOverrides="HorizontalAlignment">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterTheHulk.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Fighter6" HorizontalAlignment="Left" Margin="624,123,0,0" VerticalAlignment="Top" Height="212" Width="132">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterSloth.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Bet!" HorizontalAlignment="Left" Margin="336,33,0,0" VerticalAlignment="Top" Height="71" FontSize="24" d:LayoutOverrides="VerticalAlignment" Width="116">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/PurpleButton.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Odds 1" HorizontalAlignment="Left" Margin="48,314,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
+        <Label Content="Odds 2" HorizontalAlignment="Left" Margin="155,314,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,1.596" Foreground="#FFECECEC"/>
+        <Label Content="Odds 3" HorizontalAlignment="Left" Margin="287,312,0,0" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment" Foreground="#FFECECEC"/>
+        <Label Content="Odds 4" HorizontalAlignment="Left" Margin="423,314,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
+        <Label Content="Odds 5" HorizontalAlignment="Left" Margin="533,314,0,0" VerticalAlignment="Top" Foreground="#FFEDEDF8"/>
+        <Label Content="Odds 6" HorizontalAlignment="Left" Margin="666,309,0,0" VerticalAlignment="Top" Foreground="#FFD4C9C9"/>
     </Grid>
 </UserControl>

@@ -13,8 +13,6 @@
         </Grid.Background>
         <ContentControl Content="{Binding CurrentViewModel}"/>
 
-
-        <TextBlock Text="ArenaView"/>
         <Button Content="Backyard" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BackyardView}" 
@@ -40,17 +38,21 @@
         <Button Content="Bellagio" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BellagioView}" 
-                HorizontalAlignment="Center" 
-                Margin="500,189,0,0" 
+                HorizontalAlignment="Left" 
+                Margin="583,198,0,0" 
                 VerticalAlignment="Top" 
-                Height="51" 
-                Width="137"/>
+                Height="127" 
+                Width="164" FontSize="16" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/GreenButton.png"/>
+            </Button.Background>
+        </Button>
         <Label Content="Choose your arena" 
                HorizontalAlignment="Center" 
                Margin="0,74,0,0" 
                VerticalAlignment="Top" 
                Height="83" 
                Width="323" 
-               FontSize="36"/>
+               FontSize="36" FontWeight="Bold" Foreground="#FFCACAF9"/>
     </Grid>
 </UserControl>
