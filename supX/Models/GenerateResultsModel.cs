@@ -5,7 +5,7 @@ using System.Text;
 
 namespace supX.Models
 {
-    public class GenerateResultsModel
+    class GenerateResultsModel
     {
         public FighterViewModel GenerateResult(FighterViewModel fighter1, FighterViewModel fighter2)
         {
@@ -13,7 +13,7 @@ namespace supX.Models
 
             int typeOfFinish = random.Next(1, 4);
             int roundsToFinish;
-            int winChance = 100;
+            int winChance = 50;
             FighterViewModel winner;
 
             // 1 in 3 chance the fight goes to decision.
@@ -28,7 +28,7 @@ namespace supX.Models
             // If the fight goes to desicion (12 rounds), every point in cardio adds 20% win chance and every point in speed adds 5%.
             if (roundsToFinish == 12)
             {
-                winChance += (fighter1.Cardio * 20) - (fighter2.Cardio * 20);
+                winChance += (fighter1.Cardio*20) - (fighter2.Cardio*20);
                 winChance += (fighter1.Speed * 5) - (fighter2.Speed * 5);
             }
             // Else if the fight end in a KO or TKO; strength, speed and defense gives an edge.
@@ -51,7 +51,19 @@ namespace supX.Models
             }
 
             return winner;
+            
+        }
 
+        public bool GenerateBetResult(FighterViewModel myBet, FighterViewModel winner)
+        {
+            if (myBet == winner)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
