@@ -9,7 +9,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/Assets/Images/607819475.jpg"/>
+            <ImageBrush ImageSource="/Assets/Images/ringside.jpg"/>
         </Grid.Background>
         <ContentControl Content="{Binding CurrentViewModel}"/>
 

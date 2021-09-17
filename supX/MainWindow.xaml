@@ -55,11 +55,9 @@
             </Button>
             <Label Width="200
                    " Height="60" Margin="30,0,0,0"   >
-                <Views:PlayerView HorizontalContentAlignment="Left" Height="90" Width="130" Loaded="PlayerView_Loaded"  >
-                    <Views:PlayerView.Background>
-                        <ImageBrush/>
-                    </Views:PlayerView.Background>
-                </Views:PlayerView>
+                <!--<Views:PlayerView HorizontalContentAlignment="Left" Height="90" Width="130" Loaded="PlayerView_Loaded"  >
+                    
+                </Views:PlayerView>-->
             </Label>
         </StackPanel>
     </Grid>

@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Images\607819475.jpg" />
     <None Remove="Assets\Images\BackyardView.jpg" />
     <None Remove="Assets\Images\BellagioView.jpg" />
     <None Remove="Assets\Images\BlueButton.png" />
@@ -22,6 +21,7 @@
     <None Remove="Assets\Images\LetsGoBoxingStart.jpg" />
     <None Remove="Assets\Images\mike_red.gif" />
     <None Remove="Assets\Images\RedButton.png" />
+    <None Remove="Assets\Images\ringside.jpg" />
     <None Remove="Assets\Images\rippedhole.png" />
     <None Remove="Assets\Images\snake_blue.gif" />
     <None Remove="Assets\Images\WembleyView.jpg" />
@@ -33,6 +33,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" PrivateAssets="All" />
   </ItemGroup>
 
@@ -45,7 +46,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\Images\607819475.jpg" />
+    <Resource Include="Assets\Images\ringside.jpg" />
     <Resource Include="Assets\Images\BackyardView.jpg" />
     <Resource Include="Assets\Images\BellagioView.jpg" />
     <Resource Include="Assets\Images\BlueButton.png" />

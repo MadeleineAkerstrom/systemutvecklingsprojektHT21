@@ -26,12 +26,7 @@ namespace supX
         {
             InitializeComponent();
             DataContext = new MainViewModel();
-           
-        }
-
-        private void PlayerView_Loaded(object sender, RoutedEventArgs e)
-        {
-
+            
         }
     }
 }

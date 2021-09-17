@@ -15,11 +15,11 @@ namespace supX.ViewModels
         public int Losses { get; set; }
         public string ImagePath { get; set; }
 
-        public MainViewModel Parent { get; }
+       
 
-        public FighterViewModel(MainViewModel mainViewModel)
+        public FighterViewModel()
         {
-            Parent = mainViewModel;
+         
         }
     }
    
