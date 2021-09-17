@@ -8,23 +8,27 @@
              
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="White">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Images/Backgrounds/WinnerWallpaper.png"/>
+        </Grid.Background>
         <ContentControl Content="{Binding CurrentViewModel}" 
                         Grid.Column = "1"
                         Grid.Row="1"/>
-        <TextBlock Grid.Column="1" Grid.Row="1" Text="You won!" FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="DarkGoldenrod"  Margin="0,46,0,0"/>
-
+        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Icons\WinnerIcon.png" Margin="-5,-33,-5,111" Grid.RowSpan="2" Grid.Column="1"/>
+        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Frames\GoldBalanceFrame.png" Grid.Column="1" Margin="303,164,303,104" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
         <Button Content="Collect my winnings and take me back to arenas" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.ArenaView}" 
-               
-                Grid.Column="1" HorizontalAlignment="Center" Margin="0,333,0,0" Grid.Row="1" VerticalAlignment="Top" Height="57" Width="282" OpacityMask="Black">
+                Grid.Column="1" Margin="180,284,152,0" Grid.Row="1" VerticalAlignment="Top" Height="68" OpacityMask="Black">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GoldButton.png"/>
+            </Button.Background>
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <TextBlock Grid.Column="1" Grid.Row="1" Text="{Binding YourPreviousBet}" FontSize="45"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="DarkGoldenrod"  Margin="0,120,0,0" Width="90"/>
-
+        <Label Content="Label" Grid.Column="1" Margin="394,225,366,165" Grid.Row="1" FontSize="150" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="*"/>

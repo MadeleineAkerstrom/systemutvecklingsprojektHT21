@@ -37,7 +37,7 @@
             </Button>
             <Button Content="temp win"
                      Command="{Binding ChangeViewCommand}" 
-                    CommandParameter="{x:Static data:GotoView.LoserView}"
+                    CommandParameter="{x:Static data:GotoView.WinnerView}"
                     Margin="50,0,0,0" Height="90" Width="130" Foreground="#FFD0C5C5" FontWeight="Bold" FontSize="16"  >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>

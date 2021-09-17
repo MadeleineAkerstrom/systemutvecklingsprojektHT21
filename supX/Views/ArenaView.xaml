@@ -12,7 +12,7 @@
             <ImageBrush ImageSource="/Assets/Images/ringside.jpg"/>
         </Grid.Background>
         <ContentControl Content="{Binding CurrentViewModel}"/>
-
+        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Frames\SilverFrame.png" Margin="68,39,67,257"/>
         <Button Content="Backyard" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BackyardView}" 
@@ -47,12 +47,10 @@
                 <ImageBrush ImageSource="/Assets/Images/GreenButton.png"/>
             </Button.Background>
         </Button>
-        <Label Content="Choose your arena" 
-               HorizontalAlignment="Center" 
-               Margin="0,74,0,0" 
+        <Label Content="Choose your &#xD;&#xA;      arena" 
+               Margin="239,62,238,0" 
                VerticalAlignment="Top" 
-               Height="83" 
-               Width="323" 
-               FontSize="36" FontWeight="Bold" Foreground="#FFCACAF9"/>
+               Height="115" 
+               FontSize="36" FontWeight="Bold" Foreground="Black" FontFamily="Sitka Small" Background="{x:Null}" FlowDirection="LeftToRight" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
     </Grid>
 </UserControl>

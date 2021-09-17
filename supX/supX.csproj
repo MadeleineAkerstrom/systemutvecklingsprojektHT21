@@ -11,9 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\Backgrounds\WinnerWallpaper.png" />
     <None Remove="Assets\Images\BackyardView.jpg" />
     <None Remove="Assets\Images\BellagioView.jpg" />
     <None Remove="Assets\Images\BlueButton.png" />
+    <None Remove="Assets\Images\Buttons\GoldButton.png" />
     <None Remove="Assets\Images\fight1.gif" />
     <None Remove="Assets\Images\Fighters\FighterFrog.png" />
     <None Remove="Assets\Images\Fighters\FighterHuman.png" />
@@ -21,8 +23,10 @@
     <None Remove="Assets\Images\Fighters\FighterLobster.png" />
     <None Remove="Assets\Images\Fighters\FighterSloth.png" />
     <None Remove="Assets\Images\Fighters\FighterTheHulk.png" />
+    <None Remove="Assets\Images\Frames\GoldBalanceFrame.png" />
     <None Remove="Assets\Images\Frames\PurpleOddsFrame.png" />
     <None Remove="Assets\Images\Frames\ScrollFrame.png" />
+    <None Remove="Assets\Images\Frames\SilverFrame.png" />
     <None Remove="Assets\Images\Frames\WoodenSignBackyard.png" />
     <None Remove="Assets\Images\game-lose.jpg" />
     <None Remove="Assets\Images\GreenButton.png" />
@@ -31,6 +35,7 @@
     <None Remove="Assets\Images\Icons\FightCloud3.png" />
     <None Remove="Assets\Images\Icons\FightCloud4.png" />
     <None Remove="Assets\Images\Icons\FightingCloud.png" />
+    <None Remove="Assets\Images\Icons\WinnerIcon.png" />
     <None Remove="Assets\Images\LetsGoBoxingStart.jpg" />
     <None Remove="Assets\Images\mike_red.gif" />
     <None Remove="Assets\Images\PurpleButton.png" />
@@ -63,21 +68,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Images\Backgrounds\WinnerWallpaper.png" />
+    <Resource Include="Assets\Images\Buttons\GoldButton.png" />
     <Resource Include="Assets\Images\Fighters\FighterFrog.png" />
     <Resource Include="Assets\Images\Fighters\FighterHuman.png" />
     <Resource Include="Assets\Images\Fighters\FighterKangaroo.png" />
     <Resource Include="Assets\Images\Fighters\FighterLobster.png" />
     <Resource Include="Assets\Images\Fighters\FighterSloth.png" />
     <Resource Include="Assets\Images\Fighters\FighterTheHulk.png" />
+    <Resource Include="Assets\Images\Frames\GoldBalanceFrame.png" />
     <Resource Include="Assets\Images\Frames\PurpleOddsFrame.png" />
     <Resource Include="Assets\Images\Frames\ScrollFrame.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Assets\Images\Frames\SilverFrame.png" />
     <Resource Include="Assets\Images\Frames\WoodenSignBackyard.png" />
     <Resource Include="Assets\Images\Icons\FightCloud2.png" />
     <Resource Include="Assets\Images\Icons\FightCloud3.png" />
     <Resource Include="Assets\Images\Icons\FightCloud4.png" />
     <Resource Include="Assets\Images\Icons\FightingCloud.png" />
+    <Resource Include="Assets\Images\Icons\WinnerIcon.png" />
     <Resource Include="Assets\Images\PurpleButton.png" />
     <Resource Include="Assets\Images\ringside.jpg" />
     <Resource Include="Assets\Images\BackyardView.jpg" />
@@ -112,11 +122,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Assets\Images\Buttons\" />
-    <Folder Include="Assets\Images\Backgrounds\" />
   </ItemGroup>
 
 </Project>
