@@ -6,7 +6,10 @@
              xmlns:local="clr-namespace:supX.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Beige" Margin="0,-5,0,5">
+    <Grid Margin="0,-5,0,5">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Images/BellagioView.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="*"/>
@@ -20,7 +23,7 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" Grid.Row="0"  Text=" Welcome To Bellagio! " FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Bisque" Background="Black" Margin="6,0,0,0"/>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <local:BettingView/>
+            <!--<local:BettingView/>-->
 
 
         </StackPanel>

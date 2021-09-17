@@ -51,6 +51,11 @@
             DataType="{x:Type viewmodels:WinnerViewModel}">
             <views:WinnerView/>
         </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:MainViewModel}">
+            <views:MainView/>
+        </DataTemplate>
         
     </Application.Resources>
 </Application>

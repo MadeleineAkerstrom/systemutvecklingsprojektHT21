@@ -4,7 +4,13 @@ using System.Text;
 
 namespace supX.ViewModels
 {
-    public class BellagioViewModel : MainViewModel
+    public class BellagioViewModel : BaseViewModel
     {
+        public MainViewModel Parent { get; }
+
+        public BellagioViewModel(MainViewModel mainViewModel)
+        {
+            Parent = mainViewModel;
+        }
     }
 }
