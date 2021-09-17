@@ -7,20 +7,22 @@ namespace supX.Models
 {
     public class GenerateFightsModel
     {
-        public void GenerateFight()
+        public int[] GenerateFight()
         {
             List<FighterViewModel> fighters = new List<FighterViewModel>();
 
             int fighterCount = fighters.Count;
-            int fighter1, fighter2;
+            int[] fighterIDs = new int[2];
 
             Random random = new Random();
 
-            fighter1 = random.Next(0, fighterCount);
+            fighterIDs[0] = random.Next(0, fighterCount);
             do
             {
-                fighter2 = random.Next(0, fighterCount);
-            } while (fighter1 == fighter2);
+                fighterIDs[1] = random.Next(0, fighterCount);
+            } while (fighterIDs[0] == fighterIDs[1]);
+
+            return fighterIDs;
         }
     }
 }
