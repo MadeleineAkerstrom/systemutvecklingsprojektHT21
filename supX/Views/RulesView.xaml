@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:supX.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Red">
-        <TextBlock Text="RulesView"/>
+    <Grid Background="#FF725858" Opacity="100">
+        <Image Source="/Assets/Images/Frames/ScrollFrame.png" Margin="351,24,-50,56" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
     </Grid>
 </UserControl>
