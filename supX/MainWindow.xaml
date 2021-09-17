@@ -32,7 +32,7 @@
                     Margin="50,0,0,0" Width="100"  />
             <Button Content="History" Width="100" Margin="50,0,0,0" />
             <Button Content="Rules" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.RulesView}" Width="100"/>
-            <Label Content="{Binding MyPlayer.MyBalance}" />
+            <Label Content="" />
         </StackPanel>
     </Grid>
 </Window>

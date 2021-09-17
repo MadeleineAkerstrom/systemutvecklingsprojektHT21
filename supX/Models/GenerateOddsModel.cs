@@ -16,8 +16,8 @@ namespace supX.Models
             winChangePercentage = +(fighter1.Cardio - fighter2.Cardio) * 10;
             winChangePercentage = +(fighter1.Speed - fighter2.Defense) * 10;
 
-            double odds1 = (winChangePercentage / 100) + 1;
-            double odds2 = 100 - (winChangePercentage / 100) + 1;
+            double odds1 = 1 / (winChangePercentage / 100);
+            double odds2 = 1 / ((100 - winChangePercentage) / 100);
 
         }
 
