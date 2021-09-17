@@ -10,19 +10,18 @@ namespace supX.Models
         public double MyBalance { get; set; } 
         public double BetAmount { get; set; }
         public double Odds { get; set; }
-        public double NewBalance { get; set; } 
-
+        public double NewBalance { get; set; }
+        GenerateResultsModel generateResultsModel = new GenerateResultsModel();
       
-        public double CalculateNewBalance(GenerateResultsModel winner)
+        public double CalculateNewBalance(FighterViewModel myBet, FighterViewModel winner)
         {            
             double newBalance = NewBalance;        
             double myBalance = MyBalance;
             double betAmount = BetAmount;
             double odds = Odds;
-            
+            bool result = generateResultsModel.GenerateBetResult(myBet, winner);
 
-
-            if (winner = myBet)
+            if (result == false)
             {
                 newBalance = myBalance - betAmount;
             }
@@ -31,13 +30,7 @@ namespace supX.Models
                 newBalance = (betAmount * odds) + myBalance;
             }
 
-            return newBalance;
-        }
-       
-
-        public GenerateNewBalanceModel()
-        {
-
+            return newBalance;            
         }
     }
 }
