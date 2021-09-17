@@ -6,7 +6,10 @@
              xmlns:local="clr-namespace:supX.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="Beige" Margin="0,-5,0,5">
+    <Grid Margin="0,-5,0,5">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Images/BackyardView.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="*"/>
@@ -18,9 +21,12 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="0" Text=" Welcome To My Backyard! " FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Bisque" Background="DarkOliveGreen" Margin="6,0,0,0"/>
+        <TextBlock Grid.Column="1" Grid.Row="0" Text=" Welcome To My Backyard! " FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Bisque" Background="#FF08623E" Margin="6,0,0,0"/>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <local:BettingView Height="337" Width="760" />
+            <StackPanel.Background>
+                <ImageBrush/>
+            </StackPanel.Background>
+            <!--<local:BettingView Height="350" Width="760" />-->
 
 
         </StackPanel>

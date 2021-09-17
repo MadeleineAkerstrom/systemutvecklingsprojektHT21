@@ -7,27 +7,38 @@
              xmlns:data="clr-namespace:supX.Data"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="BlanchedAlmond">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Images/ringside.jpg"/>
+        </Grid.Background>
         <ContentControl Content="{Binding CurrentViewModel}"/>
 
 
         <TextBlock Text="ArenaView"/>
         <Button Content="Backyard" 
-                Command="{Binding ChangeViewCommand}" 
+                Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BackyardView}" 
-                HorizontalAlignment="Center" 
+                HorizontalAlignment="Left" 
                 VerticalAlignment="Top" 
-                Margin="-500,189,0,0" 
-                Height="51" Width="137"/>
+                Margin="39,198,0,0" 
+                Height="127" Width="164" FontSize="16" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/GreenButton.png"/>
+            </Button.Background>
+        </Button>
         <Button Content="Wembley" 
-                Command="{Binding ChangeViewCommand}" 
+                Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.WembleyView}" 
-                HorizontalAlignment="Center" Margin="0,189,0,0" 
+                HorizontalAlignment="Center" Margin="0,198,0,0" 
                 VerticalAlignment="Top" 
-                Height="51" 
-                Width="137"/>
+                Height="127" 
+                Width="164" FontSize="16" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/GreenButton.png"/>
+            </Button.Background>
+        </Button>
         <Button Content="Bellagio" 
-                Command="{Binding ChangeViewCommand}" 
+                Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BellagioView}" 
                 HorizontalAlignment="Center" 
                 Margin="500,189,0,0" 

@@ -6,8 +6,12 @@
              xmlns:local="clr-namespace:supX.Views"
              mc:Ignorable="d" 
              d:DesignHeight="60" d:DesignWidth="200">
-    <Grid Background="LightPink">
-        <TextBox HorizontalAlignment="Left" Text="Balance:" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Height="29" FontSize="16" Margin="10,10,0,0"/>
+    <Grid Background="Black">
+        <TextBox HorizontalAlignment="Left" Text="Balance:" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Height="29" FontSize="16" Margin="10,10,0,0">
+            <TextBox.Style>
+                <Style/>
+            </TextBox.Style>
+        </TextBox>
 
     </Grid>
 </UserControl>
