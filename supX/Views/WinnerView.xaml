@@ -9,9 +9,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
-        <ContentControl Content="{Binding CurrentViewModel}" 
+        <!--<ContentControl Content="{Binding CurrentViewModel}" 
                         Grid.Column = "1"
-                        Grid.Row="1"/>
+                        Grid.Row="1"/>-->
         <TextBlock Grid.Column="1" Grid.Row="1" Text="You won!" FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="DarkGoldenrod"  Margin="0,46,0,0"/>
 
         <Button Content="Collect my winnings and take me back to arenas" 

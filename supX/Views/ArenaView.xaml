@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/ringside.jpg"/>
         </Grid.Background>
-        <ContentControl Content="{Binding CurrentViewModel}"/>
+        <!--<ContentControl Content="{Binding CurrentViewModel}"/>-->
 
 
         <TextBlock Text="ArenaView"/>
