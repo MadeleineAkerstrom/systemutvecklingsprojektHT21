@@ -24,16 +24,14 @@ namespace supX
     public partial class MainWindow : Window
     {
         string filename = "fighters.json";
-        FighterViewModel fighter = new FighterViewModel();
-        //FighterViewModel
+        FighterViewModel fighter; 
+        
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
-            //createPlayerCommand.CreatePlayer();
-            //CreatePlayerCommand createPlayerCommand = new CreatePlayerCommand();
+            DataContext = new MainViewModel();            
             OpenFile();
-            //SaveFile();
+            
 
         }
 
@@ -47,11 +45,8 @@ namespace supX
         public void OpenFile() 
         {
             fighter = FileHandler.Open<FighterViewModel>("fighters.json");
-            /*listFighter.ItemsSource = fighter.fighters;*/ //Listan på figtes i ctor i fighterviewmodel som nyas överst här i Main
-            //fighter = new List<FighterViewModel>();
-
-            //More to come i guess
-            //fighters = new ObservableCollection<FighterViewModel>();
+            /*listFighter.ItemsSource = fighter.fighters;*/ //To see that the list is propely displayed
+            
         }
 
         private void PlayerView_Loaded(object sender, RoutedEventArgs e)

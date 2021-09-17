@@ -20,28 +20,17 @@ namespace supX.ViewModels
 
         public FighterViewModel()
         {
-            fighters = new List<FighterViewModel>(); //lista skapad i ctor
+            fighters = new List<FighterViewModel>(); 
         }
 
 
-        public override string ToString() //Annars kommer inte namnet i listan över trollkarlar, samma som comboboxen
+        public override string ToString() 
         {
             return $"{Name} {Wins} {Losses}";
         }
 
     
 
-        public List<FighterViewModel> fighters { get; set; }
-
-        public FighterViewModel()
-        {
-            fighters = new List<FighterViewModel>(); //lista skapad i ctor
-        }
-
         
-        public override string ToString() //Annars kommer inte namnet i listan över trollkarlar, samma som comboboxen
-        {
-            return $"{Name} {Wins} {Losses}";
-        }
     }
 }

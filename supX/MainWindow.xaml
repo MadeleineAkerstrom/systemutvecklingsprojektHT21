@@ -21,11 +21,9 @@
             <RowDefinition Height="450" />
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
-        <ContentControl 
+        <ContentControl Content="{Binding CurrentViewModel}"
                         Grid.Column = "1"
-                        Grid.Row="1">
-            <!--<ListBox x:Name="listFighter" Margin="585,127,52,52"/>-->
-        </ContentControl>
+                        Grid.Row="1"/>
         <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal">
             <Button Content="Choose Arena" Margin="0,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.ArenaView}" Width="100"/>
             <Button Content="temporary winning view"
@@ -37,7 +35,7 @@
 
             <Label Content="{Binding MyPlayer.MyBalance}" />
 
-            
+
 
         </StackPanel>
     </Grid>
