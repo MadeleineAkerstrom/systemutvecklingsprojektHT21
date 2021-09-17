@@ -22,11 +22,26 @@ namespace supX
     /// </summary>
     public partial class MainWindow : Window
     {
+        string filename = "fighters.json";
+        FighterViewModel fighter;
         public MainWindow()
         {
             InitializeComponent();
             DataContext = new MainViewModel();
+            OpenFile();
+        }
+
+        public void OpenFile() 
+        {
+            fighter = FileHandler.FileHandler.Open<FighterViewModel>("fighters.json");
             
         }
+
+        public void SaveFile() 
+        {
+            FileHandler.FileHandler.Save(fighter, filename);
+        }
     }
+
+
 }
