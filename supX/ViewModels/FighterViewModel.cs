@@ -15,12 +15,18 @@ namespace supX.ViewModels
         public int Losses { get; set; }
         public string ImagePath { get; set; }
 
-       
+        public List<FighterViewModel> fighters { get; set; }
 
         public FighterViewModel()
         {
-         
+            fighters = new List<FighterViewModel>();
         }
+
+        public override string ToString()
+        {
+            return $"{Name} {Wins} {Losses}";
+        }
+
     }
-   
+
 }
