@@ -38,7 +38,7 @@
                 <ImageBrush ImageSource="/Assets/Images/Fighters/FighterTheHulk.png"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="653,185,0,0" VerticalAlignment="Top" Height="212" Width="132">
+        <Button Content="" HorizontalAlignment="Left" Margin="658,185,0,0" VerticalAlignment="Top" Height="212" Width="132">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Fighters/FighterSloth.png"/>
             </Button.Background>
@@ -49,13 +49,13 @@
             </Button.Background>
         </Button>
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="279,-48,279,250" d:LayoutOverrides="HorizontalAlignment"/>
-        <TextBox HorizontalAlignment="Center" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="23" TextAlignment="Left" Margin="0,44,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="66" TextChanged="TextBox_TextChanged"/>
-        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="28,370,663,-27"/>
-        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="664,370,26,-27"/>
-        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="537,370,154,-27"/>
-        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="399,370,292,-27" d:LayoutOverrides="HorizontalAlignment"/>
-        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="273,370,418,-27"/>
-        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="142,370,549,-27"/>
+        <TextBox HorizontalAlignment="Center" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="0,36,0,0" FontSize="14" FontWeight="Bold" Opacity="1" TextChanged="TextBox_TextChanged" Width="46"/>
+        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="28,379,663,-36"/>
+        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="664,379,26,-36"/>
+        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="537,379,154,-36"/>
+        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="399,379,292,-36" d:LayoutOverrides="HorizontalAlignment"/>
+        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="274,379,416,-36"/>
+        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="144,379,546,-36"/>
         <Label Content="Odds 1" HorizontalAlignment="Left" Margin="60,402,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
         <Label Content="Odds 2" HorizontalAlignment="Left" Margin="175,402,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,1.596" Foreground="#FFECECEC" d:LayoutOverrides="HorizontalAlignment"/>
         <Label Content="Odds 3" HorizontalAlignment="Left" Margin="305,402,0,0" VerticalAlignment="Top" Foreground="#FFECECEC" d:LayoutOverrides="HorizontalAlignment"/>

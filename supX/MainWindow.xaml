@@ -10,7 +10,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="860">
     <Grid Background="Black">
-
+       
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="800"/>
@@ -27,6 +27,7 @@
                         Grid.Column = "1"
                         Grid.Row="1"/>
         <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" Margin="0,-3,0,-20">
+            
             <Button Content="Choose Arena" Margin="0,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.ArenaView}" Height="90" Width="130" Foreground="#FFD3CFCF" FontWeight="Bold" FontSize="16">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
@@ -43,12 +44,17 @@
                     <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
                 </Button.Background>
             </Button>
-            <Button Content="History" Height="90" Width="130" Margin="50,0,0,0" Foreground="#FFD0C5C5" FontSize="16" FontWeight="Bold" >
+            <Button Content="History/temp loser" Height="90" Width="130" Margin="50,0,0,0" Foreground="#FFD0C5C5" FontSize="16" FontWeight="Bold" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.LoserView}" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
                 </Button.Background>
             </Button>
             <Button Content="Rules" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.RulesView}" Width="130" Height="95" Foreground="#FFD3CFCF" FontSize="16" FontWeight="Bold">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="TempBet" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BettingView}" Width="130" Height="95" Foreground="#FFD3CFCF" FontSize="16" FontWeight="Bold">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
                 </Button.Background>

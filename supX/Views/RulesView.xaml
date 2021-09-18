@@ -6,7 +6,16 @@
              xmlns:local="clr-namespace:supX.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#FF725858" Opacity="100">
-        <Image Source="/Assets/Images/Frames/ScrollFrame.png" Margin="351,24,-50,56" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+    <Grid Background="Black" Opacity="100">
+        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Frames\GoldFrame.png" Margin="-137,-80,-145,-59" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="VerticalAlignment">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-89.944"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </UserControl>
