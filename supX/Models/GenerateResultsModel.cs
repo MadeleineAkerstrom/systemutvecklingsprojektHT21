@@ -65,9 +65,9 @@ namespace supX.Models
             
         }
 
-        public bool GenerateBetResult(FighterViewModel myBet, FighterViewModel winner)
+        public bool GenerateBetResult(FighterViewModel myBet, FightViewModel winner)
         {
-            if (myBet == winner)
+            if (myBet.Id == winner.WinnerId)
             {
                 return true;
             }

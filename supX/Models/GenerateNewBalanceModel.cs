@@ -13,7 +13,7 @@ namespace supX.Models
         public double NewBalance { get; set; }
         GenerateResultsModel generateResultsModel = new GenerateResultsModel();
       
-        public double CalculateNewBalance(FighterViewModel myBet, FighterViewModel winner)
+        public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner)
         {            
             double newBalance = NewBalance;        
             double myBalance = MyBalance;
