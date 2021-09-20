@@ -8,9 +8,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="Black">
-        <ContentControl Content="{Binding CurrentViewModel}" 
+        <!--<ContentControl Content="{Binding CurrentViewModel}" 
                         Grid.Column = "1"
-                        Grid.Row="1"/>
+                        Grid.Row="1"/>-->
         <TextBlock Grid.Column="1" Grid.Row="1" Text="You lost.." FontSize="65"  VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="DimGray"/>
         <Button Content="Take me back to arenas" 
                 Command="{Binding Parent.ChangeViewCommand}" 
