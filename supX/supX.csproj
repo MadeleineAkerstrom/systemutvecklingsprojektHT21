@@ -11,6 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\Backgrounds\black-board.jpg" />
+    <None Remove="Assets\Images\Backgrounds\Blackboard %281%29.png" />
     <None Remove="Assets\Images\Backgrounds\WinnerWallpaper.png" />
     <None Remove="Assets\Images\BackyardView.jpg" />
     <None Remove="Assets\Images\BellagioView.jpg" />
@@ -83,6 +85,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Images\Backgrounds\black-board.jpg" />
+    <Resource Include="Assets\Images\Backgrounds\Blackboard (1).png" />
     <Resource Include="Assets\Images\Backgrounds\WinnerWallpaper.png" />
     <Resource Include="Assets\Images\Buttons\BlackButton.png" />
     <Resource Include="Assets\Images\Buttons\GoldButton.png" />
