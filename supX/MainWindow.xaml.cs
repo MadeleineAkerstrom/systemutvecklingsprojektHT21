@@ -24,7 +24,7 @@ namespace supX
     /// </summary>
     public partial class MainWindow : Window
     {
-        string filename = "fighters.json";
+        string filename = "/Assets/Json/fighters.json";
         FighterViewModel fighter;
         public MainWindow()
         {
