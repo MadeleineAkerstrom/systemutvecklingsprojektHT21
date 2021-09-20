@@ -39,7 +39,7 @@ namespace supX
 
             int[] fighterArray = generateFightsModel.GenerateFight(fighter.fighters);
             double[] odds = generateOddsModel.GenerateOdds(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
-            FighterViewModel winner = generateResultsModel.GenerateResult(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
+            FightViewModel winner = generateResultsModel.GenerateResult(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
 
         }
 
