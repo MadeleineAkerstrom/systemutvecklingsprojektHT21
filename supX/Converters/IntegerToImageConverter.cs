@@ -6,7 +6,7 @@ using System.Windows.Data;
 
 namespace supX.Converters
 {
-    public class IntegerToImageConverter //: IValueConverter
+    public class IntegerToImageConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
@@ -30,6 +30,11 @@ namespace supX.Converters
                     break;
             }
             return null;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
         }
     }
 }
