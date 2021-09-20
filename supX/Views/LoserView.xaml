@@ -10,12 +10,19 @@
     <Grid Background="Black">
         <!--<ContentControl Content="{Binding CurrentViewModel}" 
                         Grid.Column = "1"
-                        Grid.Row="1"/>-->
-        <TextBlock Grid.Column="1" Grid.Row="1" Text="You lost.." FontSize="65"  VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="DimGray"/>
+
+                        Grid.Row="1"/>
+        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\game-lose.jpg" Margin="40,44,39,68" Grid.RowSpan="2" Grid.Column="1"/>
+        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Icons\SkeletonLoseView.png" Grid.Column="1" Margin="166,-31,350,152" Grid.RowSpan="2" Width="244" d:LayoutOverrides="HorizontalAlignment"/>
+
         <Button Content="Take me back to arenas" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.ArenaView}" 
-                Grid.Column="1" HorizontalAlignment="Center" Margin="0,293,0,0" Grid.Row="1" VerticalAlignment="Top" Height="57" Width="264"/>
+                Grid.Column="1" Margin="218,267,218,0" Grid.Row="1" VerticalAlignment="Top" Height="97" FontWeight="Bold" FontSize="20" Foreground="#FFC1C1C1">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/BlackButton.png"/>
+            </Button.Background>
+        </Button>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>

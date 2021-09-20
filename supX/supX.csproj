@@ -11,19 +11,52 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\Backgrounds\WinnerWallpaper.png" />
     <None Remove="Assets\Images\BackyardView.jpg" />
     <None Remove="Assets\Images\BellagioView.jpg" />
     <None Remove="Assets\Images\BlueButton.png" />
+    <None Remove="Assets\Images\Buttons\BlackButton.png" />
+    <None Remove="Assets\Images\Buttons\GoldButton.png" />
+    <None Remove="Assets\Images\Buttons\SilverButton.png" />
     <None Remove="Assets\Images\fight1.gif" />
+    <None Remove="Assets\Images\Fighters\FighterFrog.png" />
+    <None Remove="Assets\Images\Fighters\FighterHuman.png" />
+    <None Remove="Assets\Images\Fighters\FighterKangaroo.png" />
+    <None Remove="Assets\Images\Fighters\FighterLobster.png" />
+    <None Remove="Assets\Images\Fighters\FighterSloth.png" />
+    <None Remove="Assets\Images\Fighters\FighterTheHulk.png" />
+    <None Remove="Assets\Images\Frames\FrameMain.png" />
+    <None Remove="Assets\Images\Frames\FrameMain2.png" />
+    <None Remove="Assets\Images\Frames\FrameMain4.png" />
+    <None Remove="Assets\Images\Frames\GoldBalanceFrame.png" />
+    <None Remove="Assets\Images\Frames\GoldFrame.png" />
+    <None Remove="Assets\Images\Frames\PurpleOddsFrame.png" />
+    <None Remove="Assets\Images\Frames\RedFrameRules.png" />
+    <None Remove="Assets\Images\Frames\RulesFrame.png" />
+    <None Remove="Assets\Images\Frames\ScrollFrame.png" />
+    <None Remove="Assets\Images\Frames\ScrollFrameRules.png" />
+    <None Remove="Assets\Images\Frames\SilverFrame.png" />
+    <None Remove="Assets\Images\Frames\WoodenSignBackyard.png" />
     <None Remove="Assets\Images\game-lose.jpg" />
     <None Remove="Assets\Images\GreenButton.png" />
     <None Remove="Assets\Images\GreyButton.png" />
+    <None Remove="Assets\Images\Icons\ExplosionWinner.png" />
+    <None Remove="Assets\Images\Icons\FightCloud2.png" />
+    <None Remove="Assets\Images\Icons\FightCloud3.png" />
+    <None Remove="Assets\Images\Icons\FightCloud4.png" />
+    <None Remove="Assets\Images\Icons\FightingCloud.png" />
+    <None Remove="Assets\Images\Icons\SkeletonLoseView.png" />
+    <None Remove="Assets\Images\Icons\WinnerIcon.png" />
     <None Remove="Assets\Images\LetsGoBoxingStart.jpg" />
     <None Remove="Assets\Images\mike_red.gif" />
+    <None Remove="Assets\Images\PurpleButton.png" />
     <None Remove="Assets\Images\RedButton.png" />
     <None Remove="Assets\Images\ringside.jpg" />
     <None Remove="Assets\Images\rippedhole.png" />
     <None Remove="Assets\Images\snake_blue.gif" />
+    <None Remove="Assets\Images\StageBettingView.png" />
+    <None Remove="Assets\Images\Text\BellagioLogo.jpg" />
+    <None Remove="Assets\Images\Text\WembleyLogo.png" />
     <None Remove="Assets\Images\WembleyView.jpg" />
     <None Remove="Assets\Images\winner.png" />
   </ItemGroup>
@@ -46,6 +79,38 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Images\Backgrounds\WinnerWallpaper.png" />
+    <Resource Include="Assets\Images\Buttons\BlackButton.png" />
+    <Resource Include="Assets\Images\Buttons\GoldButton.png" />
+    <Resource Include="Assets\Images\Buttons\SilverButton.png" />
+    <Resource Include="Assets\Images\Fighters\FighterFrog.png" />
+    <Resource Include="Assets\Images\Fighters\FighterHuman.png" />
+    <Resource Include="Assets\Images\Fighters\FighterKangaroo.png" />
+    <Resource Include="Assets\Images\Fighters\FighterLobster.png" />
+    <Resource Include="Assets\Images\Fighters\FighterSloth.png" />
+    <Resource Include="Assets\Images\Fighters\FighterTheHulk.png" />
+    <Resource Include="Assets\Images\Frames\FrameMain.png" />
+    <Resource Include="Assets\Images\Frames\FrameMain2.png" />
+    <Resource Include="Assets\Images\Frames\FrameMain4.png" />
+    <Resource Include="Assets\Images\Frames\GoldBalanceFrame.png" />
+    <Resource Include="Assets\Images\Frames\GoldFrame.png" />
+    <Resource Include="Assets\Images\Frames\PurpleOddsFrame.png" />
+    <Resource Include="Assets\Images\Frames\RedFrameRules.png" />
+    <Resource Include="Assets\Images\Frames\RulesFrame.png" />
+    <Resource Include="Assets\Images\Frames\ScrollFrame.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\Frames\ScrollFrameRules.png" />
+    <Resource Include="Assets\Images\Frames\SilverFrame.png" />
+    <Resource Include="Assets\Images\Frames\WoodenSignBackyard.png" />
+    <Resource Include="Assets\Images\Icons\ExplosionWinner.png" />
+    <Resource Include="Assets\Images\Icons\FightCloud2.png" />
+    <Resource Include="Assets\Images\Icons\FightCloud3.png" />
+    <Resource Include="Assets\Images\Icons\FightCloud4.png" />
+    <Resource Include="Assets\Images\Icons\FightingCloud.png" />
+    <Resource Include="Assets\Images\Icons\SkeletonLoseView.png" />
+    <Resource Include="Assets\Images\Icons\WinnerIcon.png" />
+    <Resource Include="Assets\Images\PurpleButton.png" />
     <Resource Include="Assets\Images\ringside.jpg" />
     <Resource Include="Assets\Images\BackyardView.jpg" />
     <Resource Include="Assets\Images\BellagioView.jpg" />
@@ -59,6 +124,9 @@
     <Resource Include="Assets\Images\RedButton.png" />
     <Resource Include="Assets\Images\rippedhole.png" />
     <Resource Include="Assets\Images\snake_blue.gif" />
+    <Resource Include="Assets\Images\StageBettingView.png" />
+    <Resource Include="Assets\Images\Text\BellagioLogo.jpg" />
+    <Resource Include="Assets\Images\Text\WembleyLogo.png" />
     <Resource Include="Assets\Images\WembleyView.jpg" />
     <Resource Include="Assets\Images\winner.png" />
   </ItemGroup>
