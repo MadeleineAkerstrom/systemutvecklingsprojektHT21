@@ -13,13 +13,11 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/WinnerWallpaper.png"/>
         </Grid.Background>
-        <ContentControl Content="{Binding CurrentViewModel}" 
-                        Grid.Column = "1"
-                        Grid.Row="1"/>
-        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Icons\ExplosionWinner.png" Grid.Column="2" Margin="-303,-48,2,108" Grid.RowSpan="2" d:LayoutOverrides="HorizontalAlignment"/>
-        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Icons\ExplosionWinner.png" Margin="-56,-36,507,108" Grid.RowSpan="2" Grid.Column="1"/>
-        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Icons\WinnerIcon.png" Margin="-5,-33,-5,111" Grid.RowSpan="2" Grid.Column="1"/>
-        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Frames\GoldBalanceFrame.png" Grid.Column="1" Margin="303,164,303,104" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+        
+        <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Grid.Column="2" Margin="-303,-48,2,108" Grid.RowSpan="2" d:LayoutOverrides="HorizontalAlignment"/>
+        <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Margin="-56,-36,507,108" Grid.RowSpan="2" Grid.Column="1"/>
+        <Image Source="\Assets\Images\Icons\WinnerIcon.png" Margin="-5,-33,-5,111" Grid.RowSpan="2" Grid.Column="1"/>
+        <Image Source="\Assets\Images\Frames\GoldBalanceFrame.png" Grid.Column="1" Margin="303,164,303,104" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
         <Button Content="Collect my winnings" 
 
                 Command="{Binding Parent.ChangeViewCommand}" 

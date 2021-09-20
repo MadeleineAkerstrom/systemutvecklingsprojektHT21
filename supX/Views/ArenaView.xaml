@@ -12,8 +12,8 @@
             <ImageBrush ImageSource="/Assets/Images/ringside.jpg"/>
         </Grid.Background>
 
-        <ContentControl Content="{Binding CurrentViewModel}"/>
-        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Frames\SilverFrame.png" Margin="68,39,67,257"/>
+        
+        <Image Source="\Assets\Images\Frames\SilverFrame.png" Margin="68,39,67,257"/>
 
         <Button Content="Backyard" 
                 Command="{Binding Parent.ChangeViewCommand}" 

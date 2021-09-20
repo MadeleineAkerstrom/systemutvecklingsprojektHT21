@@ -8,12 +8,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="Black">
-        <!--<ContentControl Content="{Binding CurrentViewModel}" 
-                        Grid.Column = "1"
-
-                        Grid.Row="1"/>
-        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\game-lose.jpg" Margin="40,44,39,68" Grid.RowSpan="2" Grid.Column="1"/>
-        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Icons\SkeletonLoseView.png" Grid.Column="1" Margin="166,-31,350,152" Grid.RowSpan="2" Width="244" d:LayoutOverrides="HorizontalAlignment"/>
+        
+        <Image Source="\Assets\Images\game-lose.jpg" Margin="40,44,39,68" Grid.RowSpan="2" Grid.Column="1"/>
+        <Image Source="\Assets\Images\Icons\SkeletonLoseView.png" Grid.Column="1" Margin="166,-31,350,152" Grid.RowSpan="2" Width="244" d:LayoutOverrides="HorizontalAlignment"/>
 
         <Button Content="Take me back to arenas" 
                 Command="{Binding Parent.ChangeViewCommand}" 
