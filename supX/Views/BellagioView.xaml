@@ -23,7 +23,7 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" Grid.Row="1"  Text=" Bellagio " FontSize="85"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#FFCBB9B9" FontFamily="Edwardian Script ITC" d:LayoutOverrides="VerticalAlignment" Height="102" Width="272"/>
 
-        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Icons\FightCloud3.png" Margin="52,66,68,-36" Grid.RowSpan="3" Grid.Column="1" RenderTransformOrigin="0.5,0.5" >
+        <Image Source="\Assets\Images\Icons\FightCloud3.png" Margin="52,66,68,-36" Grid.RowSpan="3" Grid.Column="1" RenderTransformOrigin="0.5,0.5" >
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

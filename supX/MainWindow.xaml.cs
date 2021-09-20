@@ -30,6 +30,7 @@ namespace supX
         {
             InitializeComponent();
             DataContext = new MainViewModel();
+            
             OpenFile();
 
             GenerateOddsModel generateOddsModel = new GenerateOddsModel();

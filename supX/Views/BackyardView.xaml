@@ -21,7 +21,7 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
-        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Icons\FightingCloud.png" Margin="210,124,175,-13" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.RowSpan="2">
+        <Image Source="\Assets\Images\Icons\FightingCloud.png" Margin="210,124,175,-13" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.RowSpan="2">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -31,7 +31,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Image Source="C:\Users\Usuario\source\repos\sup21_g10b\supX\Assets\Images\Frames\WoodenSignBackyard.png" Grid.Column="1" Margin="75,-185,502,-19" Grid.Row="2"/>
+        <Image Source="\Assets\Images\Frames\WoodenSignBackyard.png" Grid.Column="1" Margin="75,-185,502,-19" Grid.Row="2"/>
         <TextBlock Grid.Column="1" Grid.Row="1" FontSize="20"  VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="Black" Margin="62,237,0,0" TextAlignment="Center" FontFamily="Engravers MT" Height="45" Width="208"><Run Language="es-es" Text="THE"/><LineBreak/><Run Text="b"/><Run Text="ackyard "/></TextBlock>
         <StackPanel Grid.Column="1" Grid.Row="1">
 
