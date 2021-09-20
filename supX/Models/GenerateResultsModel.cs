@@ -13,7 +13,7 @@ namespace supX.Models
 
             int typeOfFinish = random.Next(1, 4);
             int roundsToFinish;
-            int winChance = 50;
+            int winChance = 100;
             FighterViewModel winner;
 
             // 1 in 3 chance the fight goes to decision.
@@ -25,18 +25,18 @@ namespace supX.Models
             {
                 roundsToFinish = 12;
             }
-            // If the fight goes to desicion (12 rounds), every point in cardio adds 20% win chance and every point in speed adds 5%.
+            // If the fight goes to desicion (12 rounds), every point in cardio adds 10% win chance and every point in speed adds 5%.
             if (roundsToFinish == 12)
             {
-                winChance += (fighter1.Cardio*20) - (fighter2.Cardio*20);
-                winChance += (fighter1.Speed * 5) - (fighter2.Speed * 5);
+                winChance += (fighter1.Cardio * 20) - (fighter2.Cardio * 20);
+                winChance += (fighter1.Speed * 10) - (fighter2.Speed * 10);
             }
             // Else if the fight end in a KO or TKO; strength, speed and defense gives an edge.
             else
             {
-                winChance += (fighter1.Strength * 15) - (fighter2.Strength * 15);
-                winChance += (fighter1.Speed * 10) - (fighter2.Speed * 10);
-                winChance += (fighter1.Defense * 15) - (fighter2.Defense * 15);
+                winChance += (fighter1.Strength * 20) - (fighter2.Strength * 20);
+                winChance += (fighter1.Speed * 5) - (fighter2.Speed * 5);
+                winChance += (fighter1.Defense * 20) - (fighter2.Defense * 20);
             }
 
             int win = random.Next(1, 100);
