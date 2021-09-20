@@ -1,8 +1,7 @@
 {
-  "fighters": 
-  [
+  "fighters": [
     {
-      "id": 1,
+      "id": 0,
       "name": "Mike",
       "strength": 4,
       "cardio": 3,
@@ -13,7 +12,7 @@
       "imagePath": ""
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "Snake",
       "strength": 2,
       "cardio": 5,
@@ -24,11 +23,44 @@
       "imagePath": ""
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Monkey",
       "strength": 5,
       "cardio": 4,
       "speed": 4,
+      "defense": 1,
+      "wins": 0,
+      "losses": 0,
+      "imagePath": ""
+    },
+    {
+      "id": 3,
+      "name": "Donkey",
+      "strength": 5,
+      "cardio": 4,
+      "speed": 3,
+      "defense": 2,
+      "wins": 0,
+      "losses": 0,
+      "imagePath": ""
+    },
+    {
+      "id": 4,
+      "name": "T-Rex",
+      "strength": 5,
+      "cardio": 5,
+      "speed": 5,
+      "defense": 5,
+      "wins": 0,
+      "losses": 0,
+      "imagePath": ""
+    },
+    {
+      "id": 5,
+      "name": "Robot",
+      "strength": 1,
+      "cardio": 1,
+      "speed": 1,
       "defense": 1,
       "wins": 0,
       "losses": 0,

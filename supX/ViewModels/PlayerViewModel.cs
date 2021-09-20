@@ -18,7 +18,5 @@ namespace supX.ViewModels
             MyBalance = 100;
             MyName = "Madde";
         }
-
-
     }
 }

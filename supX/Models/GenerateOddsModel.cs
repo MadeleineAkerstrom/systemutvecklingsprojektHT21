@@ -16,8 +16,8 @@ namespace supX.Models
             winChangePercentage += (fighter1.Strength - fighter2.Defense) * 5;
             winChangePercentage += (fighter1.Speed - fighter2.Defense) * 5;
 
-            oddsArray[0] = 0.98 / (winChangePercentage / 100);
-            oddsArray[1] = 0.98 / ((100 - winChangePercentage) / 100);
+            oddsArray[0] = Math.Round(0.95 / (winChangePercentage / 100), 2);
+            oddsArray[1] = Math.Round(0.95 / ((100 - winChangePercentage) / 100), 2);
 
             return oddsArray;
         }
