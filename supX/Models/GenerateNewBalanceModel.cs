@@ -7,6 +7,7 @@ namespace supX.Models
 {
     public class GenerateNewBalanceModel: BaseViewModel
     {
+
         public double MyBalance { get; set; } 
         public double BetAmount { get; set; }
         public double Odds { get; set; }

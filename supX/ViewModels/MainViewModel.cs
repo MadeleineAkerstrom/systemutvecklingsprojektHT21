@@ -9,7 +9,9 @@ namespace supX.ViewModels
     public class MainViewModel : BaseViewModel
     {
                    
-        public PlayerViewModel MyPlayer { get; set; }
+        //public PlayerViewModel MyPlayer { get; set; } //Might not need this one
+
+        
 
         private MainViewModel gameViewModel;
 
