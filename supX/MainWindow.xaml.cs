@@ -16,6 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using supX.Assets.Filehandler;
 using supX.Models;
+using System.Media;
 
 namespace supX
 {
@@ -26,21 +27,24 @@ namespace supX
     {
         string filename = "fighters.json";
         FighterViewModel fighter;
+        
         public MainWindow()
         {
             InitializeComponent();
             DataContext = new MainViewModel();
-            
+            PlaySound();
             OpenFile();
 
             GenerateOddsModel generateOddsModel = new GenerateOddsModel();
             GenerateResultsModel generateResultsModel = new GenerateResultsModel();
             GenerateFightsModel generateFightsModel = new GenerateFightsModel();
+            GenerateNewBalanceModel generateNewBalanceModel = new GenerateNewBalanceModel();
 
             int[] fighterArray = generateFightsModel.GenerateFight(fighter.fighters);
             double[] odds = generateOddsModel.GenerateOdds(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
             FighterViewModel winner = generateResultsModel.GenerateResult(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
-
+            
+            
         }
 
         public void OpenFile() 
@@ -53,6 +57,13 @@ namespace supX
         {
             FileHandler.FileHandler.Save(fighter, filename);
         }
+
+        public void PlaySound() 
+        {
+            var player = new SoundPlayer(Properties.ResourceRagnaros.By_fire_be_purged);
+            player.Play();
+        }
+
     }
 
 

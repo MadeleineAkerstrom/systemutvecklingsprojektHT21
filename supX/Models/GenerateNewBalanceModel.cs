@@ -7,31 +7,37 @@ namespace supX.Models
 {
     public class GenerateNewBalanceModel: BaseViewModel
     {
-
-        public double MyBalance { get; set; } 
+        PlayerViewModel playerViewModel;
+        FighterViewModel FighterViewModel;
+        //public double MyBalance { get; set; } 
         public double BetAmount { get; set; }
         public double Odds { get; set; }
-        public double NewBalance { get; set; }
+        //public double NewBalance { get; set; }
         GenerateResultsModel generateResultsModel = new GenerateResultsModel();
+
+        public GenerateNewBalanceModel()
+        {
+            
+        }
       
         public double CalculateNewBalance(FighterViewModel myBet, FighterViewModel winner)
         {            
-            double newBalance = NewBalance;        
-            double myBalance = MyBalance;
+            //double newBalance = NewBalance;        
+            double myBalance = playerViewModel.MyBalance;
             double betAmount = BetAmount;
             double odds = Odds;
             bool result = generateResultsModel.GenerateBetResult(myBet, winner);
 
             if (result == false)
             {
-                newBalance = myBalance - betAmount;
+                myBalance += myBalance - betAmount;
             }
             else
             {
-                newBalance = (betAmount * odds) + myBalance;
+                myBalance += (betAmount * odds) + myBalance;
             }
 
-            return newBalance;            
+            return myBalance;            
         }
     }
 }
