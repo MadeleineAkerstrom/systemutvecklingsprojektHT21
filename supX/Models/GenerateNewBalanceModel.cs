@@ -20,7 +20,7 @@ namespace supX.Models
             
         }
       
-        public double CalculateNewBalance(FighterViewModel myBet, FighterViewModel winner)
+        public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner)
         {            
             //double newBalance = NewBalance;        
             double myBalance = playerViewModel.MyBalance;
