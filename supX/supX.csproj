@@ -11,13 +11,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\Backgrounds\WembleyOutside.jpg" />
     <None Remove="Assets\Images\Backgrounds\WinnerWallpaper.png" />
     <None Remove="Assets\Images\BackyardView.jpg" />
     <None Remove="Assets\Images\BellagioView.jpg" />
     <None Remove="Assets\Images\BlueButton.png" />
+    <None Remove="Assets\Images\Buttons\BigBlueRectangleFrame.png" />
     <None Remove="Assets\Images\Buttons\BlackButton.png" />
     <None Remove="Assets\Images\Buttons\GoldButton.png" />
     <None Remove="Assets\Images\Buttons\SilverButton.png" />
+    <None Remove="Assets\Images\Buttons\SmallBlueRectangleFrame.png" />
     <None Remove="Assets\Images\fight1.gif" />
     <None Remove="Assets\Images\Fighters\FighterFrog.png" />
     <None Remove="Assets\Images\Fighters\FighterHuman.png" />
@@ -30,6 +33,7 @@
     <None Remove="Assets\Images\Frames\FrameMain4.png" />
     <None Remove="Assets\Images\Frames\GoldBalanceFrame.png" />
     <None Remove="Assets\Images\Frames\GoldFrame.png" />
+    <None Remove="Assets\Images\Frames\IceFrame.png" />
     <None Remove="Assets\Images\Frames\PurpleOddsFrame.png" />
     <None Remove="Assets\Images\Frames\RedFrameRules.png" />
     <None Remove="Assets\Images\Frames\RulesFrame.png" />
@@ -62,6 +66,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Images\Frames\BigBlueRectangleFrame.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="bin\Debug\netcoreapp3.1\fighters.json" />
   </ItemGroup>
 
@@ -83,10 +91,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Images\Backgrounds\WembleyOutside.jpg" />
     <Resource Include="Assets\Images\Backgrounds\WinnerWallpaper.png" />
     <Resource Include="Assets\Images\Buttons\BlackButton.png" />
     <Resource Include="Assets\Images\Buttons\GoldButton.png" />
     <Resource Include="Assets\Images\Buttons\SilverButton.png" />
+    <Resource Include="Assets\Images\Frames\IceFrame.png" />
+    <Resource Include="Assets\Images\Frames\SmallBlueRectangleFrame.png" />
     <Resource Include="Assets\Images\Fighters\FighterFrog.png" />
     <Resource Include="Assets\Images\Fighters\FighterHuman.png" />
     <Resource Include="Assets\Images\Fighters\FighterKangaroo.png" />

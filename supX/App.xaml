@@ -33,11 +33,6 @@
         </DataTemplate>
         
         <DataTemplate
-            DataType="{x:Type viewmodels:GameViewModel}">
-            <views:BettingView/>
-        </DataTemplate>
-
-        <DataTemplate
             DataType="{x:Type viewmodels:RulesViewModel}">
             <views:RulesView />
         </DataTemplate>
@@ -56,6 +51,16 @@
             DataType="{x:Type viewmodels:MainViewModel}">
             <views:MainView/>
         </DataTemplate>
+
+        <DataTemplate
+            DataType="{x:Type viewmodels:BettingViewBellagioViewModel}">
+            <views:BettingViewBellagio/>
+        </DataTemplate>
+
+        <DataTemplate 
+            DataType="{x:Type viewmodels:BettingViewBackyardViewModel}">
+            <views:BettingViewBackyard/>
+        </DataTemplate> 
         
     </Application.Resources>
 </Application>
