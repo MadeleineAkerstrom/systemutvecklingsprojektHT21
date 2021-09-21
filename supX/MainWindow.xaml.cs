@@ -60,8 +60,9 @@ namespace supX
 
         public void PlaySound() 
         {
-            var player = new SoundPlayer(Properties.ResourceRagnaros.By_fire_be_purged);
+            var player = new SoundPlayer(Properties.Resources.Cheer_8_sec);
             player.Play();
+            
         }
 
     }
