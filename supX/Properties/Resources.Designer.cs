@@ -90,6 +90,24 @@ namespace supX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream mixkit_game_level_music_689_1_ {
+            get {
+                return ResourceManager.GetStream("mixkit_game_level_music_689_1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream mixkit_sad_game_over_trombone_471_1_ {
+            get {
+                return ResourceManager.GetStream("mixkit_sad_game_over_trombone_471_1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream robotic_countdown {
             get {
                 return ResourceManager.GetStream("robotic_countdown", resourceCulture);
