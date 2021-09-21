@@ -33,13 +33,14 @@ namespace supX
             
             OpenFile();
 
-            GenerateOddsModel generateOddsModel = new GenerateOddsModel();
-            GenerateResultsModel generateResultsModel = new GenerateResultsModel();
-            GenerateFightsModel generateFightsModel = new GenerateFightsModel();
+            //GenerateFightsModel generateFightsModel = new GenerateFightsModel();
+            //GenerateOddsModel generateOddsModel = new GenerateOddsModel();
+            //GenerateResultsModel generateResultsModel = new GenerateResultsModel();
 
-            int[] fighterArray = generateFightsModel.GenerateFight(fighter.fighters);
-            double[] odds = generateOddsModel.GenerateOdds(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
-            FightViewModel winner = generateResultsModel.GenerateResult(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
+
+            //int[] fighterArray = generateFightsModel.GenerateFight(fighter.fighters);
+            //double[] odds = generateOddsModel.GenerateOdds(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
+            //FightViewModel winner = generateResultsModel.GenerateResult(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
 
         }
 

@@ -2,69 +2,69 @@
   "fighters": [
     {
       "id": 0,
-      "name": "Mike",
+      "name": "Dolph",
       "strength": 4,
       "cardio": 3,
       "speed": 2,
       "defense": 2,
       "wins": 0,
       "losses": 0,
-      "imagePath": ""
+      "imagePath": "/Assets/Images/Fighters/FighterHuman.png"
     },
     {
       "id": 1,
-      "name": "Snake",
+      "name": "Frog",
       "strength": 2,
       "cardio": 5,
-      "speed": 5,
+      "speed": 4,
       "defense": 2,
       "wins": 0,
       "losses": 0,
-      "imagePath": ""
+      "imagePath": "/Assets/Images/Fighters/FighterFrog.png"
     },
     {
       "id": 2,
-      "name": "Monkey",
-      "strength": 5,
+      "name": "Kangaroo",
+      "strength": 3,
       "cardio": 4,
       "speed": 4,
       "defense": 1,
       "wins": 0,
       "losses": 0,
-      "imagePath": ""
+      "imagePath": "/Assets/Images/Fighters/FighterKangaroo.png"
     },
     {
       "id": 3,
-      "name": "Donkey",
-      "strength": 5,
-      "cardio": 4,
-      "speed": 3,
-      "defense": 2,
-      "wins": 0,
-      "losses": 0,
-      "imagePath": ""
-    },
-    {
-      "id": 4,
-      "name": "T-Rex",
-      "strength": 5,
+      "name": "Lobster",
+      "strength": 1,
       "cardio": 5,
-      "speed": 5,
+      "speed": 2,
       "defense": 5,
       "wins": 0,
       "losses": 0,
-      "imagePath": ""
+      "imagePath": "/Assets/Images/Fighters/FighterLobster.png"
+    },
+    {
+      "id": 4,
+      "name": "Sloth",
+      "strength": 4,
+      "cardio": 3,
+      "speed": 1,
+      "defense": 3,
+      "wins": 0,
+      "losses": 0,
+      "imagePath": "/Assets/Images/Fighters/FighterSloth.png"
     },
     {
       "id": 5,
-      "name": "Robot",
-      "strength": 1,
-      "cardio": 1,
-      "speed": 1,
-      "defense": 1,
+      "name": "Hulk",
+      "strength": 5,
+      "cardio": 2,
+      "speed": 2,
+      "defense": 3,
       "wins": 0,
       "losses": 0,
-      "imagePath": ""
+      "imagePath": "/Assets/Images/Fighters/FighterTheHulk.png"
     }
   ]
 }

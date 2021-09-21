@@ -38,6 +38,11 @@ namespace supX.Models
                 winChance += (fighter1.Strength * 20) - (fighter2.Strength * 20);
                 winChance += (fighter1.Speed * 5) - (fighter2.Speed * 5);
                 winChance += (fighter1.Defense * 20) - (fighter2.Defense * 20);
+                // For every round it takes to finish the fight, additional win chance is added based on cardio.
+                for (int i = 0; i < roundsToFinish; i++)
+                {
+                    winChance += (fighter1.Cardio * 2) - (fighter2.Cardio * 2);
+                }
                 winner.NumberOfRounds = roundsToFinish;
             }
 
@@ -60,9 +65,9 @@ namespace supX.Models
             
         }
 
-        public bool GenerateBetResult(FightViewModel myBet, FightViewModel winner)
+        public bool GenerateBetResult(FighterViewModel myBet, FightViewModel winner)
         {
-            if (myBet == winner)
+            if (myBet.Id == winner.WinnerId)
             {
                 return true;
             }
