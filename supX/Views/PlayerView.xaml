@@ -7,11 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="60" d:DesignWidth="200">
     <Grid Background="Black">
-        <TextBox HorizontalAlignment="Left" Text="Balance:" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Height="29" FontSize="16" Margin="10,10,0,0">
-            <TextBox.Style>
-                <Style/>
-            </TextBox.Style>
-        </TextBox>
+        
+        <Label Content="Balance $$:" Foreground="Gold" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding MyBalance}" Foreground="Gold" HorizontalAlignment="Center" Margin="0,12,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </UserControl>
