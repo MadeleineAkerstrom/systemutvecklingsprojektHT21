@@ -53,7 +53,7 @@
         <TextBox HorizontalAlignment="Left" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="400,55,0,0" FontSize="14" FontWeight="Bold" Opacity="1" TextChanged="TextBox_TextChanged" Width="46"/>
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="10,145,715,220" d:LayoutOverrides="VerticalAlignment"/>
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="10,145,715,220" d:LayoutOverrides="VerticalAlignment"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="10,145,715,220" d:LayoutOverrides="VerticalAlignment"/>
+        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="10,145,715,220dw" d:LayoutOverrides="VerticalAlignment"/>
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="428,197,263,146" d:LayoutOverrides="VerticalAlignment"/>
         <Label Content="Odds 1" HorizontalAlignment="Left" Margin="20,174,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" d:LayoutOverrides="VerticalAlignment" FontWeight="Bold"/>
         <Label Content="Odds 2" HorizontalAlignment="Left" Margin="204,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,1.596" Foreground="#FF8F8FFF" d:LayoutOverrides="HorizontalAlignment" FontWeight="Bold"/>
