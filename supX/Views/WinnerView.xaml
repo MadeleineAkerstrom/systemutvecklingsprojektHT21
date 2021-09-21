@@ -22,7 +22,7 @@
 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.ArenaView}" 
-                Grid.Column="1" Margin="224,284,234,0" Grid.Row="1" VerticalAlignment="Top" Height="68" OpacityMask="Black" FontWeight="Bold" Click="Button_Click" FontSize="20">
+                Grid.Column="1" Margin="224,284,234,0" Grid.Row="1" VerticalAlignment="Top" Height="68" OpacityMask="Black" FontWeight="Bold" FontSize="20">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GoldButton.png"/>
             </Button.Background>

@@ -14,11 +14,11 @@ using System.Windows.Shapes;
 namespace supX.Views
 {
     /// <summary>
-    /// Interaction logic for BettingView.xaml
+    /// Interaction logic for BettingViewWembley.xaml
     /// </summary>
-    public partial class BettingView : UserControl
+    public partial class BettingViewWembley : UserControl
     {
-        public BettingView()
+        public BettingViewWembley()
         {
             InitializeComponent();
         }
