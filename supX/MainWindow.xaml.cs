@@ -32,7 +32,7 @@ namespace supX
         {
             InitializeComponent();
             DataContext = new MainViewModel();
-            PlaySound();
+            //PlaySound();
             OpenFile();
 
         }
