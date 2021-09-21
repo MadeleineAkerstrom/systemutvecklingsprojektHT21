@@ -32,7 +32,8 @@ namespace supX
         {
             InitializeComponent();
             DataContext = new MainViewModel();
-            PlaySound();
+            //PlaySound();
+            //PlayLooping();
             OpenFile();
 
         }
@@ -53,6 +54,15 @@ namespace supX
             var player = new SoundPlayer(Properties.Resources.Cheer_8_sec);
             player.Play();
             
+        }
+
+        public void PlayLooping() 
+        {
+            SoundPlayer loop = new SoundPlayer(Properties.Resources.fight);
+            loop.PlayLooping();
+            
+        
+        
         }
 
     }
