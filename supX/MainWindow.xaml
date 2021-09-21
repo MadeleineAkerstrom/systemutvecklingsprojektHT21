@@ -26,6 +26,8 @@
         <ContentControl Content="{Binding CurrentViewModel}" 
                         Grid.Column = "1"
                         Grid.Row="1"/>
+        <ContentControl Content="{Binding Saldo}" />
+
         <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" Margin="0,-3,0,-20">
             
             <Button Content="Choose Arena" Margin="0,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.ArenaView}" Height="90" Width="130" Foreground="#FFD3CFCF" FontWeight="Bold" FontSize="16">
@@ -35,36 +37,16 @@
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>
-            </Button>
-            <Button Content="temp win"
-                     Command="{Binding ChangeViewCommand}" 
-                    CommandParameter="{x:Static data:GotoView.WinnerView}"
-                    Margin="50,0,0,0" Height="90" Width="130" Foreground="#FFD0C5C5" FontWeight="Bold" FontSize="16"  >
-                <Button.Background>
-                    <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
-                </Button.Background>
-            </Button>
-            <Button Content="History/temp loser" Height="90" Width="130" Margin="50,0,0,0" Foreground="#FFD0C5C5" FontSize="16" FontWeight="Bold" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.LoserView}" >
-                <Button.Background>
-                    <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
-                </Button.Background>
-            </Button>
+            </Button>                        
             <Button Content="Rules" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.RulesView}" Width="130" Height="95" Foreground="#FFD3CFCF" FontSize="16" FontWeight="Bold">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
                 </Button.Background>
             </Button>
-            <Button Content="TempBet" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BettingViewBellagio}" Width="130" Height="95" Foreground="#FFD3CFCF" FontSize="16" FontWeight="Bold">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
-                </Button.Background>
-            </Button>
-            <Label Width="200
-                   " Height="60" Margin="30,0,0,0"   >
-                <!--<Views:PlayerView HorizontalContentAlignment="Left" Height="90" Width="130" Loaded="PlayerView_Loaded"  >
-                    
-                </Views:PlayerView>-->
-            </Label>
+            <Views:PlayerView HorizontalContentAlignment="Left" Height="90" Width="130" />
+
+
+
         </StackPanel>
     </Grid>
 </Window>

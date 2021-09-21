@@ -29,6 +29,7 @@
     <None Remove="Assets\Images\Fighters\FighterLobster.png" />
     <None Remove="Assets\Images\Fighters\FighterSloth.png" />
     <None Remove="Assets\Images\Fighters\FighterTheHulk.png" />
+    <None Remove="Assets\Images\Frames\BalanceFrame.png" />
     <None Remove="Assets\Images\Frames\FrameMain.png" />
     <None Remove="Assets\Images\Frames\FrameMain2.png" />
     <None Remove="Assets\Images\Frames\FrameMain4.png" />
@@ -68,6 +69,7 @@
 
   <ItemGroup>
     <Resource Include="Assets\Images\Backgrounds\Blackboard (1).png" />
+    <Resource Include="Assets\Images\Frames\BalanceFrame.png" />
     <Resource Include="Assets\Images\Frames\BigBlueRectangleFrame.png" />
   </ItemGroup>
 
