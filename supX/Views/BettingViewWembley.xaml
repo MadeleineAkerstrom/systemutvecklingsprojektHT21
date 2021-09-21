@@ -14,55 +14,23 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/WembleyOutside.jpg"/>
         </Grid.Background>
-        <Button Content="" HorizontalAlignment="Left" Margin="570,305,0,0" VerticalAlignment="Top" Height="147" Width="124">
+        <Button Content="" HorizontalAlignment="Left" Margin="560,284,0,0" VerticalAlignment="Top" Height="144" Width="89">
             <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterFrog.png"/>
+                <ImageBrush ImageSource="{Binding Fighter2.ImagePath}"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="6,230,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.451,1.341" Height="217" Width="109" d:LayoutOverrides="HorizontalAlignment">
+        <Button Content="" HorizontalAlignment="Left" Margin="216,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="144" Width="94">
             <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterLobster.png"/>
+                <ImageBrush ImageSource="{Binding Fighter1.ImagePath}"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="405,250,0,0" VerticalAlignment="Top" Height="212" Width="154">
-            <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterHuman.png"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="113,230,0,0" VerticalAlignment="Top" Height="217" Width="122" d:LayoutOverrides="HorizontalAlignment" >
-            <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterKangaroo.png"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="264,310,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="147" Width="86" d:LayoutOverrides="HorizontalAlignment">
-            <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterTheHulk.png"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="678,248,0,0" VerticalAlignment="Top" Height="212" Width="132">
-            <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/Fighters/FighterSloth.png"/>
-            </Button.Background>
-        </Button>
-        <Button Content="Bet!" HorizontalAlignment="Left" Margin="495,30,0,0" VerticalAlignment="Top" Height="71" FontSize="24" d:LayoutOverrides="VerticalAlignment" Width="116" FontWeight="Bold">
-            <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/PurpleButton.png"/>
-            </Button.Background>
-        </Button>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="355,-2,300,361" RenderTransformOrigin="1.178,0.992" d:LayoutOverrides="HorizontalAlignment"/>
-        <TextBox HorizontalAlignment="Left" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="400,55,0,0" FontSize="14" FontWeight="Bold" Opacity="1" TextChanged="TextBox_TextChanged" Width="46"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="10,145,715,220" d:LayoutOverrides="VerticalAlignment"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="10,145,715,220" d:LayoutOverrides="VerticalAlignment"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="10,145,715,220" d:LayoutOverrides="VerticalAlignment"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="428,197,263,146" d:LayoutOverrides="VerticalAlignment"/>
-        <Label Content="Odds 1" HorizontalAlignment="Left" Margin="20,174,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" d:LayoutOverrides="VerticalAlignment" FontWeight="Bold"/>
-        <Label Content="Odds 2" HorizontalAlignment="Left" Margin="204,220,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.555,1.596" Foreground="#FF8F8FFF" d:LayoutOverrides="HorizontalAlignment" FontWeight="Bold"/>
-        <Label Content="Odds 3" HorizontalAlignment="Left" Margin="334,220,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" d:LayoutOverrides="HorizontalAlignment" FontWeight="Bold"/>
-        <Label Content="Odds 4" HorizontalAlignment="Left" Margin="458,220,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
-        <Label Content="Odds 5" HorizontalAlignment="Left" Margin="596,220,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
-        <Label Content="Odds 6" HorizontalAlignment="Left" Margin="724,220,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="100,135,595,214" d:LayoutOverrides="VerticalAlignment"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="303,197,387,146" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="319,-3,263,316" RenderTransformOrigin="1.178,0.992"/>
+        <TextBox HorizontalAlignment="Left" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="32" TextAlignment="Left" Margin="388,34,0,0" FontSize="20" FontWeight="Bold" Opacity="1" TextChanged="TextBox_TextChanged" Width="80"/>
+        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="550,164,140,179"/>
+
+        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="208,164,482,179"/>
+        <Label Content="{Binding Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="238,190,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
+        <Label Content="{Binding Odds[1]}" FontSize="18" HorizontalAlignment="Left" Margin="579,190,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
 
     </Grid>
 </UserControl>

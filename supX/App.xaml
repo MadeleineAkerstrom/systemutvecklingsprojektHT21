@@ -60,7 +60,12 @@
         <DataTemplate 
             DataType="{x:Type viewmodels:BettingViewBackyardViewModel}">
             <views:BettingViewBackyard/>
-        </DataTemplate> 
+        </DataTemplate>
         
+        <DataTemplate 
+            DataType="{x:Type viewmodels:BettingViewWembleyViewModel}">
+            <views:BettingViewWembley/>
+        </DataTemplate>
+
     </Application.Resources>
 </Application>
