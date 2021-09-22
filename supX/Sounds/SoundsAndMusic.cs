@@ -19,7 +19,7 @@ namespace supX.Sounds
         /// </summary>
         public void PlayGameOverSound()
         {
-            var player = new SoundPlayer(Properties.Resources.mixkit_sad_game_over_trombone_471_1_);
+            var player = new SoundPlayer(Properties.Resources.game_over);
             player.Play();
         }
 
@@ -28,7 +28,7 @@ namespace supX.Sounds
         /// </summary>
         public void PlayIntroSound()
         {
-            var player = new SoundPlayer(Properties.Resources.mixkit_game_level_music_689_1_);
+            var player = new SoundPlayer(Properties.Resources.retro_intro);
             player.Play();
         }
 
@@ -94,6 +94,13 @@ namespace supX.Sounds
             SoundPlayer loop = new SoundPlayer(Properties.Resources.fight);
             loop.PlayLooping();
         }
+
+        public void PlayArenaIntro() 
+        {
+            var player = new SoundPlayer(Properties.Resources.crowd_cheering_12s);
+            player.Play();
+        }
+
         #endregion
 
 

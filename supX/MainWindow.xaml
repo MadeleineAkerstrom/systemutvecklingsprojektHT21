@@ -26,7 +26,10 @@
         <ContentControl Content="{Binding CurrentViewModel}" 
                         Grid.Column = "1"
                         Grid.Row="1"/>
-        <ContentControl Content="{Binding Saldo}" />
+        <ContentControl Content="{Binding BalanceViewModel}"
+                        Grid.Column="1"
+                        Grid.Row="3"/>
+
 
         <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" Margin="0,-3,0,-20">
             
@@ -43,7 +46,7 @@
                     <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
                 </Button.Background>
             </Button>
-            <Views:PlayerView HorizontalContentAlignment="Left" Height="90" Width="130" />
+            <Views:PlayerView Margin="300, 0, 0 ,0" HorizontalContentAlignment="Right" Height="90" Width="130"/>
 
 
 

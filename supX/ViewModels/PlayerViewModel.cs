@@ -7,7 +7,7 @@ namespace supX.ViewModels
     public class PlayerViewModel : BaseViewModel
     {
         public double MyBalance { get; set; }
-        //public string MyName { get; set; }
+        
 
         
         public MainViewModel Parent { get; }

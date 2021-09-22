@@ -7,8 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="60" d:DesignWidth="200">
     <Grid Background="Black">
-        <Image Source="\Assets\Images\Frames\BalanceFrame.png" Margin="-54,0,54,0" />
-        <Label Content="{Binding MyBalance}" Foreground="Gold" HorizontalAlignment="Left" VerticalAlignment="Center" Height="36" Width="60" Margin="130,0,0,0"/>
+        <Image Source="\Assets\Images\Frames\BalanceFrame.png" Margin="-54,0,77,0" />
+        <Label Content="{Binding MyBalance, UpdateSourceTrigger=PropertyChanged}" Foreground="Gold" HorizontalAlignment="Left" VerticalAlignment="Center" Height="36" Width="60" Margin="125,0,0,0"/>
 
     </Grid>
 </UserControl>
