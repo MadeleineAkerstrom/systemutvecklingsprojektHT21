@@ -11,7 +11,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="/Assets/Images/StageBettingView.png"/>
+            <ImageBrush ImageSource="/Assets/Images/Frames/StageBettingView.png"/>
         </Grid.Background>
         <Button Content="" HorizontalAlignment="Left" Margin="520,262,0,0" VerticalAlignment="Top" Height="151" Width="82">
             <Button.Background>
