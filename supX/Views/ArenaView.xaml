@@ -23,7 +23,7 @@
                 Margin="39,198,0,0" 
                 Height="127" Width="164" FontSize="16" FontWeight="Bold">
             <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/GreenButton.png"/>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
         </Button>
         <Button Content="Wembley" 
@@ -34,7 +34,7 @@
                 Height="127" 
                 Width="164" FontSize="16" FontWeight="Bold">
             <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/GreenButton.png"/>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
         </Button>
         <Button Content="Bellagio" 
@@ -46,7 +46,7 @@
                 Height="127" 
                 Width="164" FontSize="16" FontWeight="Bold">
             <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/GreenButton.png"/>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
         </Button>
         <Label Content="Choose your &#xD;&#xA;      arena" 
