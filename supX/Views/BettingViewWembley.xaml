@@ -14,14 +14,14 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/WembleyOutside.jpg"/>
         </Grid.Background>
-        <Button Content="" HorizontalAlignment="Left" Margin="560,284,0,0" VerticalAlignment="Top" Height="144" Width="89">
+        <Button Content="" HorizontalAlignment="Left" Margin="560,261,0,0" VerticalAlignment="Top" Height="167" Width="100">
             <Button.Background>
-                <ImageBrush ImageSource="{Binding Fighter2.ImagePath}"/>
+                <ImageBrush ImageSource="{Binding GameVM.Fighter2.ImagePath}"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="216,284,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="144" Width="94">
+        <Button Content="" HorizontalAlignment="Left" Margin="195,261,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="167" Width="115">
             <Button.Background>
-                <ImageBrush ImageSource="{Binding Fighter1.ImagePath}"/>
+                <ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}"/>
             </Button.Background>
         </Button>
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="319,-3,263,316" RenderTransformOrigin="1.178,0.992"/>
@@ -29,8 +29,8 @@
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="550,164,140,179"/>
 
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="208,164,482,179"/>
-        <Label Content="{Binding Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="238,190,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
-        <Label Content="{Binding Odds[1]}" FontSize="18" HorizontalAlignment="Left" Margin="579,190,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
+        <Label Content="{Binding GameVM.Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="238,190,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
+        <Label Content="{Binding GameVM.Odds[1]}" FontSize="18" HorizontalAlignment="Left" Margin="579,190,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
 
     </Grid>
 </UserControl>
