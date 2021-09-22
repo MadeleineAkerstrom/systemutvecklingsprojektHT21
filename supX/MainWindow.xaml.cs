@@ -28,6 +28,7 @@ namespace supX
         string filename = "/Assets/Json/fighters.json";
         FighterViewModel fighter;
         
+        
         public MainWindow()
         {
             InitializeComponent();
