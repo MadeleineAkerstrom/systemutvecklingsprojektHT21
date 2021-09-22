@@ -29,8 +29,6 @@ namespace supX.ViewModels
             Odds = generateOddsModel.GenerateOdds(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
             Fighter1 = fighter.fighters[fighterArray[0]];
             Fighter2 = fighter.fighters[fighterArray[1]];
-
-            MessageBox.Show(Odds[0] + " " + Fighter1.Name + " vs " + Fighter2.Name + " " + Odds[1]);
         }
 
         public void OpenFile()
