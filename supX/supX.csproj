@@ -11,11 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\Backgrounds\BackyardBettingViewBackground.jpg" />
     <None Remove="Assets\Images\Backgrounds\Blackboard %281%29.png" />
     <None Remove="Assets\Images\Backgrounds\WembleyOutside.jpg" />
     <None Remove="Assets\Images\Backgrounds\WinnerWallpaper.png" />
     <None Remove="Assets\Images\BackyardView.jpg" />
-    <None Remove="Assets\Images\BellagioView.jpg" />
     <None Remove="Assets\Images\BlueButton.png" />
     <None Remove="Assets\Images\Buttons\BigBlueRectangleFrame.png" />
     <None Remove="Assets\Images\Buttons\BlackButton.png" />
@@ -42,6 +42,9 @@
     <None Remove="Assets\Images\Frames\ScrollFrame.png" />
     <None Remove="Assets\Images\Frames\ScrollFrameRules.png" />
     <None Remove="Assets\Images\Frames\SilverFrame.png" />
+    <None Remove="Assets\Images\Frames\WoodenFrameBetAmount.png" />
+    <None Remove="Assets\Images\Frames\WoodenOddsFrame.png" />
+    <None Remove="Assets\Images\Frames\WoodenOddsFrameFlipped.png" />
     <None Remove="Assets\Images\Frames\WoodenSignBackyard.png" />
     <None Remove="Assets\Images\game-lose.jpg" />
     <None Remove="Assets\Images\GreenButton.png" />
@@ -64,10 +67,10 @@
     <None Remove="Assets\Images\Text\BellagioLogo.jpg" />
     <None Remove="Assets\Images\Text\WembleyLogo.png" />
     <None Remove="Assets\Images\WembleyView.jpg" />
-    <None Remove="Assets\Images\winner.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Images\Backgrounds\BackyardBettingViewBackground.jpg" />
     <Resource Include="Assets\Images\Backgrounds\Blackboard (1).png" />
     <Resource Include="Assets\Images\Frames\BalanceFrame.png" />
     <Resource Include="Assets\Images\Frames\BigBlueRectangleFrame.png" />
@@ -121,6 +124,9 @@
     </Resource>
     <Resource Include="Assets\Images\Frames\ScrollFrameRules.png" />
     <Resource Include="Assets\Images\Frames\SilverFrame.png" />
+    <Resource Include="Assets\Images\Frames\WoodenFrameBetAmount.png" />
+    <Resource Include="Assets\Images\Frames\WoodenOddsFrame.png" />
+    <Resource Include="Assets\Images\Frames\WoodenOddsFrameFlipped.png" />
     <Resource Include="Assets\Images\Frames\WoodenSignBackyard.png" />
     <Resource Include="Assets\Images\Icons\ExplosionWinner.png" />
     <Resource Include="Assets\Images\Icons\FightCloud2.png" />
@@ -131,13 +137,12 @@
     <Resource Include="Assets\Images\Icons\WinnerIcon.png" />
     <Resource Include="Assets\Images\PurpleButton.png" />
     <Resource Include="Assets\Images\ringside.jpg" />
-    <Resource Include="Assets\Images\BackyardView.jpg" />
-    <Resource Include="Assets\Images\BellagioView.jpg" />
-    <Resource Include="Assets\Images\BlueButton.png" />
-    <Resource Include="Assets\Images\fight1.gif" />
-    <Resource Include="Assets\Images\game-lose.jpg" />
-    <Resource Include="Assets\Images\GreenButton.png" />
-    <Resource Include="Assets\Images\GreyButton.png" />
+    <Resource Include="Assets\Images\Backgrounds\BackyardView.jpg" />
+    <Resource Include="Assets\Images\Buttons\BlueButton.png" />
+    <Resource Include="Assets\Images\Icons\fight1.gif" />
+    <Resource Include="Assets\Images\Backgrounds\game-lose.jpg" />
+    <Resource Include="Assets\Images\Buttons\GreenButton.png" />
+    <Resource Include="Assets\Images\Buttons\GreyButton.png" />
     <Resource Include="Assets\Images\LetsGoBoxingStart.jpg" />
     <Resource Include="Assets\Images\mike_red.gif" />
     <Resource Include="Assets\Images\RedButton.png" />
@@ -146,8 +151,7 @@
     <Resource Include="Assets\Images\StageBettingView.png" />
     <Resource Include="Assets\Images\Text\BellagioLogo.jpg" />
     <Resource Include="Assets\Images\Text\WembleyLogo.png" />
-    <Resource Include="Assets\Images\WembleyView.jpg" />
-    <Resource Include="Assets\Images\winner.png" />
+    <Resource Include="Assets\Images\Backgrounds\WembleyView.jpg" />
   </ItemGroup>
 
   <ItemGroup>
