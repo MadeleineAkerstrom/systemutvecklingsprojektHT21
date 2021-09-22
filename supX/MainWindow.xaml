@@ -26,8 +26,6 @@
         <ContentControl Content="{Binding CurrentViewModel}" 
                         Grid.Column = "1"
                         Grid.Row="1"/>
-        <ContentControl Content="{Binding Saldo}" />
-
         <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" Margin="0,-3,0,-20">
             
             <Button Content="Choose Arena" Margin="0,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.ArenaView}" Height="90" Width="130" Foreground="#FFD3CFCF" FontWeight="Bold" FontSize="16">
@@ -43,7 +41,8 @@
                     <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
                 </Button.Background>
             </Button>
-            <Views:PlayerView HorizontalContentAlignment="Left" Height="90" Width="130" />
+            <Label Content="Balance: " FontSize="22" Foreground="AliceBlue" Margin="100,0,0,0" />
+            <Label Content="{Binding Player.MyBalance}" Foreground="AliceBlue" FontSize="22" />
 
 
 

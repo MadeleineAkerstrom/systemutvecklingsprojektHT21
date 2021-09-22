@@ -29,6 +29,7 @@ namespace supX
         FighterViewModel fighter;
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic(); 
         
+        
         public MainWindow()
         {
             InitializeComponent();
