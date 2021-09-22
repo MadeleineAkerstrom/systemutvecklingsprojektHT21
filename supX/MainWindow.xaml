@@ -30,7 +30,7 @@
             
             <Button Content="Choose Arena" Margin="0,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.ArenaView}" Height="90" Width="130" Foreground="#FFD3CFCF" FontWeight="Bold" FontSize="16">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
+                    <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
                 </Button.Background>
                 <Button.Effect>
                     <DropShadowEffect/>
@@ -38,7 +38,7 @@
             </Button>                        
             <Button Content="Rules" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.RulesView}" Width="130" Height="95" Foreground="#FFD3CFCF" FontSize="16" FontWeight="Bold">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Assets/Images/RedButton.png"/>
+                    <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
                 </Button.Background>
             </Button>
             <Label Content="Balance: " FontSize="22" Foreground="AliceBlue" Margin="100,0,0,0" />
