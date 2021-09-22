@@ -8,10 +8,20 @@ namespace supX.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-                   
-        //public PlayerViewModel MyPlayer { get; set; } //Might not need this one
 
-        
+        //public PlayerViewModel MyPlayer { get; set; } //Might not need this one
+        private MainViewModel balanceViewModel;
+
+        public MainViewModel BalanceViewModel
+        {
+            get { return balanceViewModel; }
+            set
+            {
+                balanceViewModel = value;
+                NotifyPropertyChanged();
+            }
+        }
+
 
         private MainViewModel gameViewModel;
 

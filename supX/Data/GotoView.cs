@@ -6,6 +6,10 @@ namespace supX.Data
 {
     public enum GotoView
     {
-        PlayerView, BackyardView, MainView, ArenaView, RulesView, WinnerView, LoserView, BellagioView, BettingView, WembleyView
+        PlayerView, MainView, ArenaView, RulesView,
+        WinnerView, LoserView,
+        BellagioView,BettingViewBellagio, 
+        WembleyView, BettingViewWembley, 
+        BackyardView, BettingViewBackyard
     }
 }
