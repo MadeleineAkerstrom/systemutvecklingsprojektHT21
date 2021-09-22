@@ -25,7 +25,7 @@
         </Button>
         <Button Content="Bet!" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Height="71" FontSize="24" d:LayoutOverrides="VerticalAlignment" Width="116" FontWeight="Bold">
             <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/PurpleButton.png"/>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/PurpleButton.png"/>
             </Button.Background>
         </Button>
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="279,-48,279,250" d:LayoutOverrides="HorizontalAlignment"/>
