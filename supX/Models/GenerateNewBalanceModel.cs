@@ -30,11 +30,11 @@ namespace supX.Models
 
             if (result == false)
             {
-                myBalance += myBalance - betAmount;
+                myBalance = myBalance - betAmount;
             }
             else
             {
-                myBalance += (betAmount * odds) + myBalance;
+                myBalance = (betAmount * odds) + myBalance;
             }
 
             return myBalance;            
