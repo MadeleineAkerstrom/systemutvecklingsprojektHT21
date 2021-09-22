@@ -8,7 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Margin="0,-5,0,5">
         <Grid.Background>
-            <ImageBrush ImageSource="/Assets/Images/BackyardView.jpg"/>
+            <ImageBrush ImageSource="/Assets/Images/Backgrounds/BackyardView.jpg"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -34,10 +34,6 @@
         <Image Source="\Assets\Images\Frames\WoodenSignBackyard.png" Grid.Column="1" Margin="75,-185,502,-19" Grid.Row="2"/>
         <TextBlock Grid.Column="1" Grid.Row="1" FontSize="20"  VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="Black" Margin="62,237,0,0" TextAlignment="Center" FontFamily="Engravers MT" Height="45" Width="208"><Run Language="es-es" Text="THE"/><LineBreak/><Run Text="b"/><Run Text="ackyard "/></TextBlock>
         <StackPanel Grid.Column="1" Grid.Row="1">
-
-
-
-
         </StackPanel>
     </Grid>
 </UserControl>

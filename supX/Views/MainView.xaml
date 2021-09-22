@@ -12,9 +12,7 @@
             <RowDefinition Height="193*"/>
         </Grid.RowDefinitions>
         <Grid.Background>
-            <ImageBrush ImageSource="/Assets/Images/LetsGoBoxingStart.jpg"/>
+            <ImageBrush ImageSource="/Assets/Images/Backgrounds/LetsGoBoxingStart.jpg"/>
         </Grid.Background>
-        
-
     </Grid>
 </UserControl>

@@ -8,7 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Margin="0,-5,0,5">
         <Grid.Background>
-            <ImageBrush ImageSource="/Assets/Images/WembleyView.jpg"/>
+            <ImageBrush ImageSource="/Assets/Images/Backgrounds/WembleyView.jpg"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -25,9 +25,6 @@
         <Image Source="\Assets\Images\Icons\FightCloud4.png" Grid.Column="1" Margin="212,88,212,-24" Grid.RowSpan="2" Width="336" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment"></Image>
 
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <!--<local:BettingView/>-->
-
-
         </StackPanel>
     </Grid>
 </UserControl>

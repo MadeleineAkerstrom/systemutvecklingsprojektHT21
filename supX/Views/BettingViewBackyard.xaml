@@ -24,7 +24,6 @@
                 <ImageBrush ImageSource="{Binding Fighter1.ImagePath}"/>
             </Button.Background>
         </Button>
-
         <Image Source="/Assets/Images/Frames/WoodenFrameBetAmount.png" Margin="335,-15,315,283" d:LayoutOverrides="HorizontalAlignment"/>
         <TextBox HorizontalAlignment="Left" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="406,60,0,0" FontSize="14" FontWeight="Bold" Opacity="1" TextChanged="TextBox_TextChanged"/>
         <Image Source="/Assets/Images/Frames/WoodenOddsFrame.png" Margin="1,266,640,2"/>

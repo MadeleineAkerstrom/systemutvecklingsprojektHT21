@@ -22,7 +22,7 @@
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" Grid.Row="1"  Text=" Bellagio " FontSize="85"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#FFCBB9B9" FontFamily="Edwardian Script ITC" d:LayoutOverrides="VerticalAlignment" Height="102" Width="272"/>
-
+        
         <Image Source="\Assets\Images\Icons\FightCloud3.png" Margin="52,66,68,-36" Grid.RowSpan="3" Grid.Column="1" RenderTransformOrigin="0.5,0.5" >
             <Image.RenderTransform>
                 <TransformGroup>
@@ -34,9 +34,6 @@
             </Image.RenderTransform>
         </Image>
         <StackPanel Grid.Column="1" Grid.Row="1">
-
-            <!--<local:BettingView/>-->
-
 
         </StackPanel>
     </Grid>
