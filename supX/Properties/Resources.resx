@@ -127,6 +127,12 @@
   <data name="karate_chop_long" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\karate-chop-long.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="mixkit_game_level_music_689_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixkit-game-level-music-689(1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mixkit_sad_game_over_trombone_471_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixkit-sad-game-over-trombone-471(1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="robotic_countdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\robotic-countdown.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

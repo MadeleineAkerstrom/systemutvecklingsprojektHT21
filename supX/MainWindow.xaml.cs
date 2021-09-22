@@ -27,14 +27,14 @@ namespace supX
     {
         string filename = "/Assets/Json/fighters.json";
         FighterViewModel fighter;
+        Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic(); 
         
         public MainWindow()
         {
             InitializeComponent();
             DataContext = new MainViewModel();
-            //PlaySound();
             OpenFile();
-
+            sounds.PlayIntroSound();
         }
 
         public void OpenFile() 
@@ -48,12 +48,7 @@ namespace supX
             FileHandler.FileHandler.Save(fighter, filename);
         }
 
-        public void PlaySound() 
-        {
-            var player = new SoundPlayer(Properties.Resources.Cheer_8_sec);
-            player.Play();
-            
-        }
+              
 
     }
 
