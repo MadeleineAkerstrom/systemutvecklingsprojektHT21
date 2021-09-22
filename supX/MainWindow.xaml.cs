@@ -25,10 +25,9 @@ namespace supX
     /// </summary>
     public partial class MainWindow : Window
     {
-        string filename = "/Assets/Json/fighters.json";
+        string filename = new Uri(@".\Assets\Json\fighters.json", UriKind.Relative).ToString();
         FighterViewModel fighter;
-        
-        
+
         public MainWindow()
         {
             InitializeComponent();
@@ -40,8 +39,7 @@ namespace supX
 
         public void OpenFile() 
         {
-            fighter = FileHandler.FileHandler.Open<FighterViewModel>("fighters.json");
-            
+            fighter = FileHandler.FileHandler.Open<FighterViewModel>(filename);
         }
 
         public void SaveFile() 
