@@ -3,14 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace supX.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-
-        //public PlayerViewModel MyPlayer { get; set; } //Might not need this one
-
+        
         public PlayerViewModel Player { get; set; }
 
         private MainViewModel gameViewModel;
@@ -41,6 +40,7 @@ namespace supX.ViewModels
         {
             Player = new PlayerViewModel();
             ChangeViewCommand = new ChangeViewCommand(this);
+            /*mediaPlayer = new MediaPlayer();*///New here TEST
         }
     }
 }

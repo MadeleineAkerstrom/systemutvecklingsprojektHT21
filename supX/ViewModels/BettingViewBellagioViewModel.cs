@@ -8,6 +8,7 @@ namespace supX.ViewModels
 {
     public class BettingViewBellagioViewModel : BaseViewModel
     {
+        Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
         public MainViewModel Parent { get; }
         public GameViewModel GameVM { get; set; }
 
@@ -15,7 +16,22 @@ namespace supX.ViewModels
         {
             Parent = mainViewModel;
 
+
             GameVM = new GameViewModel();
+
+            OpenFile();
+
+            GenerateOddsModel generateOddsModel = new GenerateOddsModel();
+            GenerateFightsModel generateFightsModel = new GenerateFightsModel();
+
+            int[] fighterArray = generateFightsModel.GenerateFight(fighter.fighters);
+            Odds = generateOddsModel.GenerateOdds(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
+            Fighter1 = fighter.fighters[fighterArray[0]];
+            Fighter2 = fighter.fighters[fighterArray[1]];
+
+            sounds.PlayBellagioIntroSound();
+           
+
         }
     }
 }

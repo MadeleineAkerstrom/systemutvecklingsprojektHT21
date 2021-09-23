@@ -63,9 +63,27 @@ namespace supX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream Cheer_8_sec {
+        internal static System.IO.UnmanagedMemoryStream Backyard_Greetings {
             get {
-                return ResourceManager.GetStream("Cheer_8_sec", resourceCulture);
+                return ResourceManager.GetStream("Backyard_Greetings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Bellagio_Greetings {
+            get {
+                return ResourceManager.GetStream("Bellagio_Greetings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream crowd_cheering_12s {
+            get {
+                return ResourceManager.GetStream("crowd_cheering_12s", resourceCulture);
             }
         }
         
@@ -81,9 +99,54 @@ namespace supX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream karate_chop_long {
+        internal static System.IO.UnmanagedMemoryStream GameOverMelody {
             get {
-                return ResourceManager.GetStream("karate_chop_long", resourceCulture);
+                return ResourceManager.GetStream("GameOverMelody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream mixkit_arcade_game_opener_222_1_ {
+            get {
+                return ResourceManager.GetStream("mixkit_arcade_game_opener_222_1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream mixkit_game_level_music_689_1_ {
+            get {
+                return ResourceManager.GetStream("mixkit_game_level_music_689_1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream PlayArenaPresentationApplause {
+            get {
+                return ResourceManager.GetStream("PlayArenaPresentationApplause", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream PlayFighting {
+            get {
+                return ResourceManager.GetStream("PlayFighting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream retro_intro {
+            get {
+                return ResourceManager.GetStream("retro_intro", resourceCulture);
             }
         }
         
@@ -93,6 +156,15 @@ namespace supX.Properties {
         internal static System.IO.UnmanagedMemoryStream robotic_countdown {
             get {
                 return ResourceManager.GetStream("robotic_countdown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Wembly_Greetings {
+            get {
+                return ResourceManager.GetStream("Wembly_Greetings", resourceCulture);
             }
         }
     }

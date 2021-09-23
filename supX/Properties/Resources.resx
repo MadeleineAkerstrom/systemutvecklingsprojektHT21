@@ -118,16 +118,40 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Cheer_8_sec" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cheer 8 sec.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Backyard_Greetings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backyard Greetings.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bellagio_Greetings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bellagio Greetings.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="crowd_cheering_12s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4crowd-cheering-soft_12s-cheering-1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="fight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fight.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="karate_chop_long" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\karate-chop-long.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="GameOverMelody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameOverMelody.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mixkit_arcade_game_opener_222_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixkit-arcade-game-opener-222(1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mixkit_game_level_music_689_1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mixkit-game-level-music-689(1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PlayArenaPresentationApplause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlayArenaPresentationApplause.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PlayFighting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlayFighting.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="retro_intro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\retro.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="robotic_countdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\robotic-countdown.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wembly_Greetings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wembly Greetings.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
