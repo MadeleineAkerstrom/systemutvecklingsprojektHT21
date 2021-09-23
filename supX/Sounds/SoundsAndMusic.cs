@@ -14,12 +14,12 @@ namespace supX.Sounds
         
         public SoundsAndMusic()
         {
-            
+            //StopSound(mediaPlayer);
         }
 
         public void StopSound() 
         {
-            mediaPlayer.Stop();
+            mediaPlayer.Stop();            
         }
 
         #region MediaPlayer
@@ -41,7 +41,7 @@ namespace supX.Sounds
         /// </summary>
         public void PlayIntro()
         {
-            Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\retro.wav", UriKind.Relative);
+            Uri uri = new Uri(@"C:/Users/Rocks/source/repos/sup21_g10b/supX/Resources/retro.wav", UriKind.Relative);
             mediaPlayer.Open(uri);
             mediaPlayer.Volume = 0.02;
             mediaPlayer.Play();           
@@ -158,8 +158,8 @@ namespace supX.Sounds
         /// </summary>
         public void PlayIntroSound()
         {
-            var player = new SoundPlayer(Properties.Resources.retro_intro);
-            player.Play();
+            SoundPlayer loop = new SoundPlayer(Properties.Resources.retroLowSound);
+            loop.PlayLooping();
         }
 
         /// <summary>
@@ -185,7 +185,7 @@ namespace supX.Sounds
         /// </summary>
         public void PlayWemblyIntroSound()
         {
-            var player = new SoundPlayer(Properties.Resources.Wembly_Greetings);
+            var player = new SoundPlayer(Properties.Resources.WembleyGreetingsWithApplause);
             player.Play();
         }
 
@@ -194,7 +194,7 @@ namespace supX.Sounds
         /// </summary>
         public void PlayBackyardIntroSound()
         {
-            var player = new SoundPlayer(Properties.Resources.Backyard_Greetings);
+            var player = new SoundPlayer(Properties.Resources.BackyardGreetingsWithApplause);
             player.Play();
         }
 
@@ -203,7 +203,7 @@ namespace supX.Sounds
         /// </summary>
         public void PlayBellagioIntroSound()
         {
-            var player = new SoundPlayer(Properties.Resources.Bellagio_Greetings);
+            var player = new SoundPlayer(Properties.Resources.BellagioGreetingsWithApplause);
             player.Play();
         }
 
@@ -224,11 +224,13 @@ namespace supX.Sounds
             SoundPlayer loop = new SoundPlayer(Properties.Resources.fight);
             loop.PlayLooping();
         }
-
+        /// <summary>
+        /// Plays the Arena sound as a loop
+        /// </summary>
         public void PlayArenaIntroSound() 
         {
-            var player = new SoundPlayer(Properties.Resources.crowd_cheering_12s);
-            player.Play();
+            SoundPlayer loop  = new SoundPlayer(Properties.Resources.PlayArenaIntroSoundLowSound);
+            loop.PlayLooping();
         }
 
         #endregion

@@ -28,15 +28,15 @@ namespace supX
         string filename = "/Assets/Json/fighters.json";
         FighterViewModel fighter;
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
-        
+        //MediaPlayer mediaPlayer;
         
         
         public MainWindow()
         {
             InitializeComponent();
             DataContext = new MainViewModel();
-            OpenFile();
-            sounds.PlayIntro();
+            sounds.PlayIntroSound();
+            //sounds.StopSound(mediaPlayer);
 
         }
 
