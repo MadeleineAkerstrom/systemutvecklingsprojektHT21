@@ -37,13 +37,10 @@ namespace supX
             DataContext = new MainViewModel();
             OpenFile();
             sounds.PlayIntro();
+
         }
 
-        public void OpenFile() 
-        {
-            fighter = FileHandler.FileHandler.Open<FighterViewModel>("fighters.json");
-            
-        }
+
 
         public void SaveFile() 
         {

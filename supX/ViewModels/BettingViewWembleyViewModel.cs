@@ -11,16 +11,14 @@ namespace supX.ViewModels
 
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
         public MainViewModel Parent { get; }
-
-        FighterViewModel fighter;
-        public double[] Odds { get; set; }
-        public int[] FighterIds { get; set; }
-        public FighterViewModel Fighter1 { get; set; }
-        public FighterViewModel Fighter2 { get; set; }
+        public GameViewModel GameVM { get; set; }
 
         public BettingViewWembleyViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
+
+
+            GameVM = new GameViewModel();
 
             OpenFile();
 
@@ -33,12 +31,13 @@ namespace supX.ViewModels
             Fighter2 = fighter.fighters[fighterArray[1]];
 
             sounds.PlayWemblyIntro();
-            //MessageBox.Show(Odds[0] + " " + Fighter1.Name + " vs " + Fighter2.Name + " " + Odds[1]);
+            
         }
 
         public void OpenFile()
         {
             fighter = FileHandler.FileHandler.Open<FighterViewModel>("fighters.json");
+
 
         }
 
