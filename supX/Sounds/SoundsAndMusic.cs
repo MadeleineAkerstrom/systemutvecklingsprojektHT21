@@ -2,13 +2,34 @@
 using System.Collections.Generic;
 using System.Media;
 using System.Text;
+using System.Windows.Media;
 
 namespace supX.Sounds
 {
     public class SoundsAndMusic
     {
+
+        
         public SoundsAndMusic()
         {
+
+        }
+
+        public void MediaPlayerTestingMethod() 
+        {
+            var mediaPlayer = new MediaPlayer();
+            Uri uri = new Uri(@".\Resources\fight.wav", UriKind.Relative);
+            mediaPlayer.Open(uri);
+            mediaPlayer.Play();
+            //player.Volume = 0.3;
+            //player.Open(PlayWemblyIntro);
+            //mediaPlayer.Open(new System.Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\Wembly Greetings.wav"));
+            //mediaPlayer.Open(new Uri(@".\Resources\Wembly Greetings.wav", UriKind.Relative));
+            //mediaPlayer.Volume = 50.0;
+            //mediaPlayer.Position.
+            //mediaPlayer.Play(Properties.Resources.Wembly_Greetings);
+            //new Uri(@".\Assets\Images\BackgroundBlixt_Test_white.png", UriKind.Relative)
+
 
         }
 
@@ -55,8 +76,8 @@ namespace supX.Sounds
         /// </summary>
         public void PlayWemblyIntro()
         {
-            //var player = new SoundPlayer(Properties.Resources.);
-            //player.Play();
+            var player = new SoundPlayer(Properties.Resources.Wembly_Greetings);
+            player.Play();
         }
 
         /// <summary>
@@ -64,8 +85,8 @@ namespace supX.Sounds
         /// </summary>
         public void PlayBackyardIntro()
         {
-            //var player = new SoundPlayer(Properties.Resources.);
-            //player.Play();
+            var player = new SoundPlayer(Properties.Resources.Backyard_Greetings);
+            player.Play();
         }
 
         /// <summary>
@@ -73,8 +94,8 @@ namespace supX.Sounds
         /// </summary>
         public void PlayBellagioIntro()
         {
-            //var player = new SoundPlayer(Properties.Resources.);
-            //player.Play();
+            var player = new SoundPlayer(Properties.Resources.Bellagio_Greetings);
+            player.Play();
         }
 
         /// <summary>

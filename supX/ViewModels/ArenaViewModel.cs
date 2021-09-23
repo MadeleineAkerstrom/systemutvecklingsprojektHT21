@@ -12,7 +12,8 @@ namespace supX.ViewModels
         public ArenaViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
-            soundsAndMusic.PlayArenaIntro();
+            //soundsAndMusic.PlayArenaIntro();
+            
         }
     }
 }
