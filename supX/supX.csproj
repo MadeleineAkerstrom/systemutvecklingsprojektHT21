@@ -36,9 +36,11 @@
     <None Remove="Assets\Images\Fighters\FighterFemaleKangaroo.png" />
     <None Remove="Assets\Images\Fighters\FighterFish.png" />
     <None Remove="Assets\Images\Fighters\FighterFrog.png" />
+    <None Remove="Assets\Images\Fighters\FighterHippo.png" />
     <None Remove="Assets\Images\Fighters\FighterHuman.png" />
     <None Remove="Assets\Images\Fighters\FighterJodiPerez.png" />
     <None Remove="Assets\Images\Fighters\FighterKangaroo.png" />
+    <None Remove="Assets\Images\Fighters\FighterKid.png" />
     <None Remove="Assets\Images\Fighters\FighterLego.png" />
     <None Remove="Assets\Images\Fighters\FighterLion.png" />
     <None Remove="Assets\Images\Fighters\FighterLlama.png" />
@@ -109,7 +111,9 @@
     <Resource Include="Assets\Images\Fighters\FighterFamilyGuy.png" />
     <Resource Include="Assets\Images\Fighters\FighterFemaleKangaroo.png" />
     <Resource Include="Assets\Images\Fighters\FighterFish.png" />
+    <Resource Include="Assets\Images\Fighters\FighterHippo.png" />
     <Resource Include="Assets\Images\Fighters\FighterJodiPerez.png" />
+    <Resource Include="Assets\Images\Fighters\FighterKid.png" />
     <Resource Include="Assets\Images\Fighters\FighterLego.png" />
     <Resource Include="Assets\Images\Fighters\FighterLion.png" />
     <Resource Include="Assets\Images\Fighters\FighterLlama.png" />
