@@ -9,9 +9,7 @@ namespace supX.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-        /*MediaPlayer mediaPlayer = new MediaPlayer();*/ //Mediaplayer here
         
-
         public PlayerViewModel Player { get; set; }
 
         private MainViewModel gameViewModel;

@@ -12,7 +12,7 @@ namespace supX.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-
+        Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
         protected void NotifyPropertyChanged([CallerMemberName] String propertyName = "") 
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

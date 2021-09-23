@@ -13,7 +13,7 @@ namespace supX.ViewModels
         public LoserViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
-            soundsAndMusic.PlayGameOverSound();
+            soundsAndMusic.PlayGameOver();
         }
         
     }

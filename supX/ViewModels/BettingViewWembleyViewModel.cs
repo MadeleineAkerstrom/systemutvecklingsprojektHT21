@@ -8,6 +8,8 @@ namespace supX.ViewModels
 {
     public class BettingViewWembleyViewModel : BaseViewModel
     {
+
+        Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
         public MainViewModel Parent { get; }
 
         FighterViewModel fighter;
@@ -30,7 +32,8 @@ namespace supX.ViewModels
             Fighter1 = fighter.fighters[fighterArray[0]];
             Fighter2 = fighter.fighters[fighterArray[1]];
 
-            MessageBox.Show(Odds[0] + " " + Fighter1.Name + " vs " + Fighter2.Name + " " + Odds[1]);
+            sounds.PlayWemblyIntro();
+            //MessageBox.Show(Odds[0] + " " + Fighter1.Name + " vs " + Fighter2.Name + " " + Odds[1]);
         }
 
         public void OpenFile()

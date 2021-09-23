@@ -1,4 +1,5 @@
-﻿using System;
+﻿using supX.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Media;
 using System.Text;
@@ -8,15 +9,21 @@ namespace supX.Sounds
 {
     public class SoundsAndMusic
     {
-        //Ha mediaplayer här?
+        
         MediaPlayer mediaPlayer = new MediaPlayer();
-
+        
         public SoundsAndMusic()
         {
-            //var mediaPlayer = new MediaPlayer();
+            
+        }
+
+        public void StopSound() 
+        {
+            mediaPlayer.Stop();
         }
 
         #region MediaPlayer
+
         /// <summary>
         /// Plays when Game Over
         /// </summary>
@@ -37,7 +44,7 @@ namespace supX.Sounds
             Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\retro.wav", UriKind.Relative);
             mediaPlayer.Open(uri);
             mediaPlayer.Volume = 0.02;
-            mediaPlayer.Play();
+            mediaPlayer.Play();           
 
         }
 
@@ -116,6 +123,7 @@ namespace supX.Sounds
             Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\PlayArenaIntro.wav", UriKind.Relative);
             mediaPlayer.Open(uri);
             mediaPlayer.Volume = 1;
+            
             mediaPlayer.Play();
         }
 

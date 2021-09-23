@@ -36,8 +36,7 @@ namespace supX
             InitializeComponent();
             DataContext = new MainViewModel();
             OpenFile();
-            //sounds.PlayGameOverSound();
-            sounds.PlayArenaPresentationApplause();
+            sounds.PlayIntro();
         }
 
         public void OpenFile() 
