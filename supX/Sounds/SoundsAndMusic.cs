@@ -224,6 +224,7 @@ namespace supX.Sounds
             SoundPlayer loop = new SoundPlayer(Properties.Resources.fight);
             loop.PlayLooping();
         }
+
         /// <summary>
         /// Plays the Arena sound as a loop
         /// </summary>
