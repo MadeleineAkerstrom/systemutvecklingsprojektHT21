@@ -4,6 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:supX.Views"
+             xmlns:data="clr-namespace:supX.Data"
+             xmlns:viewmodels="clr-namespace:supX.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Margin="0,-5,0,5">
@@ -13,23 +15,27 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Frames/StageBettingView.png"/>
         </Grid.Background>
-        <Button Content="" HorizontalAlignment="Left" Margin="507,243,0,0" VerticalAlignment="Top" Height="186" Width="116">
+        <Button CommandParameter="" HorizontalAlignment="Left" Margin="507,243,0,0" VerticalAlignment="Top" Height="186" Width="116">
             <Button.Background>
                 <ImageBrush ImageSource="{Binding GameVM.Fighter2.ImagePath}"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="170,243,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="186" Width="116">
+        <Button  HorizontalAlignment="Left" Margin="180,238,0,0" VerticalAlignment="Top" Height="186" Width="116">
             <Button.Background>
                 <ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}"/>
             </Button.Background>
         </Button>
-        <Button Content="Bet!" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Height="71" FontSize="24" d:LayoutOverrides="VerticalAlignment" Width="116" FontWeight="Bold">
+        <!--<ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}" Height="186" Width="116"/>-->
+
+        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="279,-53,279,255"/>
+        <Button Content="Bet!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BellagioView}" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Height="71" FontSize="24" d:LayoutOverrides="VerticalAlignment" Width="116" FontWeight="Bold">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/PurpleButton.png"/>
             </Button.Background>
         </Button>
-        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="279,-48,279,250" d:LayoutOverrides="HorizontalAlignment"/>
-        <TextBox HorizontalAlignment="Center" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="0,36,0,0" FontSize="14" FontWeight="Bold" Opacity="1" TextChanged="TextBox_TextChanged"  Width="46"/>
+        
+        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Center" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="279,0,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Center" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="475,0,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="506,159,185,184"/>
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="178,159,512,184"/>
         <Label Content="{Binding GameVM.Odds[0]}" HorizontalAlignment="Left" Margin="208,182,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>

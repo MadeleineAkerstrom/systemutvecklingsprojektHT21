@@ -13,6 +13,7 @@ namespace supX.ViewModels
 
         public PlayerViewModel Player { get; set; }
 
+
         private MainViewModel gameViewModel;
 
         public MainViewModel GameViewModel

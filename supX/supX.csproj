@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <None Remove="Assets\Images\Backgrounds\BackyardBettingViewBackground.jpg" />
+    <None Remove="Assets\Images\Backgrounds\BellagioView.jpg" />
     <None Remove="Assets\Images\Backgrounds\Blackboard %281%29.png" />
     <None Remove="Assets\Images\Backgrounds\WembleyOutside.jpg" />
     <None Remove="Assets\Images\Backgrounds\WinnerWallpaper.png" />
@@ -71,6 +72,7 @@
 
   <ItemGroup>
     <Resource Include="Assets\Images\Backgrounds\BackyardBettingViewBackground.jpg" />
+    <Resource Include="Assets\Images\Backgrounds\BellagioView.jpg" />
     <Resource Include="Assets\Images\Backgrounds\Blackboard (1).png" />
     <Resource Include="Assets\Images\Frames\BalanceFrame.png" />
     <Resource Include="Assets\Images\Frames\BigBlueRectangleFrame.png" />

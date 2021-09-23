@@ -11,6 +11,9 @@ namespace supX.ViewModels
         public MainViewModel Parent { get; }
         public GameViewModel GameVM { get; set; }
 
+        public int MyBet { get; set; }
+        public string BetAmount { get; set; } = "100";
+
         public BettingViewBackyardViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
