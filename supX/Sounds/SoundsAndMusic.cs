@@ -8,39 +8,140 @@ namespace supX.Sounds
 {
     public class SoundsAndMusic
     {
+        //Ha mediaplayer här?
+        MediaPlayer mediaPlayer = new MediaPlayer();
 
-        
         public SoundsAndMusic()
         {
-
+            //var mediaPlayer = new MediaPlayer();
         }
 
-        public void MediaPlayerTestingMethod() 
+        #region MediaPlayer
+        /// <summary>
+        /// Plays when Game Over
+        /// </summary>
+        public void PlayGameOver() 
         {
-            var mediaPlayer = new MediaPlayer();
-            Uri uri = new Uri(@".\Resources\fight.wav", UriKind.Relative);
+            Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\GameOverMelody.wav", UriKind.Relative);
             mediaPlayer.Open(uri);
+            mediaPlayer.Volume = 0.02;
             mediaPlayer.Play();
-            //player.Volume = 0.3;
-            //player.Open(PlayWemblyIntro);
-            //mediaPlayer.Open(new System.Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\Wembly Greetings.wav"));
-            //mediaPlayer.Open(new Uri(@".\Resources\Wembly Greetings.wav", UriKind.Relative));
-            //mediaPlayer.Volume = 50.0;
-            //mediaPlayer.Position.
-            //mediaPlayer.Play(Properties.Resources.Wembly_Greetings);
-            //new Uri(@".\Assets\Images\BackgroundBlixt_Test_white.png", UriKind.Relative)
-
 
         }
+
+        /// <summary>
+        /// Plays Intro music for the game
+        /// </summary>
+        public void PlayIntro()
+        {
+            Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\retro.wav", UriKind.Relative);
+            mediaPlayer.Open(uri);
+            mediaPlayer.Volume = 0.02;
+            mediaPlayer.Play();
+
+        }
+
+        /// <summary>
+        /// Sounds that starts a fight between two fighters
+        /// </summary>
+        public void PlayFight()
+        {
+            Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\fight.wav", UriKind.Relative);
+            mediaPlayer.Open(uri);
+            mediaPlayer.Volume = 0.02;
+            mediaPlayer.Play();
+        }
+
+        /// <summary>
+        /// Countdown befor a fight starts
+        /// </summary>
+        public void PlayCountDown()
+        {
+            Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\robotic-countdown.wav", UriKind.Relative);
+            mediaPlayer.Open(uri);
+            mediaPlayer.Volume = 0.02;
+            mediaPlayer.Play();
+        }
+
+        /// <summary>
+        /// Intro to Wembley
+        /// </summary>
+        public void PlayWemblyIntro()
+        {
+            Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\Wembly Greetings.wav", UriKind.Relative);
+            mediaPlayer.Open(uri);
+            mediaPlayer.Volume = 1;
+            mediaPlayer.Play();
+        }
+
+        /// <summary>
+        /// Intro to Backyard
+        /// </summary>
+        public void PlayBackyardIntro()
+        {
+            Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\Backyard Greetings.wav", UriKind.Relative);
+            mediaPlayer.Open(uri);
+            mediaPlayer.Volume = 1;
+            mediaPlayer.Play();
+        }
+
+        /// <summary>
+        /// Intro to Bellagio
+        /// </summary>
+        public void PlayBellagioIntro()
+        {
+            Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\Bellagio Greetings.wav", UriKind.Relative);
+            mediaPlayer.Open(uri);
+            mediaPlayer.Volume = 1;
+            mediaPlayer.Play();
+        }
+
+        /// <summary>
+        /// Sound during a fight 
+        /// </summary>
+        public void PlayFighting()
+        {
+            Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\PlayFighting.wav", UriKind.Relative);//Karate chops long
+            mediaPlayer.Open(uri);
+            mediaPlayer.Volume = 1;
+            mediaPlayer.Play();
+        }
+
+              
+        /// <summary>
+        /// Plays the intro to Arena
+        /// </summary>
+        public void PlayArenaIntro()
+        {
+            Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\PlayArenaIntro.wav", UriKind.Relative);
+            mediaPlayer.Open(uri);
+            mediaPlayer.Volume = 1;
+            mediaPlayer.Play();
+        }
+
+        /// <summary>
+        /// Applauses during Arena presentations
+        /// </summary>
+        public void PlayArenaPresentationApplause() 
+        {
+            Uri uri = new Uri(@"C:\Users\Rocks\source\repos\sup21_g10b\supX\Resources\PlayArenaPresentationApplause.wav", UriKind.Relative);
+            mediaPlayer.Open(uri);
+            mediaPlayer.Volume = 0.2;
+            mediaPlayer.Play();
+
+        }
+
+
+        #endregion
 
 
         #region SoundEffects
         /// <summary>
-        /// Game Over sound
+        /// Plays when Game Over
         /// </summary>
         public void PlayGameOverSound()
         {
-            var player = new SoundPlayer(Properties.Resources.game_over);
+            var player = new SoundPlayer(Properties.Resources.GameOverMelody);
             player.Play();
         }
 
@@ -65,7 +166,7 @@ namespace supX.Sounds
         /// <summary>
         /// Countdown befor a fight starts
         /// </summary>
-        public void PlayCountDown()
+        public void PlayCountDownSound()
         {
             var player = new SoundPlayer(Properties.Resources.robotic_countdown);
             player.Play();
@@ -74,7 +175,7 @@ namespace supX.Sounds
         /// <summary>
         /// Intro to Wembley
         /// </summary>
-        public void PlayWemblyIntro()
+        public void PlayWemblyIntroSound()
         {
             var player = new SoundPlayer(Properties.Resources.Wembly_Greetings);
             player.Play();
@@ -83,7 +184,7 @@ namespace supX.Sounds
         /// <summary>
         /// Intro to Backyard
         /// </summary>
-        public void PlayBackyardIntro()
+        public void PlayBackyardIntroSound()
         {
             var player = new SoundPlayer(Properties.Resources.Backyard_Greetings);
             player.Play();
@@ -92,7 +193,7 @@ namespace supX.Sounds
         /// <summary>
         /// Intro to Bellagio
         /// </summary>
-        public void PlayBellagioIntro()
+        public void PlayBellagioIntroSound()
         {
             var player = new SoundPlayer(Properties.Resources.Bellagio_Greetings);
             player.Play();
@@ -103,20 +204,20 @@ namespace supX.Sounds
         /// </summary>
         public void PlayFightingSound()
         {
-            var player = new SoundPlayer(Properties.Resources.karate_chop_long);
+            var player = new SoundPlayer(Properties.Resources.PlayFighting);
             player.Play();
         }
 
         /// <summary>
         /// Plays a loop
         /// </summary>
-        public void PlayLooping()
+        public void PlayLoopingSound()
         {
             SoundPlayer loop = new SoundPlayer(Properties.Resources.fight);
             loop.PlayLooping();
         }
 
-        public void PlayArenaIntro() 
+        public void PlayArenaIntroSound() 
         {
             var player = new SoundPlayer(Properties.Resources.crowd_cheering_12s);
             player.Play();

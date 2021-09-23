@@ -7,19 +7,20 @@ namespace supX.ViewModels
 {
     public class WembleyViewModel : BaseViewModel
     {
-        Sounds.SoundsAndMusic soundsAndMusic = new Sounds.SoundsAndMusic();
-        
+        //Sounds.SoundsAndMusic soundsAndMusic = new Sounds.SoundsAndMusic();
+        Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
+
         public MainViewModel Parent { get; }
 
         public WembleyViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
             //soundsAndMusic.PlayWemblyIntro();
+            sounds.PlayWemblyIntro();
             //soundsAndMusic.MediaPlayerTestingMethod();
-            MediaPlayerTestingMethod();
         }
 
-        public void MediaPlayerTestingMethod()
+        public void MediaPlayerTestingMethodXX()
         {
             var mediaPlayer = new MediaPlayer();
             //Uri uri = new Uri(@".\Resources\fight.wav", UriKind.Relative);

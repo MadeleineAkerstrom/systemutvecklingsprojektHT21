@@ -9,7 +9,7 @@ namespace supX.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-        MediaPlayer mediaPlayer = new MediaPlayer(); //Mediaplayer here
+        /*MediaPlayer mediaPlayer = new MediaPlayer();*/ //Mediaplayer here
         
 
         public PlayerViewModel Player { get; set; }
@@ -42,7 +42,7 @@ namespace supX.ViewModels
         {
             Player = new PlayerViewModel();
             ChangeViewCommand = new ChangeViewCommand(this);
-            mediaPlayer = new MediaPlayer();//New here TEST
+            /*mediaPlayer = new MediaPlayer();*///New here TEST
         }
     }
 }
