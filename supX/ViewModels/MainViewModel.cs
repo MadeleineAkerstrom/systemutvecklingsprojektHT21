@@ -40,7 +40,9 @@ namespace supX.ViewModels
         {
             Player = new PlayerViewModel();
             ChangeViewCommand = new ChangeViewCommand(this);
+            currentViewModel = new StartViewModel(null);
             /*mediaPlayer = new MediaPlayer();*///New here TEST
+
         }
     }
 }

@@ -48,7 +48,7 @@
         </DataTemplate>
 
         <DataTemplate
-            DataType="{x:Type viewmodels:MainViewModel}">
+            DataType="{x:Type viewmodels:StartViewModel}">
             <views:MainView/>
         </DataTemplate>
 

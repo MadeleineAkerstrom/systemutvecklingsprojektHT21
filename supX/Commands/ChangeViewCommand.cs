@@ -61,6 +61,9 @@ namespace supX.Commands
                 case GotoView.LoserView:
                     mainViewModel.CurrentViewModel = new LoserViewModel(mainViewModel);
                     break;
+                case GotoView.MainView:
+                    mainViewModel.CurrentViewModel = new StartViewModel(mainViewModel);
+                    break;
                 default:
                     break;
             }
