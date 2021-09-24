@@ -108,15 +108,6 @@ namespace supX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream PlayArenaPresentationApplause {
-            get {
-                return ResourceManager.GetStream("PlayArenaPresentationApplause", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         internal static System.IO.UnmanagedMemoryStream PlayFighting {
             get {
                 return ResourceManager.GetStream("PlayFighting", resourceCulture);
