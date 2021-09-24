@@ -16,6 +16,7 @@ namespace supX.ViewModels
         public FighterViewModel FightVM { get; set; }
         public FightViewModel Winner { get; set; }
         public ICommand Result { get; set; }
+        public PlayerViewModel PlayerVM { get; set; }
 
         public BellagioViewModel(MainViewModel mainViewModel)
         {
@@ -25,8 +26,9 @@ namespace supX.ViewModels
             Result = new RelyCommand(LostOrWon);          
             Betbell.MyBetId = Betbell.GameVM.SetMyBet(Betbell.BetAmount1, Betbell.BetAmount2, Betbell.FighterId1, Betbell.FighterId2);
             Winner = Betbell.GameVM.GenerateResult(Betbell.GameVM.fighter.fighters[Betbell.GameVM.Fighter1.Id], Betbell.GameVM.fighter.fighters[Betbell.GameVM.Fighter2.Id]);
+            Betbell.GameVM.BetAmount=Betbell.GameVM.SetBetAmount(Betbell.BetAmount1, Betbell.BetAmount2);
             //Thread.Sleep(5000);
-            //Betbell.GameVM.PlayerVM.MyBalance = Betbell.GameVM.CalculateNewBalance(Betbell.GameVM.fighter.fighters[Betbell.MyBetId], Winner);
+            Betbell.GameVM.Parent.Player.MyBalance = Betbell.GameVM.CalculateNewBalance(Betbell.GameVM.fighter.fighters[Betbell.MyBetId], Winner);
         }
 
         public void LostOrWon()
