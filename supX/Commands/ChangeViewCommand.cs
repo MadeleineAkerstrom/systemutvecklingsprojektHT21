@@ -31,9 +31,6 @@ namespace supX.Commands
                 case GotoView.ArenaView:
                     mainViewModel.CurrentViewModel = new ArenaViewModel(mainViewModel);
                     break;
-                case GotoView.PlayerView:
-                    mainViewModel.CurrentViewModel = new PlayerViewModel(mainViewModel);
-                    break;
                 case GotoView.BackyardView:
                     mainViewModel.CurrentViewModel = new BackyardViewModel(mainViewModel);
                     break;

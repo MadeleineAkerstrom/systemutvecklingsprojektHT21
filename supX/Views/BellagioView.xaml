@@ -32,7 +32,7 @@
                     <TranslateTransform/>
                 </TransformGroup>
             </Image.RenderTransform>
-        </Image>
+        </Image>-->
         <StackPanel Grid.Column="1" Grid.Row="1">
 
         </StackPanel>
