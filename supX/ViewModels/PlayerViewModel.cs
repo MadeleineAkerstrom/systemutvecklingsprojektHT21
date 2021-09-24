@@ -6,12 +6,11 @@ namespace supX.ViewModels
 {
     public class PlayerViewModel : BaseViewModel
     {
-        public double MyBalance { get; set; } = 100;
-        public MainViewModel Parent { get; }
-
+        public double MyBalance { get; set; }
+     
         public PlayerViewModel()
         {
-            
+            MyBalance = 100;
         }
     }
 }
