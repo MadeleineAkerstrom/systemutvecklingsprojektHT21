@@ -91,15 +91,7 @@ namespace supX.Sounds
             var player = new SoundPlayer(Properties.Resources.PlayFighting);
             player.Play();
         }
-
-        /// <summary>
-        /// Plays a loop
-        /// </summary>
-        public void PlayLoopingSound()
-        {
-            SoundPlayer loop = new SoundPlayer(Properties.Resources.fight);
-            loop.PlayLooping();
-        }
+               
 
         /// <summary>
         /// Plays the Arena sound as a loop
