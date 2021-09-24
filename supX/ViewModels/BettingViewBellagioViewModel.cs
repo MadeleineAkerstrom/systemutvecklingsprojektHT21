@@ -14,7 +14,7 @@ namespace supX.ViewModels
         public GameViewModel GameVM { get; set; }
         public double BetAmount1 { get; set; }
         public double BetAmount2 { get; set; }
-        public int MyBetId { get; set; }
+        public int MyBetId { get; set; } = 0;
         public int FighterId1 { get; set; }
         public int FighterId2 { get; set; }
         public BettingViewBellagioViewModel betbell;
@@ -26,7 +26,7 @@ namespace supX.ViewModels
             Parent = mainViewModel;
 
             GameVM = new GameViewModel();
-
+        
             GameVM.GenerateArena();
             FighterId1 = GameVM.Fighter1.Id;
             FighterId2 = GameVM.Fighter2.Id;

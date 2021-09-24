@@ -48,33 +48,33 @@ namespace supX.ViewModels
         {
             FightViewModel winner = GenerateResult(Fighter1, Fighter2);
 
-            int myBet = SetMyBet(bettingViewBellagioView.BetAmount1, bettingViewBellagioView.BetAmount2, bettingViewBellagioView.MyBetId, Fighter1.Id, Fighter2.Id);
+            int myBet = SetMyBet(bettingViewBellagioView.BetAmount1, bettingViewBellagioView.BetAmount2, Fighter1.Id, Fighter2.Id);
 
             GenerateBetResult(fighterViewModel.fighters[myBet], winner);
         }
 
-        public int SetMyBet(double BetAmount1, double BetAmount2, int MyBetId, int FighterId1, int FighterId2)
+        public int SetMyBet(double BetAmount1, double BetAmount2, int FighterId1, int FighterId2)
         {
+            int MyBetId= 0;
             if (BetAmount1 != 0 && BetAmount2 != 0)
             {
                 MessageBox.Show("You can't bet on both fighter, you idiot!");
                 changeViewCommand.Execute(GotoView.BettingViewBellagio);
             }
-            if (BetAmount1 == 0 && BetAmount2 == 0)
+            else if (BetAmount1 == 0 && BetAmount2 == 0)
             {
                 MessageBox.Show("You have to bet on someone, you idiot!");
                 changeViewCommand.Execute(GotoView.BettingViewBellagio);
             }
-            else
-            if (BetAmount1 != 0)
+            else if (BetAmount1 != 0)
             {
                 MyBetId = FighterId1;
-                changeViewCommand.Execute(GotoView.BellagioView);
+              //  changeViewCommand.Execute(GotoView.BellagioView);
             }
             else
             {
                 MyBetId = FighterId2;
-                changeViewCommand.Execute(GotoView.BellagioView);
+               // changeViewCommand.Execute(GotoView.BellagioView);
             }
             return MyBetId;
         }
