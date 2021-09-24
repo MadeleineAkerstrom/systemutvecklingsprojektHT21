@@ -9,18 +9,14 @@ namespace supX.Sounds
 {
     public class SoundsAndMusic
     {
-        
+
         MediaPlayer mediaPlayer = new MediaPlayer();
-        
+
         public SoundsAndMusic()
         {
-            //StopSound(mediaPlayer);
+            
         }
-
-        public void StopSound() 
-        {
-            mediaPlayer.Stop();            
-        }
+               
 
         #region MediaPlayer
 
