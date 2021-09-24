@@ -10,6 +10,7 @@ namespace supX.ViewModels
 {
     public class BettingViewBellagioViewModel : BaseViewModel
     {
+        Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
         public MainViewModel Parent { get; }
         public GameViewModel GameVM { get; set; }
         public double BetAmount1 { get; set; }
@@ -24,6 +25,8 @@ namespace supX.ViewModels
         public BettingViewBellagioViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
+            GameVM = new GameViewModel();                     
+            sounds.PlayBellagioIntroSound();          
 
             GameVM = new GameViewModel();
         

@@ -11,10 +11,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Icons/ringside.jpg"/>
         </Grid.Background>
-
-        
         <Image Source="\Assets\Images\Frames\SilverFrame.png" Margin="68,39,67,257"/>
-
         <Button Content="Backyard" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BettingViewBackyard}" 

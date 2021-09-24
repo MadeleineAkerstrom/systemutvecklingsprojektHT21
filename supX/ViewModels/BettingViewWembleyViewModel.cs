@@ -8,15 +8,19 @@ namespace supX.ViewModels
 {
     public class BettingViewWembleyViewModel : BaseViewModel
     {
+
+        Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
         public MainViewModel Parent { get; }
         public GameViewModel GameVM { get; set; }
 
         public BettingViewWembleyViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
-
-            GameVM = new GameViewModel();
+            GameVM = new GameViewModel();                     
+            sounds.PlayWemblyIntroSound();
+            
         }
+                
 
     }
 }

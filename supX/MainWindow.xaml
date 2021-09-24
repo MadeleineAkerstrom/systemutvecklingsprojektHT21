@@ -43,9 +43,6 @@
             </Button>
             <Label Content="Balance: " FontSize="22" Foreground="AliceBlue" Margin="100,0,0,0" />
             <Label Content="{Binding Player.MyBalance}" Foreground="AliceBlue" FontSize="22" />
-
-
-
         </StackPanel>
     </Grid>
 </Window>

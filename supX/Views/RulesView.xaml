@@ -11,10 +11,9 @@
         <Grid.Background>
             <ImageBrush ImageSource="\Assets\Images\Backgrounds\Blackboard (1).png"/>
         </Grid.Background>
-        <TextBox Focusable="False" Text="Rules &#xA;You start with a balance of 100 Money, our imaginary &#xA;currency. Choose an arena to visit to start the game. &#xA;                 &#xA;Two animals per fight. Each fighter has its own strength &#xA;and weakness. These characteristics affect the odds. How much are you willing to gamble on your favorite player? &#xA;                  &#xA;After you have placed your bid, the fight begin. Depending &#xA;on the outcoming of the fight your balance will either &#xA;increase or drop. If it falls all the way to 0 you are &#xA;bankrupt, and it is game over." 
-               
+        <TextBox Focusable="False" Text="Rules &#xA;You start with a balance of 100 Money, our imaginary &#xA;currency. Choose an arena to visit to start the game. &#xA;                 &#xA;Two fighters per fight. Each fighter has its own strength &#xA;and weakness. These characteristics affect the odds. &#xA;How much are you willing to gamble on your &#xA;favorite player? &#xA;                  &#xA;After you have placed your bid, the fight begin. Depending &#xA;on the outcoming of the fight your balance will either &#xA;increase or drop. If it falls all the way to 0 you are &#xA;bankrupt, and it is game over." 
+    
         HorizontalAlignment="Left" Margin="21,0,0,0" VerticalAlignment="Center" Height="326" Width="711" BorderBrush="{x:Null}" Foreground="White" FontFamily="Courier New" FontWeight="Bold" FontSize="20" Background="{x:Null}">
-            
         </TextBox>
 
         <Button Content="Start game" 
