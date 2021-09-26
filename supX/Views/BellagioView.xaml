@@ -37,6 +37,10 @@
         <StackPanel Grid.Column="1" Grid.Row="1">
 
         </StackPanel>
-        <Button Content="See the result" Command="{Binding Result}"   Grid.Column="1" HorizontalAlignment="Left" Height="60" Margin="302,225,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="120"/>
+        <Button Content="See the result" Command="{Binding Result}"   Grid.Column="1" HorizontalAlignment="Center" Height="84" Margin="0,213,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="168" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" FontSize="16">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/VioletButton.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </UserControl>
