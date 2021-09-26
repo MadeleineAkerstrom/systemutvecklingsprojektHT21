@@ -39,7 +39,7 @@ namespace supX.ViewModels
 
         public MainViewModel()
         {
-            Player = new PlayerViewModel();
+            Player = new PlayerViewModel(this);
             ChangeViewCommand = new ChangeViewCommand(this);
             currentViewModel = new StartViewModel(null);
             /*mediaPlayer = new MediaPlayer();*///New here TEST
