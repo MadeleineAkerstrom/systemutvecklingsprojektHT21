@@ -107,9 +107,9 @@ namespace supX.ViewModels
        
         
 
-        public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner)
+        public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner, double myBalance)
         {      
-            double myBalance = Parent.Player.MyBalance;
+            //double myBalance = Parent.Player.MyBalance;
             double betAmount = BetAmount;
             double odds = winner.WinnerOdds;
             bool result = GenerateBetResult(myBet, winner);

@@ -10,9 +10,17 @@ namespace supX.ViewModels
     public class MainViewModel : BaseViewModel
     {
         
-        public PlayerViewModel Player { get; set; }
-              
-      
+        //public PlayerViewModel Player { get; set; }
+
+        private PlayerViewModel player;
+
+        public PlayerViewModel Player
+        {
+            get { return player; }
+            set { player = value; NotifyPropertyChanged(); }
+        }
+
+
         private MainViewModel gameViewModel;
 
         public MainViewModel GameViewModel
@@ -39,11 +47,14 @@ namespace supX.ViewModels
 
         public MainViewModel()
         {
-            Player = new PlayerViewModel();
+            //Player = new PlayerViewModel(this);
             ChangeViewCommand = new ChangeViewCommand(this);
             currentViewModel = new StartViewModel(null);
             /*mediaPlayer = new MediaPlayer();*///New here TEST
-
+            if (Player == null)
+            {
+                Player = new PlayerViewModel(this) { MyBalance = 100 };
+            }
         }
     }
 }

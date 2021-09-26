@@ -28,7 +28,7 @@ namespace supX.ViewModels
             Winner = Betbell.GameVM.GenerateResult(Betbell.GameVM.fighter.fighters[Betbell.GameVM.Fighter1.Id], Betbell.GameVM.fighter.fighters[Betbell.GameVM.Fighter2.Id]);
             Betbell.GameVM.BetAmount=Betbell.GameVM.SetBetAmount(Betbell.BetAmount1, Betbell.BetAmount2);
             //Thread.Sleep(5000);
-            Betbell.GameVM.Parent.Player.MyBalance = Betbell.GameVM.CalculateNewBalance(Betbell.GameVM.fighter.fighters[Betbell.MyBetId], Winner);
+            Parent.Player.MyBalance = Betbell.GameVM.CalculateNewBalance(Betbell.GameVM.fighter.fighters[Betbell.MyBetId], Winner, Parent.Player.MyBalance); //Here
         }
 
         public void LostOrWon()
