@@ -66,6 +66,11 @@
             DataType="{x:Type viewmodels:BettingViewWembleyViewModel}">
             <views:BettingViewWembley/>
         </DataTemplate>
+        
+        <DataTemplate
+            DataType="{x:Type viewmodels:ShowResultViewModel}">
+            <views:ShowResultView/>
+        </DataTemplate>
 
     </Application.Resources>
 </Application>

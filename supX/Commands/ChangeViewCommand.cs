@@ -61,6 +61,9 @@ namespace supX.Commands
                 case GotoView.MainView:
                     mainViewModel.CurrentViewModel = new StartViewModel(mainViewModel);
                     break;
+                case GotoView.ShowResultView:
+                    mainViewModel.CurrentViewModel = new ShowResultViewModel(mainViewModel);
+                    break;
                 default:
                     break;
             }

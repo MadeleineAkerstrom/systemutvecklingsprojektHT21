@@ -9,9 +9,19 @@ namespace supX.ViewModels
         public double MyBalance { get; set; } = 100;
         public MainViewModel Parent { get; }
 
+        public PlayerViewModel(MainViewModel mainViewModel)
+        {
+            Parent = mainViewModel;
+        }
+        
+        
         public PlayerViewModel()
         {
             
         }
+
     }
+
+   
+
 }

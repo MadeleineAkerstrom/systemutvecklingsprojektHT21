@@ -10,6 +10,6 @@ namespace supX.Data
         WinnerView, LoserView,
         BellagioView,BettingViewBellagio, 
         WembleyView, BettingViewWembley, 
-        BackyardView, BettingViewBackyard
+        BackyardView, BettingViewBackyard, ShowResultView
     }
 }

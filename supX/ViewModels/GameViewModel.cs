@@ -21,17 +21,23 @@ namespace supX.ViewModels
         ChangeViewCommand changeViewCommand;
         FighterViewModel fighterViewModel;
         BettingViewBellagioViewModel bettingViewBellagioView;
+        public PlayerViewModel PlayerVM { get; set; }
+        public double BetAmount { get; set; }
+        public double BetOdds { get; set; }
+
         public GameViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
 
             fighterViewModel = new FighterViewModel();
             bettingViewBellagioView = new BettingViewBellagioViewModel(Parent);
+           
         }
 
         public GameViewModel()
         {
-            changeViewCommand = new ChangeViewCommand(Parent);
+           
+            Parent = new MainViewModel();
             OpenFile();
         }
 
@@ -58,17 +64,19 @@ namespace supX.ViewModels
             int MyBetId= 0;
             if (BetAmount1 != 0 && BetAmount2 != 0)
             {
-                MessageBox.Show("You can't bet on both fighter, you idiot!");
-                changeViewCommand.Execute(GotoView.BettingViewBellagio);
+                MessageBox.Show("You can't bet on both fighters, you idiot!");
+                Parent.CurrentViewModel = new BettingViewBellagioViewModel(null);
+                
             }
             else if (BetAmount1 == 0 && BetAmount2 == 0)
             {
                 MessageBox.Show("You have to bet on someone, you idiot!");
-                changeViewCommand.Execute(GotoView.BettingViewBellagio);
+                Parent.CurrentViewModel = new BettingViewBellagioViewModel(null);
             }
             else if (BetAmount1 != 0)
             {
                 MyBetId = FighterId1;
+
               //  changeViewCommand.Execute(GotoView.BellagioView);
             }
             else
@@ -95,30 +103,48 @@ namespace supX.ViewModels
             return fighterIDs;
         }
 
-        PlayerViewModel playerViewModel;
-        public double BetAmount { get; set; }
+        
+       
+        
 
-        public double BetOdds { get; set; }    
         public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner)
-        {
-            //double newBalance = NewBalance;        
-            double myBalance = playerViewModel.MyBalance;
+        {      
+            double myBalance = Parent.Player.MyBalance;
             double betAmount = BetAmount;
-            double odds = BetOdds;
+            double odds = winner.WinnerOdds;
             bool result = GenerateBetResult(myBet, winner);
 
             if (result == false)
             {
                 myBalance = myBalance - betAmount;
-                changeViewCommand.Execute(GotoView.LoserView);
+                MessageBox.Show("You lost");
+                //Parent.CurrentViewModel = new LoserViewModel(null); 
+                return myBalance;
             }
             else
             {
+                myBalance = myBalance - betAmount;
                 myBalance = (betAmount * odds) + myBalance;
-                changeViewCommand.Execute(GotoView.WinnerView);
+                MessageBox.Show("You won");
+                //Parent.CurrentViewModel = new WinnerViewModel(null);
+                return myBalance;
             }
 
-            return myBalance;
+           
+        }
+        public double SetBetAmount(double betamount1, double betamount2)
+        {
+            double betamount;
+            if (betamount1 >0)
+            {
+                betamount = betamount1;
+            }
+            else
+            {
+                betamount = betamount2;
+            }
+            return betamount;
+
         }
 
         public double[] GenerateOdds(FighterViewModel fighter1, FighterViewModel fighter2)
@@ -184,12 +210,14 @@ namespace supX.ViewModels
                 winner.WinnerId = fighter1.Id;
                 winner.WinnerName = fighter1.Name;
                 winner.LoserName = fighter2.Name;
+                winner.WinnerOdds = Odds[0];
             }
             else
             {
                 winner.WinnerId = fighter2.Id;
                 winner.WinnerName = fighter2.Name;
                 winner.LoserName = fighter1.Name;
+                winner.WinnerOdds = Odds[1];
             }
 
             return winner;

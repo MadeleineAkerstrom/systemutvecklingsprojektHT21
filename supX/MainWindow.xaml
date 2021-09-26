@@ -41,8 +41,7 @@
                     <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
                 </Button.Background>
             </Button>
-            <Label Content="Balance: " FontSize="22" Foreground="AliceBlue" Margin="100,0,0,0" />
-            <Label Content="{Binding Player.MyBalance}" Foreground="AliceBlue" FontSize="22" />
-        </StackPanel>
+            <Views:PlayerView/>
+              </StackPanel>
     </Grid>
 </Window>
