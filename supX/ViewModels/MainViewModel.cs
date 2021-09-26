@@ -10,9 +10,17 @@ namespace supX.ViewModels
     public class MainViewModel : BaseViewModel
     {
         
-        public PlayerViewModel Player { get; set; }
-              
-      
+        //public PlayerViewModel Player { get; set; }
+
+        private PlayerViewModel player;
+
+        public PlayerViewModel Player
+        {
+            get { return player; }
+            set { player = value; NotifyPropertyChanged(); }
+        }
+
+
         private MainViewModel gameViewModel;
 
         public MainViewModel GameViewModel
