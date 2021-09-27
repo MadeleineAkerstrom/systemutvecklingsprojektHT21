@@ -84,6 +84,7 @@
     <None Remove="Assets\Images\Icons\FightCloud4.png" />
     <None Remove="Assets\Images\Icons\FightingCloud.png" />
     <None Remove="Assets\Images\Icons\SkeletonLoseView.png" />
+    <None Remove="Assets\Images\Icons\VSBackyard.png" />
     <None Remove="Assets\Images\Icons\WinnerIcon.png" />
     <None Remove="Assets\Images\LetsGoBoxingStart.jpg" />
     <None Remove="Assets\Images\mike_red.gif" />
@@ -194,6 +195,7 @@
     <Resource Include="Assets\Images\Icons\FightCloud4.png" />
     <Resource Include="Assets\Images\Icons\FightingCloud.png" />
     <Resource Include="Assets\Images\Icons\SkeletonLoseView.png" />
+    <Resource Include="Assets\Images\Icons\VSBackyard.png" />
     <Resource Include="Assets\Images\Icons\WinnerIcon.png" />
     <Resource Include="Assets\Images\Buttons\PurpleButton.png" />
     <Resource Include="Assets\Images\Icons\ringside.jpg" />
