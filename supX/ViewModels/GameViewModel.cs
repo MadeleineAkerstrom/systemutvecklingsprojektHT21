@@ -133,14 +133,14 @@ namespace supX.ViewModels
             {
                 myBalance = myBalance - betAmount;
                 //Parent.CurrentViewModel = new LoserViewModel(null); 
-                return myBalance;
+                return Math.Round(myBalance);
             }
             else
             {
                 myBalance = myBalance - betAmount;
                 myBalance = (betAmount * odds) + myBalance;
                 //Parent.CurrentViewModel = new WinnerViewModel(null);
-                return myBalance;
+                return Math.Round(myBalance);
             }
 
            
