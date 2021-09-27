@@ -23,6 +23,7 @@
     <None Remove="Assets\Images\Buttons\GoldButton.png" />
     <None Remove="Assets\Images\Buttons\SilverButton.png" />
     <None Remove="Assets\Images\Buttons\SmallBlueRectangleFrame.png" />
+    <None Remove="Assets\Images\Buttons\VioletButton.png" />
     <None Remove="Assets\Images\fight1.gif" />
     <None Remove="Assets\Images\Fighters\FighterAkebia.png" />
     <None Remove="Assets\Images\Fighters\FighterAmputee.png" />
@@ -101,6 +102,7 @@
     <Resource Include="Assets\Images\Backgrounds\BackyardBettingViewBackground.jpg" />
     <Resource Include="Assets\Images\Backgrounds\BellagioView.jpg" />
     <Resource Include="Assets\Images\Backgrounds\Blackboard (1).png" />
+    <Resource Include="Assets\Images\Buttons\VioletButton.png" />
     <Resource Include="Assets\Images\Fighters\FighterAkebia.png" />
     <Resource Include="Assets\Images\Fighters\FighterAmputee.png" />
     <Resource Include="Assets\Images\Fighters\FighterBoxingGlove.png" />

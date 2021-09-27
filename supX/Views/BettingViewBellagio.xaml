@@ -28,18 +28,20 @@
         <!--<ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}" Height="186" Width="116"/>-->
 
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="279,-53,279,255"/>
-        <Button Content="Bet!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BellagioView}" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top" Height="71" FontSize="24" d:LayoutOverrides="VerticalAlignment" Width="116" FontWeight="Bold">
+        <Button Content="Bet!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BellagioView}" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Height="83" FontSize="24" Width="136" FontWeight="Bold">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/PurpleButton.png"/>
             </Button.Background>
         </Button>
-        
+
         <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Center" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="279,0,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
         <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Center" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="475,0,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="506,159,185,184"/>
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="178,159,512,184"/>
         <Label Content="{Binding GameVM.Odds[0]}" HorizontalAlignment="Left" Margin="208,182,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
         <Label Content="{Binding GameVM.Odds[1]}" HorizontalAlignment="Left" Margin="536,182,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
+        <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="314,21,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="16"/>
+        <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="435,21,0,0" VerticalAlignment="Top" Width="63" Foreground="White" FontSize="16"/>
 
     </Grid>
 </UserControl>
