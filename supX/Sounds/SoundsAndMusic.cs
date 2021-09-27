@@ -61,7 +61,7 @@ namespace supX.Sounds
         /// </summary>
         public void PlayWemblyIntroSound()
         {
-            var player = new SoundPlayer(Properties.Resources.WembleyGreetingsWithApplause);
+            var player = new SoundPlayer(Properties.Resources.WembleyGreetingsWithApplauseLow);
             player.Play();
         }
 
@@ -70,7 +70,7 @@ namespace supX.Sounds
         /// </summary>
         public void PlayBackyardIntroSound()
         {
-            var player = new SoundPlayer(Properties.Resources.BackyardGreetingsWithApplause);
+            var player = new SoundPlayer(Properties.Resources.BackyardGreetingsWithApplauseLow);
             player.Play();
         }
 
@@ -79,7 +79,7 @@ namespace supX.Sounds
         /// </summary>
         public void PlayBellagioIntroSound()
         {
-            var player = new SoundPlayer(Properties.Resources.BellagioGreetingsWithApplause);
+            var player = new SoundPlayer(Properties.Resources.BellagioGreetingsWithApplauseLow);
             player.Play();
         }
 

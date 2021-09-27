@@ -63,18 +63,18 @@ namespace supX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream BackyardGreetingsWithApplause {
+        internal static System.IO.UnmanagedMemoryStream BackyardGreetingsWithApplauseLow {
             get {
-                return ResourceManager.GetStream("BackyardGreetingsWithApplause", resourceCulture);
+                return ResourceManager.GetStream("BackyardGreetingsWithApplauseLow", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream BellagioGreetingsWithApplause {
+        internal static System.IO.UnmanagedMemoryStream BellagioGreetingsWithApplauseLow {
             get {
-                return ResourceManager.GetStream("BellagioGreetingsWithApplause", resourceCulture);
+                return ResourceManager.GetStream("BellagioGreetingsWithApplauseLow", resourceCulture);
             }
         }
         
@@ -135,9 +135,9 @@ namespace supX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream WembleyGreetingsWithApplause {
+        internal static System.IO.UnmanagedMemoryStream WembleyGreetingsWithApplauseLow {
             get {
-                return ResourceManager.GetStream("WembleyGreetingsWithApplause", resourceCulture);
+                return ResourceManager.GetStream("WembleyGreetingsWithApplauseLow", resourceCulture);
             }
         }
     }
