@@ -14,22 +14,24 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/WembleyOutside.jpg"/>
         </Grid.Background>
-        <Button Content="" HorizontalAlignment="Left" Margin="560,261,0,0" VerticalAlignment="Top" Height="167" Width="100">
+        <Button Content="" HorizontalAlignment="Left" Margin="655,268,0,0" VerticalAlignment="Top" Height="167" Width="100">
             <Button.Background>
                 <ImageBrush ImageSource="{Binding GameVM.Fighter2.ImagePath}"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="195,261,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="167" Width="115">
+        <Button Content="" HorizontalAlignment="Left" Margin="60,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="167" Width="115">
             <Button.Background>
                 <ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}"/>
             </Button.Background>
         </Button>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="319,-3,263,316" RenderTransformOrigin="1.178,0.992"/>
-        <TextBox HorizontalAlignment="Left" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="32" TextAlignment="Left" Margin="388,34,0,0" FontSize="20" FontWeight="Bold" Opacity="1" TextChanged="TextBox_TextChanged" Width="80"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="550,164,140,179"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="208,164,482,179"/>
-        <Label Content="{Binding GameVM.Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="238,190,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
-        <Label Content="{Binding GameVM.Odds[1]}" FontSize="18" HorizontalAlignment="Left" Margin="579,190,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
+        <Image Source="/Assets/Images/Text/VSBlue.png" Height="95" Margin="360,10,305,345" Width="135" d:LayoutOverrides="HorizontalAlignment"/>
+        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="655,160,35,183"/>
+        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="65,150,625,193"/>
+        <Label Content="{Binding GameVM.Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="260,305,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
+        <Label Content="{Binding GameVM.Odds[1]}" FontSize="18" HorizontalAlignment="Left" Margin="575,305,0,0" VerticalAlignment="Top" Foreground="#FF8F8FFF" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="25" TextAlignment="Left" Margin="90,190,0,0" FontSize="20" FontWeight="Bold" Opacity="1" TextChanged="TextBox_TextChanged" Width="50" d:LayoutOverrides="HorizontalAlignment"/>
+        <TextBox HorizontalAlignment="Left" Text="$" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="25" TextAlignment="Left" Margin="675,200,0,0" FontSize="20" FontWeight="Bold" Opacity="1" TextChanged="TextBox_TextChanged" Width="50"/>
+        
 
     </Grid>
 </UserControl>
