@@ -10,6 +10,7 @@ namespace supX.ViewModels
 {
     public class WembleyViewModel : BaseViewModel
     {
+        Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
         public MainViewModel Parent { get; }
         public GameViewModel GameVM { get; set; }
         public BettingViewWembleyViewModel Betwem { get; set; }
@@ -20,6 +21,7 @@ namespace supX.ViewModels
 
         public WembleyViewModel(MainViewModel mainViewModel)
         {
+            sounds.PlayFightingSound();
             Parent = mainViewModel;
             Betwem = (BettingViewWembleyViewModel)mainViewModel.CurrentViewModel;
 
