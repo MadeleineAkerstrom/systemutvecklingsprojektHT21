@@ -132,7 +132,6 @@ namespace supX.ViewModels
             if (result == false)
             {
                 myBalance = myBalance - betAmount;
-                MessageBox.Show("You lost");
                 //Parent.CurrentViewModel = new LoserViewModel(null); 
                 return myBalance;
             }
@@ -140,7 +139,6 @@ namespace supX.ViewModels
             {
                 myBalance = myBalance - betAmount;
                 myBalance = (betAmount * odds) + myBalance;
-                MessageBox.Show("You won");
                 //Parent.CurrentViewModel = new WinnerViewModel(null);
                 return myBalance;
             }
