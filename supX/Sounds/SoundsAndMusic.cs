@@ -9,15 +9,11 @@ namespace supX.Sounds
 {
     public class SoundsAndMusic
     {
-
-        MediaPlayer mediaPlayer = new MediaPlayer();
-
+                
         public SoundsAndMusic()
         {
             
         }
-     
-
 
         #region SoundEffects
         /// <summary>
