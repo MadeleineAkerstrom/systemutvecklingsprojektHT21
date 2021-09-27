@@ -13,16 +13,18 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/WinnerWallpaper.png"/>
         </Grid.Background>
-        
-        <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Grid.Column="2" Margin="-303,-48,2,108" Grid.RowSpan="2" d:LayoutOverrides="HorizontalAlignment"/>
-        <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Margin="-56,-36,507,108" Grid.RowSpan="2" Grid.Column="1"/>
-        <Image Source="\Assets\Images\Icons\WinnerIcon.png" Margin="-5,-33,-5,111" Grid.RowSpan="2" Grid.Column="1"/>
-        <Image Source="\Assets\Images\Frames\GoldBalanceFrame.png" Grid.Column="1" Margin="303,164,303,104" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+
+        <Image Source="\Assets\Images\Icons\WinnerIcon.png" Margin="-5,-33,-5,111"/>
+
+        <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Margin="-442,-48,142,108"/>
+        <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Margin="469,-42,-18,114"/>
+        <Image Source="\Assets\Images\Frames\GoldBalanceFrame.png" Grid.Column="1" Margin="303,164,303,104" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+        <Label Content="{Binding Parent.Player.MyBalance}" Margin="376,235,0,0"  FontSize="22" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Height="36"/>
         <Button Content="Collect my winnings" 
 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.ArenaView}" 
-                Grid.Column="1" Margin="224,284,234,0" Grid.Row="1" VerticalAlignment="Top" Height="68" OpacityMask="Black" FontWeight="Bold" FontSize="20">
+                Margin="224,284,234,0" VerticalAlignment="Top" Height="68" OpacityMask="Black" FontWeight="Bold" FontSize="20">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GoldButton.png"/>
             </Button.Background>
@@ -30,19 +32,6 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-        <Label Content="Label" Grid.Column="1" Margin="394,225,366,165" Grid.Row="1" FontSize="150" Background="White" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="20"/>
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="60" />
-        </Grid.RowDefinitions>
-
 
     </Grid>
 </UserControl>

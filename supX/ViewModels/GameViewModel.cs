@@ -31,12 +31,12 @@ namespace supX.ViewModels
 
             fighterViewModel = new FighterViewModel();
             bettingViewBellagioView = new BettingViewBellagioViewModel(Parent);
-           
+
         }
 
         public GameViewModel()
         {
-           
+
             Parent = new MainViewModel();
             OpenFile();
         }
@@ -57,6 +57,21 @@ namespace supX.ViewModels
             int myBet = SetMyBet(bettingViewBellagioView.BetAmount1, bettingViewBellagioView.BetAmount2, Fighter1.Id, Fighter2.Id);
 
             GenerateBetResult(fighterViewModel.fighters[myBet], winner);
+        }
+
+        public bool EnoughBalance(double MyBalance, double BetAmount1, double BetAmount2)
+        {
+            if (BetAmount1 > MyBalance || BetAmount2 > MyBalance )
+            {
+                MessageBox.Show("Your balance is not enough. Try again!");
+                Parent.CurrentViewModel = new BettingViewBellagioViewModel(null);
+                return false;
+            }
+            else
+            {
+
+                return true;
+            }
         }
 
         public int SetMyBet(double BetAmount1, double BetAmount2, int FighterId1, int FighterId2)
@@ -107,9 +122,9 @@ namespace supX.ViewModels
        
         
 
-        public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner)
+        public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner, double myBalance)
         {      
-            double myBalance = Parent.Player.MyBalance;
+            //double myBalance = Parent.Player.MyBalance;
             double betAmount = BetAmount;
             double odds = winner.WinnerOdds;
             bool result = GenerateBetResult(myBet, winner);
