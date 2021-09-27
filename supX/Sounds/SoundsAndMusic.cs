@@ -21,7 +21,13 @@ namespace supX.Sounds
         /// </summary>
         public void PlayGameOverSound()
         {
-            var player = new SoundPlayer(Properties.Resources.GameOverMelody);
+            var player = new SoundPlayer(Properties.Resources.GameOverMelodyLow);
+            player.Play();
+        }
+
+        public void PlayWinnerGameSound()
+        {
+            var player = new SoundPlayer(Properties.Resources.WinningSoundLow);
             player.Play();
         }
 
