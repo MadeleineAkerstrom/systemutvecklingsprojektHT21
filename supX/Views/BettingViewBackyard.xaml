@@ -14,21 +14,25 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/BackyardBettingViewBackground.jpg"/>
         </Grid.Background>
-        <Button x:Name="btnFighter2" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BackyardView}" Content="" HorizontalAlignment="Left" Margin="451,203,0,0" VerticalAlignment="Top" Height="212" Width="154">
+
+        <Button x:Name="btnFighter2" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BackyardView}" Content="" HorizontalAlignment="Left" Margin="483,203,0,0" VerticalAlignment="Top" Height="212" Width="154" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="{Binding GameVM.Fighter2.ImagePath}"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnFighter1" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BackyardView}" Content="" HorizontalAlignment="Left" Margin="206,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="212" Width="154">
+        <Button x:Name="btnFighter1" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BackyardView}" Content="" HorizontalAlignment="Left" Margin="163,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="212" Width="154" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}"/>
             </Button.Background>
         </Button>
-        <Image Source="/Assets/Images/Frames/WoodenFrameBetAmount.png" Margin="335,-15,315,283" d:LayoutOverrides="HorizontalAlignment"/>
-        <TextBox Text="{Binding BetAmount}"  HorizontalAlignment="Left" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="406,60,0,0" FontSize="14" FontWeight="Bold" Opacity="1" TextChanged="TextBox_TextChanged"/>
+        <Image Source="/Assets/Images/Frames/WoodenFrameBetAmount.png" Margin="269,5,262,252" RenderTransformOrigin="0.417,0.347">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/Assets/Images/Frames/WoodenSignBackyard.png"/>
+            </Image.OpacityMask>
+        </Image>
         <Image Source="/Assets/Images/Frames/WoodenOddsFrame.png" Margin="1,266,640,2"/>
         <Image Source="/Assets/Images/Frames/WoodenOddsFrameFlipped.png" Margin="640,267,1,1"/>
-        <Label Content="{Binding GameVM.Odds[0]}" FontSize="20" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Left" Margin="35,305,0,0" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment" Height="33" Width="70" RenderTransformOrigin="0.5,0.5">
+        <Label Content="{Binding GameVM.Odds[0]}" FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="16,296,0,0" VerticalAlignment="Top" Height="46" Width="60" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -38,7 +42,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="{Binding GameVM.Odds[1]}" FontSize="20" Foreground="Black" FontWeight="Bold" HorizontalAlignment="Left" Margin="670,308,0,0" VerticalAlignment="Top" Height="27" Width="99" RenderTransformOrigin="0.5,0.5">
+        <Label Content="{Binding GameVM.Odds[1]}" FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="720,301,0,0" VerticalAlignment="Top" Height="41" Width="83" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -48,5 +52,23 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
+        <Button Content="Bet!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BackyardView}" HorizontalAlignment="Left" Height="124" Margin="329,262,0,0" VerticalAlignment="Top" Width="149" Foreground="White" FontWeight="Bold" FontSize="26" BorderBrush="{x:Null}">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Frames/WoodenFrameBetAmount.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="97,295,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="663,295,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
+        <Label Content="" HorizontalAlignment="Left" Height="295" Margin="279,-88,0,0" VerticalAlignment="Top" Width="289">
+            <Label.Background>
+                <ImageBrush ImageSource="/Assets/Images/Icons/VSBackyard.png"/>
+            </Label.Background>
+        </Label>
+        <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="456,44,0,0" VerticalAlignment="Top" Width="125" Foreground="White" FontSize="16"/>
+        <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="294,44,0,0" VerticalAlignment="Top" Width="124" Foreground="White" FontSize="16"/>
+
     </Grid>
 </UserControl>
