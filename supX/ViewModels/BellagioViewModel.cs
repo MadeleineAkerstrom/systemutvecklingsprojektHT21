@@ -37,11 +37,11 @@ namespace supX.ViewModels
             if (Betbell.MyBetId == Winner.WinnerId)
             {
 
-                Parent.CurrentViewModel = new WinnerViewModel(null);
+                Parent.CurrentViewModel = new WinnerViewModel(Parent);
             }
             else
             {
-                Parent.CurrentViewModel = new LoserViewModel(null);
+                Parent.CurrentViewModel = new LoserViewModel(Parent);
             }
         }
 

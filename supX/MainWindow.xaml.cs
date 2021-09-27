@@ -28,7 +28,7 @@ namespace supX
         string filename = "/Assets/Json/fighters.json";
         FighterViewModel fighter;
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
-        
+
 
         public MainWindow()
         {

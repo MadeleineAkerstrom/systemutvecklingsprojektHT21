@@ -19,9 +19,8 @@
         <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Margin="-442,-48,142,108"/>
         <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Margin="469,-42,-18,114"/>
         <Image Source="\Assets\Images\Frames\GoldBalanceFrame.png" Grid.Column="1" Margin="303,164,303,104" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
-        <Label Content="{Binding Parent.Player.MyBalance}" Margin="376,235,0,0"  FontSize="22" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Height="36"/>
+        <Label Content="{Binding Parent.Player.MyBalance}" Margin="377,225,0,0"  FontSize="22" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Height="36" FontWeight="Bold"/>
         <Button Content="Collect my winnings" 
-
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.ArenaView}" 
                 Margin="224,284,234,0" VerticalAlignment="Top" Height="68" OpacityMask="Black" FontWeight="Bold" FontSize="20">
