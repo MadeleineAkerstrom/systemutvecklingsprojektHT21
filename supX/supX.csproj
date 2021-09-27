@@ -94,6 +94,7 @@
     <None Remove="Assets\Images\snake_blue.gif" />
     <None Remove="Assets\Images\StageBettingView.png" />
     <None Remove="Assets\Images\Text\BellagioLogo.jpg" />
+    <None Remove="Assets\Images\Text\VS.png" />
     <None Remove="Assets\Images\Text\WembleyLogo.png" />
     <None Remove="Assets\Images\WembleyView.jpg" />
   </ItemGroup>
@@ -208,6 +209,7 @@
     <Resource Include="Assets\Images\Icons\snake_blue.gif" />
     <Resource Include="Assets\Images\Frames\StageBettingView.png" />
     <Resource Include="Assets\Images\Text\BellagioLogo.jpg" />
+    <Resource Include="Assets\Images\Text\VS.png" />
     <Resource Include="Assets\Images\Text\WembleyLogo.png" />
     <Resource Include="Assets\Images\Backgrounds\WembleyView.jpg" />
   </ItemGroup>
