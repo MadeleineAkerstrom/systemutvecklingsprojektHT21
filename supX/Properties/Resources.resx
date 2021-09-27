@@ -127,8 +127,8 @@
   <data name="fight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fight.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="GameOverMelody" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GameOverMelody.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="GameOverMelodyLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameOverMelodyLow.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PlayArenaIntroSoundLowSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PlayArenaIntroSoundLowSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -144,5 +144,8 @@
   </data>
   <data name="WembleyGreetingsWithApplauseLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WembleyGreetingsWithApplauseLow.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="WinningSoundLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WinningSoundLow.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

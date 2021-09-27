@@ -10,6 +10,7 @@ namespace supX.ViewModels
 {
     public class BackyardViewModel : BaseViewModel
     {
+        Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
         public MainViewModel Parent { get; }
         public GameViewModel GameVM { get; set; }
         public BettingViewBackyardViewModel Betback { get; set; }
@@ -20,6 +21,7 @@ namespace supX.ViewModels
 
         public BackyardViewModel(MainViewModel mainViewModel)
         {
+            sounds.PlayFightingSound();
             Parent = mainViewModel;
             Betback = (BettingViewBackyardViewModel)mainViewModel.CurrentViewModel;
 

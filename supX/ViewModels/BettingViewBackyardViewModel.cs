@@ -28,7 +28,9 @@ namespace supX.ViewModels
         {
             Parent = mainViewModel;
 
-            //sounds.PlayBackyardIntroSound();          
+
+            sounds.PlayBackyardIntroSound();         
+
 
             GameVM = new GameViewModel();
             FighterVM = new FighterViewModel();
