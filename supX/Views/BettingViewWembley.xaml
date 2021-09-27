@@ -14,30 +14,32 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/WembleyOutside.jpg"/>
         </Grid.Background>
-        <Button Content="" HorizontalAlignment="Left" Margin="655,268,0,0" VerticalAlignment="Top" Height="167" Width="100">
+        <Button Content="" HorizontalAlignment="Left" Margin="655,256,0,0" VerticalAlignment="Top" Height="167" Width="100">
             <Button.Background>
                 <ImageBrush ImageSource="{Binding GameVM.Fighter2.ImagePath}"/>
             </Button.Background>
         </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="60,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="167" Width="115">
+        <Button Content="" HorizontalAlignment="Left" Margin="60,250,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="167" Width="115">
             <Button.Background>
                 <ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}"/>
             </Button.Background>
         </Button>
-        <Image Source="/Assets/Images/Text/VSBlue.png" Height="95" Margin="360,10,305,345" Width="135" d:LayoutOverrides="HorizontalAlignment"/>
+        <Image Source="/Assets/Images/Text/VSBlue.png" Margin="360,10,305,325" Width="135" d:LayoutOverrides="HorizontalAlignment"/>
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="655,150,35,193"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="65,150,625,193"/>
-        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="83,170,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
-        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="668,171,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
-        <Label Content="{Binding GameVM.Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="243,275,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Height="50" Width="56"/>
-        <Label Content="{Binding GameVM.Odds[1]}" FontSize="18" HorizontalAlignment="Left" Margin="562,275,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" RenderTransformOrigin="0.6,0.71" Height="53" Width="58"/>
-        <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="274,0,0,0" VerticalAlignment="Top" Width="90" Foreground="White" FontSize="16" FontWeight="Bold"/>
-        <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="512,0,0,0" VerticalAlignment="Top" Width="120" Foreground="White" FontSize="16" FontWeight="Bold"/>
-        <Button Content="Bet!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.WembleyView}" HorizontalAlignment="Left" Margin="360,352,0,0" VerticalAlignment="Top" Height="82" FontSize="24" Width="136" FontWeight="Bold" Foreground="White">
+        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="65,158,625,184"/>
+        <Image Source="/Assets/Images/Frames/BlueNeonFrame.png" Height="155" Margin="-52,-15,278,310"/>
+        <Image Source="/Assets/Images/Frames/BlueNeonFrame.png" Height="155" Margin="321,-18,-82,313"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="246,285,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="569,283,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
+        <Label Content="{Binding GameVM.Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="94,182,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Height="50" Width="56"/>
+        <Label Content="{Binding GameVM.Odds[1]}" FontSize="18" HorizontalAlignment="Left" Margin="686,175,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" RenderTransformOrigin="0.517,0.472" Height="53" Width="58"/>
+        <Button Content="Bet!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.WembleyView}" HorizontalAlignment="Left" Margin="355,331,0,0" VerticalAlignment="Top" Height="93" FontSize="24" Width="145" FontWeight="Bold" Foreground="White">
             <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/Frames/BigBlueRectangleFrame.png"/>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/TurquoiseButton.png"/>
             </Button.Background>
         </Button>
+        <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="190,37,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontWeight="Bold" Width="155"/>
+        <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="525,30,0,0" VerticalAlignment="Top" Width="235" Foreground="White" FontSize="24" FontWeight="Bold"/>
 
     </Grid>
 </UserControl>

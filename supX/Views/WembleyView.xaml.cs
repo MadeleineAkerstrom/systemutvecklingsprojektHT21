@@ -22,5 +22,6 @@ namespace supX.Views
         {
             InitializeComponent();
         }
+
     }
 }

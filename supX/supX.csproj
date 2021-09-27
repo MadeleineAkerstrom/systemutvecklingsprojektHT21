@@ -24,6 +24,7 @@
     <None Remove="Assets\Images\Buttons\RoundWoodButton.png" />
     <None Remove="Assets\Images\Buttons\SilverButton.png" />
     <None Remove="Assets\Images\Buttons\SmallBlueRectangleFrame.png" />
+    <None Remove="Assets\Images\Buttons\TurquoiseButton.png" />
     <None Remove="Assets\Images\Buttons\VioletButton.png" />
     <None Remove="Assets\Images\Buttons\WoodSignButton.png" />
     <None Remove="Assets\Images\fight1.gif" />
@@ -61,6 +62,7 @@
     <None Remove="Assets\Images\Fighters\FighterTiger.png" />
     <None Remove="Assets\Images\Fighters\FighterWeirdArms.png" />
     <None Remove="Assets\Images\Frames\BalanceFrame.png" />
+    <None Remove="Assets\Images\Frames\BlueNeonFrame.png" />
     <None Remove="Assets\Images\Frames\FrameMain.png" />
     <None Remove="Assets\Images\Frames\FrameMain2.png" />
     <None Remove="Assets\Images\Frames\FrameMain4.png" />
@@ -112,6 +114,7 @@
     <Resource Include="Assets\Images\Backgrounds\BellagioView.jpg" />
     <Resource Include="Assets\Images\Backgrounds\Blackboard (1).png" />
     <Resource Include="Assets\Images\Buttons\RoundWoodButton.png" />
+    <Resource Include="Assets\Images\Buttons\TurquoiseButton.png" />
     <Resource Include="Assets\Images\Buttons\VioletButton.png" />
     <Resource Include="Assets\Images\Buttons\WoodSignButton.png" />
     <Resource Include="Assets\Images\Fighters\FighterAkebia.png" />
@@ -172,6 +175,7 @@
     <Resource Include="Assets\Images\Buttons\BlackButton.png" />
     <Resource Include="Assets\Images\Buttons\GoldButton.png" />
     <Resource Include="Assets\Images\Buttons\SilverButton.png" />
+    <Resource Include="Assets\Images\Frames\BlueNeonFrame.png" />
     <Resource Include="Assets\Images\Frames\IceFrame.png" />
     <Resource Include="Assets\Images\Frames\RoundWoodFrame.png" />
     <Resource Include="Assets\Images\Frames\SmallBlueRectangleFrame.png" />
