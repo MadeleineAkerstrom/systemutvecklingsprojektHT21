@@ -20,7 +20,7 @@ namespace supX.ViewModels
         public int MyBetId { get; set; } = 0;
         public int FighterId1 { get; set; }
         public int FighterId2 { get; set; }
-        public BettingViewBellagioViewModel betbell;
+        public BettingViewBackyardViewModel betback;
 
 
 
@@ -28,7 +28,7 @@ namespace supX.ViewModels
         {
             Parent = mainViewModel;
 
-            //sounds.PlayBellagioIntroSound();          
+            //sounds.PlayBackyardIntroSound();          
 
             GameVM = new GameViewModel();
             FighterVM = new FighterViewModel();
