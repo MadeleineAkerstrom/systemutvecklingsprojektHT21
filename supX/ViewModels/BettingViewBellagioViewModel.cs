@@ -27,9 +27,8 @@ namespace supX.ViewModels
         public BettingViewBellagioViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
-                            
-            //sounds.PlayBellagioIntroSound();          
 
+            sounds.PlayBellagioIntroSound();
             GameVM = new GameViewModel();
             FighterVM = new FighterViewModel();
             GameVM.GenerateArena();
