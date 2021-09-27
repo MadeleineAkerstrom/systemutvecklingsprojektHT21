@@ -21,9 +21,11 @@
     <None Remove="Assets\Images\Buttons\BigBlueRectangleFrame.png" />
     <None Remove="Assets\Images\Buttons\BlackButton.png" />
     <None Remove="Assets\Images\Buttons\GoldButton.png" />
+    <None Remove="Assets\Images\Buttons\RoundWoodButton.png" />
     <None Remove="Assets\Images\Buttons\SilverButton.png" />
     <None Remove="Assets\Images\Buttons\SmallBlueRectangleFrame.png" />
     <None Remove="Assets\Images\Buttons\VioletButton.png" />
+    <None Remove="Assets\Images\Buttons\WoodSignButton.png" />
     <None Remove="Assets\Images\fight1.gif" />
     <None Remove="Assets\Images\Fighters\FighterAkebia.png" />
     <None Remove="Assets\Images\Fighters\FighterAmputee.png" />
@@ -67,6 +69,7 @@
     <None Remove="Assets\Images\Frames\IceFrame.png" />
     <None Remove="Assets\Images\Frames\PurpleOddsFrame.png" />
     <None Remove="Assets\Images\Frames\RedFrameRules.png" />
+    <None Remove="Assets\Images\Frames\RoundWoodFrame.png" />
     <None Remove="Assets\Images\Frames\RulesFrame.png" />
     <None Remove="Assets\Images\Frames\ScrollFrame.png" />
     <None Remove="Assets\Images\Frames\ScrollFrameRules.png" />
@@ -74,6 +77,8 @@
     <None Remove="Assets\Images\Frames\WoodenFrameBetAmount.png" />
     <None Remove="Assets\Images\Frames\WoodenOddsFrame.png" />
     <None Remove="Assets\Images\Frames\WoodenOddsFrameFlipped.png" />
+    <None Remove="Assets\Images\Frames\WoodenSign2Way.png" />
+    <None Remove="Assets\Images\Frames\WoodenSign2WayFlipped.png" />
     <None Remove="Assets\Images\Frames\WoodenSignBackyard.png" />
     <None Remove="Assets\Images\game-lose.jpg" />
     <None Remove="Assets\Images\GreenButton.png" />
@@ -95,6 +100,7 @@
     <None Remove="Assets\Images\snake_blue.gif" />
     <None Remove="Assets\Images\StageBettingView.png" />
     <None Remove="Assets\Images\Text\BellagioLogo.jpg" />
+    <None Remove="Assets\Images\Text\FireVS.png" />
     <None Remove="Assets\Images\Text\VS.png" />
     <None Remove="Assets\Images\Text\VSBlue.png" />
     <None Remove="Assets\Images\Text\WembleyLogo.png" />
@@ -105,7 +111,9 @@
     <Resource Include="Assets\Images\Backgrounds\BackyardBettingViewBackground.jpg" />
     <Resource Include="Assets\Images\Backgrounds\BellagioView.jpg" />
     <Resource Include="Assets\Images\Backgrounds\Blackboard (1).png" />
+    <Resource Include="Assets\Images\Buttons\RoundWoodButton.png" />
     <Resource Include="Assets\Images\Buttons\VioletButton.png" />
+    <Resource Include="Assets\Images\Buttons\WoodSignButton.png" />
     <Resource Include="Assets\Images\Fighters\FighterAkebia.png" />
     <Resource Include="Assets\Images\Fighters\FighterAmputee.png" />
     <Resource Include="Assets\Images\Fighters\FighterBoxingGlove.png" />
@@ -165,6 +173,7 @@
     <Resource Include="Assets\Images\Buttons\GoldButton.png" />
     <Resource Include="Assets\Images\Buttons\SilverButton.png" />
     <Resource Include="Assets\Images\Frames\IceFrame.png" />
+    <Resource Include="Assets\Images\Frames\RoundWoodFrame.png" />
     <Resource Include="Assets\Images\Frames\SmallBlueRectangleFrame.png" />
     <Resource Include="Assets\Images\Fighters\FighterFrog.png" />
     <Resource Include="Assets\Images\Fighters\FighterHuman.png" />
@@ -188,6 +197,8 @@
     <Resource Include="Assets\Images\Frames\WoodenFrameBetAmount.png" />
     <Resource Include="Assets\Images\Frames\WoodenOddsFrame.png" />
     <Resource Include="Assets\Images\Frames\WoodenOddsFrameFlipped.png" />
+    <Resource Include="Assets\Images\Frames\WoodenSign2Way.png" />
+    <Resource Include="Assets\Images\Frames\WoodenSign2WayFlipped.png" />
     <Resource Include="Assets\Images\Frames\WoodenSignBackyard.png" />
     <Resource Include="Assets\Images\Icons\ExplosionWinner.png" />
     <Resource Include="Assets\Images\Icons\FightCloud2.png" />
@@ -212,6 +223,7 @@
     <Resource Include="Assets\Images\Icons\snake_blue.gif" />
     <Resource Include="Assets\Images\Frames\StageBettingView.png" />
     <Resource Include="Assets\Images\Text\BellagioLogo.jpg" />
+    <Resource Include="Assets\Images\Text\FireVS.png" />
     <Resource Include="Assets\Images\Text\VS.png" />
     <Resource Include="Assets\Images\Text\VSBlue.png" />
     <Resource Include="Assets\Images\Text\WembleyLogo.png" />

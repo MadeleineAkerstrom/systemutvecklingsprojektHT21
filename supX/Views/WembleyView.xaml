@@ -10,21 +10,12 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/WembleyView.jpg"/>
         </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="20"/>
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="60" />
-        </Grid.RowDefinitions>
         <Image Source="\Assets\Images\Text\WembleyLogo.png" Margin="96,-43,96,0" Grid.RowSpan="2" Grid.Column="1" Height="225" VerticalAlignment="Top"/>
         <Image Source="\Assets\Images\Icons\FightCloud4.png" Grid.Column="1" Margin="212,88,212,-24" Grid.RowSpan="2" Width="336" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment"></Image>
-
-        <StackPanel Grid.Column="1" Grid.Row="1">
-        </StackPanel>
+        <Button Content="See the result" Command="{Binding Result}" HorizontalAlignment="Center" Height="154" Margin="0,204,0,0" VerticalAlignment="Top" Width="310" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" FontSize="22">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/BlueButton.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </UserControl>
