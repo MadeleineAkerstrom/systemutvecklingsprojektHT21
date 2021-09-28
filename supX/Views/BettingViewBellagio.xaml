@@ -39,6 +39,8 @@
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="468,135,142,168" d:LayoutOverrides="VerticalAlignment"/>
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="143,133,475,165" d:LayoutOverrides="VerticalAlignment"/>
         <Image Source="\Assets\Images\Text\VS.png" Margin="102,0,93,295" Height="155" Width="605" d:LayoutOverrides="HorizontalAlignment"/>
+        <Image Source="\Assets\Images\Frames\blueborderneonborder.png" Margin="-225,-15,420,310" Height="155" Width="605"/>
+        <Image Source="\Assets\Images\Frames\blueborderneonborder.png" Margin="416,-15,-222,310" Height="155" Width="605"/>
         <Label Content="{Binding GameVM.Odds[0]}" HorizontalAlignment="Left" Margin="225,127,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
         <Label Content="{Binding GameVM.Odds[1]}" HorizontalAlignment="Left" Margin="560,128,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
         <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="192,40,0,0" VerticalAlignment="Top" Width="90" Foreground="White" FontSize="16" FontWeight="Bold"/>
@@ -46,6 +48,23 @@
         <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" TextAlignment="Left" Margin="542,178,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" d:LayoutOverrides="VerticalAlignment"/>
         <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="210,178,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
 
+
+        <Label Content="Strength:" Foreground="White" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Speed:" Foreground="White" HorizontalAlignment="Left" Margin="40,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="Defense:" Foreground="White" HorizontalAlignment="Left" Margin="40,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cardio:" Foreground="White" HorizontalAlignment="Left" Margin="40,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Strength}" Foreground="White" HorizontalAlignment="Left" Margin="107,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Speed}" Foreground="White" HorizontalAlignment="Left" Margin="107,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Defense}" Foreground="White" HorizontalAlignment="Left" Margin="107,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Cardio}" Foreground="White" HorizontalAlignment="Left" Margin="107,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="Strength:" Foreground="White" HorizontalAlignment="Left" Margin="684,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="Speed:" Foreground="White" HorizontalAlignment="Left" Margin="684,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="Defense:" Foreground="White" HorizontalAlignment="Left" Margin="684,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cardio:" Foreground="White" HorizontalAlignment="Left" Margin="684,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Strength}" Foreground="White" HorizontalAlignment="Left" Margin="745,20,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Speed}" Foreground="White" HorizontalAlignment="Left" Margin="745,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Defense}" Foreground="White" HorizontalAlignment="Left" Margin="745,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Cardio}" Foreground="White" HorizontalAlignment="Left" Margin="745,65,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </UserControl>
