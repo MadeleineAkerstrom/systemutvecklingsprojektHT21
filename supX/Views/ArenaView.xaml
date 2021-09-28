@@ -15,10 +15,9 @@
         <Button Content="Backyard" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BettingViewBackyard}" 
-                HorizontalAlignment="Left" 
-                VerticalAlignment="Top" 
-                Margin="39,198,0,0" 
-                Height="127" Width="164" FontSize="16" FontWeight="Bold">
+                Margin="28,260,608,62" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                Height="127" Width="164" FontSize="16" FontWeight="Bold"
+                MinHeight="127" MinWidth="164">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
@@ -26,10 +25,11 @@
         <Button Content="Wembley" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BettingViewWembley}" 
-                HorizontalAlignment="Center" Margin="0,198,0,0" 
-                VerticalAlignment="Top" 
+                HorizontalAlignment="Stretch" Margin="0,198,0,0" 
+                VerticalAlignment="Stretch" 
                 Height="127" 
-                Width="164" FontSize="16" FontWeight="Bold">
+                Width="164" FontSize="16" FontWeight="Bold"
+                MinHeight="127" MinWidth="164">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
@@ -37,11 +37,12 @@
         <Button Content="Bellagio" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BettingViewBellagio}" 
-                HorizontalAlignment="Left" 
+                HorizontalAlignment="Stretch" 
                 Margin="583,198,0,0" 
-                VerticalAlignment="Top" 
+                VerticalAlignment="Stretch" 
                 Height="127" 
-                Width="164" FontSize="16" FontWeight="Bold">
+                Width="164" FontSize="16" FontWeight="Bold"
+                MinHeight="127" MinWidth="164">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
