@@ -62,6 +62,7 @@
     <None Remove="Assets\Images\Fighters\FighterTiger.png" />
     <None Remove="Assets\Images\Fighters\FighterWeirdArms.png" />
     <None Remove="Assets\Images\Frames\BalanceFrame.png" />
+    <None Remove="Assets\Images\Frames\blueborderneonborder.png" />
     <None Remove="Assets\Images\Frames\BlueNeonFrame.png" />
     <None Remove="Assets\Images\Frames\FrameMain.png" />
     <None Remove="Assets\Images\Frames\FrameMain2.png" />
@@ -69,6 +70,7 @@
     <None Remove="Assets\Images\Frames\GoldBalanceFrame.png" />
     <None Remove="Assets\Images\Frames\GoldFrame.png" />
     <None Remove="Assets\Images\Frames\IceFrame.png" />
+    <None Remove="Assets\Images\Frames\neonborder.png" />
     <None Remove="Assets\Images\Frames\PurpleOddsFrame.png" />
     <None Remove="Assets\Images\Frames\RedFrameRules.png" />
     <None Remove="Assets\Images\Frames\RoundWoodFrame.png" />
@@ -82,6 +84,7 @@
     <None Remove="Assets\Images\Frames\WoodenSign2Way.png" />
     <None Remove="Assets\Images\Frames\WoodenSign2WayFlipped.png" />
     <None Remove="Assets\Images\Frames\WoodenSignBackyard.png" />
+    <None Remove="Assets\Images\Frames\woodframewithwood.png" />
     <None Remove="Assets\Images\game-lose.jpg" />
     <None Remove="Assets\Images\GreenButton.png" />
     <None Remove="Assets\Images\GreyButton.png" />
@@ -175,8 +178,10 @@
     <Resource Include="Assets\Images\Buttons\BlackButton.png" />
     <Resource Include="Assets\Images\Buttons\GoldButton.png" />
     <Resource Include="Assets\Images\Buttons\SilverButton.png" />
+    <Resource Include="Assets\Images\Frames\blueborderneonborder.png" />
     <Resource Include="Assets\Images\Frames\BlueNeonFrame.png" />
     <Resource Include="Assets\Images\Frames\IceFrame.png" />
+    <Resource Include="Assets\Images\Frames\neonborder.png" />
     <Resource Include="Assets\Images\Frames\RoundWoodFrame.png" />
     <Resource Include="Assets\Images\Frames\SmallBlueRectangleFrame.png" />
     <Resource Include="Assets\Images\Fighters\FighterFrog.png" />
@@ -204,6 +209,7 @@
     <Resource Include="Assets\Images\Frames\WoodenSign2Way.png" />
     <Resource Include="Assets\Images\Frames\WoodenSign2WayFlipped.png" />
     <Resource Include="Assets\Images\Frames\WoodenSignBackyard.png" />
+    <Resource Include="Assets\Images\Frames\woodframewithwood.png" />
     <Resource Include="Assets\Images\Icons\ExplosionWinner.png" />
     <Resource Include="Assets\Images\Icons\FightCloud2.png" />
     <Resource Include="Assets\Images\Icons\FightCloud3.png" />
