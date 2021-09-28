@@ -46,7 +46,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="{Binding GameVM.Odds[1]}" FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="690,231,0,0" VerticalAlignment="Top" Height="41" Width="83" RenderTransformOrigin="0.5,0.5">
+        <Label Content="{Binding GameVM.Odds[1]}" FontSize="20" Foreground="White" FontWeight="Bold" HorizontalAlignment="Left" Margin="698,231,0,0" VerticalAlignment="Top" Height="41" Width="83" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -66,8 +66,8 @@
         </Button>
         <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="54,314,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
         <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="709,312,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
-        <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="556,17,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FontSize="16" FontWeight="Bold"/>
-        <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="109,19,0,0" VerticalAlignment="Top" Width="178" Foreground="White" FontSize="16" FontWeight="Bold" d:LayoutOverrides="HorizontalAlignment"/>
+        <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="540,20,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FontSize="15" FontWeight="Bold"/>
+        <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="92,25,0,0" VerticalAlignment="Top" Width="178" Foreground="White" FontSize="15" FontWeight="Bold" d:LayoutOverrides="HorizontalAlignment"/>
         <Label Content="Strength:" HorizontalAlignment="Left" Margin="110,100,0,0" VerticalAlignment="Top"/>
         <Label Content="Speed:" HorizontalAlignment="Left" Margin="110,115,0,0" VerticalAlignment="Top"/>
         <Label Content="Defense:" HorizontalAlignment="Left" Margin="110,130,0,0" VerticalAlignment="Top"/>

@@ -2,7 +2,7 @@
   "fighters": [
     {
       "id": 0,
-      "name": "Dolph",
+      "name": " Dolph Lundgren ",
       "strength": 4,
       "cardio": 3,
       "speed": 2,
@@ -13,7 +13,7 @@
     },
     {
       "id": 1,
-      "name": "Frog",
+      "name": "  Froggy Frog   ",
       "strength": 2,
       "cardio": 5,
       "speed": 4,
@@ -24,7 +24,7 @@
     },
     {
       "id": 2,
-      "name": "Kangaroo",
+      "name": "Kangaroo Benny ",
       "strength": 3,
       "cardio": 4,
       "speed": 4,
@@ -35,7 +35,7 @@
     },
     {
       "id": 3,
-      "name": "Lobster",
+      "name": "Lenny the Lobster",
       "strength": 1,
       "cardio": 5,
       "speed": 2,
@@ -46,7 +46,7 @@
     },
     {
       "id": 4,
-      "name": "Sloth",
+      "name": "Siddy The Sloth",
       "strength": 4,
       "cardio": 3,
       "speed": 1,
@@ -57,7 +57,7 @@
     },
     {
       "id": 5,
-      "name": "Hulk",
+      "name": " The Hulk Junior",
       "strength": 5,
       "cardio": 2,
       "speed": 2,
@@ -68,7 +68,7 @@
     },
     {
       "id": 6,
-      "name": "Akebia",
+      "name": " Akebia Quinata",
       "strength": 5,
       "cardio": 2,
       "speed": 4,
@@ -79,7 +79,7 @@
     },
     {
       "id": 7,
-      "name": "Amputee",
+      "name": " Amy The Amputee",
       "strength": 5,
       "cardio": 2,
       "speed": 2,
@@ -90,7 +90,7 @@
     },
     {
       "id": 8,
-      "name": "Boxing glove",
+      "name": "The boxing glove",
       "strength": 5,
       "cardio": 2,
       "speed": 5,
@@ -101,7 +101,7 @@
     },
     {
       "id": 9,
-      "name": "Bull",
+      "name": "The Bully Bull",
       "strength": 5,
       "cardio": 3,
       "speed": 5,
@@ -112,7 +112,7 @@
     },
     {
       "id": 10,
-      "name": "Burger",
+      "name": "The Angry Burger",
       "strength": 2,
       "cardio": 2,
       "speed": 2,
@@ -123,7 +123,7 @@
     },
     {
       "id": 11,
-      "name": "Cactus",
+      "name": "Sticky The Cactus",
       "strength": 3,
       "cardio": 2,
       "speed": 3,
@@ -134,7 +134,7 @@
     },
     {
       "id": 12,
-      "name": "TheCasanova",
+      "name": "Guy The Casanova",
       "strength": 2,
       "cardio": 5,
       "speed": 5,
@@ -145,7 +145,7 @@
     },
     {
       "id": 13,
-      "name": "Dog",
+      "name": "Sako The Dog  ",
       "strength": 5,
       "cardio": 4,
       "speed": 1,
@@ -156,7 +156,7 @@
     },
     {
       "id": 14,
-      "name": "DonkeyKong",
+      "name": "  Donkey Kong   ",
       "strength": 5,
       "cardio": 2,
       "speed": 5,
@@ -167,7 +167,7 @@
     },
     {
       "id": 15,
-      "name": "FamilyGuyWoman",
+      "name": "Family Guy Woman",
       "strength": 1,
       "cardio": 1,
       "speed": 1,
@@ -178,7 +178,7 @@
     },
     {
       "id": 16,
-      "name": "FemaleKangaroo",
+      "name": "Judith Kangaroo ",
       "strength": 2,
       "cardio": 5,
       "speed": 5,
@@ -189,7 +189,7 @@
     },
     {
       "id": 17,
-      "name": "Fish",
+      "name": "Fishy Fletcher ",
       "strength": 4,
       "cardio": 4,
       "speed": 1,
@@ -200,7 +200,7 @@
     },
     {
       "id": 18,
-      "name": "JodiPerez",
+      "name": "   Jodi Perez   ",
       "strength": 3,
       "cardio": 3,
       "speed": 3,
@@ -211,7 +211,7 @@
     },
     {
       "id": 19,
-      "name": "Lego",
+      "name": "The Lego Soldier",
       "strength": 2,
       "cardio": 4,
       "speed": 2,
@@ -222,7 +222,7 @@
     },
     {
       "id": 20,
-      "name": "Lion",
+      "name": "Leone Lioness ",
       "strength": 3,
       "cardio": 4,
       "speed": 3,
@@ -233,7 +233,7 @@
     },
     {
       "id": 21,
-      "name": "Llama",
+      "name": "Lenox The Llama  ",
       "strength": 2,
       "cardio": 4,
       "speed": 5,
@@ -244,7 +244,7 @@
     },
     {
       "id": 22,
-      "name": "Monster",
+      "name": "Melvin The Monster",
       "strength": 5,
       "cardio": 1,
       "speed": 1,
@@ -255,7 +255,7 @@
     },
     {
       "id": 23,
-      "name": "MurderRabbit",
+      "name": "The Murder Rabbit",
       "strength": 2,
       "cardio": 5,
       "speed": 5,
@@ -266,7 +266,7 @@
     },
     {
       "id": 24,
-      "name": "Ninja",
+      "name": "Nils The Ninja ",
       "strength": 2,
       "cardio": 4,
       "speed": 5,
@@ -277,7 +277,7 @@
     },
     {
       "id": 25,
-      "name": "Pizza",
+      "name": "Gregory The Pizza",
       "strength": 1,
       "cardio": 3,
       "speed": 5,
@@ -288,7 +288,7 @@
     },
     {
       "id": 26,
-      "name": "Raisin",
+      "name": "Rudolph The Raisin",
       "strength": 2,
       "cardio": 2,
       "speed": 1,
@@ -299,7 +299,7 @@
     },
     {
       "id": 27,
-      "name": "Rhino",
+      "name": "Ronald The Rhino",
       "strength": 5,
       "cardio": 5,
       "speed": 2,
@@ -310,7 +310,7 @@
     },
     {
       "id": 28,
-      "name": "ScaredWoman",
+      "name": "Annalisa Hepburn",
       "strength": 1,
       "cardio": 5,
       "speed": 1,
@@ -321,7 +321,7 @@
     },
     {
       "id": 29,
-      "name": "Tiger",
+      "name": "Thomas The Tiger",
       "strength": 3,
       "cardio": 3,
       "speed": 3,
@@ -332,7 +332,7 @@
     },
     {
       "id": 30,
-      "name": "WeirdArms",
+      "name": "Fredrik Armstrong",
       "strength": 5,
       "cardio": 4,
       "speed": 5,
@@ -343,7 +343,7 @@
     },
     {
       "id": 31,
-      "name": "Kid",
+      "name": "Kenny Peterson ",
       "strength": 1,
       "cardio": 2,
       "speed": 1,
@@ -354,7 +354,7 @@
     },
     {
       "id": 32,
-      "name": "Hippo",
+      "name": "Henrique The Hippo",
       "strength": 4,
       "cardio": 2,
       "speed": 3,
@@ -365,7 +365,7 @@
     },
     {
       "id": 33,
-      "name": "The Hulk",
+      "name": "The Grown Hulk   ",
       "strength": 5,
       "cardio": 2,
       "speed": 3,
@@ -376,7 +376,7 @@
     },
     {
       "id": 34,
-      "name": "Akuma",
+      "name": "Akuma Azerhabia ",
       "strength": 4,
       "cardio": 3,
       "speed": 1,
@@ -387,7 +387,7 @@
     },
     {
       "id": 35,
-      "name": "Andrew",
+      "name": " Andrew Johnston",
       "strength": 3,
       "cardio": 4,
       "speed": 2,
@@ -398,18 +398,18 @@
     },
     {
       "id": 36,
-      "name": "Arnold Schwarznegger",
+      "name": "Mr Schwarznegger",
       "strength": 4,
       "cardio": 3,
       "speed": 2,
       "defense": 5,
       "wins": 0,
       "losses": 0,
-      "imagePath": "/Assets/Images/Fighters/ArnoldSchwarznegger.png"
+      "imagePath": "/Assets/Images/Fighters/ArnoldSchwarzenegger.png"
     },
     {
       "id": 37,
-      "name": "Bamm-Bamm",
+      "name": "Bamm-Bamm Rubble",
       "strength": 5,
       "cardio": 1,
       "speed": 1,
@@ -420,7 +420,7 @@
     },
     {
       "id": 38,
-      "name": "Bart Simpson",
+      "name": "  Bart Simpson  ",
       "strength": 2,
       "cardio": 3,
       "speed": 4,
@@ -431,7 +431,7 @@
     },
     {
       "id": 39,
-      "name": "Bath Duck",
+      "name": "The Bath Duckie  ",
       "strength": 0,
       "cardio": 0,
       "speed": 0,
@@ -442,7 +442,7 @@
     },
     {
       "id": 40,
-      "name": "Batman",
+      "name": "     Batman     ",
       "strength": 3,
       "cardio": 3,
       "speed": 5,
@@ -453,7 +453,7 @@
     },
     {
       "id": 41,
-      "name": "Beetle",
+      "name": "Beenie The Beetle",
       "strength": 2,
       "cardio": 2,
       "speed": 5,
@@ -464,7 +464,7 @@
     },
     {
       "id": 42,
-      "name": "Betty",
+      "name": "Betty Jean Rubble",
       "strength": 1,
       "cardio": 5,
       "speed": 3,
@@ -475,7 +475,7 @@
     },
     {
       "id": 43,
-      "name": "Bobby",
+      "name": "Bobby Voltage   ",
       "strength": 3,
       "cardio": 3,
       "speed": 3,
@@ -486,7 +486,7 @@
     },
     {
       "id": 44,
-      "name": "Bruce Lee",
+      "name": "   Bruce Lee    ",
       "strength": 3,
       "cardio": 5,
       "speed": 5,
@@ -497,7 +497,7 @@
     },
     {
       "id": 45,
-      "name": "Lennart",
+      "name": "Lennart Karlsson",
       "strength": 3,
       "cardio": 1,
       "speed": 1,
@@ -508,7 +508,7 @@
     },
     {
       "id": 46,
-      "name": "Chameleon",
+      "name": "Charly Chameleon",
       "strength": 1,
       "cardio": 4,
       "speed": 5,
@@ -519,7 +519,7 @@
     },
     {
       "id": 47,
-      "name": "Chun-Li",
+      "name": "Chun-Li Yokomo  ",
       "strength": 2,
       "cardio": 3,
       "speed": 3,
@@ -530,7 +530,7 @@
     },
     {
       "id": 48,
-      "name": "Daniel",
+      "name": "Daniel Langston ",
       "strength": 3,
       "cardio": 3,
       "speed": 3,
@@ -541,7 +541,7 @@
     },
     {
       "id": 49,
-      "name": "Donald Trump",
+      "name": " Donald Trump  ",
       "strength": 0,
       "cardio": 0,
       "speed": 0,
@@ -552,7 +552,7 @@
     },
     {
       "id": 50,
-      "name": "Dr Foxes",
+      "name": "Doctor Ben Foxes ",
       "strength": 3,
       "cardio": 4,
       "speed": 3,
@@ -563,7 +563,7 @@
     },
     {
       "id": 51,
-      "name": "Evil Monkey",
+      "name": "The Evil Monkey  ",
       "strength": 1,
       "cardio": 4,
       "speed": 4,
@@ -574,7 +574,7 @@
     },
     {
       "id": 52,
-      "name": "Floyd Mayweather Jr",
+      "name": "Floyd Mayweather",
       "strength": 4,
       "cardio": 4,
       "speed": 3,
@@ -585,7 +585,7 @@
     },
     {
       "id": 53,
-      "name": "Grumpy",
+      "name": "Grumpy The Dwarf",
       "strength": 2,
       "cardio": 1,
       "speed": 0,
@@ -596,7 +596,7 @@
     },
     {
       "id": 54,
-      "name": "Hercules",
+      "name": "The Hero Hercules ",
       "strength": 3,
       "cardio": 4,
       "speed": 4,
@@ -607,7 +607,7 @@
     },
     {
       "id": 55,
-      "name": "Homer Simpson",
+      "name": " Homer Simpson  ",
       "strength": 0,
       "cardio": 0,
       "speed": 1,
@@ -618,7 +618,7 @@
     },
     {
       "id": 56,
-      "name": "Hot Dog",
+      "name": "Homles The Hot Dog",
       "strength": 2,
       "cardio": 2,
       "speed": 3,
@@ -629,7 +629,7 @@
     },
     {
       "id": 57,
-      "name": "Jackie Chan",
+      "name": "  Jackie Chan   ",
       "strength": 3,
       "cardio": 5,
       "speed": 5,
@@ -640,7 +640,7 @@
     },
     {
       "id": 58,
-      "name": "John",
+      "name": "John Silverstone",
       "strength": 2,
       "cardio": 4,
       "speed": 3,
@@ -651,7 +651,7 @@
     },
     {
       "id": 59,
-      "name": "John Cena",
+      "name": "   John Cena    ",
       "strength": 5,
       "cardio": 5,
       "speed": 5,
@@ -662,7 +662,7 @@
     },
     {
       "id": 60,
-      "name": "Dwayne Johnson",
+      "name": "Dwayne Johnson ",
       "strength": 5,
       "cardio": 5,
       "speed": 5,
@@ -673,7 +673,7 @@
     },
     {
       "id": 61,
-      "name": "Johnny Bravo",
+      "name": "  Johnny Bravo  ",
       "strength": 5,
       "cardio": 0,
       "speed": 5,
@@ -684,7 +684,7 @@
     },
     {
       "id": 62,
-      "name": "Jonah",
+      "name": "Jonah Jeffersson",
       "strength": 3,
       "cardio": 1,
       "speed": 5,
@@ -695,7 +695,7 @@
     },
     {
       "id": 63,
-      "name": "Karate Pizza",
+      "name": "The Karate Pizza",
       "strength": 0,
       "cardio": 0,
       "speed": 5,
@@ -706,7 +706,7 @@
     },
     {
       "id": 64,
-      "name": "Luke Skywalker",
+      "name": " Luke Skywalker ",
       "strength": 2,
       "cardio": 4,
       "speed": 5,
@@ -717,7 +717,7 @@
     },
     {
       "id": 65,
-      "name": "Manny Pacquiao",
+      "name": " Manny Pacquiao ",
       "strength": 3,
       "cardio": 3,
       "speed": 5,
@@ -728,7 +728,7 @@
     },
     {
       "id": 66,
-      "name": "Chad",
+      "name": "Chad Octoberus   ",
       "strength": 4,
       "cardio": 4,
       "speed": 4,
@@ -739,7 +739,7 @@
     },
     {
       "id": 67,
-      "name": "McGregor",
+      "name": "Conor McGregor  ",
       "strength": 4,
       "cardio": 5,
       "speed": 4,
@@ -750,7 +750,7 @@
     },
     {
       "id": 69,
-      "name": "Mike Tyson",
+      "name": "   Mike Tyson   ",
       "strength": 5,
       "cardio": 4,
       "speed": 5,
@@ -761,7 +761,7 @@
     },
     {
       "id": 70,
-      "name": "Mike Wazowski ",
+      "name": " Mike Wazowski  ",
       "strength": 0,
       "cardio": 0,
       "speed": 0,
@@ -772,7 +772,7 @@
     },
     {
       "id": 71,
-      "name": "Mr Bean",
+      "name": "Mister Bean     ",
       "strength": 0,
       "cardio": 1,
       "speed": 0,
@@ -783,7 +783,7 @@
     },
     {
       "id": 72,
-      "name": "Muhammad Ali",
+      "name": "  Muhammad Ali  ",
       "strength": 5,
       "cardio": 5,
       "speed": 5,
@@ -794,7 +794,7 @@
     },
     {
       "id": 73,
-      "name": "Mulan",
+      "name": "Fa Mulan Hua Mulan",
       "strength": 3,
       "cardio": 5,
       "speed": 1,
@@ -805,7 +805,7 @@
     },
     {
       "id": 74,
-      "name": "Penniless",
+      "name": "Jason Penniless",
       "strength": 0,
       "cardio": 0,
       "speed": 0,
@@ -816,7 +816,7 @@
     },
     {
       "id": 75,
-      "name": "Peter",
+      "name": "Peter Pringles  ",
       "strength": 3,
       "cardio": 3,
       "speed": 2,
@@ -827,7 +827,7 @@
     },
     {
       "id": 76,
-      "name": "Pinocchio",
+      "name": "Pinocchio Gepetto",
       "strength": 0,
       "cardio": 0,
       "speed": 5,
@@ -838,7 +838,7 @@
     },
     {
       "id": 77,
-      "name": "Popeye",
+      "name": "Popeye Bluto    ",
       "strength": 5,
       "cardio": 4,
       "speed": 4,
@@ -849,7 +849,7 @@
     },
     {
       "id": 78,
-      "name": "Popsicle",
+      "name": "Drippin Popsicle ",
       "strength": 3,
       "cardio": 1,
       "speed": 3,
@@ -860,7 +860,7 @@
     },
     {
       "id": 79,
-      "name": "Shark",
+      "name": "Marcus Sharktooth",
       "strength": 4,
       "cardio": 4,
       "speed": 4,
@@ -871,7 +871,7 @@
     },
     {
       "id": 80,
-      "name": "Simba",
+      "name": "Simba The Lion  ",
       "strength": 3,
       "cardio": 4,
       "speed": 4,
@@ -882,7 +882,7 @@
     },
     {
       "id": 81,
-      "name": "Soki",
+      "name": "Soki Sakuntza  ",
       "strength": 2,
       "cardio": 5,
       "speed": 5,
@@ -893,7 +893,7 @@
     },
     {
       "id": 82,
-      "name": "Kalle",
+      "name": "Kalle Andersson",
       "strength": 5,
       "cardio": 2,
       "speed": 2,
@@ -904,7 +904,7 @@
     },
     {
       "id": 83,
-      "name": "Oskar",
+      "name": "  Oskar Persson ",
       "strength": 2,
       "cardio": 0,
       "speed": 5,
@@ -915,7 +915,7 @@
     },
     {
       "id": 84,
-      "name": "Tarzan",
+      "name": "     Tarzan     ",
       "strength": 4,
       "cardio": 4,
       "speed": 4,
@@ -926,7 +926,7 @@
     },
     {
       "id": 85,
-      "name": "Oliver",
+      "name": "Oliver Klinghoffer",
       "strength": 4,
       "cardio": 1,
       "speed": 1,
@@ -937,7 +937,7 @@
     },
     {
       "id": 86,
-      "name": "Tim Boetsch",
+      "name": "  Tim Boetsch   ",
       "strength": 2,
       "cardio": 5,
       "speed": 5,
@@ -948,7 +948,7 @@
     },
     {
       "id": 87,
-      "name": "Turbo",
+      "name": "Turbo Timothee   ",
       "strength": 4,
       "cardio": 4,
       "speed": 1,
@@ -959,7 +959,7 @@
     },
     {
       "id": 88,
-      "name": "WereWolf",
+      "name": "Wade The Werewolf",
       "strength": 1,
       "cardio": 5,
       "speed": 5,
@@ -970,7 +970,7 @@
     },
     {
       "id": 89,
-      "name": "Cockroach",
+      "name": "Denny The Cockroach",
       "strength": 0,
       "cardio": 0,
       "speed": 5,
@@ -981,7 +981,7 @@
     },
     {
       "id": 90,
-      "name": "Demon",
+      "name": "Gashadokuro Demon",
       "strength": 4,
       "cardio": 5,
       "speed": 5,
@@ -992,7 +992,7 @@
     },
     {
       "id": 91,
-      "name": "Hellman",
+      "name": "The Hellman     ",
       "strength": 5,
       "cardio": 1,
       "speed": 5,
@@ -1003,7 +1003,7 @@
     },
     {
       "id": 92,
-      "name": "Jin Kazama",
+      "name": "Jinese Kazamari ",
       "strength": 2,
       "cardio": 2,
       "speed": 1,
@@ -1014,7 +1014,7 @@
     },
     {
       "id": 93,
-      "name": "Marilyn Manson",
+      "name": " Marilyn Manson ",
       "strength": 0,
       "cardio": 4,
       "speed": 3,
@@ -1025,7 +1025,7 @@
     },
     {
       "id": 94,
-      "name": "Monkey D",
+      "name": "Caacrinolaas Dee",
       "strength": 1,
       "cardio": 5,
       "speed": 5,
@@ -1036,7 +1036,7 @@
     },
     {
       "id": 95,
-      "name": "Pirate Cat",
+      "name": "Pelle Pirate Cat",
       "strength": 0,
       "cardio": 2,
       "speed": 5,
@@ -1047,7 +1047,7 @@
     },
     {
       "id": 96,
-      "name": "Rabies Dog",
+      "name": "Doggy Nalfeshnee  ",
       "strength": 4,
       "cardio": 2,
       "speed": 5,
@@ -1058,7 +1058,7 @@
     },
     {
       "id": 97,
-      "name": "Rooster",
+      "name": "Aldinach Rooster",
       "strength": 5,
       "cardio": 3,
       "speed": 4,
@@ -1069,7 +1069,7 @@
     },
     {
       "id": 98,
-      "name": "The Red Guy",
+      "name": "  The Red Guy   ",
       "strength": 1,
       "cardio": 1,
       "speed": 4,
@@ -1080,7 +1080,7 @@
     },
     {
       "id": 99,
-      "name": "Vin Smoke",
+      "name": "Vinsel Smoke   ",
       "strength": 2,
       "cardio": 2,
       "speed": 5,
@@ -1091,7 +1091,7 @@
     },
     {
       "id": 100,
-      "name": "Zombie",
+      "name": "Clisthert The Zombie",
       "strength": 0,
       "cardio": 5,
       "speed": 0,
@@ -1102,7 +1102,7 @@
     },
     {
       "id": 101,
-      "name": "Rex",
+      "name": "Zeernebooch Rex",
       "strength": 4,
       "cardio": 4,
       "speed": 5,
