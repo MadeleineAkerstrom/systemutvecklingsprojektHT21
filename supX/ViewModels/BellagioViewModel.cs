@@ -38,8 +38,11 @@ namespace supX.ViewModels
             
             if (Betbell.MyBetId == Winner.WinnerId)
             {
-
                 Parent.CurrentViewModel = new WinnerViewModel(Parent);
+            }
+            else if (Parent.Player.MyBalance == 0)
+            {
+                Parent.CurrentViewModel = new GameOverViewModel(Parent);
             }
             else
             {
