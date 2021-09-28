@@ -16,15 +16,24 @@ namespace supX.Sounds
         }
 
         #region SoundEffects
-        /// <summary>
-        /// Plays when Game Over
-        /// </summary>
+
         public void PlayGameOverSound()
+        {
+            var player = new SoundPlayer(Properties.Resources.GameOverSoundTuneLow);
+            player.Play();
+        }
+
+        /// <summary>
+        /// Plays when player loses money
+        /// </summary>
+        public void PlayLosingGameSound()
         {
             var player = new SoundPlayer(Properties.Resources.GameOverMelodyLow);
             player.Play();
         }
-
+        /// <summary>
+        /// Plays when player wins money
+        /// </summary>
         public void PlayWinnerGameSound()
         {
             var player = new SoundPlayer(Properties.Resources.WinningSoundLow);
