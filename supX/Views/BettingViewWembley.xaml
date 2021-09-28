@@ -14,16 +14,9 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/WembleyOutside.jpg"/>
         </Grid.Background>
-        <Button Content="" HorizontalAlignment="Left" Margin="655,256,0,0" VerticalAlignment="Top" Height="167" Width="100">
-            <Button.Background>
-                <ImageBrush ImageSource="{Binding GameVM.Fighter2.ImagePath}"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="60,250,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="167" Width="115">
-            <Button.Background>
-                <ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}"/>
-            </Button.Background>
-        </Button>
+        <Image   Source="{Binding GameVM.Fighter2.ImagePath}" Margin="652,234,32,10" Height="206" Width="116"/>
+        <Image   Source="{Binding GameVM.Fighter1.ImagePath}" Margin="62,234,622,10" Height="206" Width="116"/>
+
         <Image Source="/Assets/Images/Text/VSBlue.png" Margin="360,10,305,325" Width="135" d:LayoutOverrides="HorizontalAlignment"/>
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="655,150,35,193"/>
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="65,158,625,184"/>
@@ -60,7 +53,7 @@
         <Label Content="{Binding GameVM.Fighter2.Speed}" Foreground="White" HorizontalAlignment="Left" Margin="767,25,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Defense}" Foreground="White" HorizontalAlignment="Left" Margin="767,40,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Cardio}" Foreground="White" HorizontalAlignment="Left" Margin="767,55,0,0" VerticalAlignment="Top"/>
-        
+
 
     </Grid>
 </UserControl>

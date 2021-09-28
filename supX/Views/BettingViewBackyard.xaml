@@ -19,16 +19,8 @@
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/BackyardBettingViewBackground.jpg"/>
         </Grid.Background>
 
-        <Button x:Name="btnFighter2" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BackyardView}" Content="" HorizontalAlignment="Left" Margin="483,183,0,0" VerticalAlignment="Top" Height="212" Width="154" BorderBrush="{x:Null}">
-            <Button.Background>
-                <ImageBrush ImageSource="{Binding GameVM.Fighter2.ImagePath}"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="btnFighter1" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BackyardView}" Content="" HorizontalAlignment="Left" Margin="163,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="212" Width="154" BorderBrush="{x:Null}">
-            <Button.Background>
-                <ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}"/>
-            </Button.Background>
-        </Button>
+        <Image Source="{Binding GameVM.Fighter2.ImagePath}" Margin="475,200,150,10" Height="206" Width="116"/>
+        <Image Source="{Binding GameVM.Fighter1.ImagePath}" Margin="150,200,475,10" Height="206" Width="116"/>
         <Image Source="/Assets/Images/Frames/RoundWoodFrame.png" Margin="460,15,39,305" Width="301"/>
         <Image Source="/Assets/Images/Frames/RoundWoodFrame.png" Margin="15,20,484,300" Width="301"/>
         <Image Source="/Assets/Images/Text/FireVS.png" Margin="302,10,283,290" Width="215" d:LayoutOverrides="HorizontalAlignment"/>
