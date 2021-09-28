@@ -72,5 +72,10 @@
             <views:ShowResultView/>
         </DataTemplate>
 
+        <DataTemplate
+            DataType="{x:Type viewmodels:GameOverViewModel}">
+            <views:GameOverView/>
+        </DataTemplate>
+
     </Application.Resources>
 </Application>
