@@ -16,7 +16,9 @@ namespace supX.Sounds
         }
 
         #region SoundEffects
-
+        /// <summary>
+        /// Plays when game over
+        /// </summary>
         public void PlayGameOverSound()
         {
             var player = new SoundPlayer(Properties.Resources.GameOverSoundTuneLow);
