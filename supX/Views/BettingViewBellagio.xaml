@@ -45,6 +45,24 @@
         <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="512,40,0,0" VerticalAlignment="Top" Width="120" Foreground="White" FontSize="16" FontWeight="Bold"/>
         <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" TextAlignment="Left" Margin="542,178,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" d:LayoutOverrides="VerticalAlignment"/>
         <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="210,178,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
+        
+        
+        <Label Content="Strength:" Foreground="White" HorizontalAlignment="Left" Margin="66,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="Speed:" Foreground="White" HorizontalAlignment="Left" Margin="66,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="Defense:" Foreground="White" HorizontalAlignment="Left" Margin="66,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cardio:" Foreground="White" HorizontalAlignment="Left" Margin="66,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Strength}" Foreground="White" HorizontalAlignment="Left" Margin="137,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Speed}" Foreground="White" HorizontalAlignment="Left" Margin="137,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Defense}" Foreground="White" HorizontalAlignment="Left" Margin="137,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Cardio}" Foreground="White" HorizontalAlignment="Left" Margin="137,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="Strength:" Foreground="White" HorizontalAlignment="Left" Margin="624,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="Speed:" Foreground="White" HorizontalAlignment="Left" Margin="624,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="Defense:" Foreground="White" HorizontalAlignment="Left" Margin="624,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cardio:" Foreground="White" HorizontalAlignment="Left" Margin="624,145,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Strength}" Foreground="White" HorizontalAlignment="Left" Margin="694,100,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Speed}" Foreground="White" HorizontalAlignment="Left" Margin="694,115,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Defense}" Foreground="White" HorizontalAlignment="Left" Margin="694,130,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Cardio}" Foreground="White" HorizontalAlignment="Left" Margin="694,145,0,0" VerticalAlignment="Top"/>
 
 
     </Grid>
