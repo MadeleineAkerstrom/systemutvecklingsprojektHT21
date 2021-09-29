@@ -76,5 +76,7 @@
         <Label Content="{Binding GameVM.Fighter2.Speed}" HorizontalAlignment="Left" Margin="614,115,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Defense}" HorizontalAlignment="Left" Margin="614,130,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Cardio}" HorizontalAlignment="Left" Margin="614,145,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" Height="30" Margin="30,380,665,0" Width="105"/>
+        <Button Content="Button" Height="25" Margin="680,380,10,5" Width="110"/>
     </Grid>
 </UserControl>
