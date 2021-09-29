@@ -9,27 +9,27 @@
         xmlns:Views="clr-namespace:supX.Views" x:Class="supX.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="860" WindowState="Normal" ResizeMode="CanResize" MinHeight="600" MinWidth="860">
-    <Grid Background="#FF231F20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinWidth="840" MinHeight="530">
+    <Grid Background="#FF231F20">
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" MinWidth="20"/>
-            <ColumnDefinition Width="*" MinWidth="800"/>
-            <ColumnDefinition Width="Auto" MinWidth="20"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="800"/>
+            <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" MinHeight="20" />
-            <RowDefinition Height="*" MinHeight="352.84"/>
-            <RowDefinition Height="*" MinHeight="74.16"/>
-            <RowDefinition Height="Auto" MinHeight="15"/>
-            <RowDefinition Height="*" MinHeight="68"/>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="352.84" />
+            <RowDefinition Height="74.16"/>
+            <RowDefinition Height="15" />
+            <RowDefinition Height="68"/>
         </Grid.RowDefinitions>
         <ContentControl Content="{Binding CurrentViewModel}" 
                         Grid.Column = "1"
                         Grid.Row="1" Grid.RowSpan="2"/>
-        <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" Margin="0,12,0,-20" Grid.RowSpan="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="800" MinHeight="68">
+        <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" Margin="0,12,0,-20" Grid.RowSpan="2">
 
-            <Button Content="Choose Arena" Margin="0,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.ArenaView}" Height="90" Width="130" Foreground="#FFD3CFCF" FontWeight="Bold" FontSize="16" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="90" MinWidth="130">
+            <Button Content="Choose Arena" Margin="0,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.ArenaView}" Height="90" Width="130" Foreground="#FFD3CFCF" FontWeight="Bold" FontSize="16">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
                 </Button.Background>
@@ -37,12 +37,12 @@
                     <DropShadowEffect/>
                 </Button.Effect>
             </Button>
-            <Button Content="Rules" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.RulesView}" Width="130" Height="95" Foreground="#FFD3CFCF" FontSize="16" FontWeight="Bold" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="90" MinWidth="130">
+            <Button Content="Rules" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.RulesView}" Width="130" Height="95" Foreground="#FFD3CFCF" FontSize="16" FontWeight="Bold">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
                 </Button.Background>
             </Button>
-            <Views:PlayerView Margin="250,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinWidth="200" MinHeight="60" MaxWidth="200" MaxHeight="60"/>
+            <Views:PlayerView Margin="250,0,0,0"/>
         </StackPanel>
     </Grid>
 </Window>
