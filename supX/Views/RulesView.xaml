@@ -18,7 +18,15 @@
 
         <Button Content="Start game" 
                 Command="{Binding Parent.ChangeViewCommand}" 
-                CommandParameter="{x:Static data:GotoView.ArenaView}" Margin="280,363,288,0" VerticalAlignment="Top" Height="62" FontWeight="Bold" FontSize="20" Foreground="#FFC1C1C1" BorderBrush="{x:Null}">
+                CommandParameter="{x:Static data:GotoView.ArenaView}" Margin="137,363,431,0" VerticalAlignment="Top" Height="62" FontWeight="Bold" FontSize="20" Foreground="#FFC1C1C1" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/BlackButton.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button Content="Instructions" 
+                Command="{Binding Parent.ChangeViewCommand}" 
+                CommandParameter="{x:Static data:GotoView.InstructionsView}" Margin="433,363,135,0" VerticalAlignment="Top" Height="62" FontWeight="Bold" FontSize="20" Foreground="#FFC1C1C1" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/BlackButton.png"/>
             </Button.Background>
