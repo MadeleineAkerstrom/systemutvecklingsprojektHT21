@@ -15,16 +15,10 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Frames/StageBettingView.png"/>
         </Grid.Background>
-        <Button CommandParameter="" HorizontalAlignment="Left" Margin="507,243,0,0" VerticalAlignment="Top" Height="186" Width="116">
-            <Button.Background>
-                <ImageBrush ImageSource="{Binding GameVM.Fighter2.ImagePath}"/>
-            </Button.Background>
-        </Button>
-        <Button  HorizontalAlignment="Left" Margin="180,238,0,0" VerticalAlignment="Top" Height="186" Width="116">
-            <Button.Background>
-                <ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}"/>
-            </Button.Background>
-        </Button>
+
+        <Image Source="{Binding GameVM.Fighter2.ImagePath}" Margin="475,200,150,10" Height="206" Width="116"/>
+
+            <Image Source="{Binding GameVM.Fighter1.ImagePath}" Margin="150,200,475,10" Height="206" Width="116"/>
         <!--<ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}" Height="186" Width="116"/>-->
 
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="48,-40,378,220" d:LayoutOverrides="VerticalAlignment"/>
