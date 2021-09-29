@@ -16,6 +16,7 @@
     <None Remove="Assets\Images\Backgrounds\Blackboard %281%29.png" />
     <None Remove="Assets\Images\Backgrounds\GameOver %281%29.png" />
     <None Remove="Assets\Images\Backgrounds\gameover.png" />
+    <None Remove="Assets\Images\Backgrounds\instructions.png" />
     <None Remove="Assets\Images\Backgrounds\WembleyOutside.jpg" />
     <None Remove="Assets\Images\Backgrounds\WinnerWallpaper.png" />
     <None Remove="Assets\Images\BackyardView.jpg" />
@@ -198,6 +199,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Images\Backgrounds\instructions.png" />
     <Resource Include="Assets\Images\Buttons\BlueCircleButton.png" />
     <Resource Include="Assets\Images\Buttons\BrownCircleButton.png" />
     <Resource Include="Assets\Images\Buttons\CoffeBrownCircleButton.png" />

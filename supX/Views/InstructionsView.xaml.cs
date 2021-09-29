@@ -14,14 +14,13 @@ using System.Windows.Shapes;
 namespace supX.Views
 {
     /// <summary>
-    /// Interaction logic for RulesView.xaml
+    /// Interaction logic for InstructionsView.xaml
     /// </summary>
-    public partial class RulesView : UserControl
+    public partial class InstructionsView : UserControl
     {
-        public RulesView()
+        public InstructionsView()
         {
             InitializeComponent();
         }
-
     }
 }
