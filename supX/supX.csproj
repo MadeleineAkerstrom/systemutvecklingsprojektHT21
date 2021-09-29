@@ -157,6 +157,7 @@
     <None Remove="Assets\Images\Frames\WoodenSignBackyard.png" />
     <None Remove="Assets\Images\Frames\woodframewithwood.png" />
     <None Remove="Assets\Images\game-lose.jpg" />
+    <None Remove="Assets\Images\Gif\Cartoon-Fighting-Cloud.gif" />
     <None Remove="Assets\Images\GreenButton.png" />
     <None Remove="Assets\Images\GreyButton.png" />
     <None Remove="Assets\Images\Icons\ExplosionWinner.png" />
@@ -181,6 +182,7 @@
     <None Remove="Assets\Images\Text\VSBlue.png" />
     <None Remove="Assets\Images\Text\WembleyLogo.png" />
     <None Remove="Assets\Images\WembleyView.jpg" />
+    <None Remove="Resources\Cartoon-Fighting-Cloud.gif" />
   </ItemGroup>
 
   <ItemGroup>
@@ -313,11 +315,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fody" Version="6.5.2">
+    <PackageReference Include="Fody" Version="6.5.3">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" PrivateAssets="All" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -357,6 +360,7 @@
     <Resource Include="Assets\Images\Frames\WoodenSign2Way.png" />
     <Resource Include="Assets\Images\Frames\WoodenSign2WayFlipped.png" />
     <Resource Include="Assets\Images\Frames\WoodenSignBackyard.png" />
+    <Resource Include="Assets\Images\Gif\Cartoon-Fighting-Cloud.gif" />
     <Resource Include="Assets\Images\Frames\woodframewithwood.png" />
     <Resource Include="Assets\Images\Icons\ExplosionWinner.png" />
     <Resource Include="Assets\Images\Icons\FightCloud2.png" />
@@ -386,6 +390,7 @@
     <Resource Include="Assets\Images\Text\VSBlue.png" />
     <Resource Include="Assets\Images\Text\WembleyLogo.png" />
     <Resource Include="Assets\Images\Backgrounds\WembleyView.jpg" />
+    <Resource Include="Resources\Cartoon-Fighting-Cloud.gif" />
   </ItemGroup>
 
   <ItemGroup>
