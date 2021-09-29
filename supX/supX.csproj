@@ -22,12 +22,23 @@
     <None Remove="Assets\Images\BlueButton.png" />
     <None Remove="Assets\Images\Buttons\BigBlueRectangleFrame.png" />
     <None Remove="Assets\Images\Buttons\BlackButton.png" />
+    <None Remove="Assets\Images\Buttons\BlueCircleButton.png" />
+    <None Remove="Assets\Images\Buttons\BrownCircleButton.png" />
+    <None Remove="Assets\Images\Buttons\CoffeBrownCircleButton.png" />
     <None Remove="Assets\Images\Buttons\GoldButton.png" />
+    <None Remove="Assets\Images\Buttons\GreenCircleButton.png" />
+    <None Remove="Assets\Images\Buttons\HandBrownCircleButton.png" />
+    <None Remove="Assets\Images\Buttons\PurpleCircleButton.png" />
+    <None Remove="Assets\Images\Buttons\PurpleCircleButton2.png" />
     <None Remove="Assets\Images\Buttons\RoundWoodButton.png" />
     <None Remove="Assets\Images\Buttons\SilverButton.png" />
     <None Remove="Assets\Images\Buttons\SmallBlueRectangleFrame.png" />
+    <None Remove="Assets\Images\Buttons\TealCircleButton.png" />
     <None Remove="Assets\Images\Buttons\TurquoiseButton.png" />
     <None Remove="Assets\Images\Buttons\VioletButton.png" />
+    <None Remove="Assets\Images\Buttons\VioletCircleButton.png" />
+    <None Remove="Assets\Images\Buttons\WoodBrick.png" />
+    <None Remove="Assets\Images\Buttons\WoodCircleButton.png" />
     <None Remove="Assets\Images\Buttons\WoodSignButton.png" />
     <None Remove="Assets\Images\fight1.gif" />
     <None Remove="Assets\Images\Fighters\AdultHulk.png" />
@@ -186,6 +197,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Images\Buttons\BlueCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\BrownCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\CoffeBrownCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\GreenCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\HandBrownCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\PurpleCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\PurpleCircleButton2.png" />
+    <Resource Include="Assets\Images\Buttons\TealCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\VioletCircleButton.png" />
+    <Resource Include="Assets\Images\Buttons\WoodCircleButton.png" />
     <Resource Include="Assets\Images\Fighters\FighterCockroach.png" />
     <Resource Include="Assets\Images\Fighters\FighterDemon.png" />
     <Resource Include="Assets\Images\Fighters\FighterHellman.png" />
@@ -215,6 +236,7 @@
     <Resource Include="Assets\Images\Buttons\RoundWoodButton.png" />
     <Resource Include="Assets\Images\Buttons\TurquoiseButton.png" />
     <Resource Include="Assets\Images\Buttons\VioletButton.png" />
+    <Resource Include="Assets\Images\Buttons\WoodBrick.png" />
     <Resource Include="Assets\Images\Buttons\WoodSignButton.png" />
     <Resource Include="Assets\Images\Fighters\AdultHulk.png" />
     <Resource Include="Assets\Images\Fighters\Akuma.png" />

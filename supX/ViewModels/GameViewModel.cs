@@ -59,36 +59,15 @@ namespace supX.ViewModels
             GenerateBetResult(fighterViewModel.fighters[myBet], winner);
         }
 
-        public bool EnoughBalance(double MyBalance, double BetAmount1, double BetAmount2)
-        {
-            if (BetAmount1 > MyBalance || BetAmount2 > MyBalance )
-            {
-                MessageBox.Show("Your balance is not enough. Try again!");
-                Parent.CurrentViewModel = new BettingViewBellagioViewModel(null);
-                return false;
-            }
-            else
-            {
-
-                return true;
-            }
-        }
-
         public int SetMyBet(double BetAmount1, double BetAmount2, int FighterId1, int FighterId2)
         {
             int MyBetId= 0;
-            if (BetAmount1 != 0 && BetAmount2 != 0)
-            {
-                MessageBox.Show("You can't bet on both fighters, you idiot!");
-                Parent.CurrentViewModel = new BettingViewBellagioViewModel(null);
-                
-            }
-            else if (BetAmount1 == 0 && BetAmount2 == 0)
+            if (BetAmount1 <= 0 && BetAmount2 <= 0)
             {
                 MessageBox.Show("You have to bet on someone, you idiot!");
                 Parent.CurrentViewModel = new BettingViewBellagioViewModel(null);
             }
-            else if (BetAmount1 != 0)
+            else if (BetAmount1 > 0)
             {
                 MyBetId = FighterId1;
 
