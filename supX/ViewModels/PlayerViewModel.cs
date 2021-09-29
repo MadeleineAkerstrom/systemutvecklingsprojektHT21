@@ -9,7 +9,7 @@ namespace supX.ViewModels
         
 
         public double MyBalance { get; set; }
-
+        public string MyName { get; set; }
 
         public MainViewModel Parent { get; }
 

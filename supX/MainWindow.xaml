@@ -37,12 +37,17 @@
                     <DropShadowEffect/>
                 </Button.Effect>
             </Button>
+            <Button Content="Cash Out" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.CashOutView}" Width="130" Height="95" Foreground="#FFD3CFCF" FontSize="16" FontWeight="Bold">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
+                </Button.Background>
+            </Button>
             <Button Content="Rules" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.RulesView}" Width="130" Height="95" Foreground="#FFD3CFCF" FontSize="16" FontWeight="Bold">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
                 </Button.Background>
             </Button>
-            <Views:PlayerView Margin="250,0,0,0"/>
+            <Views:PlayerView Margin="120,0,0,0"/>
         </StackPanel>
     </Grid>
 </Window>
