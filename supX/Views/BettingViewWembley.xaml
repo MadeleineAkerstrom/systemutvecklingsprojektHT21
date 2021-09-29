@@ -29,7 +29,7 @@
         <TextBox x:Name="txtBetAmount2" HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="364,283,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" TextChanged="txtBetAmount2_TextChanged" Grid.Column="1"/>
         <Label Content="{Binding GameVM.Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="94,176,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Height="50" Width="56"/>
         <Label Content="{Binding GameVM.Odds[1]}" FontSize="18" HorizontalAlignment="Left" Margin="481,175,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" RenderTransformOrigin="0.517,0.472" Height="53" Width="74" Grid.Column="1"/>
-        <Button x:Name="btnStartFightWembley" IsEnabled="{Binding btnEnabled}" Content="Start fight!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.WembleyView}" HorizontalAlignment="Left" Margin="355,331,0,0" VerticalAlignment="Top" Height="93" FontSize="24" Width="145" FontWeight="Bold" Foreground="White">
+        <Button x:Name="btnStartFightWembley" IsEnabled="{Binding btnEnabled}" Content="Start fight!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.WembleyView}" HorizontalAlignment="Left" Margin="150,331,0,0" VerticalAlignment="Top" Height="93" FontSize="24" FontWeight="Bold" Foreground="White" Grid.Column="1" Width="140">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/TurquoiseButton.png"/>
             </Button.Background>
