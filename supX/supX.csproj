@@ -108,6 +108,7 @@
     <None Remove="Assets\Images\Fighters\FighterZombie.png" />
     <None Remove="Assets\Images\Fighters\FloydMayweatherJr.png" />
     <None Remove="Assets\Images\Fighters\Grumpy.png" />
+    <None Remove="Assets\Images\Fighters\HenryHenderson.png" />
     <None Remove="Assets\Images\Fighters\Hercules.png" />
     <None Remove="Assets\Images\Fighters\HomerSimpson.png" />
     <None Remove="Assets\Images\Fighters\HotDog.png" />
@@ -219,6 +220,7 @@
     <Resource Include="Assets\Images\Fighters\FighterTheRedGuy.png" />
     <Resource Include="Assets\Images\Fighters\FighterVinSmoke.png" />
     <Resource Include="Assets\Images\Fighters\FighterZombie.png" />
+    <Resource Include="Assets\Images\Fighters\HenryHenderson.png" />
     <Resource Include="Assets\Images\Fighters\MikeWazowski.png" />
     <Resource Include="Assets\Images\Fighters\Popeye.png" />
   </ItemGroup>
