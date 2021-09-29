@@ -79,6 +79,16 @@ namespace supX.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] Cartoon_Fighting_Cloud {
+            get {
+                object obj = ResourceManager.GetObject("Cartoon_Fighting_Cloud", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream fight {
@@ -93,6 +103,15 @@ namespace supX.Properties {
         internal static System.IO.UnmanagedMemoryStream GameOverMelodyLow {
             get {
                 return ResourceManager.GetStream("GameOverMelodyLow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream GameOverSoundTuneLow {
+            get {
+                return ResourceManager.GetStream("GameOverSoundTuneLow", resourceCulture);
             }
         }
         

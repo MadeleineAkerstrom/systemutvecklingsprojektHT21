@@ -8,7 +8,7 @@
         xmlns:viewmodels="clr-namespace:supX.ViewModels"
         xmlns:Views="clr-namespace:supX.Views" x:Class="supX.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="860">
+        Title="MainWindow" Height="600" Width="860" WindowState="Normal" ResizeMode="CanResize" MinHeight="600" MinWidth="860">
     <Grid Background="#FF231F20">
 
         <Grid.ColumnDefinitions>

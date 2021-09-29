@@ -10,11 +10,11 @@
     <Grid Background="Black">
 
         <Image Source="\Assets\Images\Backgrounds\game-lose.jpg" Margin="40,44,39,68"/>
-        <Image Source="\Assets\Images\Icons\SkeletonLoseView.png" Margin="166,-31,350,152"  Width="244" d:LayoutOverrides="HorizontalAlignment"/>
+        <Image Source="\Assets\Images\Icons\SkeletonLoseView.png" Margin="166,-31,350,152"  Width="244" d:LayoutOverrides="HorizontalAlignment" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="244" MinHeight="298"/>
         <Button Content="Take me back to arenas" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.ArenaView}" 
-                Margin="218,301,218,0" VerticalAlignment="Top" Height="97" FontWeight="Bold" FontSize="20" Foreground="#FFC1C1C1">
+                Margin="218,301,218,0" VerticalAlignment="Stretch" Height="97" FontWeight="Bold" FontSize="20" Foreground="#FFC1C1C1" MinHeight="97" MinWidth="364" HorizontalAlignment="Stretch">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/BlackButton.png"/>
             </Button.Background>
