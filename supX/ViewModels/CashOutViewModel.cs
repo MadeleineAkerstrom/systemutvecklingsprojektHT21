@@ -6,6 +6,7 @@ namespace supX.ViewModels
 {
     public class CashOutViewModel : BaseViewModel
     {
+        PlayerViewModel player /*= new PlayerViewModel()*/;
         #region Properties
         public MainViewModel Parent { get; }
         #endregion
@@ -18,7 +19,18 @@ namespace supX.ViewModels
         }
         #endregion
 
-
+        public PlayerViewModel SavePlayerName(PlayerViewModel player) 
+        {
+            player.MyName;
+            player.MyBalance;
+            player.player.Add(player);
+            return player;
+        }
+        private void UpdateList() 
+        {
+            
+        
+        }
 
     }
 }
