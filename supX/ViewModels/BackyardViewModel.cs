@@ -40,7 +40,7 @@ namespace supX.ViewModels
             {
                 Parent.CurrentViewModel = new WinnerViewModel(Parent);
             }
-            else if (Parent.Player.MyBalance == 0)
+            else if (Parent.Player.MyBalance <= 0)
             {
                 Parent.CurrentViewModel = new GameOverViewModel(Parent);
             }
