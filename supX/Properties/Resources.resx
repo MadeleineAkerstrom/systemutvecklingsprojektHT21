@@ -124,11 +124,17 @@
   <data name="BellagioGreetingsWithApplauseLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BellagioGreetingsWithApplauseLow.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Cartoon_Fighting_Cloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cartoon-Fighting-Cloud.gif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="fight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fight.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="GameOverMelodyLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GameOverMelodyLow.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="GameOverSoundTuneLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameOverSoundTuneLow.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PlayArenaIntroSoundLowSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PlayArenaIntroSoundLowSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

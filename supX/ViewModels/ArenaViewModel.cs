@@ -8,7 +8,7 @@ namespace supX.ViewModels
     public class ArenaViewModel : BaseViewModel
     {
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
-        //MediaPlayer mediaPlayer;
+        
         
         public MainViewModel Parent { get; }
 
