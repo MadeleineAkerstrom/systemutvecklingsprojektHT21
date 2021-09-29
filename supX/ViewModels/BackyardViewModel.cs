@@ -25,28 +25,32 @@ namespace supX.ViewModels
             Parent = mainViewModel;
             Betback = (BettingViewBackyardViewModel)mainViewModel.CurrentViewModel;
 
-            Result = new RelyCommand(LostOrWon);
             Betback.MyBetId = Betback.GameVM.SetMyBet(Betback.BetAmount1, Betback.BetAmount2, Betback.FighterId1, Betback.FighterId2);
             Winner = Betback.GameVM.GenerateResult(Betback.GameVM.fighter.fighters[Betback.GameVM.Fighter1.Id], Betback.GameVM.fighter.fighters[Betback.GameVM.Fighter2.Id]);
             Betback.GameVM.BetAmount = Betback.GameVM.SetBetAmount(Betback.BetAmount1, Betback.BetAmount2);
             //Thread.Sleep(5000);
             Parent.Player.MyBalance = Betback.GameVM.CalculateNewBalance(Betback.GameVM.fighter.fighters[Betback.MyBetId], Winner, Parent.Player.MyBalance); //Here
+            Result = new RelyCommand(LostOrWon);
         }
 
         public void LostOrWon()
         {
 
-            if (Betback.MyBetId == Winner.WinnerId)
-            {
-                Parent.CurrentViewModel = new WinnerViewModel(Parent);
-            }
-            else if (Parent.Player.MyBalance <= 0)
+            if (Parent.Player.MyBalance == 0)
             {
                 Parent.CurrentViewModel = new GameOverViewModel(Parent);
             }
             else
             {
-                Parent.CurrentViewModel = new LoserViewModel(Parent);
+                if (Betback.MyBetId == Winner.WinnerId)
+                {
+                    Parent.CurrentViewModel = new WinnerViewModel(Parent);
+                }
+
+                else
+                {
+                    Parent.CurrentViewModel = new LoserViewModel(Parent);
+                }
             }
         }
 
