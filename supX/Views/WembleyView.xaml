@@ -4,28 +4,25 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:supX.Views"
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="#FF639DFE" Margin="0,-5,0,5">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="20"/>
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="60" />
-        </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="0"  Text=" Welcome To Wembley! " FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Bisque" Background="DarkOrange" Margin="6,0,0,0"/>
-        <StackPanel Grid.Column="1" Grid.Row="1">
-            <StackPanel.Background>
-                <ImageBrush ImageSource="/Assets/Images/WembleyView.jpg"/>
-            </StackPanel.Background>
-            <!--<local:BettingView/>-->
-
-
-        </StackPanel>
+    <Grid Margin="0,-5,0,5">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Images/Backgrounds/WembleyView.jpg"/>
+        </Grid.Background>
+        <Image Source="\Assets\Images\Text\WembleyLogo.png" Margin="96,-43,96,0" Grid.RowSpan="2" Grid.Column="1" Height="225" VerticalAlignment="Top"/>
+        <Image Source="\Assets\Images\Icons\FightCloud4.png" Grid.Column="1" Margin="212,88,212,-24" Grid.RowSpan="2" Width="336" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment"></Image>
+        <Image gif:ImageBehavior.AnimatedSource="\Resources\Cartoon-Fighting-Cloud.gif" 
+               gif:ImageBehavior.RepeatBehavior="2x"
+               gif:ImageBehavior.AnimationSpeedRatio="2"               
+               Grid.Row="1"  
+               Grid.Column="1" 
+               Grid.RowSpan="2"/>
+        <Button Content="See the result" Command="{Binding Result}" HorizontalAlignment="Center" Height="154" Margin="0,204,0,0" VerticalAlignment="Top" Width="310" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" FontSize="22">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/BlueButton.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </UserControl>

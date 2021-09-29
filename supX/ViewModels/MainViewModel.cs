@@ -3,13 +3,23 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace supX.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-                   
-        public PlayerViewModel MyPlayer { get; set; }
+        
+        //public PlayerViewModel Player { get; set; }
+
+        private PlayerViewModel player;
+
+        public PlayerViewModel Player
+        {
+            get { return player; }
+            set { player = value; NotifyPropertyChanged(); }
+        }
+
 
         private MainViewModel gameViewModel;
 
@@ -37,12 +47,13 @@ namespace supX.ViewModels
 
         public MainViewModel()
         {
+            
             ChangeViewCommand = new ChangeViewCommand(this);
+            currentViewModel = new StartViewModel(null);
+            if (Player == null)
+            {
+                Player = new PlayerViewModel(this) { MyBalance = 100 };
+            }
         }
-
-
-
-
-
     }
 }

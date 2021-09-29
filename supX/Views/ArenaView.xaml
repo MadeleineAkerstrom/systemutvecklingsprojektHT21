@@ -9,48 +9,47 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/Assets/Images/ringside.jpg"/>
+            <ImageBrush ImageSource="/Assets/Images/Icons/ringside.jpg"/>
         </Grid.Background>
-        <ContentControl Content="{Binding CurrentViewModel}"/>
-
-
-        <TextBlock Text="ArenaView"/>
+        <Image Source="\Assets\Images\Frames\SilverFrame.png" Margin="68,39,67,257"/>
         <Button Content="Backyard" 
                 Command="{Binding Parent.ChangeViewCommand}" 
-                CommandParameter="{x:Static data:GotoView.BackyardView}" 
+                CommandParameter="{x:Static data:GotoView.BettingViewBackyard}" 
                 HorizontalAlignment="Left" 
                 VerticalAlignment="Top" 
                 Margin="39,198,0,0" 
                 Height="127" Width="164" FontSize="16" FontWeight="Bold">
             <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/GreenButton.png"/>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
         </Button>
         <Button Content="Wembley" 
                 Command="{Binding Parent.ChangeViewCommand}" 
-                CommandParameter="{x:Static data:GotoView.WembleyView}" 
+                CommandParameter="{x:Static data:GotoView.BettingViewWembley}" 
                 HorizontalAlignment="Center" Margin="0,198,0,0" 
                 VerticalAlignment="Top" 
                 Height="127" 
                 Width="164" FontSize="16" FontWeight="Bold">
             <Button.Background>
-                <ImageBrush ImageSource="/Assets/Images/GreenButton.png"/>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
         </Button>
         <Button Content="Bellagio" 
                 Command="{Binding Parent.ChangeViewCommand}" 
-                CommandParameter="{x:Static data:GotoView.BellagioView}" 
-                HorizontalAlignment="Center" 
-                Margin="500,189,0,0" 
+                CommandParameter="{x:Static data:GotoView.BettingViewBellagio}" 
+                HorizontalAlignment="Left" 
+                Margin="583,198,0,0" 
                 VerticalAlignment="Top" 
-                Height="51" 
-                Width="137"/>
-        <Label Content="Choose your arena" 
-               HorizontalAlignment="Center" 
-               Margin="0,74,0,0" 
+                Height="127" 
+                Width="164" FontSize="16" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Choose your &#xD;&#xA;      arena" 
+               Margin="239,62,238,0" 
                VerticalAlignment="Top" 
-               Height="83" 
-               Width="323" 
-               FontSize="36"/>
+               Height="115" 
+               FontSize="36" FontWeight="Bold" Foreground="Black" FontFamily="Sitka Small" Background="{x:Null}" FlowDirection="LeftToRight" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
     </Grid>
 </UserControl>

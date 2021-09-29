@@ -4,11 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:supX.Views"
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Margin="0,-5,0,5">
         <Grid.Background>
-            <ImageBrush ImageSource="/Assets/Images/BackyardView.jpg"/>
+            <ImageBrush ImageSource="/Assets/Images/Backgrounds/BackyardView.jpg"/>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
@@ -21,14 +22,32 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="60" />
         </Grid.RowDefinitions>
-        <TextBlock Grid.Column="1" Grid.Row="0" Text=" Welcome To My Backyard! " FontSize="65"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Bisque" Background="#FF08623E" Margin="6,0,0,0"/>
+        <Image Source="\Assets\Images\Icons\FightingCloud.png" Margin="210,124,175,-13" Grid.Row="1" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" RenderTransformOrigin="0.5,0.5" Grid.Column="1" Grid.RowSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="254.531"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image gif:ImageBehavior.AnimatedSource="\Resources\Cartoon-Fighting-Cloud.gif" 
+               gif:ImageBehavior.RepeatBehavior="2x"
+               gif:ImageBehavior.AnimationSpeedRatio="2"               
+               Grid.Row="1"  
+               Grid.Column="1" 
+               Grid.RowSpan="2"/>
+
+
+
+        <Image Source="\Assets\Images\Frames\WoodenSignBackyard.png" Grid.Column="1" Margin="81,91,417,-19" Grid.Row="1" Grid.RowSpan="2"/>
         <StackPanel Grid.Column="1" Grid.Row="1">
-            <StackPanel.Background>
-                <ImageBrush/>
-            </StackPanel.Background>
-            <!--<local:BettingView Height="350" Width="760" />-->
-
-
         </StackPanel>
+        <Button Content="See the result" Command="{Binding Result}"   Grid.Column="1" HorizontalAlignment="Left" Height="106" Margin="104,149,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="216" BorderBrush="{x:Null}" FontWeight="Bold" Foreground="White" FontSize="24">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreyButton.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </UserControl>

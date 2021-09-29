@@ -31,9 +31,6 @@ namespace supX.Commands
                 case GotoView.ArenaView:
                     mainViewModel.CurrentViewModel = new ArenaViewModel(mainViewModel);
                     break;
-                case GotoView.PlayerView:
-                    mainViewModel.CurrentViewModel = new PlayerViewModel(mainViewModel);
-                    break;
                 case GotoView.BackyardView:
                     mainViewModel.CurrentViewModel = new BackyardViewModel(mainViewModel);
                     break;
@@ -43,8 +40,14 @@ namespace supX.Commands
                 case GotoView.WembleyView:
                     mainViewModel.CurrentViewModel = new WembleyViewModel(mainViewModel);
                     break;
-                case GotoView.BettingView:
-                    mainViewModel.CurrentViewModel = new GameViewModel(mainViewModel);
+                case GotoView.BettingViewBellagio:
+                    mainViewModel.CurrentViewModel = new BettingViewBellagioViewModel(mainViewModel);
+                    break;
+                case GotoView.BettingViewBackyard:
+                    mainViewModel.CurrentViewModel = new BettingViewBackyardViewModel(mainViewModel);
+                    break;
+                case GotoView.BettingViewWembley:
+                    mainViewModel.CurrentViewModel = new BettingViewWembleyViewModel(mainViewModel);
                     break;
                 case GotoView.RulesView:
                     mainViewModel.CurrentViewModel = new RulesViewModel(mainViewModel);
@@ -54,6 +57,15 @@ namespace supX.Commands
                     break;
                 case GotoView.LoserView:
                     mainViewModel.CurrentViewModel = new LoserViewModel(mainViewModel);
+                    break;
+                case GotoView.MainView:
+                    mainViewModel.CurrentViewModel = new StartViewModel(mainViewModel);
+                    break;
+                case GotoView.ShowResultView:
+                    mainViewModel.CurrentViewModel = new ShowResultViewModel(mainViewModel);
+                    break;
+                case GotoView.InstructionsView:
+                    mainViewModel.CurrentViewModel = new InstructionsViewModel(mainViewModel);
                     break;
                 default:
                     break;

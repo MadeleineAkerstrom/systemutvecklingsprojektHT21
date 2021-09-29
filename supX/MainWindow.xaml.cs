@@ -15,6 +15,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using supX.Models;
+using System.Media;
+
 namespace supX
 {
     /// <summary>
@@ -22,11 +25,30 @@ namespace supX
     /// </summary>
     public partial class MainWindow : Window
     {
+        string filename = "/Assets/Json/fighters.json";
+        FighterViewModel fighter;
+        Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
+
+
         public MainWindow()
         {
             InitializeComponent();
             DataContext = new MainViewModel();
-            
+            sounds.PlayIntroSound();
+           
+
         }
+
+
+
+        public void SaveFile() 
+        {
+            FileHandler.FileHandler.Save(fighter, filename);
+        }
+
+              
+
     }
+
+
 }

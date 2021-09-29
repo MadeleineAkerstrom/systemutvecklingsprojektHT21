@@ -8,27 +8,17 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="Black">
-        <ContentControl Content="{Binding CurrentViewModel}" 
-                        Grid.Column = "1"
-                        Grid.Row="1"/>
-        <TextBlock Grid.Column="1" Grid.Row="1" Text="You lost.." FontSize="65"  VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="DimGray"/>
+
+        <Image Source="\Assets\Images\Backgrounds\game-lose.jpg" Margin="40,44,39,68"/>
+        <Image Source="\Assets\Images\Icons\SkeletonLoseView.png" Margin="166,-31,350,152"  Width="244" d:LayoutOverrides="HorizontalAlignment" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" MinWidth="244" MinHeight="298"/>
         <Button Content="Take me back to arenas" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.ArenaView}" 
-                Grid.Column="1" HorizontalAlignment="Center" Margin="0,293,0,0" Grid.Row="1" VerticalAlignment="Top" Height="57" Width="264"/>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="20"/>
-        </Grid.ColumnDefinitions>
-
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="60" />
-        </Grid.RowDefinitions>
-
+                Margin="218,301,218,0" VerticalAlignment="Stretch" Height="97" FontWeight="Bold" FontSize="20" Foreground="#FFC1C1C1" MinHeight="97" MinWidth="364" HorizontalAlignment="Stretch">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/BlackButton.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </UserControl>
