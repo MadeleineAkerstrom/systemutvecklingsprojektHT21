@@ -39,8 +39,8 @@
         <Label Content="{Binding GameVM.Odds[1]}" HorizontalAlignment="Left" Margin="560,128,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
         <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="162,45,0,0" VerticalAlignment="Top" Width="173" Foreground="White" FontSize="16" FontWeight="Bold"/>
         <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="481,45,0,0" VerticalAlignment="Top" Width="167" Foreground="White" FontSize="16" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" TextAlignment="Left" Margin="542,178,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" d:LayoutOverrides="VerticalAlignment"/>
-        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="210,178,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
+        <TextBox x:Name="txtBetAmount2" HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" TextAlignment="Left" Margin="542,178,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" d:LayoutOverrides="VerticalAlignment" TextChanged="txtBetAmount2_TextChanged"/>
+        <TextBox x:Name="txtBetAmount1" HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="210,178,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" TextChanged="txtBetAmount1_TextChanged"/>
 
 
         <Label Content="Strength:" Foreground="White" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top"/>

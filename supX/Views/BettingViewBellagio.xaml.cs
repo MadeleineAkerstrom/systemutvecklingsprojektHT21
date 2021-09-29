@@ -22,5 +22,21 @@ namespace supX.Views
         {
             InitializeComponent();
         }
+
+        private void txtBetAmount1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtBetAmount1.Text != "0")
+            {
+                txtBetAmount2.Text = "0";
+            }
+        }
+
+        private void txtBetAmount2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtBetAmount2.Text != "0")
+            {
+                txtBetAmount1.Text = "0";
+            }
+        }
     }
 }
