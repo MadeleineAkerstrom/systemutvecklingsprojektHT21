@@ -18,18 +18,18 @@
         <Image   Source="{Binding GameVM.Fighter2.ImagePath}" Margin="447,235,32,9" Height="206" Width="116" Grid.Column="1"/>
         <Image   Source="{Binding GameVM.Fighter1.ImagePath}" Margin="62,231,27,13" Height="206" Width="116" d:LayoutOverrides="HorizontalAlignment"/>
 
-        <Image Source="/Assets/Images/Text/VSBlue.png" Margin="155,10,305,325" Width="135" Grid.Column="1"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="450,150,35,193" Grid.Column="1"/>
-        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="65,158,30,184" d:LayoutOverrides="HorizontalAlignment"/>
-        <Image Source="/Assets/Images/Frames/BlueNeonFrame.png" Margin="-100,-25,0,270" HorizontalAlignment="Left" Width="654" Grid.Column="1"/>
-        <Image Source="/Assets/Images/Frames/BlueNeonFrame.png" Margin="48,-25,-87,270" Width="634" d:LayoutOverrides="HorizontalAlignment" Grid.Column="1"/>
-        <Image Source="/Assets/Images/Frames/neonborder.png" Margin="-80,-55,-12,283" d:LayoutOverrides="HorizontalAlignment"/>
-        <Image Source="/Assets/Images/Frames/neonborder.png" Margin="398,-58,-85,286" Grid.Column="1"/>
-        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="41,285,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" Grid.Column="1"/>
-        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="364,283,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" Grid.Column="1"/>
-        <Label Content="{Binding GameVM.Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="94,182,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Height="50"/>
-        <Label Content="{Binding GameVM.Odds[1]}" FontSize="18" HorizontalAlignment="Left" Margin="481,175,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" RenderTransformOrigin="0.517,0.472" Height="53" Width="58" Grid.Column="1"/>
-        <Button x:Name="btnStartFightWembley" IsEnabled="{Binding btnEnabled}" Content="Start fight!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.WembleyView}" HorizontalAlignment="Left" Margin="150,331,0,0" VerticalAlignment="Top" Height="93" FontSize="24" Width="145" FontWeight="Bold" Foreground="White" Grid.Column="1" d:LayoutOverrides="HorizontalAlignment">
+        <Image Source="/Assets/Images/Text/VSBlue.png" Margin="360,10,305,325" Width="135" d:LayoutOverrides="HorizontalAlignment"/>
+        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="655,150,35,193"/>
+        <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="65,158,625,184"/>
+        <Image Source="/Assets/Images/Frames/BlueNeonFrame.png" Margin="105,-25,0,270" HorizontalAlignment="Left" Width="654"/>
+        <Image Source="/Assets/Images/Frames/BlueNeonFrame.png" Margin="253,-25,-87,270" Width="634" d:LayoutOverrides="HorizontalAlignment"/>
+        <Image Source="/Assets/Images/Frames/neonborder.png" Margin="-65,-55,583,283"/>
+        <Image Source="/Assets/Images/Frames/neonborder.png" Margin="603,-58,-85,286"/>
+        <TextBox x:Name="txtBetAmount1" HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="246,285,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" TextChanged="txtBetAmount1_TextChanged"/>
+        <TextBox x:Name="txtBetAmount2" HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="569,283,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" TextChanged="txtBetAmount2_TextChanged"/>
+        <Label Content="{Binding GameVM.Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="94,182,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Height="50" Width="56"/>
+        <Label Content="{Binding GameVM.Odds[1]}" FontSize="18" HorizontalAlignment="Left" Margin="686,175,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" RenderTransformOrigin="0.517,0.472" Height="53" Width="58"/>
+        <Button x:Name="btnStartFightWembley" IsEnabled="{Binding btnEnabled}" Content="Start fight!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.WembleyView}" HorizontalAlignment="Left" Margin="355,331,0,0" VerticalAlignment="Top" Height="93" FontSize="24" Width="145" FontWeight="Bold" Foreground="White">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/TurquoiseButton.png"/>
             </Button.Background>
