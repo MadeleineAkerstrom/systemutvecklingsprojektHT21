@@ -59,13 +59,10 @@ namespace supX.ViewModels
             else if (BetAmount1 > 0)
             {
                 MyBetId = FighterId1;
-
-              //  changeViewCommand.Execute(GotoView.BellagioView);
             }
             else
             {
                 MyBetId = FighterId2;
-               // changeViewCommand.Execute(GotoView.BellagioView);
             }
             return MyBetId;
         }
@@ -91,8 +88,7 @@ namespace supX.ViewModels
         
 
         public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner, double myBalance)
-        {      
-            //double myBalance = Parent.Player.MyBalance;
+        {  
             double betAmount = BetAmount;
             double odds = winner.WinnerOdds;
             bool result = GenerateBetResult(myBet, winner);
@@ -100,14 +96,12 @@ namespace supX.ViewModels
             if (result == false)
             {
                 myBalance = myBalance - betAmount;
-                //Parent.CurrentViewModel = new LoserViewModel(null); 
                 return Math.Round(myBalance);
             }
             else
             {
                 myBalance = myBalance - betAmount;
                 myBalance = (betAmount * odds) + myBalance;
-                //Parent.CurrentViewModel = new WinnerViewModel(null);
                 return Math.Round(myBalance);
             }
 
@@ -134,7 +128,6 @@ namespace supX.ViewModels
 
             double winChangePercentage = 50;
 
-            // Random rules for setting odds. Don't ask about it, it's just how it's calculated by the bookmaker..
             winChangePercentage += (fighter1.Strength - fighter2.Defense) * 5;
             winChangePercentage += (fighter1.Speed - fighter2.Strength) * 3;
             winChangePercentage += (fighter1.Cardio - fighter2.Cardio) * 1;
