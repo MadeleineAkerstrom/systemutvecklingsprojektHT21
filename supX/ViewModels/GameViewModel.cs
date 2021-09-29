@@ -19,8 +19,7 @@ namespace supX.ViewModels
         public FighterViewModel Fighter2 { get; set; }
         public MainViewModel Parent { get; }
         ChangeViewCommand changeViewCommand;
-        FighterViewModel fighterViewModel;
-        BettingViewBellagioViewModel bettingViewBellagioView;
+        FighterViewModel fighterViewModel;       
         public PlayerViewModel PlayerVM { get; set; }
         public double BetAmount { get; set; }
         public double BetOdds { get; set; }
@@ -29,8 +28,7 @@ namespace supX.ViewModels
         {
             Parent = mainViewModel;
 
-            fighterViewModel = new FighterViewModel();
-            bettingViewBellagioView = new BettingViewBellagioViewModel(Parent);
+            fighterViewModel = new FighterViewModel();        
 
         }
 
@@ -48,16 +46,7 @@ namespace supX.ViewModels
             Odds = GenerateOdds(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
             Fighter1 = fighter.fighters[fighterArray[0]];
             Fighter2 = fighter.fighters[fighterArray[1]];
-        }
-
-        public void GenerateFightResults()
-        {
-            FightViewModel winner = GenerateResult(Fighter1, Fighter2);
-
-            int myBet = SetMyBet(bettingViewBellagioView.BetAmount1, bettingViewBellagioView.BetAmount2, Fighter1.Id, Fighter2.Id);
-
-            GenerateBetResult(fighterViewModel.fighters[myBet], winner);
-        }
+        }       
 
         public int SetMyBet(double BetAmount1, double BetAmount2, int FighterId1, int FighterId2)
         {
