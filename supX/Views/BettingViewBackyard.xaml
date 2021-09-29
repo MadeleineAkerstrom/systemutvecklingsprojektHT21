@@ -19,8 +19,8 @@
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/BackyardBettingViewBackground.jpg"/>
         </Grid.Background>
 
-        <Image Source="{Binding GameVM.Fighter2.ImagePath}" Margin="475,200,150,10" Height="206" Width="116"/>
-        <Image Source="{Binding GameVM.Fighter1.ImagePath}" Margin="150,200,475,10" Height="206" Width="116"/>
+        <Image Source="{Binding GameVM.Fighter2.ImagePath}" Margin="130,170,460,15" Grid.RowSpan="2"/>
+        <Image Source="{Binding GameVM.Fighter1.ImagePath}" Margin="472,178,132,8" Grid.RowSpan="2"/>
         <Image Source="/Assets/Images/Frames/RoundWoodFrame.png" Margin="460,15,39,305" Width="301"/>
         <Image Source="/Assets/Images/Frames/RoundWoodFrame.png" Margin="15,20,484,300" Width="301"/>
         <Image Source="/Assets/Images/Text/FireVS.png" Margin="302,10,283,290" Width="215" d:LayoutOverrides="HorizontalAlignment"/>
@@ -48,7 +48,7 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Button x:Name="btnStartFightBackyard" Content="Start fight!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BackyardView}" HorizontalAlignment="Left" Height="124" Margin="329,170,0,0" VerticalAlignment="Top" Width="149" Foreground="White" FontWeight="Bold" FontSize="24" BorderBrush="{x:Null}" IsEnabled="{Binding btnEnabled}">
+        <Button x:Name="btnStartFightBackyard" Content="Start fight!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BackyardView}" HorizontalAlignment="Center" Height="130" Margin="0,170,0,0" VerticalAlignment="Top" Width="168" Foreground="White" FontWeight="Bold" FontSize="24" BorderBrush="{x:Null}" IsEnabled="{Binding btnEnabled}">
             <Button.Effect>
                 <DropShadowEffect/>
             </Button.Effect>
@@ -76,7 +76,15 @@
         <Label Content="{Binding GameVM.Fighter2.Speed}" HorizontalAlignment="Left" Margin="614,115,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Defense}" HorizontalAlignment="Left" Margin="614,130,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Cardio}" HorizontalAlignment="Left" Margin="614,145,0,0" VerticalAlignment="Top"/>
-        <Button Content="Bet" Command="{Binding CheckEnoughBalance}" Height="30" Margin="30,380,665,0" Width="105"/>
-        <Button Content="Bet" Command="{Binding CheckEnoughBalance}" Height="25" Margin="680,380,10,5" Width="110"/>
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="697,-30,38,3" FontWeight="Bold" Grid.Row="1" d:LayoutOverrides="VerticalAlignment">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreenCircleButton.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="43,-29,687,2" FontWeight="Bold" Grid.Row="1" d:LayoutOverrides="VerticalAlignment">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/GreenCircleButton.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </UserControl>

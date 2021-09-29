@@ -16,9 +16,9 @@
             <ImageBrush ImageSource="/Assets/Images/Frames/StageBettingView.png"/>
         </Grid.Background>
 
-        <Image Source="{Binding GameVM.Fighter2.ImagePath}" Margin="475,200,150,10" Height="206" Width="116"/>
+        <Image Source="{Binding GameVM.Fighter2.ImagePath}" Margin="480,182,130,7"/>
 
-        <Image Source="{Binding GameVM.Fighter1.ImagePath}" Margin="150,200,475,10" Height="206" Width="116"/>
+        <Image Source="{Binding GameVM.Fighter1.ImagePath}" Margin="148,180,473,5"/>
         <!--<ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}" Height="186" Width="116"/>-->
 
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="48,-40,378,220" d:LayoutOverrides="VerticalAlignment"/>
@@ -28,19 +28,18 @@
                 <ImageBrush ImageSource="/Assets/Images/Buttons/PurpleButton.png"/>
             </Button.Background>
         </Button>
-        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="512,95,179,248" Height="107"/>
-        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="178,95,512,248" Height="107"/>
-        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="468,135,142,168" d:LayoutOverrides="VerticalAlignment"/>
-        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="143,133,475,165" d:LayoutOverrides="VerticalAlignment"/>
+        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="498,105,193,238" Height="107"/>
+        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="630,222,-20,81" d:LayoutOverrides="VerticalAlignment"/>
+        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="178,99,512,244" Height="107"/>
+        <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="-20,218,638,80" d:LayoutOverrides="VerticalAlignment"/>
         <Image Source="\Assets\Images\Text\VS.png" Margin="102,0,93,295" Height="155" Width="605" d:LayoutOverrides="HorizontalAlignment"/>
         <Image Source="\Assets\Images\Frames\blueborderneonborder.png" Margin="-225,-15,420,310" Height="155" Width="605"/>
         <Image Source="\Assets\Images\Frames\blueborderneonborder.png" Margin="416,-15,-222,310" Height="155" Width="605"/>
-        <Label Content="{Binding GameVM.Odds[0]}" HorizontalAlignment="Left" Margin="225,127,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
-        <Label Content="{Binding GameVM.Odds[1]}" HorizontalAlignment="Left" Margin="560,128,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
+        <Label Content="{Binding GameVM.Odds[0]}" HorizontalAlignment="Left" Margin="218,133,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
+        <Label Content="{Binding GameVM.Odds[1]}" HorizontalAlignment="Left" Margin="540,138,0,0" VerticalAlignment="Top" Foreground="#FFECECEC"/>
         <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="162,45,0,0" VerticalAlignment="Top" Width="173" Foreground="White" FontSize="16" FontWeight="Bold"/>
-        <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="481,45,0,0" VerticalAlignment="Top" Width="167" Foreground="White" FontSize="16" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" TextAlignment="Left" Margin="542,178,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" d:LayoutOverrides="VerticalAlignment"/>
-        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="210,178,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
+        <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="477,45,0,0" VerticalAlignment="Top" Width="167" Foreground="White" FontSize="16" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="48,262,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
 
 
         <Label Content="Strength:" Foreground="White" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top"/>
@@ -59,8 +58,17 @@
         <Label Content="{Binding GameVM.Fighter2.Speed}" Foreground="White" HorizontalAlignment="Left" Margin="745,35,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Defense}" Foreground="White" HorizontalAlignment="Left" Margin="745,50,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Cardio}" Foreground="White" HorizontalAlignment="Left" Margin="745,65,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" Command="{Binding CheckEnoughBalance}" HorizontalAlignment="Left" Margin="278,182,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" Command="{Binding CheckEnoughBalance}" HorizontalAlignment="Left" Margin="473,182,0,0" VerticalAlignment="Top"/>
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" HorizontalAlignment="Left" Margin="35,315,0,0" VerticalAlignment="Top" Height="70" Width="75" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/PurpleCircleButton2.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="690,316,35,0" VerticalAlignment="Top" Height="70" Width="75" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/PurpleCircleButton2.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox HorizontalAlignment="Right" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="21" TextAlignment="Left" Margin="0,264,52,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="42"/>
 
     </Grid>
 </UserControl>
