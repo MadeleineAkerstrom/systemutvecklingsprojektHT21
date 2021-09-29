@@ -196,7 +196,6 @@
     <None Remove="Assets\Images\Text\WembleyLogo.png" />
     <None Remove="Assets\Images\WembleyView.jpg" />
     <None Remove="Resources\Cartoon-Fighting-Cloud.gif" />
-    <None Remove="Views\instructions.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -418,7 +417,6 @@
     <Resource Include="Assets\Images\Text\WembleyLogo.png" />
     <Resource Include="Assets\Images\Backgrounds\WembleyView.jpg" />
     <Resource Include="Resources\Cartoon-Fighting-Cloud.gif" />
-    <Resource Include="Views\instructions.png" />
   </ItemGroup>
 
   <ItemGroup>
