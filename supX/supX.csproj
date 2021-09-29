@@ -26,6 +26,7 @@
     <None Remove="Assets\Images\Buttons\SmallBlueRectangleFrame.png" />
     <None Remove="Assets\Images\Buttons\TurquoiseButton.png" />
     <None Remove="Assets\Images\Buttons\VioletButton.png" />
+    <None Remove="Assets\Images\Buttons\WoodBrick.png" />
     <None Remove="Assets\Images\Buttons\WoodSignButton.png" />
     <None Remove="Assets\Images\fight1.gif" />
     <None Remove="Assets\Images\Fighters\FighterAkebia.png" />
@@ -116,6 +117,7 @@
     <Resource Include="Assets\Images\Buttons\RoundWoodButton.png" />
     <Resource Include="Assets\Images\Buttons\TurquoiseButton.png" />
     <Resource Include="Assets\Images\Buttons\VioletButton.png" />
+    <Resource Include="Assets\Images\Buttons\WoodBrick.png" />
     <Resource Include="Assets\Images\Buttons\WoodSignButton.png" />
     <Resource Include="Assets\Images\Fighters\FighterAkebia.png" />
     <Resource Include="Assets\Images\Fighters\FighterAmputee.png" />

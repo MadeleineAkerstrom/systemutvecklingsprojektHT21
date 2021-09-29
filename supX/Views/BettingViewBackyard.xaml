@@ -71,6 +71,11 @@
         </Label>
         <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="556,17,0,0" VerticalAlignment="Top" Width="159" Foreground="White" FontSize="16" FontWeight="Bold"/>
         <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="109,19,0,0" VerticalAlignment="Top" Width="178" Foreground="White" FontSize="16" FontWeight="Bold" d:LayoutOverrides="HorizontalAlignment"/>
+        <Button Content="Set bet!" Margin="25,-35,660,15" Grid.Row="1" d:LayoutOverrides="VerticalAlignment" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/Images/Buttons/WoodBrick.png"/>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </UserControl>
