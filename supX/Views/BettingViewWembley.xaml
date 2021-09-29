@@ -14,21 +14,16 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/WembleyOutside.jpg"/>
         </Grid.Background>
-        <Button Content="" HorizontalAlignment="Left" Margin="655,256,0,0" VerticalAlignment="Top" Height="167" Width="100">
-            <Button.Background>
-                <ImageBrush ImageSource="{Binding GameVM.Fighter2.ImagePath}"/>
-            </Button.Background>
-        </Button>
-        <Button Content="" HorizontalAlignment="Left" Margin="60,250,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.69,0.684" Height="167" Width="115">
-            <Button.Background>
-                <ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}"/>
-            </Button.Background>
-        </Button>
+        <Image   Source="{Binding GameVM.Fighter2.ImagePath}" Margin="652,234,32,10" Height="206" Width="116"/>
+        <Image   Source="{Binding GameVM.Fighter1.ImagePath}" Margin="62,234,622,10" Height="206" Width="116"/>
+
         <Image Source="/Assets/Images/Text/VSBlue.png" Margin="360,10,305,325" Width="135" d:LayoutOverrides="HorizontalAlignment"/>
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="655,150,35,193"/>
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="65,158,625,184"/>
-        <Image Source="/Assets/Images/Frames/BlueNeonFrame.png" Height="155" Margin="-52,-15,278,310"/>
-        <Image Source="/Assets/Images/Frames/BlueNeonFrame.png" Height="155" Margin="321,-18,-82,313"/>
+        <Image Source="/Assets/Images/Frames/BlueNeonFrame.png" Margin="105,-25,0,270" HorizontalAlignment="Left" Width="654"/>
+        <Image Source="/Assets/Images/Frames/BlueNeonFrame.png" Margin="253,-25,-87,270" Width="634" d:LayoutOverrides="HorizontalAlignment"/>
+        <Image Source="/Assets/Images/Frames/neonborder.png" Margin="-65,-55,583,283"/>
+        <Image Source="/Assets/Images/Frames/neonborder.png" Margin="603,-58,-85,286"/>
         <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount1, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="246,285,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
         <TextBox HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="569,283,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46"/>
         <Label Content="{Binding GameVM.Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="94,182,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Height="50" Width="56"/>
@@ -38,8 +33,27 @@
                 <ImageBrush ImageSource="/Assets/Images/Buttons/TurquoiseButton.png"/>
             </Button.Background>
         </Button>
-        <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="190,37,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontWeight="Bold" Width="155"/>
-        <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="525,30,0,0" VerticalAlignment="Top" Width="235" Foreground="White" FontSize="24" FontWeight="Bold"/>
+        <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="150,42,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" Width="215"/>
+        <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="485,40,0,0" VerticalAlignment="Top" Width="205" Foreground="White" FontSize="18" FontWeight="Bold"/>
+
+
+        <Label Content="Strength:" Foreground="White" HorizontalAlignment="Left" Margin="40,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Speed:" Foreground="White" HorizontalAlignment="Left" Margin="40,25,0,0" VerticalAlignment="Top"/>
+        <Label Content="Defense:" Foreground="White" HorizontalAlignment="Left" Margin="40,40,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cardio:" Foreground="White" HorizontalAlignment="Left" Margin="40,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Strength}" Foreground="White" HorizontalAlignment="Left" Margin="107,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Speed}" Foreground="White" HorizontalAlignment="Left" Margin="107,25,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Defense}" Foreground="White" HorizontalAlignment="Left" Margin="107,40,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter1.Cardio}" Foreground="White" HorizontalAlignment="Left" Margin="107,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="Strength:" Foreground="White" HorizontalAlignment="Left" Margin="700,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Speed:" Foreground="White" HorizontalAlignment="Left" Margin="700,25,0,0" VerticalAlignment="Top"/>
+        <Label Content="Defense:" Foreground="White" HorizontalAlignment="Left" Margin="700,40,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cardio:" Foreground="White" HorizontalAlignment="Left" Margin="700,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Strength}" Foreground="White" HorizontalAlignment="Left" Margin="767,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Speed}" Foreground="White" HorizontalAlignment="Left" Margin="767,25,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Defense}" Foreground="White" HorizontalAlignment="Left" Margin="767,40,0,0" VerticalAlignment="Top"/>
+        <Label Content="{Binding GameVM.Fighter2.Cardio}" Foreground="White" HorizontalAlignment="Left" Margin="767,55,0,0" VerticalAlignment="Top"/>
+
 
     </Grid>
 </UserControl>
