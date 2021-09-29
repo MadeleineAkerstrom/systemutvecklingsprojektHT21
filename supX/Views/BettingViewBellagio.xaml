@@ -18,12 +18,12 @@
 
         <Image Source="{Binding GameVM.Fighter2.ImagePath}" Margin="475,200,150,10" Height="206" Width="116"/>
 
-            <Image Source="{Binding GameVM.Fighter1.ImagePath}" Margin="150,200,475,10" Height="206" Width="116"/>
+        <Image Source="{Binding GameVM.Fighter1.ImagePath}" Margin="150,200,475,10" Height="206" Width="116"/>
         <!--<ImageBrush ImageSource="{Binding GameVM.Fighter1.ImagePath}" Height="186" Width="116"/>-->
 
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="48,-40,378,220" d:LayoutOverrides="VerticalAlignment"/>
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="353,-43,55,220" d:LayoutOverrides="VerticalAlignment"/>
-        <Button Content="Bet!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BellagioView}" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Height="83" FontSize="24" Width="136" FontWeight="Bold">
+        <Button Content="Start fight!" x:Name="btnStartFightWembley" IsEnabled="{Binding btnEnabled}"  Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BellagioView}" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Height="83" FontSize="22" Width="136" FontWeight="Bold">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/PurpleButton.png"/>
             </Button.Background>
@@ -59,6 +59,8 @@
         <Label Content="{Binding GameVM.Fighter2.Speed}" Foreground="White" HorizontalAlignment="Left" Margin="745,35,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Defense}" Foreground="White" HorizontalAlignment="Left" Margin="745,50,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Cardio}" Foreground="White" HorizontalAlignment="Left" Margin="745,65,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" Command="{Binding CheckEnoughBalance}" HorizontalAlignment="Left" Margin="278,182,0,0" VerticalAlignment="Top"/>
+        <Button Content="Button" Command="{Binding CheckEnoughBalance}" HorizontalAlignment="Left" Margin="473,182,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </UserControl>
