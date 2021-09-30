@@ -18,9 +18,12 @@ namespace supX.Views
     /// </summary>
     public partial class CashOutView : UserControl
     {
+        
         public CashOutView()
         {
             InitializeComponent();
         }
+
+
     }
 }

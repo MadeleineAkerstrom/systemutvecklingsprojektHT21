@@ -6,14 +6,13 @@
              xmlns:local="clr-namespace:supX.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+       
     <Grid Background="Black">
         <TextBox Focusable="False" Text="Under Construction &#xA;"             
               
          HorizontalAlignment="Left" Margin="21,0,0,0" VerticalAlignment="Top" Height="71" Width="612" BorderBrush="{x:Null}" Foreground="White" FontFamily="Courier New" FontWeight="Bold" FontSize="50" Background="{x:Null}">
         </TextBox>
-        <ListBox x:Name="lstHighscore" Margin="52,76,445,131"/>
-        <TextBox x:Name="txtPlayerName" HorizontalAlignment="Left" Margin="64,365,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Add Yor Name" HorizontalAlignment="Left" Margin="64,401,0,0" VerticalAlignment="Top"/>
+        
 
     </Grid>
 </UserControl>
