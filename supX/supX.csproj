@@ -31,6 +31,9 @@
     <None Remove="Assets\Images\Buttons\HandBrownCircleButton.png" />
     <None Remove="Assets\Images\Buttons\PurpleCircleButton.png" />
     <None Remove="Assets\Images\Buttons\PurpleCircleButton2.png" />
+    <None Remove="Assets\Images\Buttons\RectangleGoldButton.png" />
+    <None Remove="Assets\Images\Buttons\RectangleGreenButton.png" />
+    <None Remove="Assets\Images\Buttons\RectangleSilverButton.png" />
     <None Remove="Assets\Images\Buttons\RoundWoodButton.png" />
     <None Remove="Assets\Images\Buttons\SilverButton.png" />
     <None Remove="Assets\Images\Buttons\SmallBlueRectangleFrame.png" />
@@ -208,6 +211,9 @@
     <Resource Include="Assets\Images\Buttons\HandBrownCircleButton.png" />
     <Resource Include="Assets\Images\Buttons\PurpleCircleButton.png" />
     <Resource Include="Assets\Images\Buttons\PurpleCircleButton2.png" />
+    <Resource Include="Assets\Images\Buttons\RectangleGoldButton.png" />
+    <Resource Include="Assets\Images\Buttons\RectangleGreenButton.png" />
+    <Resource Include="Assets\Images\Buttons\RectangleSilverButton.png" />
     <Resource Include="Assets\Images\Buttons\TealCircleButton.png" />
     <Resource Include="Assets\Images\Buttons\VioletCircleButton.png" />
     <Resource Include="Assets\Images\Buttons\WoodCircleButton.png" />

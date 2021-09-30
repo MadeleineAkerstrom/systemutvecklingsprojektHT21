@@ -20,7 +20,7 @@
         <Button Content="Collect my winnings" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.ArenaView}" 
-                Margin="224,284,234,0" VerticalAlignment="Top" Height="68" OpacityMask="Black" FontWeight="Bold" FontSize="20">
+                Margin="224,284,234,0" VerticalAlignment="Top" Height="68" OpacityMask="Black" FontWeight="Bold" FontSize="20" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GoldButton.png"/>
             </Button.Background>

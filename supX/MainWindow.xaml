@@ -30,45 +30,45 @@
                     Margin="0,0,0,0" 
                     Command="{Binding ChangeViewCommand}" 
                     CommandParameter="{x:Static data:GotoView.ArenaView}" 
-                    Height="90" 
-                    Width="130" 
-                    Foreground="#FFD3CFCF" 
+                    Height="75" 
+                    Width="120" 
+                    Foreground="#000000" 
                     FontWeight="Bold" 
-                    FontSize="16">
+                    FontSize="16" BorderBrush="{x:Null}">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
+                    <ImageBrush ImageSource="/Assets/Images/Buttons/RectangleSilverButton.png"/>
                 </Button.Background>
                 <Button.Effect>
                     <DropShadowEffect/>
                 </Button.Effect>
             </Button>
-            <Button Content="Cash Out" 
-                    Margin="50,0,0,0" 
-                    Command="{Binding ChangeViewCommand}" 
-                    CommandParameter="{x:Static data:GotoView.CashOutView}" 
-                    Width="130" 
-                    Height="95" 
-                    Foreground="#FFD3CFCF" 
-                    FontSize="16" 
-                    FontWeight="Bold">
-                <Button.Background>
-                    <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
-                </Button.Background>
-            </Button>
             <Button Content="Rules" 
                     Margin="50,0,0,0" 
                     Command="{Binding ChangeViewCommand}" 
                     CommandParameter="{x:Static data:GotoView.RulesView}" 
-                    Width="130" 
-                    Height="95" 
-                    Foreground="#FFD3CFCF" 
+                    Width="120" 
+                    Height="75" 
+                    Foreground="#000000" 
                     FontSize="16" 
-                    FontWeight="Bold">
+                    FontWeight="Bold" BorderBrush="{x:Null}">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
+                    <ImageBrush ImageSource="/Assets/Images/Buttons/RectangleSilverButton.png"/>
                 </Button.Background>
             </Button>
-            <Views:PlayerView Margin="120,0,0,0"/>
+            <Button Content="Cash Out" 
+                    Margin="150,0,0,0" 
+                    Command="{Binding ChangeViewCommand}" 
+                    CommandParameter="{x:Static data:GotoView.CashOutView}" 
+                    Width="125" 
+                    Height="85" 
+                    Foreground="#000000" 
+                    FontSize="16" 
+                    FontWeight="Bold" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/Images/Buttons/RectangleGoldButton.png"/>
+                </Button.Background>
+            </Button>
+            <Views:PlayerView Margin="50,0,0,0"/>
         </StackPanel>
     </Grid>
 </Window>

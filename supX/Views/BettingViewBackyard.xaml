@@ -76,12 +76,12 @@
         <Label Content="{Binding GameEngine.Fighter2.Speed}" HorizontalAlignment="Left" Margin="614,115,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameEngine.Fighter2.Defense}" HorizontalAlignment="Left" Margin="614,130,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameEngine.Fighter2.Cardio}" HorizontalAlignment="Left" Margin="614,145,0,0" VerticalAlignment="Top"/>
-        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="697,-30,38,3" FontWeight="Bold" Grid.Row="1" d:LayoutOverrides="VerticalAlignment">
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="697,-30,38,3" FontWeight="Bold" Grid.Row="1" d:LayoutOverrides="VerticalAlignment" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GreenCircleButton.png"/>
             </Button.Background>
         </Button>
-        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="43,-29,687,2" FontWeight="Bold" Grid.Row="1" d:LayoutOverrides="VerticalAlignment">
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="43,-29,687,2" FontWeight="Bold" Grid.Row="1" d:LayoutOverrides="VerticalAlignment" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GreenCircleButton.png"/>
             </Button.Background>

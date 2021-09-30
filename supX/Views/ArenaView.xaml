@@ -22,7 +22,7 @@
                 Height="127" 
                 Width="164" 
                 FontSize="16" 
-                FontWeight="Bold">
+                FontWeight="Bold" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
@@ -36,7 +36,7 @@
                 Height="127" 
                 Width="164" 
                 FontSize="16" 
-                FontWeight="Bold">
+                FontWeight="Bold" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
@@ -50,7 +50,7 @@
                 Height="127" 
                 Width="164" 
                 FontSize="16" 
-                FontWeight="Bold">
+                FontWeight="Bold" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
