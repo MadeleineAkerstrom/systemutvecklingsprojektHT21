@@ -43,7 +43,7 @@
                 </Button.Effect>
             </Button>
             <Button Content="Rules" 
-                    Margin="50,0,0,0" 
+                    Margin="20,0,0,0" 
                     Command="{Binding ChangeViewCommand}" 
                     CommandParameter="{x:Static data:GotoView.RulesView}" 
                     Width="120" 
@@ -55,8 +55,19 @@
                     <ImageBrush ImageSource="/Assets/Images/Buttons/RectangleSilverButton.png"/>
                 </Button.Background>
             </Button>
+            <Button Content="Quit Game" 
+                    Margin="20,0,0,0"                     
+                    Width="125" 
+                    Height="85" 
+                    Foreground="#000000" 
+                    FontSize="16" 
+                    FontWeight="Bold" BorderBrush="{x:Null}" Click="Button_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
+                </Button.Background>
+            </Button>
             <Button Content="Cash Out" 
-                    Margin="150,0,0,0" 
+                    Margin="50,0,0,0" 
                     Command="{Binding ChangeViewCommand}" 
                     CommandParameter="{x:Static data:GotoView.CashOutView}" 
                     Width="125" 
