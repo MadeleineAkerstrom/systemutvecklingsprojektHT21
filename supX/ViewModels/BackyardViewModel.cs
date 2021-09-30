@@ -25,6 +25,7 @@ namespace supX.ViewModels
             Betback.MyBetId = Betback.GameEngine.SetMyBet(Betback.BetAmount1, Betback.BetAmount2, Betback.FighterId1, Betback.FighterId2);
             Winner = Betback.GameEngine.GenerateResult(Betback.GameEngine.fighter.fighters[Betback.GameEngine.Fighter1.Id], Betback.GameEngine.fighter.fighters[Betback.GameEngine.Fighter2.Id]);
             Betback.GameEngine.BetAmount = Betback.GameEngine.SetBetAmount(Betback.BetAmount1, Betback.BetAmount2);
+            Parent.Player.WinnerAmount = Betback.GameEngine.WinnerAmount(Betback.GameEngine.fighter.fighters[Betback.MyBetId], Winner, Parent.Player.MyBalance);
             privatebalance = Betback.GameEngine.CalculateNewBalance(Betback.GameEngine.fighter.fighters[Betback.MyBetId], Winner, Parent.Player.MyBalance);
             Result = new RelyCommand(LostOrWon);
         }

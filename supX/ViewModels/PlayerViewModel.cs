@@ -8,6 +8,7 @@ namespace supX.ViewModels
     {
         #region Properties
         public double MyBalance { get; set; }
+        public double WinnerAmount { get; set; }
 
         public MainViewModel Parent { get; }
         #endregion

@@ -69,9 +69,16 @@ namespace supX.Models
             return fighterIDs;
         }
 
+        public double WinnerAmount (FighterViewModel myBet, FightViewModel winner, double myBalance)
+        {
+            double betAmount = BetAmount;
+            double odds = winner.WinnerOdds;
+            double winnerAmount;
+            bool result = GenerateBetResult(myBet, winner);
 
-
-
+            winnerAmount = betAmount * odds;
+            return Math.Round(winnerAmount);
+        }
 
         public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner, double myBalance)
         {

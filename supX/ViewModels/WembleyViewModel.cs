@@ -25,6 +25,7 @@ namespace supX.ViewModels
             Betwem.MyBetId = Betwem.GameEngine.SetMyBet(Betwem.BetAmount1, Betwem.BetAmount2, Betwem.FighterId1, Betwem.FighterId2);
             Winner = Betwem.GameEngine.GenerateResult(Betwem.GameEngine.fighter.fighters[Betwem.GameEngine.Fighter1.Id], Betwem.GameEngine.fighter.fighters[Betwem.GameEngine.Fighter2.Id]);
             Betwem.GameEngine.BetAmount = Betwem.GameEngine.SetBetAmount(Betwem.BetAmount1, Betwem.BetAmount2);
+            Parent.Player.WinnerAmount = Betwem.GameEngine.WinnerAmount(Betwem.GameEngine.fighter.fighters[Betwem.MyBetId], Winner, Parent.Player.MyBalance);
             privatebalance = Betwem.GameEngine.CalculateNewBalance(Betwem.GameEngine.fighter.fighters[Betwem.MyBetId], Winner, Parent.Player.MyBalance);
             Result = new RelyCommand(LostOrWon);
         }
