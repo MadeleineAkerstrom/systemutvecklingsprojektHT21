@@ -76,7 +76,7 @@ namespace supX.Models
             double winnerAmount;
             bool result = GenerateBetResult(myBet, winner);
 
-            winnerAmount = betAmount * odds;
+            winnerAmount = betAmount * odds - betAmount;
             return Math.Round(winnerAmount);
         }
 
