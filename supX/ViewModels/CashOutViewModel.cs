@@ -1,29 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Input;
 
 namespace supX.ViewModels
 {
-    public class PlayerViewModel : BaseViewModel
+    public class CashOutViewModel : BaseViewModel
     {
+        
         #region Properties
-        public double MyBalance { get; set; }
-
         public MainViewModel Parent { get; }
+                
         #endregion
 
+        
         #region Constructor
-        public PlayerViewModel(MainViewModel mainViewModel)
+        public CashOutViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
+            
         }
         #endregion
 
 
-
-
     }
-
-   
-
 }
