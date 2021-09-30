@@ -22,10 +22,10 @@ namespace supX.ViewModels
             Parent = mainViewModel;
             Betback = (BettingViewBackyardViewModel)mainViewModel.CurrentViewModel;
 
-            Betback.MyBetId = Betback.GameVM.SetMyBet(Betback.BetAmount1, Betback.BetAmount2, Betback.FighterId1, Betback.FighterId2);
-            Winner = Betback.GameVM.GenerateResult(Betback.GameVM.fighter.fighters[Betback.GameVM.Fighter1.Id], Betback.GameVM.fighter.fighters[Betback.GameVM.Fighter2.Id]);
-            Betback.GameVM.BetAmount = Betback.GameVM.SetBetAmount(Betback.BetAmount1, Betback.BetAmount2);
-            privatebalance = Betback.GameVM.CalculateNewBalance(Betback.GameVM.fighter.fighters[Betback.MyBetId], Winner, Parent.Player.MyBalance);
+            Betback.MyBetId = Betback.GameEngine.SetMyBet(Betback.BetAmount1, Betback.BetAmount2, Betback.FighterId1, Betback.FighterId2);
+            Winner = Betback.GameEngine.GenerateResult(Betback.GameEngine.fighter.fighters[Betback.GameEngine.Fighter1.Id], Betback.GameEngine.fighter.fighters[Betback.GameEngine.Fighter2.Id]);
+            Betback.GameEngine.BetAmount = Betback.GameEngine.SetBetAmount(Betback.BetAmount1, Betback.BetAmount2);
+            privatebalance = Betback.GameEngine.CalculateNewBalance(Betback.GameEngine.fighter.fighters[Betback.MyBetId], Winner, Parent.Player.MyBalance);
             Result = new RelyCommand(LostOrWon);
         }
 
