@@ -49,6 +49,7 @@ namespace supX.ViewModels
             else
             {
                 btnEnabled = true;
+                sounds.PlayCashRegisterSound();
             }
         }
     }
