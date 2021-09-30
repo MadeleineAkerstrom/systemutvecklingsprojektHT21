@@ -37,7 +37,7 @@ namespace supX.ViewModels
             CheckEnoughBalance = new RelyCommand(EnoughBalance);
         }
 
-        public void EnoughBalance()
+        private void EnoughBalance()
         {
             if (BetAmount1 + BetAmount2 > Parent.Player.MyBalance)
             {

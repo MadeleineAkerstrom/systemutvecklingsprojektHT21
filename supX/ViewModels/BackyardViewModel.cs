@@ -16,6 +16,7 @@ namespace supX.ViewModels
         public FightViewModel Winner { get; set; }
         public ICommand Result { get; set; }
         private double privatebalance;
+
         public BackyardViewModel(MainViewModel mainViewModel)
         {
             sounds.PlayFightingSound();
@@ -30,7 +31,7 @@ namespace supX.ViewModels
             Result = new RelyCommand(LostOrWon);
         }
 
-        public void LostOrWon()
+        private void LostOrWon()
         {
 
             if (privatebalance == 0)
