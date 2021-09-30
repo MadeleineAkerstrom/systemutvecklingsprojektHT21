@@ -10,13 +10,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="860" WindowState="Normal" ResizeMode="CanResize" MinHeight="600" MinWidth="860">
     <Grid Background="#FF231F20">
-
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="800"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
-
         <Grid.RowDefinitions>
             <RowDefinition Height="20" />
             <RowDefinition Height="352.84" />
@@ -28,8 +26,15 @@
                         Grid.Column = "1"
                         Grid.Row="1" Grid.RowSpan="2"/>
         <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" Margin="0,12,0,-20" Grid.RowSpan="2">
-
-            <Button Content="Choose Arena" Margin="0,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.ArenaView}" Height="90" Width="130" Foreground="#FFD3CFCF" FontWeight="Bold" FontSize="16">
+            <Button Content="Choose Arena" 
+                    Margin="0,0,0,0" 
+                    Command="{Binding ChangeViewCommand}" 
+                    CommandParameter="{x:Static data:GotoView.ArenaView}" 
+                    Height="90" 
+                    Width="130" 
+                    Foreground="#FFD3CFCF" 
+                    FontWeight="Bold" 
+                    FontSize="16">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
                 </Button.Background>
@@ -37,12 +42,28 @@
                     <DropShadowEffect/>
                 </Button.Effect>
             </Button>
-            <Button Content="Cash Out" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.CashOutView}" Width="130" Height="95" Foreground="#FFD3CFCF" FontSize="16" FontWeight="Bold">
+            <Button Content="Cash Out" 
+                    Margin="50,0,0,0" 
+                    Command="{Binding ChangeViewCommand}" 
+                    CommandParameter="{x:Static data:GotoView.CashOutView}" 
+                    Width="130" 
+                    Height="95" 
+                    Foreground="#FFD3CFCF" 
+                    FontSize="16" 
+                    FontWeight="Bold">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
                 </Button.Background>
             </Button>
-            <Button Content="Rules" Margin="50,0,0,0" Command="{Binding ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.RulesView}" Width="130" Height="95" Foreground="#FFD3CFCF" FontSize="16" FontWeight="Bold">
+            <Button Content="Rules" 
+                    Margin="50,0,0,0" 
+                    Command="{Binding ChangeViewCommand}" 
+                    CommandParameter="{x:Static data:GotoView.RulesView}" 
+                    Width="130" 
+                    Height="95" 
+                    Foreground="#FFD3CFCF" 
+                    FontSize="16" 
+                    FontWeight="Bold">
                 <Button.Background>
                     <ImageBrush ImageSource="/Assets/Images/Buttons/RedButton.png"/>
                 </Button.Background>

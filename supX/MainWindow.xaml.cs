@@ -25,30 +25,13 @@ namespace supX
     /// </summary>
     public partial class MainWindow : Window
     {
-        string filename = "/Assets/Json/fighters.json";
-        FighterViewModel fighter;
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
-
 
         public MainWindow()
         {
             InitializeComponent();
             DataContext = new MainViewModel();
             sounds.PlayIntroSound();
-           
-
         }
-
-
-
-        public void SaveFile() 
-        {
-            FileHandler.FileHandler.Save(fighter, filename);
-        }
-
-              
-
     }
-
-
 }

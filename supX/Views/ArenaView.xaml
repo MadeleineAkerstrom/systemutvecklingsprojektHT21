@@ -11,14 +11,18 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Icons/ringside.jpg"/>
         </Grid.Background>
-        <Image Source="\Assets\Images\Frames\SilverFrame.png" Margin="68,39,67,257"/>
+        <Image Source="\Assets\Images\Frames\SilverFrame.png" 
+               Margin="68,39,67,257"/>
         <Button Content="Backyard" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BettingViewBackyard}" 
                 HorizontalAlignment="Left" 
                 VerticalAlignment="Top" 
                 Margin="39,198,0,0" 
-                Height="127" Width="164" FontSize="16" FontWeight="Bold">
+                Height="127" 
+                Width="164" 
+                FontSize="16" 
+                FontWeight="Bold">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
@@ -26,10 +30,13 @@
         <Button Content="Wembley" 
                 Command="{Binding Parent.ChangeViewCommand}" 
                 CommandParameter="{x:Static data:GotoView.BettingViewWembley}" 
-                HorizontalAlignment="Center" Margin="0,198,0,0" 
+                HorizontalAlignment="Center" 
+                Margin="0,198,0,0" 
                 VerticalAlignment="Top" 
                 Height="127" 
-                Width="164" FontSize="16" FontWeight="Bold">
+                Width="164" 
+                FontSize="16" 
+                FontWeight="Bold">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
@@ -41,7 +48,9 @@
                 Margin="583,198,0,0" 
                 VerticalAlignment="Top" 
                 Height="127" 
-                Width="164" FontSize="16" FontWeight="Bold">
+                Width="164" 
+                FontSize="16" 
+                FontWeight="Bold">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/GreenButton.png"/>
             </Button.Background>
@@ -50,6 +59,13 @@
                Margin="239,62,238,0" 
                VerticalAlignment="Top" 
                Height="115" 
-               FontSize="36" FontWeight="Bold" Foreground="Black" FontFamily="Sitka Small" Background="{x:Null}" FlowDirection="LeftToRight" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"/>
+               FontSize="36" 
+               FontWeight="Bold" 
+               Foreground="Black" 
+               FontFamily="Sitka Small" 
+               Background="{x:Null}" 
+               FlowDirection="LeftToRight" 
+               VerticalContentAlignment="Top" 
+               HorizontalContentAlignment="Center"/>
     </Grid>
 </UserControl>

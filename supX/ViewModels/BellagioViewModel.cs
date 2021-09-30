@@ -12,13 +12,10 @@ namespace supX.ViewModels
     {
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
         public MainViewModel Parent { get; }
-        public GameViewModel GameVM { get; set; }
         public BettingViewBellagioViewModel Betbell { get; set; }
-        public FighterViewModel FightVM { get; set; }
         public FightViewModel Winner { get; set; }
         public ICommand Result { get; set; }
-        public PlayerViewModel PlayerVM { get; set; }
-
+        private double privatebalance;
         public BellagioViewModel(MainViewModel mainViewModel)
         {
             sounds.PlayFightingSound();
@@ -27,14 +24,13 @@ namespace supX.ViewModels
             Betbell.MyBetId = Betbell.GameVM.SetMyBet(Betbell.BetAmount1, Betbell.BetAmount2, Betbell.FighterId1, Betbell.FighterId2);
             Winner = Betbell.GameVM.GenerateResult(Betbell.GameVM.fighter.fighters[Betbell.GameVM.Fighter1.Id], Betbell.GameVM.fighter.fighters[Betbell.GameVM.Fighter2.Id]);
             Betbell.GameVM.BetAmount=Betbell.GameVM.SetBetAmount(Betbell.BetAmount1, Betbell.BetAmount2);
-            //Thread.Sleep(5000);
-            Parent.Player.MyBalance = Betbell.GameVM.CalculateNewBalance(Betbell.GameVM.fighter.fighters[Betbell.MyBetId], Winner, Parent.Player.MyBalance); //Here
+            privatebalance = Betbell.GameVM.CalculateNewBalance(Betbell.GameVM.fighter.fighters[Betbell.MyBetId], Winner, Parent.Player.MyBalance); 
             Result = new RelyCommand(LostOrWon);
         }
 
         public void LostOrWon()
         {
-            if (Parent.Player.MyBalance == 0)
+            if (privatebalance == 0)
             {
                 Parent.CurrentViewModel = new GameOverViewModel(Parent);
             }
@@ -42,12 +38,12 @@ namespace supX.ViewModels
             {
                 if (Betbell.MyBetId == Winner.WinnerId)
                 {
-                    Parent.CurrentViewModel = new WinnerViewModel(Parent);
+                    Parent.CurrentViewModel = new WinnerViewModel(Parent, privatebalance);
                 }
 
                 else
                 {
-                    Parent.CurrentViewModel = new LoserViewModel(Parent);
+                    Parent.CurrentViewModel = new LoserViewModel(Parent, privatebalance);
                 }
             }
         }

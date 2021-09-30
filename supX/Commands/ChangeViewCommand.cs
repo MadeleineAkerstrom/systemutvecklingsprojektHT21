@@ -61,18 +61,17 @@ namespace supX.Commands
                 case GotoView.MainView:
                     mainViewModel.CurrentViewModel = new StartViewModel(mainViewModel);
                     break;
-                case GotoView.ShowResultView:
-                    mainViewModel.CurrentViewModel = new ShowResultViewModel(mainViewModel);
+                case GotoView.InstructionsView:
+                    mainViewModel.CurrentViewModel = new InstructionsViewModel(mainViewModel);
                     break;
-
+                case GotoView.GameOverView:
+                    mainViewModel.CurrentViewModel = new GameOverViewModel(mainViewModel);
+                    break;
                 case GotoView.CashOutView:
                     mainViewModel.CurrentViewModel = new CashOutViewModel(mainViewModel);
                     break;
 
-               case GotoView.InstructionsView:
-                    mainViewModel.CurrentViewModel = new InstructionsViewModel(mainViewModel);
-                    break;
-               default:
+                default:
                     break;
             }
 

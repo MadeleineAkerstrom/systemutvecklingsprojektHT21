@@ -5,7 +5,6 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:supX.Views"
              xmlns:data="clr-namespace:supX.Data"
-             
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
@@ -13,9 +12,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/WinnerWallpaper.png"/>
         </Grid.Background>
-
         <Image Source="\Assets\Images\Icons\WinnerIcon.png" Margin="-5,-33,-5,111"/>
-
         <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Margin="-442,-48,142,108"/>
         <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Margin="469,-42,-18,114"/>
         <Image Source="\Assets\Images\Frames\GoldBalanceFrame.png" Grid.Column="1" Margin="303,164,303,104" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
@@ -31,6 +28,5 @@
                 <DropShadowEffect/>
             </Button.Effect>
         </Button>
-
     </Grid>
 </UserControl>

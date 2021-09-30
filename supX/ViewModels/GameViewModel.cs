@@ -11,15 +11,15 @@ namespace supX.ViewModels
 {
     public class GameViewModel : BaseViewModel
     {
+
         public string filename = new Uri(@".\Assets\Json\fighters.json", UriKind.Relative).ToString();
         public FighterViewModel fighter;
+        public FighterViewModel fighterViewModel;
         public double[] Odds { get; set; }
         public int[] FighterIds { get; set; }
         public FighterViewModel Fighter1 { get; set; }
         public FighterViewModel Fighter2 { get; set; }
         public MainViewModel Parent { get; }
-        ChangeViewCommand changeViewCommand;
-        FighterViewModel fighterViewModel;       
         public PlayerViewModel PlayerVM { get; set; }
         public double BetAmount { get; set; }
         public double BetOdds { get; set; }
@@ -27,21 +27,17 @@ namespace supX.ViewModels
         public GameViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
-
             fighterViewModel = new FighterViewModel();        
-
         }
 
         public GameViewModel()
         {
-
             Parent = new MainViewModel();
             OpenFile();
         }
 
         public void GenerateArena()
         {
-
             int[] fighterArray = GenerateFight(fighter.fighters);
             Odds = GenerateOdds(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
             Fighter1 = fighter.fighters[fighterArray[0]];
@@ -125,7 +121,6 @@ namespace supX.ViewModels
         public double[] GenerateOdds(FighterViewModel fighter1, FighterViewModel fighter2)
         {
             double[] oddsArray = new double[2];
-
             double winChangePercentage = 50;
 
             winChangePercentage += (fighter1.Strength - fighter2.Defense) * 5;
