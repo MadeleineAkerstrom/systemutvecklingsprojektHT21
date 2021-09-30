@@ -8,20 +8,33 @@ using System.Windows.Input;
 
 namespace supX.Commands
 {
+    /// <summary>
+    /// Change views
+    /// </summary>
     public class ChangeViewCommand : ICommand
     {
+        #region Variables
         public event EventHandler CanExecuteChanged;
         private MainViewModel mainViewModel;
+        #endregion
 
+        #region Constructors
         public ChangeViewCommand(MainViewModel mainViewModel)
         {
             this.mainViewModel = mainViewModel;
         }
+        #endregion
+
+        #region Public Methods
         public bool CanExecute(object parameter)
         {
             return true;
         }
 
+        /// <summary>
+        /// Switch between different views
+        /// </summary>
+        /// <param name="parameter"></param>
         public void Execute(object parameter)
         {
             GotoView view = (GotoView)parameter;
@@ -76,5 +89,6 @@ namespace supX.Commands
             }
 
         }
+        #endregion
     }
 }

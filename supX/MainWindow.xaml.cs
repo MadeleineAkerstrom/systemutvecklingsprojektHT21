@@ -25,8 +25,11 @@ namespace supX
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region Objects
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
+        #endregion
 
+        #region Constructors
         public MainWindow()
         {
             InitializeComponent();
@@ -34,9 +37,15 @@ namespace supX
             sounds.PlayIntroSound();
         }
 
+        #endregion
+        
+        #region Click Methods
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+        #endregion
+
     }
 }

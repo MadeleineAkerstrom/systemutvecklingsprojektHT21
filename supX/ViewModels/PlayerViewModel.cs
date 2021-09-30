@@ -20,11 +20,6 @@ namespace supX.ViewModels
         }
         #endregion
 
-
-
-
     }
-
-   
 
 }

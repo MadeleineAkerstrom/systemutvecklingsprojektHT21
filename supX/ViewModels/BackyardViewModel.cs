@@ -10,13 +10,22 @@ namespace supX.ViewModels
 {
     public class BackyardViewModel : BaseViewModel
     {
+        #region Objects
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
+        #endregion
+
+        #region Variables
+        private double privatebalance;
+        #endregion
+
+        #region Properties
         public MainViewModel Parent { get; }
         public BettingViewBackyardViewModel Betback { get; set; }
         public FightViewModel Winner { get; set; }
         public ICommand Result { get; set; }
-        private double privatebalance;
+        #endregion
 
+        #region Constructors
         public BackyardViewModel(MainViewModel mainViewModel)
         {
             sounds.PlayFightingSound();
@@ -30,7 +39,12 @@ namespace supX.ViewModels
             privatebalance = Betback.GameEngine.CalculateNewBalance(Betback.GameEngine.fighter.fighters[Betback.MyBetId], Winner, Parent.Player.MyBalance);
             Result = new RelyCommand(LostOrWon);
         }
+        #endregion
 
+        #region Private Methods
+        /// <summary>
+        /// Method that determines if fight is lost, won or game over and sends player to correct view
+        /// </summary>
         private void LostOrWon()
         {
 
@@ -50,7 +64,9 @@ namespace supX.ViewModels
                     Parent.CurrentViewModel = new LoserViewModel(Parent, privatebalance);
                 }
             }
+            
         }
+        #endregion
 
     }
 }

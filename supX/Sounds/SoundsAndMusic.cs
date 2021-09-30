@@ -9,11 +9,12 @@ namespace supX.Sounds
 {
     public class SoundsAndMusic
     {
-                
+        #region Constructors   
         public SoundsAndMusic()
         {
             
         }
+        #endregion
 
         #region SoundEffects
         /// <summary>

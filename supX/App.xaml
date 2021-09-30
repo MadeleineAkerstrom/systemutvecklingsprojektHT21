@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:supX"
              xmlns:viewmodels="clr-namespace:supX.ViewModels"
              xmlns:views="clr-namespace:supX.Views"
-             
+      
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <DataTemplate

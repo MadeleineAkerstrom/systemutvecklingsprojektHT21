@@ -7,9 +7,15 @@ namespace supX.ViewModels
 {
     public class LoserViewModel : BaseViewModel
     {
+        #region Objects
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
-        public MainViewModel Parent { get; }
+        #endregion
 
+        #region Properties
+        public MainViewModel Parent { get; }
+        #endregion
+
+        #region Constructors
         public LoserViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
@@ -20,6 +26,7 @@ namespace supX.ViewModels
             Parent.Player.MyBalance = privatebalance;
             sounds.PlayLosingGameSound();
         }
-        
+        #endregion
+
     }
 }

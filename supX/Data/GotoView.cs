@@ -4,6 +4,10 @@ using System.Text;
 
 namespace supX.Data
 {
+    #region Public enumerables
+    /// <summary>
+    /// All views 
+    /// </summary>
     public enum GotoView
     {
         PlayerView, MainView, ArenaView, RulesView, InstructionsView, CashOutView,
@@ -12,4 +16,5 @@ namespace supX.Data
         WembleyView, BettingViewWembley, 
         BackyardView, BettingViewBackyard
     }
+    #endregion
 }
