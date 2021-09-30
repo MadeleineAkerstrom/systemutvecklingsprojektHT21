@@ -2,16 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
-using supX.Models;
-using supX.Commands;
-using supX.Data;
+using supX.ViewModels;
 
-
-namespace supX.ViewModels
+namespace supX.Models
 {
-    public class GameViewModel : BaseViewModel
+    public class GameEngineModel
     {
-
         public string filename = new Uri(@".\Assets\Json\fighters.json", UriKind.Relative).ToString();
         public FighterViewModel fighter;
         public FighterViewModel fighterViewModel;
@@ -24,15 +20,9 @@ namespace supX.ViewModels
         public double BetAmount { get; set; }
         public double BetOdds { get; set; }
 
-        public GameViewModel(MainViewModel mainViewModel)
+        public GameEngineModel()
         {
-            Parent = mainViewModel;
-            fighterViewModel = new FighterViewModel();        
-        }
-
-        public GameViewModel()
-        {
-            Parent = new MainViewModel();
+            fighterViewModel = new FighterViewModel();
             OpenFile();
         }
 
@@ -42,11 +32,11 @@ namespace supX.ViewModels
             Odds = GenerateOdds(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
             Fighter1 = fighter.fighters[fighterArray[0]];
             Fighter2 = fighter.fighters[fighterArray[1]];
-        }       
+        }
 
         public int SetMyBet(double BetAmount1, double BetAmount2, int FighterId1, int FighterId2)
         {
-            int MyBetId= 0;
+            int MyBetId = 0;
             if (BetAmount1 <= 0 && BetAmount2 <= 0)
             {
                 MessageBox.Show("You have to bet on someone, you idiot!");
@@ -79,12 +69,19 @@ namespace supX.ViewModels
             return fighterIDs;
         }
 
-        
-       
-        
+        public double WinnerAmount (FighterViewModel myBet, FightViewModel winner, double myBalance)
+        {
+            double betAmount = BetAmount;
+            double odds = winner.WinnerOdds;
+            double winnerAmount;
+            bool result = GenerateBetResult(myBet, winner);
+
+            winnerAmount = betAmount * odds;
+            return Math.Round(winnerAmount);
+        }
 
         public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner, double myBalance)
-        {  
+        {
             double betAmount = BetAmount;
             double odds = winner.WinnerOdds;
             bool result = GenerateBetResult(myBet, winner);
@@ -101,12 +98,12 @@ namespace supX.ViewModels
                 return Math.Round(myBalance);
             }
 
-           
+
         }
         public double SetBetAmount(double betamount1, double betamount2)
         {
             double betamount;
-            if (betamount1 >0)
+            if (betamount1 > 0)
             {
                 betamount = betamount1;
             }
@@ -209,5 +206,6 @@ namespace supX.ViewModels
         {
             fighter = FileHandler.FileHandler.Open<FighterViewModel>(filename);
         }
+
     }
 }

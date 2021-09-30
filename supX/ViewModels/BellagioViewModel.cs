@@ -21,10 +21,11 @@ namespace supX.ViewModels
             sounds.PlayFightingSound();
             Parent = mainViewModel;
             Betbell = (BettingViewBellagioViewModel)mainViewModel.CurrentViewModel;
-            Betbell.MyBetId = Betbell.GameVM.SetMyBet(Betbell.BetAmount1, Betbell.BetAmount2, Betbell.FighterId1, Betbell.FighterId2);
-            Winner = Betbell.GameVM.GenerateResult(Betbell.GameVM.fighter.fighters[Betbell.GameVM.Fighter1.Id], Betbell.GameVM.fighter.fighters[Betbell.GameVM.Fighter2.Id]);
-            Betbell.GameVM.BetAmount=Betbell.GameVM.SetBetAmount(Betbell.BetAmount1, Betbell.BetAmount2);
-            privatebalance = Betbell.GameVM.CalculateNewBalance(Betbell.GameVM.fighter.fighters[Betbell.MyBetId], Winner, Parent.Player.MyBalance); 
+            Betbell.MyBetId = Betbell.GameEngine.SetMyBet(Betbell.BetAmount1, Betbell.BetAmount2, Betbell.FighterId1, Betbell.FighterId2);
+            Winner = Betbell.GameEngine.GenerateResult(Betbell.GameEngine.fighter.fighters[Betbell.GameEngine.Fighter1.Id], Betbell.GameEngine.fighter.fighters[Betbell.GameEngine.Fighter2.Id]);
+            Betbell.GameEngine.BetAmount=Betbell.GameEngine.SetBetAmount(Betbell.BetAmount1, Betbell.BetAmount2);
+            Parent.Player.WinnerAmount = Betbell.GameEngine.WinnerAmount(Betbell.GameEngine.fighter.fighters[Betbell.MyBetId], Winner, Parent.Player.MyBalance);
+            privatebalance = Betbell.GameEngine.CalculateNewBalance(Betbell.GameEngine.fighter.fighters[Betbell.MyBetId], Winner, Parent.Player.MyBalance); 
             Result = new RelyCommand(LostOrWon);
         }
 

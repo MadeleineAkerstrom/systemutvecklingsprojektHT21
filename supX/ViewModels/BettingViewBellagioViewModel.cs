@@ -13,7 +13,7 @@ namespace supX.ViewModels
     {
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
         public MainViewModel Parent { get; }
-        public GameViewModel GameVM { get; set; }
+        public GameEngineModel GameEngine { get; set; }
         public FighterViewModel FighterVM { get; set; }
         public BettingViewBellagioViewModel betbell;
         public double BetAmount1 { get; set; }
@@ -29,11 +29,11 @@ namespace supX.ViewModels
             Parent = mainViewModel;
             sounds.PlayBellagioIntroSound();
             btnEnabled = false;
-            GameVM = new GameViewModel();
+            GameEngine = new GameEngineModel();
             FighterVM = new FighterViewModel();
-            GameVM.GenerateArena();
-            FighterId1 = GameVM.Fighter1.Id;
-            FighterId2 = GameVM.Fighter2.Id;
+            GameEngine.GenerateArena();
+            FighterId1 = GameEngine.Fighter1.Id;
+            FighterId2 = GameEngine.Fighter2.Id;
             CheckEnoughBalance = new RelyCommand(EnoughBalance);
         }
 
