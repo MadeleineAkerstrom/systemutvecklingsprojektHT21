@@ -38,9 +38,34 @@ namespace supX.ViewModels
             CheckEnoughBalance = new RelyCommand(EnoughBalance);
         }
 
+        public bool ChangeInput(double betAmount1, double betAmount2) 
+        {
+            string a = BetAmount1.ToString();
+            string b = BetAmount2.ToString();
+            if (IsDigitsOnly(a) && IsDigitsOnly(b))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
+        }
+
+        public bool IsDigitsOnly(string str)
+        {
+            foreach (char c in str)
+            {
+                if (c < '0' || c > '9')
+                    return false;
+            }
+            return true;
+        }
+
         public void EnoughBalance()
         {
-            if (BetAmount1 + BetAmount2 > Parent.Player.MyBalance)
+            if (BetAmount1 + BetAmount2 > Parent.Player.MyBalance || ChangeInput(1, 2) == true)
             {
                 MessageBox.Show("Your balance is not enough. Try again!");
                 BetAmount1 = 0;
@@ -52,5 +77,6 @@ namespace supX.ViewModels
                 sounds.PlayCashRegisterSound();
             }
         }
+
     }
 }
