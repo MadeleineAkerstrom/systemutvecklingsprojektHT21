@@ -12,27 +12,22 @@ namespace supX.ViewModels
     public class BettingViewWembleyViewModel : BaseViewModel
     {
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
+        public BettingViewWembleyViewModel betwem;
         public MainViewModel Parent { get; }
         public GameViewModel GameVM { get; set; }
         public FighterViewModel FighterVM { get; set; }
-
         public double BetAmount1 { get; set; }
         public double BetAmount2 { get; set; }
         public int MyBetId { get; set; } = 0;
         public int FighterId1 { get; set; }
         public int FighterId2 { get; set; }
-        public BettingViewWembleyViewModel betwem;
         public bool btnEnabled { get; set; }
         public ICommand CheckEnoughBalance { get; set; }
-
-
 
         public BettingViewWembleyViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
-
             sounds.PlayWemblyIntroSound();          
-
             GameVM = new GameViewModel();
             btnEnabled = false;
             FighterVM = new FighterViewModel();

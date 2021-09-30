@@ -65,12 +65,7 @@
         <DataTemplate 
             DataType="{x:Type viewmodels:BettingViewWembleyViewModel}">
             <views:BettingViewWembley/>
-        </DataTemplate>
-        
-        <DataTemplate
-            DataType="{x:Type viewmodels:ShowResultViewModel}">
-            <views:ShowResultView/>
-        </DataTemplate>
+        </DataTemplate>             
 
         <DataTemplate
             DataType="{x:Type viewmodels:GameOverViewModel}">
@@ -86,7 +81,6 @@
             DataType="{x:Type viewmodels:InstructionsViewModel}">
             <views:InstructionsView/>
         </DataTemplate>
-
 
     </Application.Resources>
 </Application>
