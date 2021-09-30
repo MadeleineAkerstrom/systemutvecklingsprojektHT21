@@ -5,6 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:supX.Views"
              xmlns:data="clr-namespace:supX.Data"
+             xmlns:gif="http://wpfanimatedgif.codeplex.com"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
@@ -16,6 +17,13 @@
         <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Margin="-442,-48,142,108"/>
         <Image Source="\Assets\Images\Icons\ExplosionWinner.png" Margin="469,-42,-18,114"/>
         <Image Source="\Assets\Images\Frames\GoldBalanceFrame.png" Grid.Column="1" Margin="303,164,303,104" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+        <Image gif:ImageBehavior.AnimatedSource="\Resources\FireWorksWinner.gif" 
+               gif:ImageBehavior.RepeatBehavior="10x"
+               Margin="562,89,47,178"/>
+        <Image gif:ImageBehavior.AnimatedSource="\Resources\FireWorksWinner.gif" 
+               gif:ImageBehavior.RepeatBehavior="20x"
+               gif:ImageBehavior.AnimationSpeedRatio="2" 
+               Margin="22,89,587,178"/>
         <Label Content="{Binding Parent.Player.WinnerAmount}" Margin="377,225,0,0"  FontSize="22" Background="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Height="36" FontWeight="Bold"/>
         <Button Content="Collect my winnings" 
                 Command="{Binding Parent.ChangeViewCommand}" 

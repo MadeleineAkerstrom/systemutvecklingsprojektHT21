@@ -133,6 +133,9 @@
   <data name="fight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fight.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="FireWorksWinner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FireWorksWinner.gif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="GameOverMelodyLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GameOverMelodyLow.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
