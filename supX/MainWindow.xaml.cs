@@ -36,6 +36,16 @@ namespace supX
             DataContext = new MainViewModel();
             sounds.PlayIntroSound();
         }
+
         #endregion
+        
+        #region Click Methods
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        #endregion
+
     }
 }
