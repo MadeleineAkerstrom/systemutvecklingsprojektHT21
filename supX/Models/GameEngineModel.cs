@@ -10,15 +10,14 @@ namespace supX.Models
     {
         public string filename = new Uri(@".\Assets\Json\fighters.json", UriKind.Relative).ToString();
         public FighterViewModel fighter;
-        public FighterViewModel fighterViewModel;
+        private FighterViewModel fighterViewModel;
         public double[] Odds { get; set; }
-        public int[] FighterIds { get; set; }
         public FighterViewModel Fighter1 { get; set; }
         public FighterViewModel Fighter2 { get; set; }
         public MainViewModel Parent { get; }
-        public PlayerViewModel PlayerVM { get; set; }
+        private PlayerViewModel PlayerVM { get; set; }
         public double BetAmount { get; set; }
-        public double BetOdds { get; set; }
+        private double BetOdds { get; set; }
 
         public GameEngineModel()
         {
@@ -53,7 +52,7 @@ namespace supX.Models
             return MyBetId;
         }
 
-        public int[] GenerateFight(List<FighterViewModel> fighters)
+        private int[] GenerateFight(List<FighterViewModel> fighters)
         {
             int fighterCount = fighters.Count;
             int[] fighterIDs = new int[2];
@@ -115,7 +114,7 @@ namespace supX.Models
 
         }
 
-        public double[] GenerateOdds(FighterViewModel fighter1, FighterViewModel fighter2)
+        private double[] GenerateOdds(FighterViewModel fighter1, FighterViewModel fighter2)
         {
             double[] oddsArray = new double[2];
             double winChangePercentage = 50;
@@ -202,7 +201,7 @@ namespace supX.Models
             }
         }
 
-        public void OpenFile()
+        private void OpenFile()
         {
             fighter = FileHandler.FileHandler.Open<FighterViewModel>(filename);
         }

@@ -30,7 +30,7 @@ namespace supX.ViewModels
             Result = new RelyCommand(LostOrWon);
         }
 
-        public void LostOrWon()
+        private void LostOrWon()
         {
             if (privatebalance == 0)
             {
