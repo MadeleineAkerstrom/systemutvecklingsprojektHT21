@@ -1121,6 +1121,17 @@
       "wins": 0,
       "losses": 0,
       "imagePath": "/Assets/Images/Fighters/Rex.png"
+    },
+    {
+      "id": 102,
+      "name": "    Pickle Rick   ",
+      "strength": 5,
+      "cardio": 5,
+      "speed": 5,
+      "defense": 0,
+      "wins": 0,
+      "losses": 0,
+      "imagePath": "/Assets/Images/Fighters/PickleRick.png"
     }
 
   ]

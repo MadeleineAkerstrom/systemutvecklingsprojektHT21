@@ -28,7 +28,7 @@
         <TextBox x:Name="txtBetAmount2" HorizontalAlignment="Left" Text="{Binding BetAmount2, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" Foreground="Gray" VerticalAlignment="Top" RenderTransformOrigin="0.461,2.931" Height="22" TextAlignment="Left" Margin="364,283,0,0" FontSize="14" FontWeight="Bold" Opacity="1" Width="46" TextChanged="txtBetAmount2_TextChanged" Grid.Column="1"/>
         <Label Content="{Binding GameVM.Odds[0]}" FontSize="18" HorizontalAlignment="Left" Margin="94,176,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" Height="50" Width="56"/>
         <Label Content="{Binding GameVM.Odds[1]}" FontSize="18" HorizontalAlignment="Left" Margin="481,175,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold" RenderTransformOrigin="0.517,0.472" Height="53" Width="74" Grid.Column="1"/>
-        <Button x:Name="btnStartFightWembley" IsEnabled="{Binding btnEnabled}" Content="Start fight!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.WembleyView}" HorizontalAlignment="Left" Margin="150,331,0,0" VerticalAlignment="Top" Height="93" FontSize="24" FontWeight="Bold" Foreground="White" Grid.Column="1" Width="140">
+        <Button x:Name="btnStartFightWembley" IsEnabled="{Binding btnEnabled}" Content="Start fight!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.WembleyView}" HorizontalAlignment="Left" Margin="150,331,0,0" VerticalAlignment="Top" Height="93" FontSize="24" FontWeight="Bold" Foreground="White" Grid.Column="1" Width="140" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/TurquoiseButton.png"/>
             </Button.Background>
@@ -51,12 +51,12 @@
         <Label Content="{Binding GameVM.Fighter2.Speed}" Foreground="White" HorizontalAlignment="Left" Margin="562,25,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Content="{Binding GameVM.Fighter2.Defense}" Foreground="White" HorizontalAlignment="Left" Margin="562,40,0,0" VerticalAlignment="Top" Grid.Column="1"/>
         <Label Content="{Binding GameVM.Fighter2.Cardio}" Foreground="White" HorizontalAlignment="Left" Margin="562,55,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}"  HorizontalAlignment="Left" Margin="24,330,0,0" VerticalAlignment="Top" Height="68" Width="76" FontWeight="Bold" Grid.Column="1">
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}"  HorizontalAlignment="Left" Margin="24,330,0,0" VerticalAlignment="Top" Height="68" Width="76" FontWeight="Bold" Grid.Column="1" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/BlueCircleButton.png"/>
             </Button.Background>
         </Button>
-        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="343,330,176,0" VerticalAlignment="Top" Height="68" FontWeight="Bold" Width="76" Grid.Column="1">
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="343,330,176,0" VerticalAlignment="Top" Height="68" FontWeight="Bold" Width="76" Grid.Column="1" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/BlueCircleButton.png"/>
             </Button.Background>

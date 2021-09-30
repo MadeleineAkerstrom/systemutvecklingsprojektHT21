@@ -31,6 +31,11 @@
     <None Remove="Assets\Images\Buttons\HandBrownCircleButton.png" />
     <None Remove="Assets\Images\Buttons\PurpleCircleButton.png" />
     <None Remove="Assets\Images\Buttons\PurpleCircleButton2.png" />
+    <None Remove="Assets\Images\Buttons\RectangleGoldButton.png" />
+    <None Remove="Assets\Images\Buttons\RectangleGreenButton.png" />
+    <None Remove="Assets\Images\Buttons\RectangleSilverButton.png" />
+    <None Remove="Assets\Images\Buttons\RoundDarkGoldButton.png" />
+    <None Remove="Assets\Images\Buttons\RoundGoldButton.png" />
     <None Remove="Assets\Images\Buttons\RoundWoodButton.png" />
     <None Remove="Assets\Images\Buttons\SilverButton.png" />
     <None Remove="Assets\Images\Buttons\SmallBlueRectangleFrame.png" />
@@ -130,6 +135,7 @@
     <None Remove="Assets\Images\Fighters\Mulan.png" />
     <None Remove="Assets\Images\Fighters\Penniless.png" />
     <None Remove="Assets\Images\Fighters\Peter.png" />
+    <None Remove="Assets\Images\Fighters\PickleRick.png" />
     <None Remove="Assets\Images\Fighters\Pinocchio.png" />
     <None Remove="Assets\Images\Fighters\Popeye.png" />
     <None Remove="Assets\Images\Fighters\Popsicle.png" />
@@ -208,6 +214,11 @@
     <Resource Include="Assets\Images\Buttons\HandBrownCircleButton.png" />
     <Resource Include="Assets\Images\Buttons\PurpleCircleButton.png" />
     <Resource Include="Assets\Images\Buttons\PurpleCircleButton2.png" />
+    <Resource Include="Assets\Images\Buttons\RectangleGoldButton.png" />
+    <Resource Include="Assets\Images\Buttons\RectangleGreenButton.png" />
+    <Resource Include="Assets\Images\Buttons\RectangleSilverButton.png" />
+    <Resource Include="Assets\Images\Buttons\RoundDarkGoldButton.png" />
+    <Resource Include="Assets\Images\Buttons\RoundGoldButton.png" />
     <Resource Include="Assets\Images\Buttons\TealCircleButton.png" />
     <Resource Include="Assets\Images\Buttons\VioletCircleButton.png" />
     <Resource Include="Assets\Images\Buttons\WoodCircleButton.png" />
@@ -225,6 +236,7 @@
     <Resource Include="Assets\Images\Fighters\FighterZombie.png" />
     <Resource Include="Assets\Images\Fighters\HenryHenderson.png" />
     <Resource Include="Assets\Images\Fighters\MikeWazowski.png" />
+    <Resource Include="Assets\Images\Fighters\PickleRick.png" />
     <Resource Include="Assets\Images\Fighters\Popeye.png" />
   </ItemGroup>
 

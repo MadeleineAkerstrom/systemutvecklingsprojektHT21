@@ -19,7 +19,7 @@
         <Image Source="{Binding GameVM.Fighter1.ImagePath}" Margin="148,180,473,5"/>
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="48,-40,378,220" d:LayoutOverrides="VerticalAlignment"/>
         <Image Source="/Assets/Images/Frames/PurpleOddsFrame.png" Margin="353,-43,55,220" d:LayoutOverrides="VerticalAlignment"/>
-        <Button Content="Start fight!" x:Name="btnStartFightWembley" IsEnabled="{Binding btnEnabled}"  Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BellagioView}" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Height="83" FontSize="22" Width="136" FontWeight="Bold">
+        <Button Content="Start fight!" x:Name="btnStartFightWembley" IsEnabled="{Binding btnEnabled}"  Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.BellagioView}" HorizontalAlignment="Center" Margin="0,279,0,0" VerticalAlignment="Top" Height="83" FontSize="22" Width="136" FontWeight="Bold" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/PurpleButton.png"/>
             </Button.Background>
@@ -53,12 +53,12 @@
         <Label Content="{Binding GameVM.Fighter2.Speed}" Foreground="White" HorizontalAlignment="Left" Margin="745,35,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Defense}" Foreground="White" HorizontalAlignment="Left" Margin="745,50,0,0" VerticalAlignment="Top"/>
         <Label Content="{Binding GameVM.Fighter2.Cardio}" Foreground="White" HorizontalAlignment="Left" Margin="745,65,0,0" VerticalAlignment="Top"/>
-        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" HorizontalAlignment="Left" Margin="35,315,0,0" VerticalAlignment="Top" Height="70" Width="75" FontWeight="Bold">
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" HorizontalAlignment="Left" Margin="35,315,0,0" VerticalAlignment="Top" Height="70" Width="75" FontWeight="Bold" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/PurpleCircleButton2.png"/>
             </Button.Background>
         </Button>
-        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="690,316,35,0" VerticalAlignment="Top" Height="70" Width="75" FontWeight="Bold">
+        <Button Content="Set bet!" Command="{Binding CheckEnoughBalance}" Margin="690,316,35,0" VerticalAlignment="Top" Height="70" Width="75" FontWeight="Bold" BorderBrush="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="/Assets/Images/Buttons/PurpleCircleButton2.png"/>
             </Button.Background>
