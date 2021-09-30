@@ -8,7 +8,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="Black">
-
         <Image Source="\Assets\Images\Backgrounds\Gameover (1).png" Margin="-92,-189,-100,1" Stretch="UniformToFill"/>
         <Button Content="Retry" 
                 Command="{Binding Parent.ChangeViewCommand}" 
@@ -19,6 +18,5 @@
             </Button.Background>
         </Button>
         <Label Content="You lost everything. Here is another 100 buckeronies!" HorizontalAlignment="Center" Height="34" Margin="0,292,0,0" VerticalAlignment="Top" Width="456" Foreground="Cyan" FontSize="20" FontFamily="Agency FB" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-
     </Grid>
 </UserControl>

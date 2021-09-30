@@ -9,7 +9,5 @@
        
     <Grid Background="Black">
         <Image Source="\Assets\Images\Icons\UnderConstruction.png"/>
-
-
     </Grid>
 </UserControl>

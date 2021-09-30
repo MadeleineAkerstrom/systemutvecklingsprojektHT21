@@ -12,6 +12,5 @@
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/instructions.png"/>
         </Grid.Background>
         <Button Content="Back to rules!" Command="{Binding Parent.ChangeViewCommand}" CommandParameter="{x:Static data:GotoView.RulesView}" HorizontalAlignment="Center" Margin="0,349,0,0" VerticalAlignment="Top" Height="71" Width="157" Background="Red" FontSize="22" FontWeight="Bold"/>
-
     </Grid>
 </UserControl>

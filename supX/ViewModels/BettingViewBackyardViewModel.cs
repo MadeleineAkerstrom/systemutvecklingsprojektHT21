@@ -16,24 +16,19 @@ namespace supX.ViewModels
         public MainViewModel Parent { get; }
         public GameViewModel GameVM { get; set; }
         public FighterViewModel FighterVM { get; set; }
-
+        public BettingViewBackyardViewModel betback;
         public double BetAmount1 { get; set; }
         public double BetAmount2 { get; set; }
         public int MyBetId { get; set; } = 0;
         public int FighterId1 { get; set; }
         public int FighterId2 { get; set; }
-        public BettingViewBackyardViewModel betback;
         public bool btnEnabled { get; set; }
-
         public ICommand CheckEnoughBalance { get; set; }
 
         public BettingViewBackyardViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
-
-
             sounds.PlayBackyardIntroSound();
-
             btnEnabled = false;
             GameVM = new GameViewModel();
             FighterVM = new FighterViewModel();
@@ -41,7 +36,6 @@ namespace supX.ViewModels
             FighterId1 = GameVM.Fighter1.Id;
             FighterId2 = GameVM.Fighter2.Id;
             CheckEnoughBalance = new RelyCommand(EnoughBalance);
-            
         }
 
         public void EnoughBalance()

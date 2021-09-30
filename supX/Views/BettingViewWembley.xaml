@@ -15,9 +15,8 @@
         <Grid.Background>
             <ImageBrush ImageSource="/Assets/Images/Backgrounds/WembleyOutside.jpg"/>
         </Grid.Background>
-        <Image   Source="{Binding GameVM.Fighter2.ImagePath}" Margin="447,235,32,9" Height="206" Width="116" Grid.Column="1"/>
-        <Image   Source="{Binding GameVM.Fighter1.ImagePath}" Margin="62,231,27,13" Height="206" Width="116" d:LayoutOverrides="HorizontalAlignment"/>
-
+        <Image Source="{Binding GameVM.Fighter2.ImagePath}" Margin="447,235,32,9" Height="206" Width="116" Grid.Column="1"/>
+        <Image Source="{Binding GameVM.Fighter1.ImagePath}" Margin="62,231,27,13" Height="206" Width="116" d:LayoutOverrides="HorizontalAlignment"/>
         <Image Source="/Assets/Images/Text/VSBlue.png" Margin="155,10,305,325" Width="135" Grid.Column="1"/>
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="450,150,40,193" Grid.Column="1"/>
         <Image Source="/Assets/Images/Frames/IceFrame.png" Margin="65,152,25,190" d:LayoutOverrides="HorizontalAlignment"/>
@@ -36,8 +35,6 @@
         </Button>
         <Label Content="{Binding GameVM.Fighter1.Name}" HorizontalAlignment="Left" Height="63" Margin="-55,42,0,0" VerticalAlignment="Top" Foreground="White" FontSize="18" FontWeight="Bold" Width="215" Grid.Column="1"/>
         <Label Content="{Binding GameVM.Fighter2.Name}" HorizontalAlignment="Left" Height="63" Margin="280,40,0,0" VerticalAlignment="Top" Width="205" Foreground="White" FontSize="18" FontWeight="Bold" Grid.Column="1"/>
-
-
         <Label Content="Strength:" Foreground="White" HorizontalAlignment="Left" Margin="28,10,0,0" VerticalAlignment="Top"/>
         <Label Content="Speed:" Foreground="White" HorizontalAlignment="Left" Margin="28,25,0,0" VerticalAlignment="Top"/>
         <Label Content="Defense:" Foreground="White" HorizontalAlignment="Left" Margin="27,40,0,0" VerticalAlignment="Top"/>
@@ -64,7 +61,5 @@
                 <ImageBrush ImageSource="/Assets/Images/Buttons/BlueCircleButton.png"/>
             </Button.Background>
         </Button>
-
-
     </Grid>
 </UserControl>

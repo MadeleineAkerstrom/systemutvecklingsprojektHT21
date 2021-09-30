@@ -9,9 +9,6 @@ namespace supX.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-        
-        //public PlayerViewModel Player { get; set; }
-
         private PlayerViewModel player;
 
         public PlayerViewModel Player
@@ -19,7 +16,6 @@ namespace supX.ViewModels
             get { return player; }
             set { player = value; NotifyPropertyChanged(); }
         }
-
 
         private MainViewModel gameViewModel;
 
@@ -47,7 +43,6 @@ namespace supX.ViewModels
 
         public MainViewModel()
         {
-            
             ChangeViewCommand = new ChangeViewCommand(this);
             currentViewModel = new StartViewModel(null);
             if (Player == null)
