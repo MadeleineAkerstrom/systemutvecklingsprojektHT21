@@ -8,6 +8,9 @@ using System.Windows.Input;
 
 namespace supX.Commands
 {
+    /// <summary>
+    /// Change views
+    /// </summary>
     public class ChangeViewCommand : ICommand
     {
         public event EventHandler CanExecuteChanged;
@@ -22,6 +25,10 @@ namespace supX.Commands
             return true;
         }
 
+        /// <summary>
+        /// Switch between different views
+        /// </summary>
+        /// <param name="parameter"></param>
         public void Execute(object parameter)
         {
             GotoView view = (GotoView)parameter;

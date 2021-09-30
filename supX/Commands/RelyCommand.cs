@@ -5,10 +5,13 @@ using System.Windows.Input;
 
 namespace supX.Commands
 {
+    /// <summary>
+    /// Help class to be able to use bindings with methods
+    /// </summary>
     class RelyCommand : ICommand
     {
         private Action action;
-
+        
         public RelyCommand(Action action)
         {
             this.action = action;

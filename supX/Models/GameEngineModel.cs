@@ -25,6 +25,9 @@ namespace supX.Models
             OpenFile();
         }
 
+        /// <summary>
+        /// Method to generate fighters with odds for one arena
+        /// </summary>
         public void GenerateArena()
         {
             int[] fighterArray = GenerateFight(fighter.fighters);
@@ -33,6 +36,14 @@ namespace supX.Models
             Fighter2 = fighter.fighters[fighterArray[1]];
         }
 
+        /// <summary>
+        /// Method used to set bet on a specific fighter. Also ensures that the bet is bigger than 0 and that one bet has been made.
+        /// </summary>
+        /// <param name="BetAmount1"></param>
+        /// <param name="BetAmount2"></param>
+        /// <param name="FighterId1"></param>
+        /// <param name="FighterId2"></param>
+        /// <returns>BetID</returns>
         public int SetMyBet(double BetAmount1, double BetAmount2, int FighterId1, int FighterId2)
         {
             int MyBetId = 0;
@@ -52,6 +63,11 @@ namespace supX.Models
             return MyBetId;
         }
 
+        /// <summary>
+        /// Method that randomly selects two fighters from the fighter list
+        /// </summary>
+        /// <param name="fighters"></param>
+        /// <returns>2 fighterIDs</returns>
         private int[] GenerateFight(List<FighterViewModel> fighters)
         {
             int fighterCount = fighters.Count;
@@ -68,6 +84,13 @@ namespace supX.Models
             return fighterIDs;
         }
 
+        /// <summary>
+        /// Method that calculates the winning amount
+        /// </summary>
+        /// <param name="myBet"></param>
+        /// <param name="winner"></param>
+        /// <param name="myBalance"></param>
+        /// <returns>WinnerAmount</returns>
         public double WinnerAmount (FighterViewModel myBet, FightViewModel winner, double myBalance)
         {
             double betAmount = BetAmount;
@@ -79,6 +102,13 @@ namespace supX.Models
             return Math.Round(winnerAmount);
         }
 
+        /// <summary>
+        /// Method that calculates new balance after fight
+        /// </summary>
+        /// <param name="myBet"></param>
+        /// <param name="winner"></param>
+        /// <param name="myBalance"></param>
+        /// <returns>New balance</returns>
         public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner, double myBalance)
         {
             double betAmount = BetAmount;
@@ -96,9 +126,14 @@ namespace supX.Models
                 myBalance = (betAmount * odds) + myBalance;
                 return Math.Round(myBalance);
             }
-
-
         }
+
+        /// <summary>
+        /// Method that sets the betAmount 
+        /// </summary>
+        /// <param name="betamount1"></param>
+        /// <param name="betamount2"></param>
+        /// <returns>betAmount</returns>
         public double SetBetAmount(double betamount1, double betamount2)
         {
             double betamount;
@@ -114,6 +149,12 @@ namespace supX.Models
 
         }
 
+        /// <summary>
+        /// Method that is used to generate odds 
+        /// </summary>
+        /// <param name="fighter1"></param>
+        /// <param name="fighter2"></param>
+        /// <returns>an array with odds for 2 fighters</returns>
         private double[] GenerateOdds(FighterViewModel fighter1, FighterViewModel fighter2)
         {
             double[] oddsArray = new double[2];
@@ -129,6 +170,12 @@ namespace supX.Models
             return oddsArray;
         }
 
+        /// <summary>
+        /// Method that generate the result of the fight
+        /// </summary>
+        /// <param name="fighter1"></param>
+        /// <param name="fighter2"></param>
+        /// <returns>Winner</returns>
         public FightViewModel GenerateResult(FighterViewModel fighter1, FighterViewModel fighter2)
         {
             Random random = new Random();
@@ -189,6 +236,12 @@ namespace supX.Models
 
         }
 
+        /// <summary>
+        /// Method that generates the bet result
+        /// </summary>
+        /// <param name="myBet"></param>
+        /// <param name="winner"></param>
+        /// <returns>Won or lost</returns>
         public bool GenerateBetResult(FighterViewModel myBet, FightViewModel winner)
         {
             if (myBet.Id == winner.WinnerId)
@@ -201,6 +254,9 @@ namespace supX.Models
             }
         }
 
+        /// <summary>
+        /// Opens Json files
+        /// </summary>
         private void OpenFile()
         {
             fighter = FileHandler.FileHandler.Open<FighterViewModel>(filename);

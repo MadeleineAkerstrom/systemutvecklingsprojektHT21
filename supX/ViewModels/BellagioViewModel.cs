@@ -30,6 +30,9 @@ namespace supX.ViewModels
             Result = new RelyCommand(LostOrWon);
         }
 
+        /// <summary>
+        /// Method that determines if fight is lost, won or game over and sends player to correct view
+        /// </summary>
         private void LostOrWon()
         {
             if (privatebalance == 0)

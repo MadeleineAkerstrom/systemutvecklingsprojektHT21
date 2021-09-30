@@ -22,11 +22,6 @@ namespace supX.ViewModels
             fighters = new List<FighterViewModel>();
         }
 
-        public override string ToString()
-        {
-            return $"{Name} {Wins} {Losses}";
-        }
-
     }
 
 }
