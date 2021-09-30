@@ -19,8 +19,7 @@ namespace supX.ViewModels
         public FighterViewModel Fighter2 { get; set; }
         public MainViewModel Parent { get; }
         ChangeViewCommand changeViewCommand;
-        FighterViewModel fighterViewModel;
-        BettingViewBellagioViewModel bettingViewBellagioView;
+        FighterViewModel fighterViewModel;       
         public PlayerViewModel PlayerVM { get; set; }
         public double BetAmount { get; set; }
         public double BetOdds { get; set; }
@@ -29,8 +28,7 @@ namespace supX.ViewModels
         {
             Parent = mainViewModel;
 
-            fighterViewModel = new FighterViewModel();
-            bettingViewBellagioView = new BettingViewBellagioViewModel(Parent);
+            fighterViewModel = new FighterViewModel();        
 
         }
 
@@ -48,56 +46,23 @@ namespace supX.ViewModels
             Odds = GenerateOdds(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
             Fighter1 = fighter.fighters[fighterArray[0]];
             Fighter2 = fighter.fighters[fighterArray[1]];
-        }
-
-        public void GenerateFightResults()
-        {
-            FightViewModel winner = GenerateResult(Fighter1, Fighter2);
-
-            int myBet = SetMyBet(bettingViewBellagioView.BetAmount1, bettingViewBellagioView.BetAmount2, Fighter1.Id, Fighter2.Id);
-
-            GenerateBetResult(fighterViewModel.fighters[myBet], winner);
-        }
-
-        public bool EnoughBalance(double MyBalance, double BetAmount1, double BetAmount2)
-        {
-            if (BetAmount1 > MyBalance || BetAmount2 > MyBalance )
-            {
-                MessageBox.Show("Your balance is not enough. Try again!");
-                Parent.CurrentViewModel = new BettingViewBellagioViewModel(null);
-                return false;
-            }
-            else
-            {
-
-                return true;
-            }
-        }
+        }       
 
         public int SetMyBet(double BetAmount1, double BetAmount2, int FighterId1, int FighterId2)
         {
             int MyBetId= 0;
-            if (BetAmount1 != 0 && BetAmount2 != 0)
-            {
-                MessageBox.Show("You can't bet on both fighters, you idiot!");
-                Parent.CurrentViewModel = new BettingViewBellagioViewModel(null);
-                
-            }
-            else if (BetAmount1 == 0 && BetAmount2 == 0)
+            if (BetAmount1 <= 0 && BetAmount2 <= 0)
             {
                 MessageBox.Show("You have to bet on someone, you idiot!");
                 Parent.CurrentViewModel = new BettingViewBellagioViewModel(null);
             }
-            else if (BetAmount1 != 0)
+            else if (BetAmount1 > 0)
             {
                 MyBetId = FighterId1;
-
-              //  changeViewCommand.Execute(GotoView.BellagioView);
             }
             else
             {
                 MyBetId = FighterId2;
-               // changeViewCommand.Execute(GotoView.BellagioView);
             }
             return MyBetId;
         }
@@ -123,8 +88,7 @@ namespace supX.ViewModels
         
 
         public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner, double myBalance)
-        {      
-            //double myBalance = Parent.Player.MyBalance;
+        {  
             double betAmount = BetAmount;
             double odds = winner.WinnerOdds;
             bool result = GenerateBetResult(myBet, winner);
@@ -132,14 +96,12 @@ namespace supX.ViewModels
             if (result == false)
             {
                 myBalance = myBalance - betAmount;
-                //Parent.CurrentViewModel = new LoserViewModel(null); 
                 return Math.Round(myBalance);
             }
             else
             {
                 myBalance = myBalance - betAmount;
                 myBalance = (betAmount * odds) + myBalance;
-                //Parent.CurrentViewModel = new WinnerViewModel(null);
                 return Math.Round(myBalance);
             }
 
@@ -166,7 +128,6 @@ namespace supX.ViewModels
 
             double winChangePercentage = 50;
 
-            // Random rules for setting odds. Don't ask about it, it's just how it's calculated by the bookmaker..
             winChangePercentage += (fighter1.Strength - fighter2.Defense) * 5;
             winChangePercentage += (fighter1.Speed - fighter2.Strength) * 3;
             winChangePercentage += (fighter1.Cardio - fighter2.Cardio) * 1;

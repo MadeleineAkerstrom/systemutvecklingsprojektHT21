@@ -80,9 +80,13 @@
         <DataTemplate
             DataType="{x:Type viewmodels:CashOutViewModel}">
             <views:CashOutView/>
-        </DataTemplate>
-           
+        </DataTemplate>         
          
+        <DataTemplate
+            DataType="{x:Type viewmodels:InstructionsViewModel}">
+            <views:InstructionsView/>
+        </DataTemplate>
+
 
     </Application.Resources>
 </Application>

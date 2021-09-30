@@ -5,6 +5,7 @@ using System.Text;
 using System.Windows;
 using supX.Commands;
 using supX.Data;
+using System.Windows.Input;
 
 namespace supX.ViewModels
 {
@@ -21,6 +22,8 @@ namespace supX.ViewModels
         public int FighterId1 { get; set; }
         public int FighterId2 { get; set; }
         public BettingViewWembleyViewModel betwem;
+        public bool btnEnabled { get; set; }
+        public ICommand CheckEnoughBalance { get; set; }
 
 
 
@@ -31,10 +34,26 @@ namespace supX.ViewModels
             sounds.PlayWemblyIntroSound();          
 
             GameVM = new GameViewModel();
+            btnEnabled = false;
             FighterVM = new FighterViewModel();
             GameVM.GenerateArena();
             FighterId1 = GameVM.Fighter1.Id;
             FighterId2 = GameVM.Fighter2.Id;
+            CheckEnoughBalance = new RelyCommand(EnoughBalance);
+        }
+
+        public void EnoughBalance()
+        {
+            if (BetAmount1 + BetAmount2 > Parent.Player.MyBalance)
+            {
+                MessageBox.Show("Your balance is not enough. Try again!");
+                BetAmount1 = 0;
+                BetAmount2 = 0;
+            }
+            else
+            {
+                btnEnabled = true;
+            }
         }
     }
 }

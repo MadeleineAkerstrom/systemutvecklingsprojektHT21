@@ -749,6 +749,17 @@
       "imagePath": "/Assets/Images/Fighters/McGregor.png"
     },
     {
+      "id": 68,
+      "name": "Henry Henderson",
+      "strength": 4,
+      "cardio": 4,
+      "speed": 4,
+      "defense": 5,
+      "wins": 0,
+      "losses": 0,
+      "imagePath": "/Assets/Images/Fighters/HenryHenderson.png"
+    },
+    {
       "id": 69,
       "name": "   Mike Tyson   ",
       "strength": 5,
