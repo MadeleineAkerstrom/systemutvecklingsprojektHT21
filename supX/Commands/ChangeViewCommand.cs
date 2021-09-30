@@ -13,13 +13,19 @@ namespace supX.Commands
     /// </summary>
     public class ChangeViewCommand : ICommand
     {
+        #region Variables
         public event EventHandler CanExecuteChanged;
         private MainViewModel mainViewModel;
+        #endregion
 
+        #region Constructors
         public ChangeViewCommand(MainViewModel mainViewModel)
         {
             this.mainViewModel = mainViewModel;
         }
+        #endregion
+
+        #region Public Methods
         public bool CanExecute(object parameter)
         {
             return true;
@@ -83,5 +89,6 @@ namespace supX.Commands
             }
 
         }
+        #endregion
     }
 }

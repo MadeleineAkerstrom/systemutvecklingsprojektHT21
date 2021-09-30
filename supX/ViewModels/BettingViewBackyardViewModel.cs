@@ -12,7 +12,11 @@ namespace supX.ViewModels
 {
     public class BettingViewBackyardViewModel : BaseViewModel
     {
+        #region Objects
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
+        #endregion
+
+        #region Properties
         public MainViewModel Parent { get; }
         public GameEngineModel GameEngine { get; set; }
         public FighterViewModel FighterVM { get; set; }
@@ -24,7 +28,9 @@ namespace supX.ViewModels
         public int FighterId2 { get; set; }
         public bool btnEnabled { get; set; }
         public ICommand CheckEnoughBalance { get; set; }
+        #endregion
 
+        #region Constructors
         public BettingViewBackyardViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
@@ -37,7 +43,9 @@ namespace supX.ViewModels
             FighterId2 = GameEngine.Fighter2.Id;
             CheckEnoughBalance = new RelyCommand(EnoughBalance);
         }
+        #endregion
 
+        #region Private Methods
         /// <summary>
         /// Method that checks if player has sufficent balance to place a bet
         /// </summary>
@@ -55,5 +63,6 @@ namespace supX.ViewModels
                 sounds.PlayCashRegisterSound();
             }
         }
+        #endregion
     }
 }

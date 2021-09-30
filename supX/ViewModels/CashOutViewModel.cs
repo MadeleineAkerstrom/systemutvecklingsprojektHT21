@@ -9,7 +9,7 @@
         #endregion
 
 
-        #region Constructor
+        #region Constructors
         public CashOutViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;

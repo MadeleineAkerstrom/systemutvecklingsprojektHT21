@@ -10,13 +10,22 @@ namespace supX.ViewModels
 {
     public class BellagioViewModel : BaseViewModel
     {
+        #region Objects
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
+        #endregion
+
+        #region Variables
+        private double privatebalance;
+        #endregion
+
+        #region Properties
         public MainViewModel Parent { get; }
         public BettingViewBellagioViewModel Betbell { get; set; }
         public FightViewModel Winner { get; set; }
         public ICommand Result { get; set; }
-        private double privatebalance;
+        #endregion
 
+        #region Constructors
         public BellagioViewModel(MainViewModel mainViewModel)
         {
             sounds.PlayFightingSound();
@@ -29,7 +38,9 @@ namespace supX.ViewModels
             privatebalance = Betbell.GameEngine.CalculateNewBalance(Betbell.GameEngine.fighter.fighters[Betbell.MyBetId], Winner, Parent.Player.MyBalance); 
             Result = new RelyCommand(LostOrWon);
         }
+        #endregion
 
+        #region Private Methods
         /// <summary>
         /// Method that determines if fight is lost, won or game over and sends player to correct view
         /// </summary>
@@ -52,6 +63,6 @@ namespace supX.ViewModels
                 }
             }
         }
-
+        #endregion
     }
 }

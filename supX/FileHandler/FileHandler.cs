@@ -9,6 +9,7 @@ namespace supX.FileHandler
     /// </summary>
     public static class FileHandler
     {
+        #region Public methods
         /// <summary>
         /// Method to save Json files - not used yet. But we were planning to use it in the future to save high score and to update fighter records.
         /// </summary>
@@ -32,6 +33,6 @@ namespace supX.FileHandler
             string data = System.IO.File.ReadAllText(filename);
             return Newtonsoft.Json.JsonConvert.DeserializeObject<T>(data);
         }
-
+        #endregion
     }
 }

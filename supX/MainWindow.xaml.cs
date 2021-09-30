@@ -25,13 +25,17 @@ namespace supX
     /// </summary>
     public partial class MainWindow : Window
     {
+        #region Objects
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
+        #endregion
 
+        #region Constructors
         public MainWindow()
         {
             InitializeComponent();
             DataContext = new MainViewModel();
             sounds.PlayIntroSound();
         }
+        #endregion
     }
 }
