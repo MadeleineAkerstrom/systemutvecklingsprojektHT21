@@ -14,7 +14,7 @@ namespace supX.ViewModels
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
         public BettingViewWembleyViewModel betwem;
         public MainViewModel Parent { get; }
-        public GameViewModel GameVM { get; set; }
+        public GameEngineModel GameEngine { get; set; }
         public FighterViewModel FighterVM { get; set; }
         public double BetAmount1 { get; set; }
         public double BetAmount2 { get; set; }
@@ -28,12 +28,12 @@ namespace supX.ViewModels
         {
             Parent = mainViewModel;
             sounds.PlayWemblyIntroSound();          
-            GameVM = new GameViewModel();
+            GameEngine = new GameEngineModel();
             btnEnabled = false;
             FighterVM = new FighterViewModel();
-            GameVM.GenerateArena();
-            FighterId1 = GameVM.Fighter1.Id;
-            FighterId2 = GameVM.Fighter2.Id;
+            GameEngine.GenerateArena();
+            FighterId1 = GameEngine.Fighter1.Id;
+            FighterId2 = GameEngine.Fighter2.Id;
             CheckEnoughBalance = new RelyCommand(EnoughBalance);
         }
 
