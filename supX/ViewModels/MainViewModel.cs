@@ -9,17 +9,16 @@ namespace supX.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
-        
-        //public PlayerViewModel Player { get; set; }
-
+        #region Variables
         private PlayerViewModel player;
+        #endregion
 
+        #region Properties
         public PlayerViewModel Player
         {
             get { return player; }
             set { player = value; NotifyPropertyChanged(); }
         }
-
 
         private MainViewModel gameViewModel;
 
@@ -44,16 +43,25 @@ namespace supX.ViewModels
         }
 
         public ICommand ChangeViewCommand { get; }
+        #endregion
 
+        #region Constructors
         public MainViewModel()
         {
-            
             ChangeViewCommand = new ChangeViewCommand(this);
             currentViewModel = new StartViewModel(null);
+            ExsistingPlayer();
+        }
+        #endregion
+
+        #region Private Methods
+        private void ExsistingPlayer()
+        {
             if (Player == null)
             {
                 Player = new PlayerViewModel(this) { MyBalance = 100 };
             }
         }
+        #endregion
     }
 }

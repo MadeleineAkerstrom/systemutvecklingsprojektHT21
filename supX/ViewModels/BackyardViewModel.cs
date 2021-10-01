@@ -10,33 +10,45 @@ namespace supX.ViewModels
 {
     public class BackyardViewModel : BaseViewModel
     {
+        #region Objects
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
+        #endregion
+
+        #region Variables
+        private double privatebalance;
+        #endregion
+
+        #region Properties
         public MainViewModel Parent { get; }
-        public GameViewModel GameVM { get; set; }
         public BettingViewBackyardViewModel Betback { get; set; }
-        public FighterViewModel FightVM { get; set; }
         public FightViewModel Winner { get; set; }
         public ICommand Result { get; set; }
-        public PlayerViewModel PlayerVM { get; set; }
+        #endregion
 
+        #region Constructors
         public BackyardViewModel(MainViewModel mainViewModel)
         {
             sounds.PlayFightingSound();
             Parent = mainViewModel;
             Betback = (BettingViewBackyardViewModel)mainViewModel.CurrentViewModel;
 
-            Betback.MyBetId = Betback.GameVM.SetMyBet(Betback.BetAmount1, Betback.BetAmount2, Betback.FighterId1, Betback.FighterId2);
-            Winner = Betback.GameVM.GenerateResult(Betback.GameVM.fighter.fighters[Betback.GameVM.Fighter1.Id], Betback.GameVM.fighter.fighters[Betback.GameVM.Fighter2.Id]);
-            Betback.GameVM.BetAmount = Betback.GameVM.SetBetAmount(Betback.BetAmount1, Betback.BetAmount2);
-            //Thread.Sleep(5000);
-            Parent.Player.MyBalance = Betback.GameVM.CalculateNewBalance(Betback.GameVM.fighter.fighters[Betback.MyBetId], Winner, Parent.Player.MyBalance); //Here
+            Betback.MyBetId = Betback.GameEngine.SetMyBet(Betback.BetAmount1, Betback.BetAmount2, Betback.FighterId1, Betback.FighterId2);
+            Winner = Betback.GameEngine.GenerateResult(Betback.GameEngine.fighter.fighters[Betback.GameEngine.Fighter1.Id], Betback.GameEngine.fighter.fighters[Betback.GameEngine.Fighter2.Id]);
+            Betback.GameEngine.BetAmount = Betback.GameEngine.SetBetAmount(Betback.BetAmount1, Betback.BetAmount2);
+            Parent.Player.WinnerAmount = Betback.GameEngine.WinnerAmount(Betback.GameEngine.fighter.fighters[Betback.MyBetId], Winner, Parent.Player.MyBalance);
+            privatebalance = Betback.GameEngine.CalculateNewBalance(Betback.GameEngine.fighter.fighters[Betback.MyBetId], Winner, Parent.Player.MyBalance);
             Result = new RelyCommand(LostOrWon);
         }
+        #endregion
 
-        public void LostOrWon()
+        #region Private Methods
+        /// <summary>
+        /// Method that determines if fight is lost, won or game over and sends player to correct view
+        /// </summary>
+        private void LostOrWon()
         {
 
-            if (Parent.Player.MyBalance == 0)
+            if (privatebalance == 0)
             {
                 Parent.CurrentViewModel = new GameOverViewModel(Parent);
             }
@@ -44,15 +56,17 @@ namespace supX.ViewModels
             {
                 if (Betback.MyBetId == Winner.WinnerId)
                 {
-                    Parent.CurrentViewModel = new WinnerViewModel(Parent);
+                    Parent.CurrentViewModel = new WinnerViewModel(Parent, privatebalance);
                 }
 
                 else
                 {
-                    Parent.CurrentViewModel = new LoserViewModel(Parent);
+                    Parent.CurrentViewModel = new LoserViewModel(Parent, privatebalance);
                 }
             }
+            
         }
+        #endregion
 
     }
 }

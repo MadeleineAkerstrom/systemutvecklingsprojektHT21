@@ -91,9 +91,28 @@ namespace supX.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Cash_Register {
+            get {
+                return ResourceManager.GetStream("Cash_Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream fight {
             get {
                 return ResourceManager.GetStream("fight", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] FireWorksWinner {
+            get {
+                object obj = ResourceManager.GetObject("FireWorksWinner", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

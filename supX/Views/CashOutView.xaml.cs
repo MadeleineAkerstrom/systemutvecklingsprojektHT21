@@ -14,13 +14,16 @@ using System.Windows.Shapes;
 namespace supX.Views
 {
     /// <summary>
-    /// Interaction logic for ShowResultView.xaml
+    /// Interaction logic for CashOutView.xaml
     /// </summary>
-    public partial class ShowResultView : UserControl
+    public partial class CashOutView : UserControl
     {
-        public ShowResultView()
+        
+        public CashOutView()
         {
             InitializeComponent();
         }
+
+
     }
 }

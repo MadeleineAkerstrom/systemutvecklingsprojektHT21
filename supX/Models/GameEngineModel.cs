@@ -2,55 +2,112 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
-using supX.Models;
-using supX.Commands;
-using supX.Data;
+using supX.ViewModels;
 
-
-namespace supX.ViewModels
+namespace supX.Models
 {
-    public class GameViewModel : BaseViewModel
+    public class GameEngineModel
     {
+        #region Variables
         public string filename = new Uri(@".\Assets\Json\fighters.json", UriKind.Relative).ToString();
         public FighterViewModel fighter;
+        private FighterViewModel fighterViewModel;
+        #endregion
+
+        #region Properties
         public double[] Odds { get; set; }
-        public int[] FighterIds { get; set; }
         public FighterViewModel Fighter1 { get; set; }
         public FighterViewModel Fighter2 { get; set; }
         public MainViewModel Parent { get; }
-        ChangeViewCommand changeViewCommand;
-        FighterViewModel fighterViewModel;       
-        public PlayerViewModel PlayerVM { get; set; }
+        private PlayerViewModel PlayerVM { get; set; }
         public double BetAmount { get; set; }
-        public double BetOdds { get; set; }
+        private double BetOdds { get; set; }
+        #endregion
 
-        public GameViewModel(MainViewModel mainViewModel)
+        #region Constructors
+        public GameEngineModel()
         {
-            Parent = mainViewModel;
-
-            fighterViewModel = new FighterViewModel();        
-
-        }
-
-        public GameViewModel()
-        {
-
-            Parent = new MainViewModel();
+            fighterViewModel = new FighterViewModel();
             OpenFile();
         }
+        #endregion
 
+        #region Private Methods
+        /// <summary>
+        /// Opens Json files
+        /// </summary>
+        private void OpenFile()
+        {
+            fighter = FileHandler.FileHandler.Open<FighterViewModel>(filename);
+        }
+
+        /// <summary>
+        /// Method that randomly selects two fighters from the fighter list
+        /// </summary>
+        /// <param name="fighters"></param>
+        /// <returns>2 fighterIDs</returns>
+        private int[] GenerateFight(List<FighterViewModel> fighters)
+        {
+            int fighterCount = fighters.Count;
+            int[] fighterIDs = new int[2];
+
+            Random random = new Random();
+
+            fighterIDs[0] = random.Next(0, fighterCount);
+            do
+            {
+                fighterIDs[1] = random.Next(0, fighterCount);
+            } while (fighterIDs[0] == fighterIDs[1]);
+
+            return fighterIDs;
+        }
+
+        /// <summary>
+        /// Method that is used to generate odds 
+        /// </summary>
+        /// <param name="fighter1"></param>
+        /// <param name="fighter2"></param>
+        /// <returns>an array with odds for 2 fighters</returns>
+        private double[] GenerateOdds(FighterViewModel fighter1, FighterViewModel fighter2)
+        {
+            double[] oddsArray = new double[2];
+            double winChangePercentage = 50;
+
+            winChangePercentage += (fighter1.Strength - fighter2.Defense) * 5;
+            winChangePercentage += (fighter1.Speed - fighter2.Strength) * 3;
+            winChangePercentage += (fighter1.Cardio - fighter2.Cardio) * 1;
+
+            oddsArray[0] = Math.Round(0.95 / (winChangePercentage / 100), 2);
+            oddsArray[1] = Math.Round(0.95 / ((100 - winChangePercentage) / 100), 2);
+
+            return oddsArray;
+        }
+        #endregion
+
+        #region Public Methods
+
+        /// <summary>
+        /// Method to generate fighters with odds for one arena
+        /// </summary>
         public void GenerateArena()
         {
-
             int[] fighterArray = GenerateFight(fighter.fighters);
             Odds = GenerateOdds(fighter.fighters[fighterArray[0]], fighter.fighters[fighterArray[1]]);
             Fighter1 = fighter.fighters[fighterArray[0]];
             Fighter2 = fighter.fighters[fighterArray[1]];
-        }       
+        }
 
+        /// <summary>
+        /// Method used to set bet on a specific fighter. Also ensures that the bet is bigger than 0 and that one bet has been made.
+        /// </summary>
+        /// <param name="BetAmount1"></param>
+        /// <param name="BetAmount2"></param>
+        /// <param name="FighterId1"></param>
+        /// <param name="FighterId2"></param>
+        /// <returns>BetID</returns>
         public int SetMyBet(double BetAmount1, double BetAmount2, int FighterId1, int FighterId2)
         {
-            int MyBetId= 0;
+            int MyBetId = 0;
             if (BetAmount1 <= 0 && BetAmount2 <= 0)
             {
                 MessageBox.Show("You have to bet on someone, you idiot!");
@@ -67,28 +124,34 @@ namespace supX.ViewModels
             return MyBetId;
         }
 
-        public int[] GenerateFight(List<FighterViewModel> fighters)
+
+        /// <summary>
+        /// Method that calculates the winning amount
+        /// </summary>
+        /// <param name="myBet"></param>
+        /// <param name="winner"></param>
+        /// <param name="myBalance"></param>
+        /// <returns>WinnerAmount</returns>
+        public double WinnerAmount (FighterViewModel myBet, FightViewModel winner, double myBalance)
         {
-            int fighterCount = fighters.Count;
-            int[] fighterIDs = new int[2];
+            double betAmount = BetAmount;
+            double odds = winner.WinnerOdds;
+            double winnerAmount;
+            bool result = GenerateBetResult(myBet, winner);
 
-            Random random = new Random();
-
-            fighterIDs[0] = random.Next(0, fighterCount);
-            do
-            {
-                fighterIDs[1] = random.Next(0, fighterCount);
-            } while (fighterIDs[0] == fighterIDs[1]);
-
-            return fighterIDs;
+            winnerAmount = betAmount * odds - betAmount;
+            return Math.Round(winnerAmount);
         }
 
-        
-       
-        
-
+        /// <summary>
+        /// Method that calculates new balance after fight
+        /// </summary>
+        /// <param name="myBet"></param>
+        /// <param name="winner"></param>
+        /// <param name="myBalance"></param>
+        /// <returns>New balance</returns>
         public double CalculateNewBalance(FighterViewModel myBet, FightViewModel winner, double myBalance)
-        {  
+        {
             double betAmount = BetAmount;
             double odds = winner.WinnerOdds;
             bool result = GenerateBetResult(myBet, winner);
@@ -104,13 +167,18 @@ namespace supX.ViewModels
                 myBalance = (betAmount * odds) + myBalance;
                 return Math.Round(myBalance);
             }
-
-           
         }
+
+        /// <summary>
+        /// Method that sets the betAmount 
+        /// </summary>
+        /// <param name="betamount1"></param>
+        /// <param name="betamount2"></param>
+        /// <returns>betAmount</returns>
         public double SetBetAmount(double betamount1, double betamount2)
         {
             double betamount;
-            if (betamount1 >0)
+            if (betamount1 > 0)
             {
                 betamount = betamount1;
             }
@@ -122,22 +190,13 @@ namespace supX.ViewModels
 
         }
 
-        public double[] GenerateOdds(FighterViewModel fighter1, FighterViewModel fighter2)
-        {
-            double[] oddsArray = new double[2];
 
-            double winChangePercentage = 50;
-
-            winChangePercentage += (fighter1.Strength - fighter2.Defense) * 5;
-            winChangePercentage += (fighter1.Speed - fighter2.Strength) * 3;
-            winChangePercentage += (fighter1.Cardio - fighter2.Cardio) * 1;
-
-            oddsArray[0] = Math.Round(0.95 / (winChangePercentage / 100), 2);
-            oddsArray[1] = Math.Round(0.95 / ((100 - winChangePercentage) / 100), 2);
-
-            return oddsArray;
-        }
-
+        /// <summary>
+        /// Method that generate the result of the fight
+        /// </summary>
+        /// <param name="fighter1"></param>
+        /// <param name="fighter2"></param>
+        /// <returns>Winner</returns>
         public FightViewModel GenerateResult(FighterViewModel fighter1, FighterViewModel fighter2)
         {
             Random random = new Random();
@@ -198,6 +257,12 @@ namespace supX.ViewModels
 
         }
 
+        /// <summary>
+        /// Method that generates the bet result
+        /// </summary>
+        /// <param name="myBet"></param>
+        /// <param name="winner"></param>
+        /// <returns>Won or lost</returns>
         public bool GenerateBetResult(FighterViewModel myBet, FightViewModel winner)
         {
             if (myBet.Id == winner.WinnerId)
@@ -209,10 +274,6 @@ namespace supX.ViewModels
                 return false;
             }
         }
-
-        public void OpenFile()
-        {
-            fighter = FileHandler.FileHandler.Open<FighterViewModel>(filename);
-        }
+        #endregion
     }
 }

@@ -12,39 +12,44 @@ namespace supX.ViewModels
 {
     public class BettingViewBackyardViewModel : BaseViewModel
     {
+        #region Objects
         Sounds.SoundsAndMusic sounds = new Sounds.SoundsAndMusic();
-        public MainViewModel Parent { get; }
-        public GameViewModel GameVM { get; set; }
-        public FighterViewModel FighterVM { get; set; }
+        #endregion
 
+        #region Properties
+        public MainViewModel Parent { get; }
+        public GameEngineModel GameEngine { get; set; }
+        public FighterViewModel FighterVM { get; set; }
+        public BettingViewBackyardViewModel betback;
         public double BetAmount1 { get; set; }
         public double BetAmount2 { get; set; }
         public int MyBetId { get; set; } = 0;
         public int FighterId1 { get; set; }
         public int FighterId2 { get; set; }
-        public BettingViewBackyardViewModel betback;
         public bool btnEnabled { get; set; }
-
         public ICommand CheckEnoughBalance { get; set; }
+        #endregion
 
+        #region Constructors
         public BettingViewBackyardViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
-
-
             sounds.PlayBackyardIntroSound();
-
             btnEnabled = false;
-            GameVM = new GameViewModel();
+            GameEngine = new GameEngineModel();
             FighterVM = new FighterViewModel();
-            GameVM.GenerateArena();
-            FighterId1 = GameVM.Fighter1.Id;
-            FighterId2 = GameVM.Fighter2.Id;
+            GameEngine.GenerateArena();
+            FighterId1 = GameEngine.Fighter1.Id;
+            FighterId2 = GameEngine.Fighter2.Id;
             CheckEnoughBalance = new RelyCommand(EnoughBalance);
-            
         }
+        #endregion
 
-        public void EnoughBalance()
+        #region Private Methods
+        /// <summary>
+        /// Method that checks if player has sufficent balance to place a bet
+        /// </summary>
+        private void EnoughBalance()
         {
             if (BetAmount1 + BetAmount2 > Parent.Player.MyBalance)
             {
@@ -55,7 +60,9 @@ namespace supX.ViewModels
             else
             {
                 btnEnabled = true;
+                sounds.PlayCashRegisterSound();
             }
         }
+        #endregion
     }
 }

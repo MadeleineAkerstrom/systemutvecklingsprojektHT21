@@ -9,13 +9,23 @@ namespace supX.Sounds
 {
     public class SoundsAndMusic
     {
-                
+        #region Constructors   
         public SoundsAndMusic()
         {
             
         }
+        #endregion
 
         #region SoundEffects
+        /// <summary>
+        /// Plays cash Register sound when making a bet
+        /// </summary>
+        public void PlayCashRegisterSound()
+        {
+            var player = new SoundPlayer(Properties.Resources.Cash_Register);
+            player.Play();
+        }
+
         /// <summary>
         /// Plays when game over
         /// </summary>

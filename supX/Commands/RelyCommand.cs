@@ -5,16 +5,24 @@ using System.Windows.Input;
 
 namespace supX.Commands
 {
+    /// <summary>
+    /// Help class to be able to use bindings with methods
+    /// </summary>
     class RelyCommand : ICommand
     {
+        #region Variables
         private Action action;
+        public event EventHandler CanExecuteChanged;
+        #endregion
 
+        #region Constructors
         public RelyCommand(Action action)
         {
             this.action = action;
         }
-        public event EventHandler CanExecuteChanged;
+        #endregion
 
+        #region Public Methods
         public bool CanExecute(object parameter)
         {
             return true;
@@ -24,5 +32,6 @@ namespace supX.Commands
         {
             action();
         }
+        #endregion
     }
 }

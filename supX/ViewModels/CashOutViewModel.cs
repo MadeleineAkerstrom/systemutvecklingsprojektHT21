@@ -1,20 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace supX.ViewModels
+﻿namespace supX.ViewModels
 {
-    public class RulesViewModel : BaseViewModel
+    public class CashOutViewModel : BaseViewModel
     {
+
         #region Properties
         public MainViewModel Parent { get; }
+
         #endregion
 
+
         #region Constructors
-        public RulesViewModel(MainViewModel mainViewModel)
+        public CashOutViewModel(MainViewModel mainViewModel)
         {
             Parent = mainViewModel;
+
         }
         #endregion
+
+
     }
 }

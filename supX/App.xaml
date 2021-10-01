@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:supX"
              xmlns:viewmodels="clr-namespace:supX.ViewModels"
              xmlns:views="clr-namespace:supX.Views"
-             
+      
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <DataTemplate
@@ -65,18 +65,18 @@
         <DataTemplate 
             DataType="{x:Type viewmodels:BettingViewWembleyViewModel}">
             <views:BettingViewWembley/>
-        </DataTemplate>
-        
-        <DataTemplate
-            DataType="{x:Type viewmodels:ShowResultViewModel}">
-            <views:ShowResultView/>
-        </DataTemplate>
+        </DataTemplate>             
 
         <DataTemplate
             DataType="{x:Type viewmodels:GameOverViewModel}">
             <views:GameOverView/>
         </DataTemplate>
 
+        <DataTemplate
+            DataType="{x:Type viewmodels:CashOutViewModel}">
+            <views:CashOutView/>
+        </DataTemplate>         
+         
         <DataTemplate
             DataType="{x:Type viewmodels:InstructionsViewModel}">
             <views:InstructionsView/>
